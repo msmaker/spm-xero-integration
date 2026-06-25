@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="5cf9d5f379e903107f4423b77ae415e0" sys_domain="global" table="x_snc_spm_xero_i_0_xero_project_task" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-25 00:56:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>94f919f379e903107f4423b77ae4150e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_spm_xero_i_0_xero_project_task" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">5cf9d5f379e903107f4423b77ae415e0</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">9cf919f379e903107f4423b77ae4150a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-25 00:56:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-25 00:56:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0f919f379e903107f4423b77ae41511</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_spm_xero_i_0_xero_project_task" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">5cf9d5f379e903107f4423b77ae415e0</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">58f919f379e903107f4423b77ae4150e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-25 00:56:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-25 00:56:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e4f919f379e903107f4423b77ae41515</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_spm_xero_i_0_xero_project_task" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">5cf9d5f379e903107f4423b77ae415e0</sys_ui_form>
+            <sys_ui_section caption="Agile" display_value="Agile" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">2cf919f379e903107f4423b77ae41513</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-25 00:56:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-25 00:56:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>94f9d5f379e903107f4423b77ae415e5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_spm_xero_i_0_xero_project_task" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">5cf9d5f379e903107f4423b77ae415e0</sys_ui_form>
+            <sys_ui_section caption="Dates" display_value="Dates" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">d0f9d5f379e903107f4423b77ae415e2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-25 00:56:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-25 00:56:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a8f919f379e903107f4423b77ae41513</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_spm_xero_i_0_xero_project_task" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">5cf9d5f379e903107f4423b77ae415e0</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">a4f919f379e903107f4423b77ae41511</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-25 00:56:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-25 00:56:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6cf919f379e903107f4423b77ae41516</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_spm_xero_i_0_xero_project_task" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">5cf9d5f379e903107f4423b77ae415e0</sys_ui_form>
+            <sys_ui_section caption="Checklist" display_value="Checklist" name="x_snc_spm_xero_i_0_xero_project_task" sys_domain="global" view="Default view">68f919f379e903107f4423b77ae41515</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-25 00:56:40</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_spm_xero_i_0_xero_project_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-25 00:56:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5cf9d5f379e903107f4423b77ae415e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_spm_xero_i_0_xero_project_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+            <sys_update_name>sys_ui_form_sections_5cf9d5f379e903107f4423b77ae415e0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-25 00:56:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

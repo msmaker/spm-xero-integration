@@ -1,0 +1,2539 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>true</ih_action>
+        <internal_name>xero__get_task_by_project_id</internal_name>
+        <label_cache>[{"name":"{{action.project_id}}","label":"action➛Project Id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a36ceb24-5e8b-468c-98b3-e754adc91401].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a1bdb3df-296f-4d69-bad2-0da8d189e40d].root.items}}","label":"step➛JSON Parser step➛root➛items","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>35eb632f796503107f4423b77ae4157b</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Xero - Get Task by Project ID</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:54:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d8bebeb796503107f4423b77ae4157f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Xero - Get Task by Project ID</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_7d8bebeb796503107f4423b77ae4157f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=7d8bebeb796503107f4423b77ae4157f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7d8bebeb796503107f4423b77ae4157f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>7d8bebeb796503107f4423b77ae4157f</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:52</sys_created_on>
+        <sys_id>69eb632f796503107f4423b77ae41575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:52</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">69eb632f796503107f4423b77ae4156e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>7d8bebeb796503107f4423b77ae4157f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:52</sys_created_on>
+        <sys_id>e9eb632f796503107f4423b77ae41575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:52</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">51eb632f796503107f4423b77ae41569</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7d8bebeb796503107f4423b77ae4157f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tasks</field>
+        <id>7d8bebeb796503107f4423b77ae4157f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:52</sys_created_on>
+        <sys_id>e5eb632f796503107f4423b77ae41575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:52</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f</table>
+        <value>{{step[a1bdb3df-296f-4d69-bad2-0da8d189e40d].root.items}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>7d8bebeb796503107f4423b77ae4157f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:52</sys_created_on>
+        <sys_id>65eb632f796503107f4423b77ae41575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:52</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>7d8bebeb796503107f4423b77ae4157f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:52</sys_created_on>
+        <sys_id>e1eb632f796503107f4423b77ae41575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:52</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=7d8bebeb796503107f4423b77ae4157f^sys_idNOT IN5deb632f796503107f4423b77ae41554,95eb632f796503107f4423b77ae4154c"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</action>
+        <cid>a1bdb3df-296f-4d69-bad2-0da8d189e40d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>5deb632f796503107f4423b77ae41554</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5deb632f796503107f4423b77ae41554"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5deb632f796503107f4423b77ae41554</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>51eb632f796503107f4423b77ae41568</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"pagination","children":[{"name":"page","children":[],"type":"string","jpath":"$.pagination.page","previewValue":"1"},{"name":"pageSize","children":[],"type":"string","jpath":"$.pagination.pageSize","previewValue":"3"},{"name":"pageCount","children":[],"type":"string","jpath":"$.pagination.pageCount","previewValue":"1"},{"name":"itemCount","children":[],"type":"string","jpath":"$.pagination.itemCount","previewValue":"3"}],"type":"object","jpath":"$.pagination","previewValue":""},{"name":"items","children":[{"name":"items_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.items[*].name","previewValue":"Lay new patio (Labour)"},{"name":"rate","children":[{"name":"currency","children":[],"type":"string","jpath":"$.items[*].rate.currency","previewValue":"USD"},{"name":"value","children":[],"type":"string","jpath":"$.items[*].rate.value","previewValue":"50.0"}],"type":"object","jpath":"$.items[*].rate","previewValue":""},{"name":"chargeType","children":[],"type":"string","jpath":"$.items[*].chargeType","previewValue":"TIME"},{"name":"status","children":[],"type":"string","jpath":"$.items[*].status","previewValue":"ACTIVE"},{"name":"estimateMinutes","children":[],"type":"string","jpath":"$.items[*].estimateMinutes","previewValue":"960"},{"name":"taskId","children":[],"type":"string","jpath":"$.items[*].taskId","previewValue":"ed1f353a-9c22-4fb6-8539-47faddbef7ad"},{"name":"projectId","children":[],"type":"string","jpath":"$.items[*].projectId","previewValue":"9741b994-1093-4ee6-add5-a200f04f01c7"},{"name":"totalMinutes","children":[],"type":"string","jpath":"$.items[*].totalMinutes","previewValue":"1050"},{"name":"totalAmount","children":[{"name":"currency","children":[],"type":"string","jpath":"$.items[*].totalAmount.currency","previewValue":"USD"},{"name":"value","children":[],"type":"string","jpath":"$.items[*].totalAmount.value","previewValue":"875.0"}],"type":"object","jpath":"$.items[*].totalAmount","previewValue":""},{"name":"minutesToBeInvoiced","children":[],"type":"string","jpath":"$.items[*].minutesToBeInvoiced","previewValue":"1050"},{"name":"minutesInvoiced","children":[],"type":"string","jpath":"$.items[*].minutesInvoiced","previewValue":"0"},{"name":"nonChargeableMinutes","children":[],"type":"string","jpath":"$.items[*].nonChargeableMinutes","previewValue":"0"},{"name":"fixedMinutes","children":[],"type":"string","jpath":"$.items[*].fixedMinutes","previewValue":"0"},{"name":"amountToBeInvoiced","children":[{"name":"currency","children":[],"type":"string","jpath":"$.items[*].amountToBeInvoiced.currency","previewValue":"USD"},{"name":"value","children":[],"type":"string","jpath":"$.items[*].amountToBeInvoiced.value","previewValue":"875.0"}],"type":"object","jpath":"$.items[*].amountToBeInvoiced","previewValue":""},{"name":"amountInvoiced","children":[{"name":"currency","children":[],"type":"string","jpath":"$.items[*].amountInvoiced.currency","previewValue":"USD"},{"name":"value","children":[],"type":"string","jpath":"$.items[*].amountInvoiced.value","previewValue":"0.0"}],"type":"object","jpath":"$.items[*].amountInvoiced","previewValue":""}],"type":"object","jpath":"$.items[*]","previewValue":""}],"type":"array.object","jpath":"$.items[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5deb632f796503107f4423b77ae41554</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>d1eb632f796503107f4423b77ae41568</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value>{&#13;
+  "pagination": {&#13;
+    "page": 1,&#13;
+    "pageSize": 3,&#13;
+    "pageCount": 1,&#13;
+    "itemCount": 3&#13;
+  },&#13;
+  "items": [&#13;
+    {&#13;
+      "name": "Lay new patio (Labour)",&#13;
+      "rate": {&#13;
+        "currency": "USD",&#13;
+        "value": 50.0&#13;
+      },&#13;
+      "chargeType": "TIME",&#13;
+      "status": "ACTIVE",&#13;
+      "estimateMinutes": 960,&#13;
+      "taskId": "ed1f353a-9c22-4fb6-8539-47faddbef7ad",&#13;
+      "projectId": "9741b994-1093-4ee6-add5-a200f04f01c7",&#13;
+      "totalMinutes": 1050,&#13;
+      "totalAmount": {&#13;
+        "currency": "USD",&#13;
+        "value": 875.00&#13;
+      },&#13;
+      "minutesToBeInvoiced": 1050,&#13;
+      "minutesInvoiced": 0,&#13;
+      "nonChargeableMinutes": 0,&#13;
+      "fixedMinutes": 0,&#13;
+      "amountToBeInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 875.00&#13;
+      },&#13;
+      "amountInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "name": "Additional request: Planting and landscaping (Labour)",&#13;
+      "rate": {&#13;
+        "currency": "USD",&#13;
+        "value": 50.0&#13;
+      },&#13;
+      "chargeType": "TIME",&#13;
+      "status": "ACTIVE",&#13;
+      "taskId": "813087e4-5211-407d-9dbe-65307bc6c7fe",&#13;
+      "projectId": "9741b994-1093-4ee6-add5-a200f04f01c7",&#13;
+      "totalMinutes": 0,&#13;
+      "totalAmount": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      },&#13;
+      "minutesToBeInvoiced": 0,&#13;
+      "minutesInvoiced": 0,&#13;
+      "nonChargeableMinutes": 0,&#13;
+      "fixedMinutes": 0,&#13;
+      "amountToBeInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      },&#13;
+      "amountInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "name": "Removal of existing patio (Labour)",&#13;
+      "rate": {&#13;
+        "currency": "USD",&#13;
+        "value": 50.0&#13;
+      },&#13;
+      "chargeType": "TIME",&#13;
+      "status": "ACTIVE",&#13;
+      "estimateMinutes": 480,&#13;
+      "taskId": "28070816-6557-4245-9f57-b82e71620bd8",&#13;
+      "projectId": "9741b994-1093-4ee6-add5-a200f04f01c7",&#13;
+      "totalMinutes": 420,&#13;
+      "totalAmount": {&#13;
+        "currency": "USD",&#13;
+        "value": 350.0&#13;
+      },&#13;
+      "minutesToBeInvoiced": 420,&#13;
+      "minutesInvoiced": 0,&#13;
+      "nonChargeableMinutes": 0,&#13;
+      "fixedMinutes": 0,&#13;
+      "amountToBeInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 350.0&#13;
+      },&#13;
+      "amountInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      }&#13;
+    }&#13;
+  ]&#13;
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_5deb632f796503107f4423b77ae41554^id=5deb632f796503107f4423b77ae41554"/>
+    <sys_element_mapping action="delete_multiple" query="id=5deb632f796503107f4423b77ae41554"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>5deb632f796503107f4423b77ae41554</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>19eb632f796503107f4423b77ae4155b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>5deb632f796503107f4423b77ae41554</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>95eb632f796503107f4423b77ae4155b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[a36ceb24-5e8b-468c-98b3-e754adc91401].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>5deb632f796503107f4423b77ae41554</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>15eb632f796503107f4423b77ae4155b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=5deb632f796503107f4423b77ae41554"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=5deb632f796503107f4423b77ae41554"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=5deb632f796503107f4423b77ae41554^sys_idNOT IN55eb632f796503107f4423b77ae41556"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD99eb632fbf6503107a1cbf7855b74555</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>64fdbaa379e103107f4423b77ae41523</scope_name>
+        <serialized_content>{"FlowDesigner:FD99eb632fbf6503107a1cbf7855b74555":{"pagination":{"pageCount":"String","pageCount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pageCount\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"375147d2-bbf7-4311-b5a7-d3f0083f80a6\"}"},"pageSize":"String","pageSize.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pageSize\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"f9e8a793-65e3-4721-a145-ae86be68cbc9\"}"},"page":"String","page.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"page\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"9ae58a10-b561-4177-be8f-89ebb1db1186\"}"},"itemCount":"String","itemCount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"itemCount\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"8ea99112-640f-41ed-b183-e72989459318\"}"}},"pagination.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pagination\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"7790e3d3-839a-4c45-859a-81727789f714\"}"},"items":[{"$4_items":{"fixedMinutes":"String","fixedMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"fixedMinutes\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"8243976d-edb7-43e8-8aab-cb74bab44d75\"}"},"chargeType":"String","chargeType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"chargeType\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"87378742-a2f4-4ca8-be74-ed9621c2061d\"}"},"minutesInvoiced":"String","minutesInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"minutesInvoiced\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"d787f4cf-0a90-4a3e-bd47-bba4efab76eb\"}"},"totalAmount":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"259fa36f-5cc0-4868-85bf-dea57531e068\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"db9fab15-c9a8-4f58-bfd6-c8b265679bd6\"}"}},"totalAmount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"totalAmount\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"b9bd2250-5036-46a3-a562-88d8f6923591\"}"},"amountInvoiced":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3f1c57ed-58d8-49a0-ad25-d320cd6e6e48\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"6efdfb0c-f05e-44a8-b5d4-69a83d79cbe5\"}"}},"amountInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amountInvoiced\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"e7ea8725-ac2b-417b-9951-70fc6b4de60f\"}"},"minutesToBeInvoiced":"String","minutesToBeInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"minutesToBeInvoiced\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"f7f9af6b-29df-4d29-ae8e-40fafbea3fbf\"}"},"rate":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4676e624-79bf-4f7d-a864-a6877b97def9\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"5a5d87a0-9f87-432e-be5b-b69612604b68\"}"}},"rate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rate\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"b85d84c0-5d0c-4fd9-a6c3-3e4a1b06b361\"}"},"totalMinutes":"String","totalMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"totalMinutes\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"52ff9e48-08c7-4b39-bb56-33a1bfb40ac5\"}"},"amountToBeInvoiced":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ba824426-f65c-439c-8a80-3d4b183e3244\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"d2527bcc-2e3b-4031-b4ab-adc2d3db8a6b\"}"}},"amountToBeInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amountToBeInvoiced\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"f76abb35-b471-4636-b8eb-d166c58980e9\"}"},"nonChargeableMinutes":"String","nonChargeableMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"nonChargeableMinutes\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"4a05b8be-fcec-4b2c-be5d-8e37af52f370\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"dc1dce56-436a-48c6-8dfb-7c9d59053734\"}"},"estimateMinutes":"String","estimateMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"estimateMinutes\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"57185eab-0198-41cb-874b-12de9969afff\"}"},"projectId":"String","projectId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"projectId\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"b35fdf3c-3c1b-49c2-8e94-4b993aedf3d0\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"313bde87-d8a8-4db3-919e-cd7197b7c328\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"09efe017-2a2b-43de-8be6-4e520dee83b4\"}"}}}],"items.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"items\",\"mandatory\":\"false\",\"child_name\":\"items_object\",\"uiUniqueId\":\"f3628333-806f-4484-940f-b1d04c2b1a68\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"items_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"99c72426-b1cd-422d-aad9-79b60fac9279\"}"}},"FlowDesigner:FD99eb632fbf6503107a1cbf7855b74555.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"1d9fbc45-1558-47ea-9fd1-40fe639927cc\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD99eb632fbf6503107a1cbf7855b74555\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5deb632f796503107f4423b77ae41555</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD99eb632fbf6503107a1cbf7855b74555,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=1d9fbc45-1558-47ea-9fd1-40fe639927cc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">5deb632f796503107f4423b77ae41554</model>
+        <model_id>5deb632f796503107f4423b77ae41554</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_5deb632f796503107f4423b77ae41554</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>55eb632f796503107f4423b77ae41556</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5deb632f796503107f4423b77ae41554"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_5deb632f796503107f4423b77ae41554</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>99eb632f796503107f4423b77ae41557</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</action>
+        <cid>a36ceb24-5e8b-468c-98b3-e754adc91401</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:50</sys_created_on>
+        <sys_id>95eb632f796503107f4423b77ae4154c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=95eb632f796503107f4423b77ae4154c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95eb632f796503107f4423b77ae4154c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>d9eb632f796503107f4423b77ae41553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95eb632f796503107f4423b77ae4154c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>5deb632f796503107f4423b77ae41553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95eb632f796503107f4423b77ae4154c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>ddeb632f796503107f4423b77ae41553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95eb632f796503107f4423b77ae4154c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>51eb632f796503107f4423b77ae41554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value>c5ae36e379e103107f4423b77ae415c2</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95eb632f796503107f4423b77ae4154c</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>d1eb632f796503107f4423b77ae41554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95eb632f796503107f4423b77ae4154c</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>55eb632f796503107f4423b77ae41554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value>https://api.xero.com/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95eb632f796503107f4423b77ae4154c</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>d5eb632f796503107f4423b77ae41554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>95eb632f796503107f4423b77ae4154c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>59eb632f796503107f4423b77ae41554</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_95eb632f796503107f4423b77ae4154c^id=95eb632f796503107f4423b77ae4154c"/>
+    <sys_element_mapping action="delete_multiple" query="id=95eb632f796503107f4423b77ae4154c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>95eb632f796503107f4423b77ae4154c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>d5eb632f796503107f4423b77ae41553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>95eb632f796503107f4423b77ae4154c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>55eb632f796503107f4423b77ae41553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>95eb632f796503107f4423b77ae4154c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>d1eb632f796503107f4423b77ae41553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>95eb632f796503107f4423b77ae4154c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>ddeb632f796503107f4423b77ae41552</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>95eb632f796503107f4423b77ae4154c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>59eb632f796503107f4423b77ae41553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>95eb632f796503107f4423b77ae4154c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>59eb632f796503107f4423b77ae41552</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>95eb632f796503107f4423b77ae4154c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>5deb632f796503107f4423b77ae41552</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>95eb632f796503107f4423b77ae4154c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>51eb632f796503107f4423b77ae41553</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>projects.xro/2.0/Projects/{{action.project_id}}/Tasks</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>95eb632f796503107f4423b77ae4154c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>d9eb632f796503107f4423b77ae41552</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=95eb632f796503107f4423b77ae4154c"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=95eb632f796503107f4423b77ae4154c"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=95eb632f796503107f4423b77ae4154c^sys_idNOT IN1deb632f796503107f4423b77ae4154d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">95eb632f796503107f4423b77ae4154c</model>
+        <model_id>95eb632f796503107f4423b77ae4154c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_95eb632f796503107f4423b77ae4154c</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>1deb632f796503107f4423b77ae4154d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=95eb632f796503107f4423b77ae4154c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_95eb632f796503107f4423b77ae4154c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>51eb632f796503107f4423b77ae4154f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=7d8bebeb796503107f4423b77ae4157f^sys_idNOT IN0debafeb796503107f4423b77ae415dd"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c9510026-f99b-45eb-a948-87966794073b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>project_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Project Id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</model>
+        <model_id>7d8bebeb796503107f4423b77ae4157f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_7d8bebeb796503107f4423b77ae4157f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:50</sys_created_on>
+        <sys_id>0debafeb796503107f4423b77ae415dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0debafeb796503107f4423b77ae415dd"/>
+    <sys_hub_action_output action="delete_multiple" query="model=7d8bebeb796503107f4423b77ae4157f^sys_idNOT IN51eb632f796503107f4423b77ae41569,69eb632f796503107f4423b77ae4156e,6deb632f796503107f4423b77ae4156b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=32b4edd5-6e2d-4ab9-a988-8ec61e2f9991</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</model>
+        <model_id>7d8bebeb796503107f4423b77ae4157f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>51eb632f796503107f4423b77ae41569</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=51eb632f796503107f4423b77ae41569"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=51eb632f796503107f4423b77ae41569"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b3699fa5-9473-4a95-a56f-2ce93197d646,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</model>
+        <model_id>7d8bebeb796503107f4423b77ae4157f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>69eb632f796503107f4423b77ae4156e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=69eb632f796503107f4423b77ae4156e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=69eb632f796503107f4423b77ae4156e"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD95eb632f9c65031057af959887108268</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>64fdbaa379e103107f4423b77ae41523</scope_name>
+        <serialized_content>{"FlowDesigner:FD95eb632f9c65031057af959887108268":{"$COCollectionField":[{"items_object":{"fixedMinutes":"String","fixedMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"fixedMinutes\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"8243976d-edb7-43e8-8aab-cb74bab44d75\"}"},"chargeType":"String","chargeType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"chargeType\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"87378742-a2f4-4ca8-be74-ed9621c2061d\"}"},"minutesInvoiced":"String","minutesInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"minutesInvoiced\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"d787f4cf-0a90-4a3e-bd47-bba4efab76eb\"}"},"totalAmount":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"259fa36f-5cc0-4868-85bf-dea57531e068\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"db9fab15-c9a8-4f58-bfd6-c8b265679bd6\"}"}},"totalAmount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"totalAmount\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"b9bd2250-5036-46a3-a562-88d8f6923591\"}"},"amountInvoiced":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3f1c57ed-58d8-49a0-ad25-d320cd6e6e48\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"6efdfb0c-f05e-44a8-b5d4-69a83d79cbe5\"}"}},"amountInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amountInvoiced\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"e7ea8725-ac2b-417b-9951-70fc6b4de60f\"}"},"minutesToBeInvoiced":"String","minutesToBeInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"minutesToBeInvoiced\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"f7f9af6b-29df-4d29-ae8e-40fafbea3fbf\"}"},"rate":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4676e624-79bf-4f7d-a864-a6877b97def9\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"5a5d87a0-9f87-432e-be5b-b69612604b68\"}"}},"rate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rate\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"b85d84c0-5d0c-4fd9-a6c3-3e4a1b06b361\"}"},"totalMinutes":"String","totalMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"totalMinutes\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"52ff9e48-08c7-4b39-bb56-33a1bfb40ac5\"}"},"amountToBeInvoiced":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ba824426-f65c-439c-8a80-3d4b183e3244\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"d2527bcc-2e3b-4031-b4ab-adc2d3db8a6b\"}"}},"amountToBeInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amountToBeInvoiced\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"f76abb35-b471-4636-b8eb-d166c58980e9\"}"},"nonChargeableMinutes":"String","nonChargeableMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"nonChargeableMinutes\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"4a05b8be-fcec-4b2c-be5d-8e37af52f370\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"dc1dce56-436a-48c6-8dfb-7c9d59053734\"}"},"estimateMinutes":"String","estimateMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"estimateMinutes\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"57185eab-0198-41cb-874b-12de9969afff\"}"},"projectId":"String","projectId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"projectId\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"b35fdf3c-3c1b-49c2-8e94-4b993aedf3d0\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"313bde87-d8a8-4db3-919e-cd7197b7c328\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"09efe017-2a2b-43de-8be6-4e520dee83b4\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"a1bdb3df-296f-4d69-bad2-0da8d189e40d\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Tasks\",\"mandatory\":\"false\",\"child_name\":\"items_object\",\"uiUniqueId\":\"8fe63844-aca1-435a-80cd-411811e659ab\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD95eb632f9c65031057af959887108268\",\"child_label\":\"items_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"f3628333-806f-4484-940f-b1d04c2b1a68\",\"sourceType\":\"step\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"99c72426-b1cd-422d-aad9-79b60fac9279\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD95eb632f9c65031057af959887108268.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"a1bdb3df-296f-4d69-bad2-0da8d189e40d\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Tasks\",\"mandatory\":\"false\",\"child_name\":\"items_object\",\"uiUniqueId\":\"8fe63844-aca1-435a-80cd-411811e659ab\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD95eb632f9c65031057af959887108268\",\"child_label\":\"items_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"f3628333-806f-4484-940f-b1d04c2b1a68\",\"sourceType\":\"step\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"99c72426-b1cd-422d-aad9-79b60fac9279\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59eb632f796503107f4423b77ae41568</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=items_object,child_name=items_object,child_type=object,child_type_label=Object,child_uiUniqueId=99c72426-b1cd-422d-aad9-79b60fac9279,co_type_name=FD95eb632f9c65031057af959887108268,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=a1bdb3df-296f-4d69-bad2-0da8d189e40d,sourceType=step,sourceUiUniqueId=f3628333-806f-4484-940f-b1d04c2b1a68,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=8fe63844-aca1-435a-80cd-411811e659ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tasks</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Tasks</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</model>
+        <model_id>7d8bebeb796503107f4423b77ae4157f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>6deb632f796503107f4423b77ae4156b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6deb632f796503107f4423b77ae4156b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6deb632f796503107f4423b77ae4156b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7d8bebeb796503107f4423b77ae4157f"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=7d8bebeb796503107f4423b77ae4157f^sys_idNOT INadeb632f796503107f4423b77ae41575"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:52</sys_created_on>
+        <sys_id>adeb632f796503107f4423b77ae41575</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:52</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=adeb632f796503107f4423b77ae41575"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>project_id</element>
+        <help/>
+        <hint/>
+        <label>Project Id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_7d8bebeb796503107f4423b77ae4157f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:50</sys_created_on>
+        <sys_id>4debafeb796503107f4423b77ae415df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_7d8bebeb796503107f4423b77ae4157f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>21eb632f796503107f4423b77ae4156b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tasks</element>
+        <help/>
+        <hint/>
+        <label>Tasks</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:51</sys_created_on>
+        <sys_id>2deb632f796503107f4423b77ae4156d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:52</sys_created_on>
+        <sys_id>edeb632f796503107f4423b77ae41571</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_7d8bebeb796503107f4423b77ae4157f"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=7d8bebeb796503107f4423b77ae4157f^sys_idNOT INa6eb632f796503107f4423b77ae415b0"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a6eb632f796503107f4423b77ae415b0","name":"plan","plan_signature":null}}</plan>
+        <snapshot>c2eb632f796503107f4423b77ae415a9</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a6eb632f796503107f4423b77ae415b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:56</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>xero__get_task_by_project_id</internal_name>
+        <label_cache>[{"name":"{{action.project_id}}","label":"action➛Project Id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[a36ceb24-5e8b-468c-98b3-e754adc91401].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[a1bdb3df-296f-4d69-bad2-0da8d189e40d].root.items}}","label":"step➛JSON Parser step➛root➛items","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Xero - Get Task by Project ID</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>35eb632f796503107f4423b77ae4157b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=35eb632f796503107f4423b77ae4157b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=35eb632f796503107f4423b77ae4157b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>35eb632f796503107f4423b77ae4157b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>caeb632f796503107f4423b77ae415a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">ceeb632f796503107f4423b77ae41595</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>35eb632f796503107f4423b77ae4157b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>4eeb632f796503107f4423b77ae415a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">8aeb632f796503107f4423b77ae41591</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=35eb632f796503107f4423b77ae4157b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>tasks</field>
+        <id>35eb632f796503107f4423b77ae4157b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>c6eb632f796503107f4423b77ae415a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table>var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b</table>
+        <value>{{step[a1bdb3df-296f-4d69-bad2-0da8d189e40d].root.items}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>35eb632f796503107f4423b77ae4157b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>4aeb632f796503107f4423b77ae415a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table>var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>35eb632f796503107f4423b77ae4157b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>46eb632f796503107f4423b77ae415a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table>var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=35eb632f796503107f4423b77ae4157b^sys_idNOT INcaeb632f796503107f4423b77ae4158a,f5eb632f796503107f4423b77ae41583"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Xero - Get Task by Project ID">35eb632f796503107f4423b77ae4157b</action>
+        <cid>a1bdb3df-296f-4d69-bad2-0da8d189e40d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>caeb632f796503107f4423b77ae4158a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=caeb632f796503107f4423b77ae4158a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>caeb632f796503107f4423b77ae4158a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>4aeb632f796503107f4423b77ae41590</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"pagination","children":[{"name":"page","children":[],"type":"string","jpath":"$.pagination.page","previewValue":"1"},{"name":"pageSize","children":[],"type":"string","jpath":"$.pagination.pageSize","previewValue":"3"},{"name":"pageCount","children":[],"type":"string","jpath":"$.pagination.pageCount","previewValue":"1"},{"name":"itemCount","children":[],"type":"string","jpath":"$.pagination.itemCount","previewValue":"3"}],"type":"object","jpath":"$.pagination","previewValue":""},{"name":"items","children":[{"name":"items_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.items[*].name","previewValue":"Lay new patio (Labour)"},{"name":"rate","children":[{"name":"currency","children":[],"type":"string","jpath":"$.items[*].rate.currency","previewValue":"USD"},{"name":"value","children":[],"type":"string","jpath":"$.items[*].rate.value","previewValue":"50.0"}],"type":"object","jpath":"$.items[*].rate","previewValue":""},{"name":"chargeType","children":[],"type":"string","jpath":"$.items[*].chargeType","previewValue":"TIME"},{"name":"status","children":[],"type":"string","jpath":"$.items[*].status","previewValue":"ACTIVE"},{"name":"estimateMinutes","children":[],"type":"string","jpath":"$.items[*].estimateMinutes","previewValue":"960"},{"name":"taskId","children":[],"type":"string","jpath":"$.items[*].taskId","previewValue":"ed1f353a-9c22-4fb6-8539-47faddbef7ad"},{"name":"projectId","children":[],"type":"string","jpath":"$.items[*].projectId","previewValue":"9741b994-1093-4ee6-add5-a200f04f01c7"},{"name":"totalMinutes","children":[],"type":"string","jpath":"$.items[*].totalMinutes","previewValue":"1050"},{"name":"totalAmount","children":[{"name":"currency","children":[],"type":"string","jpath":"$.items[*].totalAmount.currency","previewValue":"USD"},{"name":"value","children":[],"type":"string","jpath":"$.items[*].totalAmount.value","previewValue":"875.0"}],"type":"object","jpath":"$.items[*].totalAmount","previewValue":""},{"name":"minutesToBeInvoiced","children":[],"type":"string","jpath":"$.items[*].minutesToBeInvoiced","previewValue":"1050"},{"name":"minutesInvoiced","children":[],"type":"string","jpath":"$.items[*].minutesInvoiced","previewValue":"0"},{"name":"nonChargeableMinutes","children":[],"type":"string","jpath":"$.items[*].nonChargeableMinutes","previewValue":"0"},{"name":"fixedMinutes","children":[],"type":"string","jpath":"$.items[*].fixedMinutes","previewValue":"0"},{"name":"amountToBeInvoiced","children":[{"name":"currency","children":[],"type":"string","jpath":"$.items[*].amountToBeInvoiced.currency","previewValue":"USD"},{"name":"value","children":[],"type":"string","jpath":"$.items[*].amountToBeInvoiced.value","previewValue":"875.0"}],"type":"object","jpath":"$.items[*].amountToBeInvoiced","previewValue":""},{"name":"amountInvoiced","children":[{"name":"currency","children":[],"type":"string","jpath":"$.items[*].amountInvoiced.currency","previewValue":"USD"},{"name":"value","children":[],"type":"string","jpath":"$.items[*].amountInvoiced.value","previewValue":"0.0"}],"type":"object","jpath":"$.items[*].amountInvoiced","previewValue":""}],"type":"object","jpath":"$.items[*]","previewValue":""}],"type":"array.object","jpath":"$.items[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>caeb632f796503107f4423b77ae4158a</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>caeb632f796503107f4423b77ae41590</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <value>{&#13;
+  "pagination": {&#13;
+    "page": 1,&#13;
+    "pageSize": 3,&#13;
+    "pageCount": 1,&#13;
+    "itemCount": 3&#13;
+  },&#13;
+  "items": [&#13;
+    {&#13;
+      "name": "Lay new patio (Labour)",&#13;
+      "rate": {&#13;
+        "currency": "USD",&#13;
+        "value": 50.0&#13;
+      },&#13;
+      "chargeType": "TIME",&#13;
+      "status": "ACTIVE",&#13;
+      "estimateMinutes": 960,&#13;
+      "taskId": "ed1f353a-9c22-4fb6-8539-47faddbef7ad",&#13;
+      "projectId": "9741b994-1093-4ee6-add5-a200f04f01c7",&#13;
+      "totalMinutes": 1050,&#13;
+      "totalAmount": {&#13;
+        "currency": "USD",&#13;
+        "value": 875.00&#13;
+      },&#13;
+      "minutesToBeInvoiced": 1050,&#13;
+      "minutesInvoiced": 0,&#13;
+      "nonChargeableMinutes": 0,&#13;
+      "fixedMinutes": 0,&#13;
+      "amountToBeInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 875.00&#13;
+      },&#13;
+      "amountInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "name": "Additional request: Planting and landscaping (Labour)",&#13;
+      "rate": {&#13;
+        "currency": "USD",&#13;
+        "value": 50.0&#13;
+      },&#13;
+      "chargeType": "TIME",&#13;
+      "status": "ACTIVE",&#13;
+      "taskId": "813087e4-5211-407d-9dbe-65307bc6c7fe",&#13;
+      "projectId": "9741b994-1093-4ee6-add5-a200f04f01c7",&#13;
+      "totalMinutes": 0,&#13;
+      "totalAmount": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      },&#13;
+      "minutesToBeInvoiced": 0,&#13;
+      "minutesInvoiced": 0,&#13;
+      "nonChargeableMinutes": 0,&#13;
+      "fixedMinutes": 0,&#13;
+      "amountToBeInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      },&#13;
+      "amountInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "name": "Removal of existing patio (Labour)",&#13;
+      "rate": {&#13;
+        "currency": "USD",&#13;
+        "value": 50.0&#13;
+      },&#13;
+      "chargeType": "TIME",&#13;
+      "status": "ACTIVE",&#13;
+      "estimateMinutes": 480,&#13;
+      "taskId": "28070816-6557-4245-9f57-b82e71620bd8",&#13;
+      "projectId": "9741b994-1093-4ee6-add5-a200f04f01c7",&#13;
+      "totalMinutes": 420,&#13;
+      "totalAmount": {&#13;
+        "currency": "USD",&#13;
+        "value": 350.0&#13;
+      },&#13;
+      "minutesToBeInvoiced": 420,&#13;
+      "minutesInvoiced": 0,&#13;
+      "nonChargeableMinutes": 0,&#13;
+      "fixedMinutes": 0,&#13;
+      "amountToBeInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 350.0&#13;
+      },&#13;
+      "amountInvoiced": {&#13;
+        "currency": "USD",&#13;
+        "value": 0.0&#13;
+      }&#13;
+    }&#13;
+  ]&#13;
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_caeb632f796503107f4423b77ae4158a^id=caeb632f796503107f4423b77ae4158a"/>
+    <sys_element_mapping action="delete_multiple" query="id=caeb632f796503107f4423b77ae4158a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>caeb632f796503107f4423b77ae4158a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>c6eb632f796503107f4423b77ae41590</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>caeb632f796503107f4423b77ae4158a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>46eb632f796503107f4423b77ae41590</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[a36ceb24-5e8b-468c-98b3-e754adc91401].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>caeb632f796503107f4423b77ae4158a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>c2eb632f796503107f4423b77ae41590</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=caeb632f796503107f4423b77ae4158a"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=caeb632f796503107f4423b77ae4158a"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=caeb632f796503107f4423b77ae4158a^sys_idNOT INc2eb632f796503107f4423b77ae4158c"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD0aeb632f70650310812056ec32eb5b8b</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>64fdbaa379e103107f4423b77ae41523</scope_name>
+        <serialized_content>{"FlowDesigner:FD0aeb632f70650310812056ec32eb5b8b":{"pagination":{"pageCount":"String","pageCount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pageCount\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"375147d2-bbf7-4311-b5a7-d3f0083f80a6\"}"},"pageSize":"String","pageSize.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pageSize\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"f9e8a793-65e3-4721-a145-ae86be68cbc9\"}"},"page":"String","page.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"page\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"9ae58a10-b561-4177-be8f-89ebb1db1186\"}"},"itemCount":"String","itemCount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"itemCount\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"8ea99112-640f-41ed-b183-e72989459318\"}"}},"pagination.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pagination\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"7790e3d3-839a-4c45-859a-81727789f714\"}"},"items":[{"$4_items":{"fixedMinutes":"String","fixedMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"fixedMinutes\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"8243976d-edb7-43e8-8aab-cb74bab44d75\"}"},"chargeType":"String","chargeType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"chargeType\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"87378742-a2f4-4ca8-be74-ed9621c2061d\"}"},"minutesInvoiced":"String","minutesInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"minutesInvoiced\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"d787f4cf-0a90-4a3e-bd47-bba4efab76eb\"}"},"totalAmount":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"259fa36f-5cc0-4868-85bf-dea57531e068\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"db9fab15-c9a8-4f58-bfd6-c8b265679bd6\"}"}},"totalAmount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"totalAmount\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"b9bd2250-5036-46a3-a562-88d8f6923591\"}"},"amountInvoiced":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3f1c57ed-58d8-49a0-ad25-d320cd6e6e48\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"6efdfb0c-f05e-44a8-b5d4-69a83d79cbe5\"}"}},"amountInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amountInvoiced\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"e7ea8725-ac2b-417b-9951-70fc6b4de60f\"}"},"minutesToBeInvoiced":"String","minutesToBeInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"minutesToBeInvoiced\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"f7f9af6b-29df-4d29-ae8e-40fafbea3fbf\"}"},"rate":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4676e624-79bf-4f7d-a864-a6877b97def9\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"5a5d87a0-9f87-432e-be5b-b69612604b68\"}"}},"rate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rate\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"b85d84c0-5d0c-4fd9-a6c3-3e4a1b06b361\"}"},"totalMinutes":"String","totalMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"totalMinutes\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"52ff9e48-08c7-4b39-bb56-33a1bfb40ac5\"}"},"amountToBeInvoiced":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ba824426-f65c-439c-8a80-3d4b183e3244\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"d2527bcc-2e3b-4031-b4ab-adc2d3db8a6b\"}"}},"amountToBeInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amountToBeInvoiced\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"f76abb35-b471-4636-b8eb-d166c58980e9\"}"},"nonChargeableMinutes":"String","nonChargeableMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"nonChargeableMinutes\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"4a05b8be-fcec-4b2c-be5d-8e37af52f370\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"dc1dce56-436a-48c6-8dfb-7c9d59053734\"}"},"estimateMinutes":"String","estimateMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"estimateMinutes\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"57185eab-0198-41cb-874b-12de9969afff\"}"},"projectId":"String","projectId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"projectId\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"b35fdf3c-3c1b-49c2-8e94-4b993aedf3d0\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"313bde87-d8a8-4db3-919e-cd7197b7c328\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"09efe017-2a2b-43de-8be6-4e520dee83b4\"}"}}}],"items.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"items\",\"mandatory\":\"false\",\"child_name\":\"items_object\",\"uiUniqueId\":\"f3628333-806f-4484-940f-b1d04c2b1a68\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"items_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"99c72426-b1cd-422d-aad9-79b60fac9279\"}"}},"FlowDesigner:FD0aeb632f70650310812056ec32eb5b8b.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"1d9fbc45-1558-47ea-9fd1-40fe639927cc\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0aeb632f70650310812056ec32eb5b8b\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>caeb632f796503107f4423b77ae4158b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD0aeb632f70650310812056ec32eb5b8b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=1d9fbc45-1558-47ea-9fd1-40fe639927cc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">caeb632f796503107f4423b77ae4158a</model>
+        <model_id>caeb632f796503107f4423b77ae4158a</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_caeb632f796503107f4423b77ae4158a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>c2eb632f796503107f4423b77ae4158c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=caeb632f796503107f4423b77ae4158a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_caeb632f796503107f4423b77ae4158a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>42eb632f796503107f4423b77ae4158d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Xero - Get Task by Project ID">35eb632f796503107f4423b77ae4157b</action>
+        <cid>a36ceb24-5e8b-468c-98b3-e754adc91401</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>f5eb632f796503107f4423b77ae41583</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f5eb632f796503107f4423b77ae41583"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5eb632f796503107f4423b77ae41583</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>4aeb632f796503107f4423b77ae41589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5eb632f796503107f4423b77ae41583</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>caeb632f796503107f4423b77ae41589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5eb632f796503107f4423b77ae41583</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>4eeb632f796503107f4423b77ae41589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5eb632f796503107f4423b77ae41583</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>ceeb632f796503107f4423b77ae41589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <value>c5ae36e379e103107f4423b77ae415c2</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5eb632f796503107f4423b77ae41583</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>42eb632f796503107f4423b77ae4158a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5eb632f796503107f4423b77ae41583</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>c2eb632f796503107f4423b77ae4158a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <value>https://api.xero.com/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5eb632f796503107f4423b77ae41583</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>46eb632f796503107f4423b77ae4158a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f5eb632f796503107f4423b77ae41583</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>c6eb632f796503107f4423b77ae4158a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f5eb632f796503107f4423b77ae41583^id=f5eb632f796503107f4423b77ae41583"/>
+    <sys_element_mapping action="delete_multiple" query="id=f5eb632f796503107f4423b77ae41583"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f5eb632f796503107f4423b77ae41583</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>46eb632f796503107f4423b77ae41589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>f5eb632f796503107f4423b77ae41583</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>c2eb632f796503107f4423b77ae41589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>f5eb632f796503107f4423b77ae41583</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>42eb632f796503107f4423b77ae41589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>f5eb632f796503107f4423b77ae41583</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>4eeb632f796503107f4423b77ae41588</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>f5eb632f796503107f4423b77ae41583</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>c6eb632f796503107f4423b77ae41589</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>f5eb632f796503107f4423b77ae41583</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>f5eb632f796503107f4423b77ae41588</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>f5eb632f796503107f4423b77ae41583</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>caeb632f796503107f4423b77ae41588</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>f5eb632f796503107f4423b77ae41583</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>ceeb632f796503107f4423b77ae41588</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>projects.xro/2.0/Projects/{{action.project_id}}/Tasks</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>f5eb632f796503107f4423b77ae41583</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>79eb632f796503107f4423b77ae41588</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=f5eb632f796503107f4423b77ae41583"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f5eb632f796503107f4423b77ae41583"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f5eb632f796503107f4423b77ae41583^sys_idNOT IN79eb632f796503107f4423b77ae41584"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">f5eb632f796503107f4423b77ae41583</model>
+        <model_id>f5eb632f796503107f4423b77ae41583</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f5eb632f796503107f4423b77ae41583</name>
+        <next_element/>
+        <order>8</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>79eb632f796503107f4423b77ae41584</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f5eb632f796503107f4423b77ae41583"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_f5eb632f796503107f4423b77ae41583</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>39eb632f796503107f4423b77ae41585</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=35eb632f796503107f4423b77ae4157b^sys_idNOT INf1eb632f796503107f4423b77ae4157c"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c9510026-f99b-45eb-a948-87966794073b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>project_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Project Id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Xero - Get Task by Project ID">35eb632f796503107f4423b77ae4157b</model>
+        <model_id>35eb632f796503107f4423b77ae4157b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_35eb632f796503107f4423b77ae4157b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>f1eb632f796503107f4423b77ae4157c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f1eb632f796503107f4423b77ae4157c"/>
+    <sys_hub_action_output action="delete_multiple" query="model=35eb632f796503107f4423b77ae4157b^sys_idNOT IN4eeb632f796503107f4423b77ae41593,8aeb632f796503107f4423b77ae41591,ceeb632f796503107f4423b77ae41595"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDceeb632f90650310643c194f4ad20890</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>64fdbaa379e103107f4423b77ae41523</scope_name>
+        <serialized_content>{"FlowDesigner:FDceeb632f90650310643c194f4ad20890":{"$COCollectionField":[{"items_object":{"fixedMinutes":"String","fixedMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"fixedMinutes\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"8243976d-edb7-43e8-8aab-cb74bab44d75\"}"},"chargeType":"String","chargeType.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"chargeType\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"87378742-a2f4-4ca8-be74-ed9621c2061d\"}"},"minutesInvoiced":"String","minutesInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"minutesInvoiced\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"d787f4cf-0a90-4a3e-bd47-bba4efab76eb\"}"},"totalAmount":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"259fa36f-5cc0-4868-85bf-dea57531e068\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"db9fab15-c9a8-4f58-bfd6-c8b265679bd6\"}"}},"totalAmount.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"totalAmount\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"b9bd2250-5036-46a3-a562-88d8f6923591\"}"},"amountInvoiced":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3f1c57ed-58d8-49a0-ad25-d320cd6e6e48\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"6efdfb0c-f05e-44a8-b5d4-69a83d79cbe5\"}"}},"amountInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amountInvoiced\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"e7ea8725-ac2b-417b-9951-70fc6b4de60f\"}"},"minutesToBeInvoiced":"String","minutesToBeInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"minutesToBeInvoiced\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"f7f9af6b-29df-4d29-ae8e-40fafbea3fbf\"}"},"rate":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"4676e624-79bf-4f7d-a864-a6877b97def9\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"5a5d87a0-9f87-432e-be5b-b69612604b68\"}"}},"rate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"rate\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"b85d84c0-5d0c-4fd9-a6c3-3e4a1b06b361\"}"},"totalMinutes":"String","totalMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"totalMinutes\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"52ff9e48-08c7-4b39-bb56-33a1bfb40ac5\"}"},"amountToBeInvoiced":{"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"ba824426-f65c-439c-8a80-3d4b183e3244\"}"},"value":"String","value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"d2527bcc-2e3b-4031-b4ab-adc2d3db8a6b\"}"}},"amountToBeInvoiced.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"amountToBeInvoiced\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"f76abb35-b471-4636-b8eb-d166c58980e9\"}"},"nonChargeableMinutes":"String","nonChargeableMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"nonChargeableMinutes\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"4a05b8be-fcec-4b2c-be5d-8e37af52f370\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"dc1dce56-436a-48c6-8dfb-7c9d59053734\"}"},"estimateMinutes":"String","estimateMinutes.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"estimateMinutes\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"57185eab-0198-41cb-874b-12de9969afff\"}"},"projectId":"String","projectId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"projectId\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"b35fdf3c-3c1b-49c2-8e94-4b993aedf3d0\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"313bde87-d8a8-4db3-919e-cd7197b7c328\"}"},"status":"String","status.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"status\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"09efe017-2a2b-43de-8be6-4e520dee83b4\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"a1bdb3df-296f-4d69-bad2-0da8d189e40d\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Tasks\",\"mandatory\":\"false\",\"child_name\":\"items_object\",\"uiUniqueId\":\"8fe63844-aca1-435a-80cd-411811e659ab\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDceeb632f90650310643c194f4ad20890\",\"child_label\":\"items_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"f3628333-806f-4484-940f-b1d04c2b1a68\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"99c72426-b1cd-422d-aad9-79b60fac9279\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDceeb632f90650310643c194f4ad20890.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"a1bdb3df-296f-4d69-bad2-0da8d189e40d\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Tasks\",\"mandatory\":\"false\",\"child_name\":\"items_object\",\"uiUniqueId\":\"8fe63844-aca1-435a-80cd-411811e659ab\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDceeb632f90650310643c194f4ad20890\",\"child_label\":\"items_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"f3628333-806f-4484-940f-b1d04c2b1a68\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"99c72426-b1cd-422d-aad9-79b60fac9279\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82eb632f796503107f4423b77ae41591</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=items_object,child_name=items_object,child_type=object,child_type_label=Object,child_uiUniqueId=99c72426-b1cd-422d-aad9-79b60fac9279,co_type_name=FDceeb632f90650310643c194f4ad20890,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=a1bdb3df-296f-4d69-bad2-0da8d189e40d,sourceType=step,sourceUiUniqueId=f3628333-806f-4484-940f-b1d04c2b1a68,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=8fe63844-aca1-435a-80cd-411811e659ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tasks</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Tasks</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Xero - Get Task by Project ID">35eb632f796503107f4423b77ae4157b</model>
+        <model_id>35eb632f796503107f4423b77ae4157b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>4eeb632f796503107f4423b77ae41593</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4eeb632f796503107f4423b77ae41593"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4eeb632f796503107f4423b77ae41593"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=32b4edd5-6e2d-4ab9-a988-8ec61e2f9991</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Xero - Get Task by Project ID">35eb632f796503107f4423b77ae4157b</model>
+        <model_id>35eb632f796503107f4423b77ae4157b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>8aeb632f796503107f4423b77ae41591</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8aeb632f796503107f4423b77ae41591"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8aeb632f796503107f4423b77ae41591"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b3699fa5-9473-4a95-a56f-2ce93197d646,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Xero - Get Task by Project ID">35eb632f796503107f4423b77ae4157b</model>
+        <model_id>35eb632f796503107f4423b77ae4157b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>ceeb632f796503107f4423b77ae41595</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ceeb632f796503107f4423b77ae41595"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ceeb632f796503107f4423b77ae41595"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=35eb632f796503107f4423b77ae4157b"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=35eb632f796503107f4423b77ae4157b^sys_idNOT IN02eb632f796503107f4423b77ae415a9"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Xero - Get Task by Project ID">35eb632f796503107f4423b77ae4157b</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>02eb632f796503107f4423b77ae415a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=02eb632f796503107f4423b77ae415a9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>project_id</element>
+        <help/>
+        <hint/>
+        <label>Project Id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_35eb632f796503107f4423b77ae4157b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:53</sys_created_on>
+        <sys_id>b1eb632f796503107f4423b77ae4157e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_35eb632f796503107f4423b77ae4157b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tasks</element>
+        <help/>
+        <hint/>
+        <label>Tasks</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>46eb632f796503107f4423b77ae41595</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>82eb632f796503107f4423b77ae41593</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 16:55:54</sys_created_on>
+        <sys_id>8eeb632f796503107f4423b77ae41598</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 16:55:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_35eb632f796503107f4423b77ae4157b"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>7d8bebeb796503107f4423b77ae4157f</sys_id>
+        <latest_snapshot>35eb632f796503107f4423b77ae4157b</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-08-20-2025_09-08-2025_1328.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

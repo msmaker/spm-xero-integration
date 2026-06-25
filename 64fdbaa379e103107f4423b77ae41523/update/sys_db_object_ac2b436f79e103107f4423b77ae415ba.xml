@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>false</create_access_controls>
+        <delete_access>false</delete_access>
+        <filter_extension/>
+        <is_df_table>false</is_df_table>
+        <is_extendable>false</is_extendable>
+        <label>OLD Xero Task</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_snc_spm_xero_i_0_xero_task</name>
+        <number_ref display_value="PRJXI">42cd47ef79e103107f4423b77ae415d0</number_ref>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Task" name="task">7035bba6440103107f44e4ff76a86141</super_class>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 14:37:29</sys_created_on>
+        <sys_id>ac2b436f79e103107f4423b77ae415ba</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>OLD Xero Task</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_db_object_ac2b436f79e103107f4423b77ae415ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 00:53:56</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_snc_spm_xero_i_0.xero_task_user" name="x_snc_spm_xero_i_0.xero_task_user">263c4f6f79e103107f4423b77ae415e0</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+</record_update>

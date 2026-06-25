@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>create</operation>
+        <source_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-06-24 21:43:21</sys_created_on>
+        <sys_id>78bd6033796903107f4423b77ae415bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_plng_att_core_resource_assignment</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_scope_privilege_78bd6033796903107f4423b77ae415bc</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-06-24 21:43:21</sys_updated_on>
+        <target_name>sn_plng_att_core_resource_assignment</target_name>
+        <target_scope display_value="SPM Planning Attributes Core">b3a48e8058031110fa9b000bb9ea5f5f</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>
