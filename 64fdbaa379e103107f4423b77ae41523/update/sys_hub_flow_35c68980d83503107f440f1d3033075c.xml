@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=16446000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>xero__create_time_entries_on_time_card_approval</internal_name>
+        <label_cache>[{"name":"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4.xero_user_id","label":"1 - Xero - Get Users➛Xero User ID","type":"string","base_type":"string","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["user_id"],"cb21ce5f-2a50-465b-a77c-276cd5cae83e":["condition"],"75a85aaf-e184-4885-9d84-655ba23f0710":["user_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f9fffb1c-fd69-47ff-b8cd-3309c7fbaaaf"}},{"name":"Created or Updated_1.current.user.email","label":"Trigger - Record Created or Updated➛Time Card Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4":["email"]}},{"name":"Created or Updated_1.current.resource_assignment.task.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["task_id"],"75a85aaf-e184-4885-9d84-655ba23f0710":["task_id"]}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"time_card","column_name":"sys_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["time_card_sysid"]}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.time_entries","label":"2 - Xero - Get Time Card➛Time Entries","reference_display":"Time Entries","type":"array.object","base_type":"array.object","usedInstances":{"9d77a6f2-9907-4319-b61f-e5e535474979":["items"]},"attributes":{"sourceId":"c61e078a-5d25-4c54-8840-f3a6fb58afba","child_name":"root_array_object","uiUniqueId":"004556f7-a581-40bb-8e4c-fd1daa77b956","uiTypeLabel":"Array.Object","co_type_name":"FD616d8dc4a53503104d32df72dd144ffc","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"8fe3327d-ca7d-4667-8786-7e9a0d730811","uiType":"array.object","child_type":"object","child_uiUniqueId":"6e7e48e1-01cd-4582-9c0f-d34e9d9a3778"}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.__action_status__.message","label":"2 - Xero - Get Time Card➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"af5d47b4-666c-45b5-9936-4b223be174e9":["condition"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.userId","label":"4 - For Each➛root_array_object➛userId","reference":"","reference_display":"userId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.taskId","label":"4 - For Each➛root_array_object➛taskId","reference":"","reference_display":"taskId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.dateUtc","label":"4 - For Each➛root_array_object➛dateUtc","reference":"","reference_display":"dateUtc","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["dateutc"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.duration","label":"4 - For Each➛root_array_object➛duration","reference":"","reference_display":"duration","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["duration"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.description","label":"4 - For Each➛root_array_object➛description","reference":"","reference_display":"description","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["description"]},"attributes":{}},{"name":"Created or Updated_1.current.resource_assignment.task.parent.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Parent➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["project_id"]}}]</label_cache>
+        <master_snapshot>9b9f8d48d83503107f440f1d3033075a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Xero – Create Time Entries on Time Card Approval</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>21850684d8f503107f440f1d303307b7</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:11:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>35c68980d83503107f440f1d3033075c</sys_id>
+        <sys_mod_count>83</sys_mod_count>
+        <sys_name>Xero – Create Time Entries on Time Card Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_hub_flow_35c68980d83503107f440f1d3033075c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:37</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2026-06-25 19:45:35">06850684d8f503107f440f1d303307d5</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=35c68980d83503107f440f1d3033075c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=35c68980d83503107f440f1d3033075c"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="time_card">stateCHANGESTOProcessed^project_time_category=cfec6c8cd8b103107f440f1d3033073f<item display_value="Processed" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Processed"/>
+            <item display_table="project_time_category" display_value="Billable" endquery="false" field="project_time_category" goto="false" newquery="false" operator="=" or="false" value="cfec6c8cd8b103107f440f1d3033073f"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 22:45:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>21850684d8f503107f440f1d303307b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:33</sys_updated_on>
+        <table>time_card</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>35c68980d83503107f440f1d3033075c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 22:45:33</sys_created_on>
+        <sys_id>e5850684d8f503107f440f1d303307b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:33</sys_updated_on>
+        <trigger display_value="">21850684d8f503107f440f1d303307b7</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=35c68980d83503107f440f1d3033075c^sys_idNOT INe5850684d8f503107f440f1d303307b7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=35c68980d83503107f440f1d3033075c^sys_idNOT INe6530204d8f503107f440f1d30330775"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
+        <label>Xero - Get Users</label>
+        <order>0</order>
+        <stage_id>de8246c0d8f503107f440f1d303307e0</stage_id>
+        <states>{}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 22:36:04</sys_created_on>
+        <sys_id>e6530204d8f503107f440f1d30330775</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:36:04</sys_updated_on>
+        <type>subflow</type>
+        <value>dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=35c68980d83503107f440f1d3033075c^sys_idNOT IN79c68980d83503107f440f1d3033075c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>35c68980d83503107f440f1d3033075c</id>
+        <name>Xero – Create Time Entries on Time Card Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:11:24</sys_created_on>
+        <sys_id>79c68980d83503107f440f1d3033075c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:11:24</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=79c68980d83503107f440f1d3033075c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=35c68980d83503107f440f1d3033075c^sys_idNOT IN641701c0d83503107f440f1d30330718,a4178140d8f103107f440f1d30330712,a81701c0d83503107f440f1d30330713"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</model>
+        <model_id>35c68980d83503107f440f1d3033075c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:12:41</sys_created_on>
+        <sys_id>641701c0d83503107f440f1d30330718</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:12:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=641701c0d83503107f440f1d30330718"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</model>
+        <model_id>35c68980d83503107f440f1d3033075c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:12:41</sys_created_on>
+        <sys_id>a4178140d8f103107f440f1d30330712</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:45:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a4178140d8f103107f440f1d30330712"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</model>
+        <model_id>35c68980d83503107f440f1d3033075c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:12:41</sys_created_on>
+        <sys_id>a81701c0d83503107f440f1d30330713</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:45:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a81701c0d83503107f440f1d30330713"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=35c68980d83503107f440f1d3033075c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=35c68980d83503107f440f1d3033075c"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=35c68980d83503107f440f1d3033075c^sys_idNOT IN18178140d8f103107f440f1d3033070e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:12:40</sys_created_on>
+        <sys_id>18178140d8f103107f440f1d3033070e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 20:36:39</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=35c68980d83503107f440f1d3033075c^sys_idNOT INc08dcdc4d83503107f440f1d303307ea,f9ed85c4d83503107f440f1d30330761"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Get Time Card">196d8dc4d83503107f440f1d303307d7</action_type>
+        <action_type_parent display_value="Xero - Get Time Card">49ae340cd8f103107f440f1d30330767</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>196d8dc4d83503107f440f1d303307d7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:40:47</sys_created_on>
+        <sys_id>c08dcdc4d83503107f440f1d303307ea</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 23:25:22</sys_updated_on>
+        <ui_id>2191986f-ba7f-4ae8-bd4e-070218aa7ee5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Wf6yhuvnmbipCQtiGNjxeEIse+ptbcJDgO0FX8912TtHQMIYrYy8RbfHy/zvE9yuWaaEkOSFKkMpcilnmUhBELMxXHoWIyCqMozGROpqTmS8BIx7ufJeZMyS03vUfW67kF7kBOGjs5b6X/LFkgemuhdoGFrumtgJJ3nb6ulx7zRQLRYIDhTjc1Fnx4wJJSd63hq4uPrywW2kjMIgeXV1PScotsHFhysH529VY5DK/AYOgZNpwcH74kkFu1Huic1fX1eP46pp1uwMZKPwabErh3UEvA/oqbDqZkyWuk3NjVFkE15EltnoCFrh1WIz74vtO/sF8ehqGPVICcBAy322M5SjzA6pA7jqP0wvV2DBWLRgvoBjUkKN4bN9/FhoCT1ss7pDhemU12Y/pl/X2QgmwLbF4Ukb7DIaD1VP3sIxF1umjufmymPNL1oyrjpWkEN9sTd6hd1Ts/z5r0+uyZzAPyl9BgwG9IueRti0jZ2uZWP3bBoZfBtcFDoExzh9P5dQq48AwDfAIeHCF++AhfcKs93W9YBpN9u/Na3/Rw7BcHeCUTKBiNkxhoLIuC5qgATbKMcajyMJ2F5GFKulU3N7i2T0LhC5U3vac5yDYKVA4a+xRhdeu+4FC3MGrxMB3tK+Wr+8p3tlMvoRTcyhJH2MfGGP4+l+4k7mfCN5DamhBZTebIanK66o7la3T3MeXs05T/gymLvAJVMKBsxkMaR0lOq1gyil4URSYrFsbpPzBlJoWMEiFkXr2wv2zHlKi+ff5PlSLEQZMZVUzMaAxZTnMVSZryNFd8BgydEdyDbcox+2Vrvq/MfkZ9A9GNUc+xyR9/yyfq+xgz+jTmf2HMDJjimaBpWhU0ZiykuJb431RcMpakUazyDzTm1W/3MNNV7goAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c08dcdc4d83503107f440f1d303307ea"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Create Time Entries">c2e54180d83503107f440f1d3033078c</action_type>
+        <action_type_parent display_value="Xero - Create Time Entries">fe41c58cd8f103107f440f1d303307a0</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c2e54180d83503107f440f1d3033078c</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>9d77a6f2-9907-4319-b61f-e5e535474979</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:42:32</sys_created_on>
+        <sys_id>f9ed85c4d83503107f440f1d30330761</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 23:25:22</sys_updated_on>
+        <ui_id>75a85aaf-e184-4885-9d84-655ba23f0710</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XwW7bOBCGXyXQ2RRIiZTE3IoEBQp0t4tt00tRGBQ5TLSVJVWi0mSNvPsOLdlK0qwbJ/XF8M0aksP5f83nsb8sg8IEpwGPQHCWUZPFgsaMppZzapmJaRzTNDPBLKjUAnBn09b/gHbzwseuVdn74HJ51oJyYE7q9uSiMf7jnIW6b1uoXNhCV/ethrnquuKyWviYU923sFGrdV3jvlK5oq4w790dZjZF15Tq9vPeLtBXRWlwMTj98nUW4D6U56ANTpePlp7rT6lyKHHrX4NBJ+/O/8c0d9v4WOfaorocn9+Phz+ug3VrfDFsFsCNg8oAVmFV2cEsWKgK9dft7SaC1pgPVTkFrorKYbbAb77pin/xvoxS6ndaQGUahtXN43z0ewjbc+UUltJr17fjVn1VFxq6wRMDVvWlO7sfGzZ8aLzJwxGn8nJ9ui77RfXn4EawSbB+vRjpOywCGi/V1z4KsR+v6h9/r6t8W1QrV8bFstaq3Dwph97lvfP1LIO++PTI5iHyk9FQgm+X+UI1DUbm+Kqui9UtWPQivCzxIbRl/QOr870VKu0VhvgKVPgW4+er8GfVFl7uH5gGD/vrLqriew/vfPtEIjUKdE4SCoLwWOZESQYkjqSRGcg4y2lwNwu62+6sxB6ejMI3NP/ee5mDbaNB88Fjf0S3RePeYFHXMHpxNxup1tu71k4Niu63j5E2msYiExGxTEeEQ5qRzMaGJCrJrIqAGc3DG2jr+Xj6aXBflmY3PJ8hdI3nBV7ygM1J+i5gRkcwDwHMTCRRYhNFRKQl4VQqIilXxMQ2ElKnuWDxHsDkybZ+lWzqTj/Ffs+s3d+Qff10/bUda3w/4YUP8J0M2gXf+IjvIeBLRU4VkxlRys+WPMe5agUnlmtmNcNvfpvvY65u79d46k7PUO/0A3ylSVOV2IhISVP8McAkyRNmCQgQseApl6kMCwcL7wVcOP00qy9Ls+Nc/bXQNZjnwyVPSd8FTH4E8xDATJKEm5QiidZYwrPUg4kTNuZKA2cRNXwfYNKtvwNVdK87+3Y1sF5K5nj81Wjez7Mbm8/QumFzEvuz/F3oFEc6D4FOmgmbWPw7ysHEhLMY6UysJZlhlEkmDP5J2wOd2faO5ffaE4Y8rwB0yvBqRh+l2g3TZ4jeYPpA9ZNW7AJrcoT1EGDVODOplZro1DDCdWSJhEiQPOeRSLCFsiT6jbB+/Q/I9UopExYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f9ed85c4d83503107f440f1d30330761"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=35c68980d83503107f440f1d3033075c^sys_idNOT IN58b2c2c0d8f503107f440f1d303307f1"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <show_stages>true</show_stages>
+        <subflow display_value="Xero - Get Users">de8246c0d8f503107f440f1d303307e0</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/51RXWsbMRD8K0HP9nGX89nCbyUhUGgbaJq8hHDsSStboJMUnc6Ja/zfu7oPF/xU+qad3dmdGb2emJZsyyrkt6u1yCVXVV4W+UatVrkqZJmXZb7Bgi2YhRZpElvQhsoDmD7Vp9NdQIgob1y4efYyPesiE30IaGPWdxiygXM+E0vqzhs4vvwXWey1kdRg29e3BfMQSFHEwLanq1Y8eqwNNGjoxlMM2u6I/q9GZ+Ls9Mp4Wk5lN691QSYNxYLhZ0Qrkc4oMB0uWAuWLLlwvCDkVj5a8xfYaxtpG0vDn53+Tat5nudpUiEZEjh2L2U9RTjCYu+0wEcftbMjEqExE0c407f2xyg/hY8KehPn8AmhgGuJPqlOMiZN6mnvPn7OBx+0HQxOTeMEmEsFkWJo+ohd+oVe/7oKZ0S+XX8FGmzpYt2C94TUPriDHq6Q6DbbGSoyZdwHqev0zmYgksOM0oTsgfD7AX6BoJPd77SGyOncs9XvPX5NXy1ww5uC82WxWcvlinO1hHUBS1XdNlWJyJtKsfMQbf3eJ1NjSFMc9ZgoDXQiaB+/kIQDTs7Pb38AFqBOIzoDAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 22:33:10</sys_created_on>
+        <sys_id>58b2c2c0d8f503107f440f1d303307f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:37:36</sys_updated_on>
+        <ui_id>dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=35c68980d83503107f440f1d3033075c^sys_idNOT INd63ec908d83503107f440f1d303307c8,9e0e894cd8f103107f440f1d303307a9"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">85ae4148d83503107f440f1d3033076b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:43:56</sys_created_on>
+        <sys_id>d63ec908d83503107f440f1d303307c8</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:30</sys_updated_on>
+        <ui_id>af5d47b4-666c-45b5-9936-4b223be174e9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWZBky69b0CJAgbYB6iCXNiBW5MomSpGqSNlxDf97l3rYRuKgRZFjb+JQuzsz2tEhMI2rGmfvzY21cq2D5bfHMJDaY/R8CDSUGCwDbrSQThrNWiAMtqAaf0GPQtpKwf7hjPCNVKLGvlsFNdU4rIPl4dmV21fIFOSoqHDlaqnXVC4FnYoYimTBEz5Op+M0jtP5JMmn4zxJxRgQxvTeUPh+IPfuU4uEr7L28wi3wyRTC08ricMAnxxqgTS6AGUxDErQApyp9yekRhB3Wp2BjdSuU1zCk5W/qHeaZf7FAkkj7+04HVlv1eCSkRzvKk+wQxzkarDQqKbUXzod3mQsoFHuwuTGUj+sPGnPoqdUrDZm93UYeCt1K7C/VIaDOp3AkQ1549D6D4MKS2rESqgqModVtdnKtpi4lNFa0SEqlNnRUL8pEXBPPCKPILol/EMLP0AtvYrP1IaKO5o5WMlZu1XUztUk4djawn42nlAnsJfCOjfoBctrWbkbmrPFnvUxfLmSF9t4OKTJIlnMp8Uoh1kxmgDOR7mY4CiexWkyB5ghZhFjHXlmHbjGMhaVaC2s8Xj83sTxWKwazgl5udxvP+AtsrKArMiSOLuelcn0WlaupOT1gKR/CIj/pH+ZjziO/wfkMiDSsm7Re23t8H/Ox6MPQzfBdnsjkEtLRO499nH4s/uLPS2A5JfQztQ/vIQzdvwNDPN0NSMGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8dae4148d83503107f440f1d3033076b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>af5d47b4-666c-45b5-9936-4b223be174e9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:43:07</sys_created_on>
+        <sys_id>9e0e894cd8f103107f440f1d303307a9</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:30</sys_updated_on>
+        <ui_id>9d77a6f2-9907-4319-b61f-e5e535474979</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VSTW/bMAz9Lzonhu1kSZxbgaFAD22BruhlKAxaohNhsqTpI6ln+L+Pip106HUnm4/k43siB2ZisDH4V3PnvTxotv/5vmBSJ4z+B6ahQ7ZnMmDn2YKdQMUUD0NZVEW127TLBrbtcg24WzZijct8m5fFDmCL+C0LssMadXAS/ThSv5DeKujf/pOGH6USDme5FhypDOjYfviSCr3FWkGDiqa9IDdOJBtSUFhUoq2KvOKrcrMq87zcrYtms2qKUqwAxYbqrp0Ps/0vr5HYKXQ3XvokFWW+YPgRUAukQS0ojwvWgRYQjOvZPrhIgEMQz1r1t4qj1IHoWKr98PIPcRd5ngpbJEccp+QtrOfXnGB+NJLjsw3S6AkJ0Ki5hxsVO/00yU97wBaiCtc9EBI98aFNmpOKWVL742jOL9eB91Jf/M1JZTioWwSB9tPEgD6tARV2RFR3YK3Uh9o6c5KXZtLSZQdFQdYqc6ah6fAy4El4Rk8E2T3h3y/wGziZXDwSDTWPF/f175jmTj5mxfVkmgo8d9KGO6I74SxufE+XOzH56TAEculp4GvCHq73nhI9LVnyf6Gzcb+S1E9s/AvVA0LFOQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=35c68980d83503107f440f1d3033075c"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=35c68980d83503107f440f1d3033075c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:12:41</sys_created_on>
+        <sys_id>201701c0d83503107f440f1d30330716</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:12:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:12:41</sys_created_on>
+        <sys_id>641701c0d83503107f440f1d30330711</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:12:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:12:42</sys_created_on>
+        <sys_id>f81701c0d83503107f440f1d3033071a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:12:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_35c68980d83503107f440f1d3033075c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>xero__create_time_entries_on_time_card_approval</internal_name>
+        <label_cache>[{"name":"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4.xero_user_id","label":"1 - Xero - Get Users➛Xero User ID","type":"string","base_type":"string","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["user_id"],"cb21ce5f-2a50-465b-a77c-276cd5cae83e":["condition"],"75a85aaf-e184-4885-9d84-655ba23f0710":["user_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f9fffb1c-fd69-47ff-b8cd-3309c7fbaaaf"}},{"name":"Created or Updated_1.current.user.email","label":"Trigger - Record Created or Updated➛Time Card Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4":["email"]}},{"name":"Created or Updated_1.current.resource_assignment.task.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["task_id"],"75a85aaf-e184-4885-9d84-655ba23f0710":["task_id"]}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"time_card","column_name":"sys_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["time_card_sysid"]}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.time_entries","label":"2 - Xero - Get Time Card➛Time Entries","reference_display":"Time Entries","type":"array.object","base_type":"array.object","usedInstances":{"9d77a6f2-9907-4319-b61f-e5e535474979":["items"]},"attributes":{"sourceId":"c61e078a-5d25-4c54-8840-f3a6fb58afba","child_name":"root_array_object","uiUniqueId":"004556f7-a581-40bb-8e4c-fd1daa77b956","uiTypeLabel":"Array.Object","co_type_name":"FD616d8dc4a53503104d32df72dd144ffc","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"8fe3327d-ca7d-4667-8786-7e9a0d730811","uiType":"array.object","child_type":"object","child_uiUniqueId":"6e7e48e1-01cd-4582-9c0f-d34e9d9a3778"}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.__action_status__.message","label":"2 - Xero - Get Time Card➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"af5d47b4-666c-45b5-9936-4b223be174e9":["condition"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.userId","label":"4 - For Each➛root_array_object➛userId","reference":"","reference_display":"userId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.taskId","label":"4 - For Each➛root_array_object➛taskId","reference":"","reference_display":"taskId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.dateUtc","label":"4 - For Each➛root_array_object➛dateUtc","reference":"","reference_display":"dateUtc","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["dateutc"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.duration","label":"4 - For Each➛root_array_object➛duration","reference":"","reference_display":"duration","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["duration"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.description","label":"4 - For Each➛root_array_object➛description","reference":"","reference_display":"description","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["description"]},"attributes":{}},{"name":"Created or Updated_1.current.resource_assignment.task.parent.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Parent➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["project_id"]}}]</label_cache>
+        <master>true</master>
+        <name>Xero – Create Time Entries on Time Card Approval</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9b9f8d48d83503107f440f1d3033075a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:32</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9b9f8d48d83503107f440f1d3033075a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9b9f8d48d83503107f440f1d3033075a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9b9f8d48d83503107f440f1d3033075a^sys_idNOT IN59850684d8f503107f440f1d303307a7"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</flow>
+        <label>Xero - Get Users</label>
+        <order>0</order>
+        <stage_id>de8246c0d8f503107f440f1d303307e0</stage_id>
+        <states>{}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 22:45:32</sys_created_on>
+        <sys_id>59850684d8f503107f440f1d303307a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:32</sys_updated_on>
+        <type>subflow</type>
+        <value>dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9b9f8d48d83503107f440f1d3033075a^sys_idNOT IN139f8d48d83503107f440f1d3033075b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9b9f8d48d83503107f440f1d3033075a</id>
+        <name>Xero – Create Time Entries on Time Card Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:00</sys_created_on>
+        <sys_id>139f8d48d83503107f440f1d3033075b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:50:00</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=139f8d48d83503107f440f1d3033075b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9b9f8d48d83503107f440f1d3033075a^sys_idNOT IN1b9f8d48d83503107f440f1d3033075b,1b9f8d48d83503107f440f1d303307a5,df9f8d48d83503107f440f1d303307a9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</model>
+        <model_id>9b9f8d48d83503107f440f1d3033075a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9b9f8d48d83503107f440f1d3033075a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:00</sys_created_on>
+        <sys_id>1b9f8d48d83503107f440f1d3033075b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1b9f8d48d83503107f440f1d3033075b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</model>
+        <model_id>9b9f8d48d83503107f440f1d3033075a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9b9f8d48d83503107f440f1d3033075a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:00</sys_created_on>
+        <sys_id>1b9f8d48d83503107f440f1d303307a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 19:38:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1b9f8d48d83503107f440f1d303307a5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</model>
+        <model_id>9b9f8d48d83503107f440f1d3033075a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9b9f8d48d83503107f440f1d3033075a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:00</sys_created_on>
+        <sys_id>df9f8d48d83503107f440f1d303307a9</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=df9f8d48d83503107f440f1d303307a9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9b9f8d48d83503107f440f1d3033075a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9b9f8d48d83503107f440f1d3033075a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9b9f8d48d83503107f440f1d3033075a^sys_idNOT INd79f8d48d83503107f440f1d303307b2"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:01</sys_created_on>
+        <sys_id>d79f8d48d83503107f440f1d303307b2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 20:36:41</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9b9f8d48d83503107f440f1d3033075a^sys_idNOT IN5f9f8d48d83503107f440f1d303307b1,139f8d48d83503107f440f1d303307b2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Get Time Card">196d8dc4d83503107f440f1d303307d7</action_type>
+        <action_type_parent display_value="Xero - Get Time Card">49ae340cd8f103107f440f1d30330767</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>196d8dc4d83503107f440f1d303307d7</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:01</sys_created_on>
+        <sys_id>5f9f8d48d83503107f440f1d303307b1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:32</sys_updated_on>
+        <ui_id>2191986f-ba7f-4ae8-bd4e-070218aa7ee5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Wf6yhuvnmbipCQtiGNjxeEIse+ptbcJDgO0FX8912TtHQMIYrYy8RbfHy/zvE9yuWaaEkOSFKkMpcilnmUhBELMxXHoWIyCqMozGROpqTmS8BIx7ufJeZMyS03vUfW67kF7kBOGjs5b6X/LFkgemuhdoGFrumtgJJ3nb6ulx7zRQLRYIDhTjc1Fnx4wJJSd63hq4uPrywW2kjMIgeXV1PScotsHFhysH529VY5DK/AYOgZNpwcH74kkFu1Huic1fX1eP46pp1uwMZKPwabErh3UEvA/oqbDqZkyWuk3NjVFkE15EltnoCFrh1WIz74vtO/sF8ehqGPVICcBAy322M5SjzA6pA7jqP0wvV2DBWLRgvoBjUkKN4bN9/FhoCT1ss7pDhemU12Y/pl/X2QgmwLbF4Ukb7DIaD1VP3sIxF1umjufmymPNL1oyrjpWkEN9sTd6hd1Ts/z5r0+uyZzAPyl9BgwG9IueRti0jZ2uZWP3bBoZfBtcFDoExzh9P5dQq48AwDfAIeHCF++AhfcKs93W9YBpN9u/Na3/Rw7BcHeCUTKBiNkxhoLIuC5qgATbKMcajyMJ2F5GFKulU3N7i2T0LhC5U3vac5yDYKVA4a+xRhdeu+4FC3MGrxMB3tK+Wr+8p3tlMvoRTcyhJH2MfGGP4+l+4k7mfCN5DamhBZTebIanK66o7la3T3MeXs05T/gymLvAJVMKBsxkMaR0lOq1gyil4URSYrFsbpPzBlJoWMEiFkXr2wv2zHlKi+ff5PlSLEQZMZVUzMaAxZTnMVSZryNFd8BgydEdyDbcox+2Vrvq/MfkZ9A9GNUc+xyR9/yyfq+xgz+jTmf2HMDJjimaBpWhU0ZiykuJb431RcMpakUazyDzTm1W/3MNNV7goAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5f9f8d48d83503107f440f1d303307b1"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Create Time Entries">c2e54180d83503107f440f1d3033078c</action_type>
+        <action_type_parent display_value="Xero - Create Time Entries">fe41c58cd8f103107f440f1d303307a0</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c2e54180d83503107f440f1d3033078c</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>9d77a6f2-9907-4319-b61f-e5e535474979</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:01</sys_created_on>
+        <sys_id>139f8d48d83503107f440f1d303307b2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:32</sys_updated_on>
+        <ui_id>75a85aaf-e184-4885-9d84-655ba23f0710</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XwW7bOBCGXyXQ2RRIiZTE3IoEBQp0t4tt00tRGBQ5TLSVJVWi0mSNvPsOLdlK0qwbJ/XF8M0aksP5f83nsb8sg8IEpwGPQHCWUZPFgsaMppZzapmJaRzTNDPBLKjUAnBn09b/gHbzwseuVdn74HJ51oJyYE7q9uSiMf7jnIW6b1uoXNhCV/ethrnquuKyWviYU923sFGrdV3jvlK5oq4w790dZjZF15Tq9vPeLtBXRWlwMTj98nUW4D6U56ANTpePlp7rT6lyKHHrX4NBJ+/O/8c0d9v4WOfaorocn9+Phz+ug3VrfDFsFsCNg8oAVmFV2cEsWKgK9dft7SaC1pgPVTkFrorKYbbAb77pin/xvoxS6ndaQGUahtXN43z0ewjbc+UUltJr17fjVn1VFxq6wRMDVvWlO7sfGzZ8aLzJwxGn8nJ9ui77RfXn4EawSbB+vRjpOywCGi/V1z4KsR+v6h9/r6t8W1QrV8bFstaq3Dwph97lvfP1LIO++PTI5iHyk9FQgm+X+UI1DUbm+Kqui9UtWPQivCzxIbRl/QOr870VKu0VhvgKVPgW4+er8GfVFl7uH5gGD/vrLqriew/vfPtEIjUKdE4SCoLwWOZESQYkjqSRGcg4y2lwNwu62+6sxB6ejMI3NP/ee5mDbaNB88Fjf0S3RePeYFHXMHpxNxup1tu71k4Niu63j5E2msYiExGxTEeEQ5qRzMaGJCrJrIqAGc3DG2jr+Xj6aXBflmY3PJ8hdI3nBV7ygM1J+i5gRkcwDwHMTCRRYhNFRKQl4VQqIilXxMQ2ElKnuWDxHsDkybZ+lWzqTj/Ffs+s3d+Qff10/bUda3w/4YUP8J0M2gXf+IjvIeBLRU4VkxlRys+WPMe5agUnlmtmNcNvfpvvY65u79d46k7PUO/0A3ylSVOV2IhISVP8McAkyRNmCQgQseApl6kMCwcL7wVcOP00qy9Ls+Nc/bXQNZjnwyVPSd8FTH4E8xDATJKEm5QiidZYwrPUg4kTNuZKA2cRNXwfYNKtvwNVdK87+3Y1sF5K5nj81Wjez7Mbm8/QumFzEvuz/F3oFEc6D4FOmgmbWPw7ysHEhLMY6UysJZlhlEkmDP5J2wOd2faO5ffaE4Y8rwB0yvBqRh+l2g3TZ4jeYPpA9ZNW7AJrcoT1EGDVODOplZro1DDCdWSJhEiQPOeRSLCFsiT6jbB+/Q/I9UopExYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=139f8d48d83503107f440f1d303307b2"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9b9f8d48d83503107f440f1d3033075a^sys_idNOT IN95850684d8f503107f440f1d303307a7"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <show_stages>true</show_stages>
+        <subflow display_value="Xero - Get Users">de8246c0d8f503107f440f1d303307e0</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/51SXWvbQBD8K+GeZSFFli38VhwCgbSBpslLCGJ1t2cfnE7KfThxhf979yzZCe5L6Zt2dud2ZlYvA1OCrViJ1fV8wTNRyTIr8mwp5/NM5qLIiiJbYs4SZqBFmsQWlKZyBzrEehjWFsGjuOrs1VMv4medpzxYi8anwaFNj5zDgVhCuV7D/vm/yHyrtKAGW728JqwHS4o8WrYaLlr/aklDg/qLpwuLft/H0nmrzGaq7yfK4wnsrIgS8oThh0cjkHZL0A4T1oIhR53dnxEyKx6M/gS2ynh6jcXhD6d+074qy7I4KZH8cBy757KeEhxheQMeSErgPthplG87xdGNSQiUELRff8XGgYfeq86MFA+NPrE7HVrzYwyCnR84HYwQOkotsI9Wo/bJiHzcdu8/TypvlTmmMjV1x0GfK/CUXRN81DOwoH5dxDwifwWNGlvaWLfQ94TUve126riFRLfpRlORSt29kzqnNiYFHh2mdAJIbwm/OcLPYFW0+52eIXJc92TUW8C7+NNwXFZNXlWzfLkQs3lVyRkscpjJ8ropC8SqKSU7JMzt3VqDc59B0YXqtxBtjrFNAdVjxpHCrer9NxK1wymLw+sfNBRRTIADAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 22:45:32</sys_created_on>
+        <sys_id>95850684d8f503107f440f1d303307a7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:32</sys_updated_on>
+        <ui_id>dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9b9f8d48d83503107f440f1d3033075a^sys_idNOT INd39f8d48d83503107f440f1d303307b1,1b9f8d48d83503107f440f1d303307b1"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">85ae4148d83503107f440f1d3033076b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:01</sys_created_on>
+        <sys_id>d39f8d48d83503107f440f1d303307b1</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:32</sys_updated_on>
+        <ui_id>af5d47b4-666c-45b5-9936-4b223be174e9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjrGdOF9vJaUw6FZYS1+2Iq5lORGTJc+SkmYm/31XtuOENmMr6+PerCPde8850sEN0c5WzpoHfWWMWCuy/PoUEKE8ht8NUVBysiRMq1xYoRVtgYBsQTq/gZ+5MJWE/eMJYRsh85r33SqoscbymiybF1six4IigiJesJiNk+k4iaJkPomz6TiLk3wMHMbYUELGJR5dHWl8uG2R4Lf87L7yuLG1UOt+fdt3uT+Cus49qzgKCH+2XOUc+RQgDQ9ICSoHq+v9gNQc8jslT8BGKNsJLuHZiJ84MElTf7DgKJH1bgxL2jvVwcU1WEAqjllXD8ZpwbjpzMl5AU7a1TnWHbirvNSuxEImj9VaulJ97hwhQ4Ozi3EGSfDKK/XUex3F/UbvvhxZ3gjVutJvSs1ADiuw6F3mrOfTEC55iY1oCVWFjtKq1lvRFiOXMlxLXISF1Dsc6l9XCMwTD9FYCG8Qv27hR6iFV/EJ22BxRzMDIxhtXyK2Q5s4OQTE7M1KgjEnkegu/eE8xU5yL452/vgSVovKXuHkLe91HILXD/vsTTdNEi/ixXxajDKYFaMJ8Pkoyyd8FM2iJJ4DzDhPQ0o7OdRYsM5QGpbcGFjzw+Gbi6Jxfu8YXpx5HZH3H/C2xC0gLdI4Si8nbjK9lLgLWXtjzJI/xMzf8V+mLIqi/zH755gJQ7tw9Nra4e+YsicfqW7m4DUTBqk9eOzj8S/jN/b4uAQ7h3a6/u5FnbDDL/y3TTuvBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8dae4148d83503107f440f1d3033076b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero – Create Time Entries on Time Card Approval">9b9f8d48d83503107f440f1d3033075a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>af5d47b4-666c-45b5-9936-4b223be174e9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:01</sys_created_on>
+        <sys_id>1b9f8d48d83503107f440f1d303307b1</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:32</sys_updated_on>
+        <ui_id>9d77a6f2-9907-4319-b61f-e5e535474979</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTXW+jMBD8L34mCEguCXmrWlWqdHeV2qovpwot9pJYZ2zONkk5xH+/dfho1dd7gh3vzs4Mpmem9U3r3Yu5cU4eNTv8eouY1AGj955pqJEdmPRYOxaxM6g21H2fpXma77fVqoRdtdoA7lel2OAq2SVZugfYIX6LvayxQO2tRDcMNC+kaxR0r/9Jw09SCYuT3AYsqfRo2aH/ciQFbUlzUeVpkvN1tl1nSZLtN2m5XZdpJtaAYkuECkpU1Pow+fxi23dNKC1yY8UMfJ9mnhaUHkFElkQM3z1qgbS+AuUwYjVoAd7Yjh28bQmwCOJRq27pOEntiY6F3ncn/9LGNElCY4VkiON4uJTFFOYIV3fg4ZmouW/t1MpPRnJ0YxQCK2iVv/2MjQ2PjZdGjyMeSjVPG9XW+ueYBFsI5m9HSOtIBDbBaJA++aieT+byNKu8l/oaynSoDAe1VODpm5atD3p6hgprIipqaBqpj0VjzVleh0lLHR8VFXGlzIWWhssaAw/CY8oV4nvC767wK1gZXPwgGhoeIuY6d6vAuQ8vFGLxpw1KRmeTh2KMIYxwKxt/QwvOOMkd3sL9H7mXTLl0JOElYA/zXxMOOrpBkn+GLsb+DuI/sOEfJc42qH8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9b9f8d48d83503107f440f1d3033075a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9b9f8d48d83503107f440f1d3033075a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b9f8d48d83503107f440f1d3033075a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:00</sys_created_on>
+        <sys_id>179f8d48d83503107f440f1d303307a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:50:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b9f8d48d83503107f440f1d3033075a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:00</sys_created_on>
+        <sys_id>939f8d48d83503107f440f1d303307ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:50:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b9f8d48d83503107f440f1d3033075a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:00</sys_created_on>
+        <sys_id>db9f8d48d83503107f440f1d303307a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 18:50:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9b9f8d48d83503107f440f1d3033075a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9b9f8d48d83503107f440f1d3033075a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>35c68980d83503107f440f1d3033075c</sys_id>
+        <latest_snapshot>9b9f8d48d83503107f440f1d3033075a</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-08-20-2025_09-08-2025_1328.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=35c68980d83503107f440f1d3033075c^sys_idNOT INe39f8d48d83503107f440f1d303307b5"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"e39f8d48d83503107f440f1d303307b5","name":"plan","plan_signature":null}}</plan>
+        <plan_id>35c68980d83503107f440f1d3033075c</plan_id>
+        <snapshot>f4ae02ccd8f503107f440f1d303307e5</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:50:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e39f8d48d83503107f440f1d303307b5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:45:33</sys_updated_on>
+        <trigger display_value="">21850684d8f503107f440f1d303307b7</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=35c68980d83503107f440f1d3033075c"/>
+</record_update>

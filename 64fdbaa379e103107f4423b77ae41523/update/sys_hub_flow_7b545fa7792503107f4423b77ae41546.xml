@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=39701000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=118090000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>xero__createupdate_project</internal_name>
-        <label_cache>[{"name":"093b391b-624a-4057-b6da-02677c526e1a.record.short_description","label":"7 - Create or Update Record➛Project Record➛Project Name","reference":"","reference_display":"Project Name","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"short_description","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["description"]}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.Record.active","label":"4 - Look Up Record➛Project Record➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"pm_project","column_name":"active","usedInstances":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.projectId","label":"3 - For Each➛items_object➛projectId","reference":"","reference_display":"projectId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.status","label":"4 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"a0dff093-7af1-4251-b951-55c72971305e":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record","label":"7 - Create or Update Record➛Project Record","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","usedInstances":{"6138c8c5-5303-403c-b893-27ab31dbd7f6":["record"],"c4d14730-4c7e-4c8c-ac18-dbb0fad4cfda":["project"],"67678f05-5875-479c-b58c-b7693ab20f2c":["project_task"]},"attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8269e7ae-dc36-46ad-a59e-079ff9ebdd51.projects","label":"1 - Xero  - Get Projects➛Projects","reference_display":"Projects","type":"array.object","base_type":"array.object","usedInstances":{"367cab86-542e-4dc9-8b99-e8968234dc98":["items"]},"attributes":{"sourceId":"8f22154c-9f01-4f04-bfef-552543c8c9ca","child_name":"items_object","uiUniqueId":"befeb962-c3b5-4320-9ebf-3df99314b301","uiTypeLabel":"Array.Object","co_type_name":"FDd7ac1befa12503104233a13eb4f69243","child_label":"items_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0bf0db52-acc5-4ca6-9e7b-62e686df5a8f","uiType":"array.object","child_type":"object","child_uiUniqueId":"e82a5241-9c95-458f-813e-347c07f6f52b"}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record.correlation_id","label":"7 - Create or Update Record➛Project Record➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"correlation_id","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["name"]}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.name","label":"3 - For Each➛items_object➛name","reference":"","reference_display":"name","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["short_description"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.deadlineUtc","label":"3 - For Each➛items_object➛deadlineUtc","reference":"","reference_display":"deadlineUtc","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["end_date","end"]},"attributes":{}},{"name":"a21d206a-54a7-45ea-a2cd-3e06ecac2f34.contact_record","label":"5 - Xero - Create/Update Contact➛Contact Record","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["company"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"809fa77d-fd26-4dae-ac91-8d628fcc408b"}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.currencyCode","label":"3 - For Each➛items_object➛currencyCode","reference":"","reference_display":"currencyCode","type":"string","base_type":"string","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["currency"],"67678f05-5875-479c-b58c-b7693ab20f2c":["currency"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.contactId","label":"3 - For Each➛items_object➛contactId","reference":"","reference_display":"contactId","type":"string","base_type":"string","usedInstances":{"a21d206a-54a7-45ea-a2cd-3e06ecac2f34":["contact_id"]},"attributes":{}},{"name":"8269e7ae-dc36-46ad-a59e-079ff9ebdd51.__action_status__.message","label":"1 - Xero  - Get Projects➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"6176fb64-2216-48c6-bfe5-af223dd9bdcd":["condition"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.estimate.value","label":"3 - For Each➛items_object➛estimate➛value","reference":"","reference_display":"value","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["budget_cost"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.totalExpenseAmount.value","label":"3 - For Each➛items_object➛totalExpenseAmount➛value","reference":"","reference_display":"value","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["cost"]},"attributes":{}},{"name":"67678f05-5875-479c-b58c-b7693ab20f2c.rate_model","label":"8 - Xero - Rate Model Validation➛Rate Model","reference":"rate_model","reference_display":"Rate Model","type":"reference","base_type":"reference","usedInstances":{"6138c8c5-5303-403c-b893-27ab31dbd7f6":["rate_model"],"c4d14730-4c7e-4c8c-ac18-dbb0fad4cfda":["rate_model"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1abaddf1-af59-4790-b9a7-601a61e44129"}}]</label_cache>
+        <label_cache>[{"name":"67678f05-5875-479c-b58c-b7693ab20f2c.rate_model","label":"8 - Xero - Rate Model Validation➛Rate Model","reference":"rate_model","reference_display":"Rate Model","type":"reference","base_type":"reference","usedInstances":{"6138c8c5-5303-403c-b893-27ab31dbd7f6":["rate_model"],"c4d14730-4c7e-4c8c-ac18-dbb0fad4cfda":["rate_model"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1abaddf1-af59-4790-b9a7-601a61e44129"}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.totalExpenseAmount.value","label":"3 - For Each➛items_object➛totalExpenseAmount➛value","reference":"","reference_display":"value","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["cost"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.estimate.value","label":"3 - For Each➛items_object➛estimate➛value","reference":"","reference_display":"value","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["budget_cost"]},"attributes":{}},{"name":"8269e7ae-dc36-46ad-a59e-079ff9ebdd51.__action_status__.message","label":"1 - Xero  - Get Projects➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"6176fb64-2216-48c6-bfe5-af223dd9bdcd":["condition"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.contactId","label":"3 - For Each➛items_object➛contactId","reference":"","reference_display":"contactId","type":"string","base_type":"string","usedInstances":{"a21d206a-54a7-45ea-a2cd-3e06ecac2f34":["contact_id"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.currencyCode","label":"3 - For Each➛items_object➛currencyCode","reference":"","reference_display":"currencyCode","type":"string","base_type":"string","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["currency"],"67678f05-5875-479c-b58c-b7693ab20f2c":["currency"]},"attributes":{}},{"name":"a21d206a-54a7-45ea-a2cd-3e06ecac2f34.contact_record","label":"5 - Xero - Create/Update Contact➛Contact Record","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["company"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"809fa77d-fd26-4dae-ac91-8d628fcc408b"}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.deadlineUtc","label":"3 - For Each➛items_object➛deadlineUtc","reference":"","reference_display":"deadlineUtc","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["end_date","end"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.name","label":"3 - For Each➛items_object➛name","reference":"","reference_display":"name","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["short_description"]},"attributes":{}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record.correlation_id","label":"7 - Create or Update Record➛Project Record➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"correlation_id","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["name"]}},{"name":"8269e7ae-dc36-46ad-a59e-079ff9ebdd51.projects","label":"1 - Xero  - Get Projects➛Projects","reference_display":"Projects","type":"array.object","base_type":"array.object","usedInstances":{"367cab86-542e-4dc9-8b99-e8968234dc98":["items"]},"attributes":{"sourceId":"8f22154c-9f01-4f04-bfef-552543c8c9ca","child_name":"items_object","uiUniqueId":"befeb962-c3b5-4320-9ebf-3df99314b301","uiTypeLabel":"Array.Object","co_type_name":"FDd7ac1befa12503104233a13eb4f69243","child_label":"items_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0bf0db52-acc5-4ca6-9e7b-62e686df5a8f","uiType":"array.object","child_type":"object","child_uiUniqueId":"e82a5241-9c95-458f-813e-347c07f6f52b"}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record","label":"7 - Create or Update Record➛Project Record","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","usedInstances":{"6138c8c5-5303-403c-b893-27ab31dbd7f6":["record"],"c4d14730-4c7e-4c8c-ac18-dbb0fad4cfda":["project"],"67678f05-5875-479c-b58c-b7693ab20f2c":["project_task"]},"attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.status","label":"4 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"a0dff093-7af1-4251-b951-55c72971305e":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.projectId","label":"3 - For Each➛items_object➛projectId","reference":"","reference_display":"projectId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.Record.active","label":"4 - Look Up Record➛Project Record➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"pm_project","column_name":"active","usedInstances":{}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record.short_description","label":"7 - Create or Update Record➛Project Record➛Project Name","reference":"","reference_display":"Project Name","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"short_description","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["description"]}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.Record.rate_model","label":"4 - Look Up Record➛Project Record➛Rate Model","reference":"rate_model","reference_display":"Rate Model","type":"reference","base_type":"reference","parent_table_name":"pm_project","column_name":"rate_model","usedInstances":{"131afc77-d073-4fdd-96ee-63de44895d5a":["rate_model"]}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.Record","label":"4 - Look Up Record➛Project Record","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","usedInstances":{"131afc77-d073-4fdd-96ee-63de44895d5a":["project"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>ce993fa779a503107f4423b77ae415b1</master_snapshot>
         <master_snapshot_digest/>
         <name>Xero - Create/Update Project</name>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7b545fa7792503107f4423b77ae41546</sys_id>
-        <sys_mod_count>169</sys_mod_count>
+        <sys_mod_count>184</sys_mod_count>
         <sys_name>Xero - Create/Update Project</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -44,11 +44,11 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_flow_7b545fa7792503107f4423b77ae41546</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:53</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:01:20</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
-        <version_record display_value="Created 2026-06-24 23:14:53">1edb21f3792d03107f4423b77ae41504</version_record>
+        <version_record display_value="Created 2026-06-25 21:01:20">b3d69284d83903107f440f1d30330732</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=7b545fa7792503107f4423b77ae41546"/>
     <sys_variable_value action="delete_multiple" query="document_key=7b545fa7792503107f4423b77ae41546"/>
@@ -76,7 +76,7 @@
         <action_type_parent display_value="Xero  - Get Projects">5e749fa7792503107f4423b77ae41577</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>93ac1bef792503107f4423b77ae4152f</compiled_snapshot>
         <display_text/>
         <flow display_value="Xero - Create/Update Project">7b545fa7792503107f4423b77ae41546</flow>
         <generation_source/>
@@ -86,10 +86,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 15:49:55</sys_created_on>
         <sys_id>a7cc9baf792503107f4423b77ae415e8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-24 16:03:34</sys_updated_on>
+        <sys_updated_on>2026-06-25 20:06:27</sys_updated_on>
         <ui_id>8269e7ae-dc36-46ad-a59e-079ff9ebdd51</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
@@ -100,7 +100,7 @@
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment>Verify if Project Already Exists</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Xero - Create/Update Project">7b545fa7792503107f4423b77ae41546</flow>
         <generation_source/>
@@ -110,13 +110,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 15:58:46</sys_created_on>
         <sys_id>89de9763796503107f4423b77ae41532</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-24 16:25:43</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:02:02</sys_updated_on>
         <ui_id>ef678da4-7aa7-48a8-bce8-8eb0002ebc1c</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPtleybF3ytmhgIEC3WbTZvmQDgiKpmFuaVCkqaWL433eomx3f47ho+sjhXM7MnBlTvp27nLoXLk28JEuScRx5XhB4XhgGBPtpGoQk9VI8cnuuxDMGmgangsHxAYvSnvMZyrX6jxEDQsqLXOCnr83d390FmXJBNZPuxe1dz82xBmeGafdivnZlnnKGBE6ZAPsbG8v5ZAP3jsb5wngTtw3QHpGsXStNLRav57IfhknKIFSGRcF67gxLio3ST51EM0yvpVgKplwa8Oha5R8Ffwb3sWf1MgZpEVbfdUfUFKkWk6nihF3nhitZS2qg9aUS5Ux+qhOw5WUZLoVpywuSsgB/LLeYLYgGUfZlqh4/twEnXFbpNZdCESy6EzZG87Q0rLC9YILNwBGa4Tzn8t529oFXxoBlNrgXcBhkQj1C0ILfywEmFvgASoQHE5BfVuKvWHObxV/gBowBEBfQbVQXvVClrqrygIgoi+pCY1nUvtxFVSv0vbQo66yb/FBdIlAoiOa5+RMMHliTyqLXUnm8lyLJkhJEScptzGKFz0RpzQS2YsTpvyU4ofN5EEYEp3HYH4+GrD+iJOnHaZL0WZyE8TCwgnjADZsNmmG4oovF5kCc1/lpQ/VhNetjK7bVeFsZm/F6IWvGyz/beI087xcNmNHl+5uvQxNTJ3xgbHy6lwR02e9CaYPqyq3MzSbZT2bohDNBX6z9I8C1xteWbE76tAtvQ9DMxljb/8Pffv+/S3oCIIrqenMpuKx+fgHoeXg73kuN1F/jQdX+JWsrGS7IJnuxY5TzfPqWrfra8vcIkK3hF0Dk3NQotwBv92vrvqFucDbqBsPXUReIczvv0HdV21Lg9pVlW9fqP1t9vK4P7Fox8Bd3HfU/nBbTf23MoY25NpvBq4ZzlVn1zeUOgp35Dbdj2Ho/c7qnYNrEQ/WwokdO75lZRm+1qDKPWHzbdt+wq5uhKr03vwf9vZ8M6cp7kGdoBn3iOTxSNYO3Gi0Q1gxlqpQUNc/TJW1s3zKuC9Mob+6Qz8yUWjoKRs4xU+ZU2k6nfY7NckR2reFV5rTpNRgKB9JzqvScLr3XFWPHPhqd8a33ln00wVxUpYfPjHyld0xrpXfspANd29P+IxfWkaD8s4J6+0bbxvetm+0A1t/im/WtW4cwnI6GOIwC3/c836ORF0eRH4dpFuJolC0HDaFCEliL4DkDYoB71BKh7aq/uVqarXni/ypg/Mek2q69o+G2xpdK2g/XYWQcixfa7LR4D2fUrItUKcGwXLJz/Mv2xXv566XkN+u1qUUftzXtZ/2Wl/wfyb+X7MqSImbeMPYp6ceRH/VHGQ37CcXjPk7ScRRQRkbZ6T/Pd/8DNJSvhXsUAAA=</values>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsIkKRvp1aVKu1tT9vevuytLMd2iu+MnXWcdlvEf99xnAQEFIiOSq3u0ePx+JuZ75sYvi19Tv0Ln6ZBmqfpNImDIIqCYDaLCA6zLJqRLMjwxB/4Ei8YeBqcCQbLRywquy4WqNDqH0YMGCkvC4GfvzZ7f3YbZM4F1Uz6F9++D/wCawhmmPYvlltbp6IROGMCXO8bOFvozHPRLVG952yfNo95n92G0tRCCQY++2mYpAww5FiUbOAvsKTYKP3cWTTD9FaKtWHOpYGIvnX+WfIXuDcJrF/OICvC3F63RE2NnDm/wgbfGV0RU+nGlcwVJ6x09aAsx5Uwl5s253BbGK6kO+LSdqeVqBbysyuH3wVoWwKWqgQQrLCJWuRNGvndXD19aVFec1nXpNkUimDRrbAxmmeVsXiWPhNsAYHQAhcFlw+WDY+8PgxYFqMHAYtRLtQTXFryBznCxAIfQV3x6BrsV7X5K9bcZvEHhIHDAIgLYAhyLSxVpetSPiIiqrLe0FiWLpa/Gvjlc3kpcFmuM4eSox+Vxe3q0GSMXNHsEaJ5YX6HEI+sSW41aAUxPUjBdE05oiTlFkW5oQqitGYCWzPi9O8KgtDlMprFBGfJbDidjNlwQkk6TLI0HbIknSXjyBqSETdsMWokdUNXq11ZnTd4T2ker0srzcvNwuwrViPSHdunfQEakYZnE+kkCD6STOHy96fS/rpzJTgivpAeJBld86lU2iBXyw317UqmN89PgNDy/NYy08ueX0PV0DznTNB936Jru7H1LRr/P79F75LkAIgi1z0uBZf1wwKAvhX7pwepl4VbPKvpteZ+bcMl2dUA9ozyXnor4QQ4rRLu4G7v3uHZA7Gd9zVltmd9a2wEEJ1NANH4PAJYdml2hdxT8/YtabvZ+r9Yf7ztDxTcOBCu9gms151h3zvHq10BR70UvEk2t3P1CufO/Oh8RZGDtxwBczja3IecftETpw/MrG9vvagyT1j8u2+/YRxqG1Wn9wYP2PDgb6hs4wHLc7SAzvEC3tmaweOSlghrhnJVSYqaF/aaSLaTOdelaZx3B80XBvqRngJhembOvNrb67x7foiP59GW8ib32kSa20oPEvHqRLwukX5p9xlakzM+Ts89tK4xF3U34MdTsdFOprXSrwyuI408wIgTp9qJoMKzgvrvY2+fBPaOvyNYP8Qv8fOPJsJwNhnjWRyFYRCEAY2DJI7DZJblMxxP8rVGESolgWkKkXOgCoRHLTXaPoe786cZtv3mzAmgWgZeKWl/dI9j41lU0F6vRXUcdzNPMqUEw3JroNwD8t+u6y9CR9fpuxsqH+JvqYrfb1famfbW+q2eDRX/S/IfFbuxFEtYME5CSoZJHMbDSU5nw5Ti6RCn2TSOKCOT/Jwvge+/ABFWYuvdFQAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=89de9763796503107f4423b77ae41532"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -124,7 +124,7 @@
         <action_type_parent display_value="Xero - Create/Update Contact">86fc1fef792503107f4423b77ae41515</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>fb9e9363796503107f4423b77ae415bb</compiled_snapshot>
         <display_text/>
         <flow display_value="Xero - Create/Update Project">7b545fa7792503107f4423b77ae41546</flow>
         <generation_source/>
@@ -134,13 +134,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 16:00:44</sys_created_on>
         <sys_id>f54fdb63796503107f4423b77ae415b6</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-24 16:25:43</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:02:02</sys_updated_on>
         <ui_id>a21d206a-54a7-45ea-a2cd-3e06ecac2f34</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/6VSW2vbMBT+K0PPtrEjX/M2VgqBboV160sp5kg6TgSy7Npy2izkv+8odjIIDAZ71Hcu3+Xo5ci0YmsmRIUVz3lR5VnMk7ho0nTFRVEApkkmJAuYhRapU3bWgXQ1jQVsD2by4PHI80KCKPMwS1cYpkpWYSmqKsSyyssV90AZaYdttCzYqNOJNig99gYOz/+9SO60UQNatn55DVgPA8l1OLD18abkDj3WBgQa4ntyg7ZbGv/XFC6DX2byTxv1l2g8DWHjhaAblFeTBAw/HFqFRNiAGTFgLVgFrhsOV2RAUI/W/AF22jraxnzzx6h/0eoyjmPf2SBZkzhXr896CXaG5a7TEh97pzs7Iw6EWWZkZ6bWfps9+JNgA5Nxl5MQMo20D3uv2stYNDVPu+79+4XwXtuzwaVoOgnm+gJHMYjJ4ejvMekfN+HMyMPtUdBgS4x1C31PSN0P3V6fWUh0G20NPaLGdO+kbtRbG1H65DCiNCG6J/zuDD/DoL3dr7SGhj3dT6vfJtz4oydJoSRw+mFClmFaQRYKyUXIRVXGWcLjJqvY6Rxt/TZ5U3NISxz1nCg1jHLQvftMEva4OD+9/gaAexSMYQMAAA==</values>
+        <values>H4sIAAAAAAAA/6VSYWvbMBD9K0OfbWPHdmzn20gpBLYV1q1fSjEn6ZwIZNm15LRZyH/fKXbS0jEY7OM9vbt7750ej0xJtmKcV1ily7SolnmcJnHRZNki5UUBmCU5FyxgBlokpuiMA+FqagvYHvToweMxXRYCeLkM82yBYSZFFZa8qkIsq2W5SD1QRsphG80DNvJ0oglS2V7D4eG/B4md0nJAw1aPTwHrYSC5Dge2On54+le/Gjhqoq6nNZ828i8huEPvMesGZbZz/WVuvr+A3SC9mCRg+OrQSCQVDWiLAWvBSHDdcLgiA4K8M/oN2CnjaBrz5FerftG+Mo5jz2yQnAmcXq9lPec6wc0NOCApo3DjMFPFrlMC7ZSJxAZG7dbvsYlw1zvVmanFAdeX7k6Prfk2pcGuAy5nJGS0JAJ7b9Vrn40097vu5ftF5a0y51TmR90J0NcKHGXHR+f1HNmofnyIeUL+CBo1trSxbqHvCan7odur8xYS3UZbTUXU6O6F1Fm1NRHdkRxGdAKIbgm/OcMPMChv9yuNoWa/7qdRzyNu/PdJkkIKSOlXclGGWQV5yEXKw5RXZZwnadzkFTsFzB7sWoO1b0HRhern0ducYpsDqqeMfYsYVO8+k6g9zlmcnn4Dh5KJRqcDAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f54fdb63796503107f4423b77ae415b6"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -148,7 +148,7 @@
         <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
         <display_text/>
         <flow display_value="Xero - Create/Update Project">7b545fa7792503107f4423b77ae41546</flow>
         <generation_source/>
@@ -158,13 +158,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 16:26:38</sys_created_on>
         <sys_id>dd352763796503107f4423b77ae4154a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-24 18:13:16</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:02:02</sys_updated_on>
         <ui_id>093b391b-624a-4057-b6da-02677c526e1a</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1WTW/bOBD9K4JOLWCpjuSvOKcgH4sA2SRIsu2hbgWKHNncpUgtSTlxDf/3HYqymzhG0qZF91JdLA6H7808DWf8cRlyFo7DZNgf9gkk/TRPk7TbTXt0wBhAUQzzvaTohZ1QkhLQ05JcQNYsOuGciNoZqzKrtPobqEUj46YSZPG+3bvabNAZF0yDDMcfP3XCimgEsaDD8XJryy4qyATJQeD5W0cYXHjCbw125+FdGTiqbZvSzEXV7YRwb0EyQNKCCAOdsCSSEav0IhxbXaNBA2GXUiw2HjMuLQKGzvfe8C+IPuo6vwIwPwp+b7PMWrW8mc4Up3BZWa6ktzSBtZtK1KW88Ek4naEgtbBrndFSG8SDyoXsgmgjKm5m6u56TXjKZZNduykUJWKzItZqntcWjPsoNb/doY63nrcCOxXQCAJK5MxKUlVcTl01zHnDg2GX8VTgIi6EusP4DJ/KmFCXY4xikvgU7ceN+T3R3HH9iTB4eNUIlf1buxB9ym1ymdcHHQzVvLKHCDeHNo9VZ13V+bOFQr7WRMFBMPOgos1MaeuCbeAx1EmN59lymQ6GlOSjQdTvJRD1GN2PRvn+fgSj/cEoSZ1hFHMLZeygV6vPGHCGacL3AzCsLcEl/GUp4lBl7PdjWGWJOLlH2QwclqqWNm5SbADLisjFGpMkeyzpDghikmHU6wOJSEJZlEJ3AJTQpEh7MVXS4qfLNFC8JT67H00sr9kUbPa6/MBYXqK6m6yM3WhdsMh/PmCYrNYgiPuSGX9FyG17O2ONcERgYUDmq8aDPSZ42gZ/F9Tvgvqxgnrl+IQSy9BC4Aux882dcQ1wum6N261yPTpbgmzeErTjc+9njc9Bv9v9nyaoD/InDNBtjX7hEEWyygD2Hu+9pntptj6Y+U+mrJfF21yezRVpXp5xw9GqA+dZm/YvYeALPSiafkbiLM2yQukMCJ35S+LdDyZyIs0dt3QWvHmE8DZYTmSADyUGGrhkeHx9eHrrX8d+0z0abK1l6xL1/e9B8O5dcIVZo9qOYwvp7OLq+vKP65Obm+fh9h6gfVD6n4DLAAOcajAmeIMdruC6hECqwEAdkDLnqDK83cF4dH55c3L8PFv6gO1IKAMsOMLGK7AX7EI8vDg6OT9/CbT3FPRM0i3Y9rq8qOpErrCeDJkD21yt1Wr16T+kEg/ebQwAAA==</values>
+        <values>H4sIAAAAAAAA/+1WTW/bOBD9K4JOLWC7juSvuKfASRYBskkQZ9ND0wojcmRzl6K0JJXENfzfdyjKrusYyaYtFligutgaDt+8eRzO6OMyFDwch9GwP+wDRv04jaO42417bMA5YpYN04Mo64WtUEGO5GkhlZjUL63wHmTljGWelLr4E5klIxemlLC4bdauNgtsLiTXqMLxx0+tsARNIBZ1OF7uLP1bShJSlOR64zgFF57TPp52Ue61ne8DKDR3pLqtEB8tKo7EJgNpsBXmoDjYQi/CsdUVGTQCv1RysfGYC2UJMHS+j0Z8obCjrvPLkNJj6Nc2r0kjljdnx2BhSsjMVrpxZfNCMDReGI4ZVNJOtm3e4bK0olB+S51ms7uQVa4uvCThBmB9NmSpDJHA0uXpmDdpZNN58XC9ZnkqVC1JsygLBnLzBtZqkVbW8VmGlbjZo7W3rtV20pERJeYUM8mhLIWauQq6F3Ucop13ZpJeOpksHoifETPVAeZy7NAJQOeU7Me1+Ra0cLF+JxjavGqFZmEmEoz5mjbpnfxdOdJehCbdxCvmtjAtSntEAe6xyWzVWt+N9NlChK81lwmU3GzdCzMvtHX0a3gif1fRfr5cxoMhg3Q0aPd7EbZ7nB22R+nhYRtHh4NRFDvDqCMs5h0HvVp9JsIJJY6vB+BUolIo/MMywmGFsa/HsIUFefJIshk8yotK2U6dYg2Yl6AWa0yIDnjUHQBhwrDd6yO0IWK8HWN3gAxYlMW9DiuUpcNMNDK6bD67H00srfgMbfJ9+aGxIid1N1kZu9E6421/fMgpWa1RgjvJRHwH5aZJnvFaOJBUGJj4qvFg3wZ42kx/FdSvgvqxgnrlEH65962H8Om6+e02w/XwxZwq2WLim+POAG4Wg9tmsRnCBz9rCA/63e7/aQ77zH7CGN5V/T8cxRSsNEj9ynuvw71+Qm99SzyZ1V4ob3OZ1xet/vOMGw1oHTjPyjSfp4G/LkFWd0XoJHGSZIVOENjcXzXv/v5O3SnzICybB2++QXgbLO9UQA8DgzVcNDy+Pjq98X/HftE9GqmsVOPS7vvf98G7d8EVZU36uxg7SGcXV9eXv12fTKfPwx1soX0o9F+BUAERnGk0JnhDfTITOsdAFYHBKoA8FaQyvt0TcXJ+OT05fj5avBVtIguDPJhQ+5bUUfYhHl1MTs7PXwLtPQU9U2wHtrlAL6p6p1ZUTwbukW8u22q1+vQPxQxbAvkMAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=dd352763796503107f4423b77ae4154a"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -172,7 +172,7 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Xero - Create/Update Project">7b545fa7792503107f4423b77ae41546</flow>
         <generation_source/>
@@ -182,16 +182,39 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 18:12:10</sys_created_on>
         <sys_id>4f5d7f6b79a503107f4423b77ae4156c</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-26 00:02:02</sys_updated_on>
+        <ui_id>6138c8c5-5303-403c-b893-27ab31dbd7f6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTW+cMBD9K5HPCzKwwO7eqqxWqpQmVVLlkkZosIfElfmoMUm2aP97DRh2lURpIu0lKgckz3jG7z3e4JuWCE5WZI6ceksvYoEXBD6l/mLupVGQej4PANEjM1JAjmanQlYqbtYPIJsu0LZ0GaTB0kudyJ+DM6dh7KQRB4f6URyz0I/QA3eo2+1MJRd1JWF7bRuYCLsXkissyOrmdkYqUOYsjYqs2mep94KVkKI0Wy9HtM/R623VrXnJmhwLnYgxeGYr1zZz8nVtMqaog+PRGcEnjQVHAyQDWeOM5FBw0KXakpVWjQkoBH5RyO20414UeiCaw1Mt/piT57Tbl6FhxqwI0zKxAg3hbA0arkxnphs16VUKhvWgCccMGqlPD2PDhotKi7IYSjSkcqwuZZMX54MiZGpw8D2a2oDAquPZIR9oZVf35ePlCHIjil4SS1GWDOS0Aq2VSBvdwWkJSuw1zqGqRHGXVKp8EH2xgZK7d9Is3EyWj+bMWtwVLrAOt2tUBXdj4us+fA1KdCS+mTameDcj9bY+lVDXeypGw+R30yEZiFkKSa9CL0HSO6ErZkpU+os56gEt8N3MjkMavuUwttwb6qDnfiSqvOP4C5l+6fbvU+Jjpn8HpNH0P/pP/TpE6/sXsbPD2pPzIWFdHx7N9YvP5HpL49Pb/l9mp/6bv9MDJ/X+rg+MrkBjkpcc5c+G0oC3bRRH8SKjoRMu4tCZx0vmpOHCvOJoGUDq08xn7r7stfvgOE0/Nl3v0GCcro1AyetXRBlHC3PDxmAZRHo2XjZ5cm2T08VytBnzIto/n2jS/pv75fYvHgTzaHAJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f5d7f6b79a503107f4423b77ae4156c"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=7b545fa7792503107f4423b77ae41546^sys_idNOT IN086b6d3f79e903107f4423b77ae415cb,e48e7fab79a503107f4423b77ae415c5,ad26d644d83903107f440f1d3033072d"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project">7b545fa7792503107f4423b77ae41546</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>a0dff093-7af1-4251-b951-55c72971305e</parent_ui_id>
+        <show_stages>false</show_stages>
+        <subflow display_value="Xero - Rate Model Validation">92daed73792d03107f4423b77ae415ee</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/8VT2W7bMBD8lUDPpqDLkui3IkWAAm1TNGlQIAiEJbmy2VKUIlGJXcP/XtKSHefqkRbtmzTkcnZmdy7XnhTezKMoAEUWZzQSQRwGWZkkUcyyDDAJp4jexNNQob3ZtPUX5KYw0H216A2o3sHrdUBjFtOQkTRKgCTBNCMsFUCCKM0yPo1SDMFvkdet2GxspZBdo2B1MT5gEb6QSrSovdnl1cRroLWMBltvtn5wZFYNFgoYKlv4EUu0J9z1+KtadrUfBjFH54OYpyU6Nou2BzxWg+srnHi4NKgFWt4SVIcTrwItwNTtao+0COJUqztgIbUZFFew7OQ3+3ocTQ4IZt6y6DQvuqYqltjWhSyC4eNBa/uSYnTTln62944eCOOLWnI8bYys9cBsgKnfIOK16iv9fvDHDQ9L6JU5GF7f2SawcWY4daPU8mxR3+4ndCL11rfxUNUc1P4PjGkl6w12buC9PH9s+wC+fWLwqLCyvEUFTSP13LV/I7dctvXKnyv745eqvrU9dnKufeDOC9+OCvwTi7/ewhfQSmfMO/uMLXaMn7S87vGNWyweZyUA5YQlEJAkg5zkIQqSAI0Fh5hmwdTbbKdSXPdO2mDVaEoxeG8vdLyVjXllW7jBUf9mcpDEKGTPbG9M79aU962Tv7qXwjjNOLA8JdMkQpIITknOKCWY0zSPYgfkvjRY+bvy41rgU4H8o7deFuUzuwF6fpjjnzixKzy+s+KxOWN+u93jY3ijvxbePAiC+/F9Jpo/TOJ/TdnenPsR2w/kn+Qr4JSKcprbfeOMJGEpCIuShGQZZQmPaZnn7MX5uvoOM8koN+sGAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 02:12:49</sys_created_on>
+        <sys_id>086b6d3f79e903107f4423b77ae415cb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-06-25 02:14:45</sys_updated_on>
-        <ui_id>6138c8c5-5303-403c-b893-27ab31dbd7f6</ui_id>
+        <ui_id>67678f05-5875-479c-b58c-b7693ab20f2c</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8HPsZHt2E7yVgiBPawd3ehLV4wsXSca8sdkOW0W8t93ZctJ2nVdKIExmB8MutK995yjo3u/cwR35s4EOPFnfsxCPwwDQoLpxM/iMPMDHlIA3xk7JS0ATypgleK43lDZmsBuR2ZhFs78zI2DCXUnJErcLObUJUGcJCwKYvCp1+ft95jJRVNLur2zBTDC1kJyBaUzv38YOzVV2EuDcua7F1t6W0MqaQYSExcVawso9ejDAmucy2PIvh2IvCRmeuCa2+qpMEHcMnh8MnbgSUPJAdvlVDYwdgpacqortXXmWrUYUED5TSm3hxNrUeqeaUGfGvED60+IOZcDUmNWhcMytQoN4lSCwU2tRVX2EU0zOShXybYor3sKRlvIaSv1ibZtg/WgNpANiB5h/nldPd4O/Zai7NhZtLJiVB5WVGslslZDY64DJHSiFLSuRblKa1VtRJeMUApvJXHh5bJ6xJ6NWJUeZQa3hwJRb4nxRRe+o0oYEh+xDCbvO/Lp99b07WlYwGnHuSOcdheFRxumRK2vsPAGLMz92Bo5i94yAJsd7/uk5tHMdWEYfQOmf/Xpp8PG++z6xTQcXfcNzwX7LPk34K1hn8WsX6OL+XX6l/xqEf1jhv2TTUnw5pw6uenOmc2JRRXVkBYVB/m1JSTku12cxMk0J5EbTZPInSQz5mbRFH9JPAtpFpA8YN4x7bUZfJmi73wXUCAUDaMezPhshYYCSwGSN69INjwM2yDd2AaHYX6x1+HHpPv+z/QLzvSHn/wGxpaeCAAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f5d7f6b79a503107f4423b77ae4156c"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=7b545fa7792503107f4423b77ae41546^sys_idNOT INe48e7fab79a503107f4423b77ae415c5,086b6d3f79e903107f4423b77ae415cb"/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
@@ -217,28 +240,28 @@
     </sys_hub_sub_flow_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <comment/>
+        <comment>Create Tasks That Were Created After the Project Was Synced</comment>
         <display_text/>
         <flow display_value="Xero - Create/Update Project">7b545fa7792503107f4423b77ae41546</flow>
         <generation_source/>
-        <order>8</order>
-        <parent_ui_id>a0dff093-7af1-4251-b951-55c72971305e</parent_ui_id>
+        <order>12</order>
+        <parent_ui_id>13faba93-ae7c-4071-8403-e4edebdd9c66</parent_ui_id>
         <show_stages>false</show_stages>
-        <subflow display_value="Xero - Rate Model Validation">92daed73792d03107f4423b77ae415ee</subflow>
-        <subflow_inputs>H4sIAAAAAAAA/8VT2W7bMBD8lUDPpqDLkui3IkWAAm1TNGlQIAiEJbmy2VKUIlGJXcP/XtKSHefqkRbtmzTkcnZmdy7XnhTezKMoAEUWZzQSQRwGWZkkUcyyDDAJp4jexNNQob3ZtPUX5KYw0H216A2o3sHrdUBjFtOQkTRKgCTBNCMsFUCCKM0yPo1SDMFvkdet2GxspZBdo2B1MT5gEb6QSrSovdnl1cRroLWMBltvtn5wZFYNFgoYKlv4EUu0J9z1+KtadrUfBjFH54OYpyU6Nou2BzxWg+srnHi4NKgFWt4SVIcTrwItwNTtao+0COJUqztgIbUZFFew7OQ3+3ocTQ4IZt6y6DQvuqYqltjWhSyC4eNBa/uSYnTTln62944eCOOLWnI8bYys9cBsgKnfIOK16iv9fvDHDQ9L6JU5GF7f2SawcWY4daPU8mxR3+4ndCL11rfxUNUc1P4PjGkl6w12buC9PH9s+wC+fWLwqLCyvEUFTSP13LV/I7dctvXKnyv745eqvrU9dnKufeDOC9+OCvwTi7/ewhfQSmfMO/uMLXaMn7S87vGNWyweZyUA5YQlEJAkg5zkIQqSAI0Fh5hmwdTbbKdSXPdO2mDVaEoxeG8vdLyVjXllW7jBUf9mcpDEKGTPbG9M79aU962Tv7qXwjjNOLA8JdMkQpIITknOKCWY0zSPYgfkvjRY+bvy41rgU4H8o7deFuUzuwF6fpjjnzixKzy+s+KxOWN+u93jY3ijvxbePAiC+/F9Jpo/TOJ/TdnenPsR2w/kn+Qr4JSKcprbfeOMJGEpCIuShGQZZQmPaZnn7MX5uvoOM8koN+sGAAA=</subflow_inputs>
+        <subflow display_value="Xero - Create/Update Tasks">01f7b76779a503107f4423b77ae4159f</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1TXWvbMBT9K8PPtpEdJ3LzNhiFwbqObutLKeZKuk405I/actos5L/vKnadLElHKfRtjzqSzj3nSOdu42nlzT0W5VzwGecXMGWTiPE8SeKJ4BwwiabAPN8roUA62YDFrKgUGsJWYDoHbjaYz3iqIAk4AA+SFNJASEyDFAVjLEYhIxneoKwaFe4ptlsiUbqtDaxvBy5C5FIb1WDpze/ufa+GhkZbbLz55mjLrmvMDAgSM/duMEfakUgMrzU13iVJH64GV+ecukkOO5hBVpymyPfwyWKpkGbmYFr0vQJKBbZq1iPSIKjr0uyBpS5t77aAp1b/JvZJ7B8MOBIwbmRDXseq5bLSEq9rq6uyJ7YgzAmPrExXlF97iy59zKEz9iD9rqUZWDtHTuKgN/++rB7HiC91uTM/bJpKghlXYG2jRWexdS/W6R+n2fXglzMvhwYLmpsVUNe6XGR1U630bhZJL8KFoUWYm+qRNLZ6UYYgneOQ8obwkvBPO/gWGu3sXxENXXYTf5b6ocPP7mfM0gjYJIkDgZEKEqnot/I0DVjC+JTFUZwL5m13oWcPnbPWRzWEkvUJ04FWNrq2H0nCCgf/W3/oVHLxr+8nDjpFHn+htG8t1Pu26BU2nu9+G32cGHu5P/G79acusr2Ac/3Z6325PH+R/C8PMfEoSoWg/6iUhCDJY6QaxRDEjKGI41TlE3xzee7/ACL6xYSSBgAA</subflow_inputs>
         <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-25 02:12:49</sys_created_on>
-        <sys_id>086b6d3f79e903107f4423b77ae415cb</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_created_on>2026-06-25 23:58:11</sys_created_on>
+        <sys_id>ad26d644d83903107f440f1d3033072d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:45</sys_updated_on>
-        <ui_id>67678f05-5875-479c-b58c-b7693ab20f2c</ui_id>
+        <sys_updated_on>2026-06-26 00:01:14</sys_updated_on>
+        <ui_id>131afc77-d073-4fdd-96ee-63de44895d5a</ui_id>
         <updation_source/>
         <wait_for_completion>true</wait_for_completion>
     </sys_hub_sub_flow_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=7b545fa7792503107f4423b77ae41546^sys_idNOT IN67d467a7796503107f4423b77ae41570,73f4af67796503107f4423b77ae415d3,39dc9bef792503107f4423b77ae415b9"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=7b545fa7792503107f4423b77ae41546^sys_idNOT IN67d467a7796503107f4423b77ae41570,73f4af67796503107f4423b77ae415d3,39dc9bef792503107f4423b77ae415b9,9c16d244d83903107f440f1d30330736"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">38ca63eb796503107f4423b77ae41539</block>
@@ -257,10 +280,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 16:25:08</sys_created_on>
         <sys_id>67d467a7796503107f4423b77ae41570</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:45</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:01:14</sys_updated_on>
         <ui_id>a0dff093-7af1-4251-b951-55c72971305e</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+2Uy27bMBBFf6XQWhb08EPxLmgRoEDbAE2QTRsII3JkE6VIlaTsuIb/vUM9bCNx0CLosjvxUjNz5+pA+0C3rmmdvdfX1oqVCpbfHsNAKK/R8z5QUGOwDJhWXDihVdEJYbAB2foLeuTCNhJ2DyeFrYXkBoduDRiqcWiC5f7Zlds1WEgoUVLhnTNCrahccDpVMVTJFUtYls6zNI7TfJqU86xMUp4BQkbvjYXvR3PvPnVK+KprP490O07ShntbSRwG+ORQcaTRFUiLYVCD4uC02R0Vg8BvlTwJa6Fcv3ENT1b8ot7pbOZfrJB2ZEMcx2MxRDWmpAXD28Yb7BUHpRwj1LKt1Zd+Dx8yVtBKdxZya6kfNt60dzFYqu7Wevt1HHgjVLfgcCk1A3k8gaMYytah9R8GJdbUqKihaSicojF6I7pi8lJHK0mHqJJ6S0M9KREwbzyijCC6If1DJz+AEX6Lz9SGinubJVjBio4qaucMrXDoYil+tt5Qv+CwStGnQS9YZkTjrmnOBgfXh/Alkmc07vdYzRc5h+lkAbCYTHPIJyXDfJJjGRNEWBJRkXXgWns4fG/jOOPJS4bf3OdfkH8Fs2qWxLPL5E/nl8i/wPzruKd/wN1/oL+knbL4j/s57sIWPbbDbt3wN9P+6NHuJ9ieG45MWDJy77WP43/aX+wIAMHOpa02P/wKJ+3wG552PHjxBQAA</values>
@@ -284,10 +307,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 16:25:43</sys_created_on>
         <sys_id>73f4af67796503107f4423b77ae415d3</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:45</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:01:14</sys_updated_on>
         <ui_id>6176fb64-2216-48c6-bfe5-af223dd9bdcd</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWdDDUiLfghYBCrQNUAe5tAGxIlc2UUpURcqOa/jfu9TDNhIHLYocexOH2t2Z0Y72nu5s01lzr2+MkavaW3x79D1ZO4ye914NFXoLj+taSCt1zXrA9zagOndBj0KaRsHu4YTwtVSixbFbAy3VWGy9xf7Zld01yBQUqKhwaVtZr6hcCjqVIZRRziOexFkSh2F8PY+KLCmiWCSAkNB7U+H7idy7Tz3iv8razSPcTJN0KxytKPQ9fLJYC6TRJSiDvldBLcDqdndEWgRxV6sTsJa1HRRX8GTkL+odp6l7sUTSyEc7jkc2WjW5pCXHu8YRHBALhZos1Kqr6i+DDmcyltApe2ZyZ6gfNo60YzFSKpdrvf06DbyVdS9wvFSagzqewJINRWfRuA+DCitqxCpoGjKHNa3eyL6YuFTBStEhKJXe0lC3KQFwRzwgjyC4JfxDDz9AK52Kz9SGigeaBRjJWb9V1M62JOHQ28J+do7QIHCUwgY36AXDW9nYG5qzwZH1wX+5kmfbuN9fx1mOV4AzwZNsNs9AzCDNcRZe5WWZYyFEGgWMDeSZsWA7w1hQoTGwwsPhexeGiVh2nBPycrnffsBbZCWHtEyjML2clXl2KSsXUvJ6QOI/BMR90r/MRxiG/wNyHhBp2LDoo7Z++D/n49GFYZhghr0RyKUhIvcO+zj92d3FjhZA8nNoq9sfTsIJO/wGX0TU2yMGAAA=</values>
@@ -311,13 +334,40 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 15:50:05</sys_created_on>
         <sys_id>39dc9bef792503107f4423b77ae415b9</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:45</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:01:14</sys_updated_on>
         <ui_id>367cab86-542e-4dc9-8b99-e8968234dc98</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6VSTU/jMBD9Lz63UT4gkN6QVkgcAIlFXFYomtiT1otjG9tpyUb57ztu0oK4ckrmzcyb9zwzMtMH2wf/bG68l1vNNn9eV0zqiNH/yDR0yDZMBuw8W7E9qD7G43idlxVeAa4FL8r1RQliDZcVrtOrqm0rbIS4zBLrzF/kwU8T9QrprYLh5QcUfCeVcLjItOBIXUDHNuO3VBgs1goaVDTpCblxIsqXgsKsEm2VpRUv8rLI0zS/vsiasmiyXBSAoqS6U+fdYvvbK0R2Ct2Zlz5RRZ6uGH4E1AJpUAvK44p1oAUE4wa2Ca4nwCGIR62Gc8VO6kB0LNZ+ePmPuLM0jYUtkiOOc/Ic1stLzjDfGcnx0QZp9IwEaNTSw43qO/0wy487wBZ6FU47IKT3xIc2ao4qFknt7505PJ0G3kp99LckleGgzhGE4GTTB/RxDaiwI6K6A2ul3ta0vr08NpOWLtkqCpJWmQMNjQeXAI/CE3oiSG4J/3WEX8DJ6OKeaKh5Orqv3/s4d/axKK5n01TguZM23BDdHhdx02u82JnJz4chkEtPA58jdne685gYaMmSf4UOxr1FqZ/Y9B826ivHMQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">12d65284d83903107f440f1d303307ba</block>
+        <comment/>
+        <connected_to>a0dff093-7af1-4251-b951-55c72971305e</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project">7b545fa7792503107f4423b77ae41546</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>367cab86-542e-4dc9-8b99-e8968234dc98</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 23:57:49</sys_created_on>
+        <sys_id>9c16d244d83903107f440f1d30330736</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-26 00:01:14</sys_updated_on>
+        <ui_id>13faba93-ae7c-4071-8403-e4edebdd9c66</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=7b545fa7792503107f4423b77ae41546"/>
@@ -421,7 +471,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>xero__createupdate_project</internal_name>
-        <label_cache>[{"name":"093b391b-624a-4057-b6da-02677c526e1a.record.short_description","label":"7 - Create or Update Record➛Project Record➛Project Name","reference":"","reference_display":"Project Name","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"short_description","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["description"]}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.Record.active","label":"4 - Look Up Record➛Project Record➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"pm_project","column_name":"active","usedInstances":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.projectId","label":"3 - For Each➛items_object➛projectId","reference":"","reference_display":"projectId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.status","label":"4 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"a0dff093-7af1-4251-b951-55c72971305e":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record","label":"7 - Create or Update Record➛Project Record","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","usedInstances":{"6138c8c5-5303-403c-b893-27ab31dbd7f6":["record"],"c4d14730-4c7e-4c8c-ac18-dbb0fad4cfda":["project"],"67678f05-5875-479c-b58c-b7693ab20f2c":["project_task"]},"attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8269e7ae-dc36-46ad-a59e-079ff9ebdd51.projects","label":"1 - Xero  - Get Projects➛Projects","reference_display":"Projects","type":"array.object","base_type":"array.object","usedInstances":{"367cab86-542e-4dc9-8b99-e8968234dc98":["items"]},"attributes":{"sourceId":"8f22154c-9f01-4f04-bfef-552543c8c9ca","child_name":"items_object","uiUniqueId":"befeb962-c3b5-4320-9ebf-3df99314b301","uiTypeLabel":"Array.Object","co_type_name":"FDd7ac1befa12503104233a13eb4f69243","child_label":"items_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0bf0db52-acc5-4ca6-9e7b-62e686df5a8f","uiType":"array.object","child_type":"object","child_uiUniqueId":"e82a5241-9c95-458f-813e-347c07f6f52b"}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record.correlation_id","label":"7 - Create or Update Record➛Project Record➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"correlation_id","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["name"]}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.name","label":"3 - For Each➛items_object➛name","reference":"","reference_display":"name","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["short_description"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.deadlineUtc","label":"3 - For Each➛items_object➛deadlineUtc","reference":"","reference_display":"deadlineUtc","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["end_date","end"]},"attributes":{}},{"name":"a21d206a-54a7-45ea-a2cd-3e06ecac2f34.contact_record","label":"5 - Xero - Create/Update Contact➛Contact Record","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["company"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"809fa77d-fd26-4dae-ac91-8d628fcc408b"}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.currencyCode","label":"3 - For Each➛items_object➛currencyCode","reference":"","reference_display":"currencyCode","type":"string","base_type":"string","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["currency"],"67678f05-5875-479c-b58c-b7693ab20f2c":["currency"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.contactId","label":"3 - For Each➛items_object➛contactId","reference":"","reference_display":"contactId","type":"string","base_type":"string","usedInstances":{"a21d206a-54a7-45ea-a2cd-3e06ecac2f34":["contact_id"]},"attributes":{}},{"name":"8269e7ae-dc36-46ad-a59e-079ff9ebdd51.__action_status__.message","label":"1 - Xero  - Get Projects➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"6176fb64-2216-48c6-bfe5-af223dd9bdcd":["condition"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.estimate.value","label":"3 - For Each➛items_object➛estimate➛value","reference":"","reference_display":"value","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["budget_cost"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.totalExpenseAmount.value","label":"3 - For Each➛items_object➛totalExpenseAmount➛value","reference":"","reference_display":"value","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["cost"]},"attributes":{}},{"name":"67678f05-5875-479c-b58c-b7693ab20f2c.rate_model","label":"8 - Xero - Rate Model Validation➛Rate Model","reference":"rate_model","reference_display":"Rate Model","type":"reference","base_type":"reference","usedInstances":{"6138c8c5-5303-403c-b893-27ab31dbd7f6":["rate_model"],"c4d14730-4c7e-4c8c-ac18-dbb0fad4cfda":["rate_model"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1abaddf1-af59-4790-b9a7-601a61e44129"}}]</label_cache>
+        <label_cache>[{"name":"67678f05-5875-479c-b58c-b7693ab20f2c.rate_model","label":"8 - Xero - Rate Model Validation➛Rate Model","reference":"rate_model","reference_display":"Rate Model","type":"reference","base_type":"reference","usedInstances":{"6138c8c5-5303-403c-b893-27ab31dbd7f6":["rate_model"],"c4d14730-4c7e-4c8c-ac18-dbb0fad4cfda":["rate_model"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1abaddf1-af59-4790-b9a7-601a61e44129"}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.totalExpenseAmount.value","label":"3 - For Each➛items_object➛totalExpenseAmount➛value","reference":"","reference_display":"value","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["cost"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.estimate.value","label":"3 - For Each➛items_object➛estimate➛value","reference":"","reference_display":"value","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["budget_cost"]},"attributes":{}},{"name":"8269e7ae-dc36-46ad-a59e-079ff9ebdd51.__action_status__.message","label":"1 - Xero  - Get Projects➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"6176fb64-2216-48c6-bfe5-af223dd9bdcd":["condition"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.contactId","label":"3 - For Each➛items_object➛contactId","reference":"","reference_display":"contactId","type":"string","base_type":"string","usedInstances":{"a21d206a-54a7-45ea-a2cd-3e06ecac2f34":["contact_id"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.currencyCode","label":"3 - For Each➛items_object➛currencyCode","reference":"","reference_display":"currencyCode","type":"string","base_type":"string","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["currency"],"67678f05-5875-479c-b58c-b7693ab20f2c":["currency"]},"attributes":{}},{"name":"a21d206a-54a7-45ea-a2cd-3e06ecac2f34.contact_record","label":"5 - Xero - Create/Update Contact➛Contact Record","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["company"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"809fa77d-fd26-4dae-ac91-8d628fcc408b"}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.deadlineUtc","label":"3 - For Each➛items_object➛deadlineUtc","reference":"","reference_display":"deadlineUtc","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["end_date","end"]},"attributes":{}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.name","label":"3 - For Each➛items_object➛name","reference":"","reference_display":"name","type":"string","base_type":"string","usedInstances":{"093b391b-624a-4057-b6da-02677c526e1a":["short_description"]},"attributes":{}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record.correlation_id","label":"7 - Create or Update Record➛Project Record➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"correlation_id","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["name"]}},{"name":"8269e7ae-dc36-46ad-a59e-079ff9ebdd51.projects","label":"1 - Xero  - Get Projects➛Projects","reference_display":"Projects","type":"array.object","base_type":"array.object","usedInstances":{"367cab86-542e-4dc9-8b99-e8968234dc98":["items"]},"attributes":{"sourceId":"8f22154c-9f01-4f04-bfef-552543c8c9ca","child_name":"items_object","uiUniqueId":"befeb962-c3b5-4320-9ebf-3df99314b301","uiTypeLabel":"Array.Object","co_type_name":"FDd7ac1befa12503104233a13eb4f69243","child_label":"items_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"0bf0db52-acc5-4ca6-9e7b-62e686df5a8f","uiType":"array.object","child_type":"object","child_uiUniqueId":"e82a5241-9c95-458f-813e-347c07f6f52b"}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record","label":"7 - Create or Update Record➛Project Record","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","usedInstances":{"6138c8c5-5303-403c-b893-27ab31dbd7f6":["record"],"c4d14730-4c7e-4c8c-ac18-dbb0fad4cfda":["project"],"67678f05-5875-479c-b58c-b7693ab20f2c":["project_task"]},"attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.status","label":"4 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"a0dff093-7af1-4251-b951-55c72971305e":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"367cab86-542e-4dc9-8b99-e8968234dc98.item.projectId","label":"3 - For Each➛items_object➛projectId","reference":"","reference_display":"projectId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.Record.active","label":"4 - Look Up Record➛Project Record➛Active","reference":"","reference_display":"Active","type":"boolean","base_type":"boolean","parent_table_name":"pm_project","column_name":"active","usedInstances":{}},{"name":"093b391b-624a-4057-b6da-02677c526e1a.record.short_description","label":"7 - Create or Update Record➛Project Record➛Project Name","reference":"","reference_display":"Project Name","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"short_description","usedInstances":{"c5cad8d5-698f-4913-b57a-25f68ae23043":["description"]}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.Record.rate_model","label":"4 - Look Up Record➛Project Record➛Rate Model","reference":"rate_model","reference_display":"Rate Model","type":"reference","base_type":"reference","parent_table_name":"pm_project","column_name":"rate_model","usedInstances":{"131afc77-d073-4fdd-96ee-63de44895d5a":["rate_model"]}},{"name":"ef678da4-7aa7-48a8-bce8-8eb0002ebc1c.Record","label":"4 - Look Up Record➛Project Record","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","usedInstances":{"131afc77-d073-4fdd-96ee-63de44895d5a":["project"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>Xero - Create/Update Project</name>
         <natlang/>
@@ -438,7 +488,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce993fa779a503107f4423b77ae415b1</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -446,7 +496,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:48</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:01:16</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -591,7 +641,30 @@
         <values>H4sIAAAAAAAA/+VVTW+cMBD9K5HPCzKwwO7eqqxWqpQmVVLlkkZosIfElfmoMUm2aP97DRh2lURpIu0lKgckz3jG7z3e4JuWCE5WZI6ceksvYoEXBD6l/mLupVGQej4PANEjM1JAjmanQlYqbtYPIJsu0LZ0GaTB0kudyJ+DM6dh7KQRB4f6URyz0I/QA3eo2+1MJRd1JWF7bRuYCLsXkissyOrmdkYqUOYsjYqs2mep94KVkKI0Wy9HtM/R623VrXnJmhwLnYgxeGYr1zZz8nVtMqaog+PRGcEnjQVHAyQDWeOM5FBw0KXakpVWjQkoBH5RyO20414UeiCaw1Mt/piT57Tbl6FhxqwI0zKxAg3hbA0arkxnphs16VUKhvWgCccMGqlPD2PDhotKi7IYSjSkcqwuZZMX54MiZGpw8D2a2oDAquPZIR9oZVf35ePlCHIjil4SS1GWDOS0Aq2VSBvdwWkJSuw1zqGqRHGXVKp8EH2xgZK7d9Is3EyWj+bMWtwVLrAOt2tUBXdj4us+fA1KdCS+mTameDcj9bY+lVDXeypGw+R30yEZiFkKSa9CL0HSO6ErZkpU+os56gEt8N3MjkMavuUwttwb6qDnfiSqvOP4C5l+6fbvU+Jjpn8HpNH0P/pP/TpE6/sXsbPD2pPzIWFdHx7N9YvP5HpL49Pb/l9mp/6bv9MDJ/X+rg+MrkBjkpcc5c+G0oC3bRRH8SKjoRMu4tCZx0vmpOHCvOJoGUDq08xn7r7stfvgOE0/Nl3v0GCcro1AyetXRBlHC3PDxmAZRHo2XjZ5cm2T08VytBnzIto/n2jS/pv75fYvHgTzaHAJAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=94480cb379e503107f4423b77ae415df"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ce993fa779a503107f4423b77ae415b1^sys_idNOT IN1c480cb379e503107f4423b77ae415e0,cddbedb3792d03107f4423b77ae415b0"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ce993fa779a503107f4423b77ae415b1^sys_idNOT INcddbedb3792d03107f4423b77ae415b0,1c480cb379e503107f4423b77ae415e0,7ad69284d83903107f440f1d3033071d"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project">ce993fa779a503107f4423b77ae415b1</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>a0dff093-7af1-4251-b951-55c72971305e</parent_ui_id>
+        <show_stages>false</show_stages>
+        <subflow display_value="Xero - Rate Model Validation">92daed73792d03107f4423b77ae415ee</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/71U227bMAz9lULPtuFbYitvQ4oCA7Z1WLtiQFEYtEQn2uRLZblNFuTfJ8Wuk6YttmJF35JjUjw85OH1hghOZoQiB+RJlNCQ+1HgJ0Uch1GeJIBxMEEkDqmgRBPZqPonMp1paH8Z9A5kZ+HNxqdRHtEgd6dhDG7sTxI3n3Jw/XCaJGwSTjEATyGrFd9uTSYXbSNhfTU8YBC2FJIrrMjs+sYhDShTUaMis83Rp3+lLCFHaUK/9pxPLnvOz3ei141FFRZoCjEcoE/DG98OcNOCpRU4BFcaK46GTwGyRYeUUHHQtVqPiELg55XcA0tR6b7hElat+G2qRqFzUHhGVllbsaxtymyFqs5E5vc/jiiPKdkgpkn9YeJOjhouTkHDhVYd050axa4Fw7YXlGMBndTzQ6wPOG+0qKs+RUMuX8GO1bIrqy+92GQscjDwrjXMsbEKWkkGfYqLZX0/yn0mqp3Yw0dZM5AHoQiKLc8ESrsSZrcUSrCMM7MjDgGtlcg7bXvakE5cPp1xDz43ZZRYGl5ZCU0jqoVt707suJhCpbeQ5o9XyPre9NCKReUBs5U9M3/wzgx+uoOvQAkr3GfzjEm2Fb9X4rbDjzvKUVIAUObmMfhunEDqpgFyNwYacQYRTfwJ2TqkXbdzCW27l9M0kd12Voxe3EHGrJ+WTWFKNPqDIXWHg2Jb58DvYZC/YJ6I7l3COmUFWT/yejRNGOTp1J3EIboxZ9RNc0pdTOk0DSMLpJ7QWHoP6fOa43O2/6+3Xn8w/tLzw8GY75t+KsNwKFqzWtXi6EpcPIDDiQjf7ESkvu8/PhIvHIC39/v7ePkFr44yPzbqKPS7uNRnlPJikpodZbkbBwV38zCO3SShecwiWqRp/oYuvfkDvEqL2ZcHAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 02:14:47</sys_created_on>
+        <sys_id>cddbedb3792d03107f4423b77ae415b0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-26 00:01:16</sys_updated_on>
+        <ui_id>67678f05-5875-479c-b58c-b7693ab20f2c</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <comment/>
@@ -617,28 +690,28 @@
     </sys_hub_sub_flow_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <comment/>
+        <comment>Create Tasks That Were Created After the Project Was Synced</comment>
         <display_text/>
         <flow display_value="Xero - Create/Update Project">ce993fa779a503107f4423b77ae415b1</flow>
         <generation_source/>
-        <order>8</order>
-        <parent_ui_id>a0dff093-7af1-4251-b951-55c72971305e</parent_ui_id>
+        <order>12</order>
+        <parent_ui_id>13faba93-ae7c-4071-8403-e4edebdd9c66</parent_ui_id>
         <show_stages>false</show_stages>
-        <subflow display_value="Xero - Rate Model Validation">92daed73792d03107f4423b77ae415ee</subflow>
-        <subflow_inputs>H4sIAAAAAAAA/71UXU/bMBT9K8jPSZSvNnHfpiKkSduYBkOTEIpu7JvWm/OB40C7qv99dhPSUkAbGuKtPbnX95xjn3u9IYKTGaHIAXkSJTTkfhT4SRHHYZQnCWAcTBCJQyoo0VQ2qv6JTGca2l8GvQPZWXiz8WmURzTI3WkYgxv7k8TNpxxcP5wmCZuEUwzAU8hqxbdb08lF20hYXw0HGIQtheQKKzK7vnFIA8pM1KjIbHP06V8pS8hRmtKvPeeTy57z80r0urGowgLNIIYD9Gk449sBbiRYWoFDcKWx4mj4FCBbdEgJFQddq/WIKAR+Xsk9sBSV7gWXsGrFbzM1Cp2DwTOyytqKZW1TZitUdSYyv/9xRHlsyQYzTesPU3dyJLg4BQ0XWnVMd2o0uxYM295QjgV0Us8Psb7gvNGirvoWDbl8BTtWy66svvRmk3HIwYV3rWGOjXXQWjL4U1ws6/vR7jNR7cwePsqagTwoRVBseSZQ2ifRLmulzYktU6Ln7RDQWom801bWhnTi8uk19+BzF40SS0MtK6FpRLWwCu/Ejo5RV3oLaf54hazv7VCxqDxgdqxnngB4ZwY/3cFXoIT17rM5xjTbid8rcdvhR8uaRUkBQJmbx+C7cQKpmwbI3RhoxBlENPEnZOuQdt3OJbTt3lEjIrvtrB+9v4OTWX9htmVnxAdD6g4H07bOQeTDIH8hPxHdB4V1yhqyfhT3aJowyNOpO4lDdGPOqJvmlLqY0mkaRhZIPaGx9B7a5zXH55L/X2e9fmf8RfPDzpjvRT+1YdgVrXla1eJoUVw8gMOWCN9sS6S+7z/eEy/sgLeP/PvE+YWsjjY/Dupo9Luk1GeU8mKSmjfKcjcOCu7mYRy7SULzmEW0SNP8DVN68wclAx9KmgcAAA==</subflow_inputs>
+        <subflow display_value="Xero - Create/Update Tasks">01f7b76779a503107f4423b77ae4159f</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/9VTXU/bMBT9K5Ofk8hJ0yb0bQIhTRpjgo0XhKJr+4Z6cj5wHKCr+t933YS2K2hiE5u0Rx/73nvOuT7XK6YVmzMel5nIZll2BFM+iXlWpmkyEVkGmMZT4CxgNVRILy04LKpGoSHsHkzvwdUKy1mWK0jDDCAL0xzyUEjMwxwF5zxBIWMZXaBsrIp2LdZraqJ01xpYXo29CJELbZTFms2vbwLWgqXRDi2brw6uXsvdgCC+c3ZBk9+djeRfEuSW7QbDEmmIxBH6+FS/h5MSTykOGD46rBUSlxJMhwGroFbgGrvcIhZBnddmByx07QaxFTx2+jtNnSTB3uADYtuLYrTrUE15Ag4une2l6+3Wx0ZL7AavFJbQG3e8jw0Pzlunm3oocSDMs+GyMX1Vfxr8YttWexvrOyKGrbfB6xpFlpeL5mHr2amuN46Nl6aRYPaeIli5ONVo/E43uwkYOGe16J3nu2K9/vJ8PQP40oLQYEVsigraVte3RWube71hQIKq6NbQISpN80DMO31bRyC9DxGtDqJTwk828BVY7U05ozZU7Cd+rfVdjx880VkeA5+kSSgwVmEqFf37LM9DnvJsypM4KQVn64B1y+7YQNftTCQRxV3vLRgsHc0rhk34Eml1694TqXscfVoHY17To1/9ebGXV1L9DaX707C+SUJfwfYpoZ+3dJ/x//1sJn8tm21V7Ii9lM2djjcO5k+T/30wu0VjnQ/M5nN6dv9DSrM4zoWgb66UhDAtE6S8JhAmnKNIklyVE3zDlN78ACOJ9NxXBwAA</subflow_inputs>
         <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-25 02:14:47</sys_created_on>
-        <sys_id>cddbedb3792d03107f4423b77ae415b0</sys_id>
+        <sys_created_on>2026-06-26 00:01:16</sys_created_on>
+        <sys_id>7ad69284d83903107f440f1d3033071d</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:47</sys_updated_on>
-        <ui_id>67678f05-5875-479c-b58c-b7693ab20f2c</ui_id>
+        <sys_updated_on>2026-06-26 00:01:16</sys_updated_on>
+        <ui_id>131afc77-d073-4fdd-96ee-63de44895d5a</ui_id>
         <updation_source/>
         <wait_for_completion>true</wait_for_completion>
     </sys_hub_sub_flow_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ce993fa779a503107f4423b77ae415b1^sys_idNOT INd2993fa779a503107f4423b77ae415e0,9e993fa779a503107f4423b77ae415df,1a993fa779a503107f4423b77ae415e0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ce993fa779a503107f4423b77ae415b1^sys_idNOT INd2993fa779a503107f4423b77ae415e0,9e993fa779a503107f4423b77ae415df,1a993fa779a503107f4423b77ae415e0,76d69284d83903107f440f1d3033071d"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">efefd7a3796503107f4423b77ae4154a</block>
@@ -657,10 +730,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 17:55:43</sys_created_on>
         <sys_id>d2993fa779a503107f4423b77ae415e0</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:48</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:01:16</sys_updated_on>
         <ui_id>367cab86-542e-4dc9-8b99-e8968234dc98</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6VTTU/cMBD9Lz5no3xAIHtDICSktkiAuFRoNbEnu24dO7WdXdIo/73jzQeIa0/JPM+8ee/FGZjpfNt592JunJN7zbY/3yImdcDofWAaGmRbJj02jkXsCKoL9TBcZ0WJV4AbwfNic1GA2MBliZvkqqzrEishLtO4teYXcu/GkWaFdK2C/vU/KPhBKmFxltmCJXUeLdsOX46koA1pKeoyTUqeZ0WeJUl2fZFWRV6lmcgBRUGECipU1Pow+/ti1/dtKC1yY8UCfJtnnlaUHkFElkQM3z1qgbS+BuUwYg1oAd7Ynm297QiwCOJRq37tOEjtiY6F3ncn/9LGNElCY41kiON0uJa7OcgJru/AwzNRc9/ZuZUfjOTopigE1tApf/sZmxoeWy+NnkY8VGqZNqpr9I8pCbYSLN+NkM6RCGyD0SB99lE/H8zpaVF5L/U5lPlQGQ5qrcB7K6vOBz0DQ4UNEe0aaFup9zv65Ed5HiYtTbxXVMS1MidaGi5pDDwIjylXiO8JvzvDr2BlcPGdaGh4jJjr3a0C5z68UIi7P11QMjmbPeymGMIIt7L1N7TgiLPc8S3c+4l7zZRLRxJeAvaw/C3hoKcbJPln6GTs7yD+Axv/Ab7O95V3AwAA</values>
@@ -684,10 +757,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 17:55:43</sys_created_on>
         <sys_id>9e993fa779a503107f4423b77ae415df</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:48</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:01:16</sys_updated_on>
         <ui_id>6176fb64-2216-48c6-bfe5-af223dd9bdcd</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjvFHnDZ5KymFQbfCWvqyFXEtyYmYbHmWlDQz+e+7sh0ntBlbWR/3Zh3p3nvOkQ5uiXa2dtY86Ctj5Koii69PAZGVx/C7JRWUgiwI0xWXVuqKdkBANqCc38BPLk2tYPd4RNhaKt6IoVsNDdZY0ZBF+2JLciwoIijiOYtZmszSJIqSy2mcz9I8TngKAlJsqCAXCo8uDzQ+3HZI8Ft+dld73NhGVqthfTt0uT+AuuGeVRwFRDxbUXGBfApQRgSkhIqD1c1uRBoB/K5SR2AtK9sLLuHZyJ84MMkyf7AQKJENboxLOjjVw8U1WEAqjlnXjMZpyYTpzeGiAKfs8hTrD9zVXmpfYiFXh2qtXFl97h0hY4OTi3EGSYjaK/XUBx3F/VpvvxxY3siqc2XYVJqBGldg0bvcWc+nJUKJEhvREuoaHaV1ozeyK0YuZbhSuAgLpbc41L+uEJgnHqKxEN4gft3Bj9BIr+ITtsHinmYORjLavURshzYJsg+I2ZmlAmOOItFd+sN5ir3kQRzt/fElrJG1vcLJGzHo2AevH/bJm27by2Q2FxcgJpyls8l0BnwC2VxMoot5UcxFznkWh5T2cqixYJ2hNCyFMbAS+/03F0Upv3cML868jsj7D3hb4uaQFVkcZecTN52dS9yZrL0xZskfYubv+C9TFkXR/5j9c8ykoX04Bm3d8HdM2ZOPVD9z9JpJg9QePPbx8JfxGzt8XJKdQlvdfPeijtj+F2EK4davBgAA</values>
@@ -711,13 +784,40 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 17:55:43</sys_created_on>
         <sys_id>1a993fa779a503107f4423b77ae415e0</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:48</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:01:16</sys_updated_on>
         <ui_id>a0dff093-7af1-4251-b951-55c72971305e</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWdDDD8W3wEGAAmkDNEEubSCsSComSpEqSdlxBf97l5IsG4mLNm2PvYlD7nJmuAO1RDeubpy915fWiidFlp8fAyKUx/C7JQoqTpaEasWEE1rlHRCQDcjGb+AnE7aWsHs4InQtJDN86FaDwRrHDVm2L7YEw4IygjK+oDFNk3maRFGSTeNinhZxwlLgkGJDCQWXeHR1oPHupkOCn/Jzu9rj1hmhnob1zdDl7gBqwzyrOAoIf3ZcMY58SpCWB6QCxcBpsxsRw4HdKnkE1kK5XnAFz1Z8xwuT2cwfLDlKpIMb4zIfnOrh8gocIJWGusaMxmlBue3NYbyERrrVKdYfuK291L7EQSEP1Vo2lfrYO0LGBicP01gkwWuv1FMfdJR3a739dGB5LVTnyrApNQU5rsChd0XjPJ+WcMkrbJRXUNfoaF4bvRFdMXKpwieJi7CUeouX+ukKgXriIRoL4TXiVx38AEZ4FR+wDRb3NAuwgubdJGI7tImTfUDszq4kWHsUie7m3xpPsZc8iMt7f3wJNaJ2l3jzhg869sHrwT6Z6bbl5XyRMZhOFgCLyTSDbFJQnk0yXkQ4oLzAaQ2tA9fY/f5LE0Upi18n4Y/7vC0/FzArZ3E0O5+f6fxcfs4k542hSX4RGv9iv5kZtOJ/aP46NMLm/agP2rrL/2FmHn1A+jtHr6mwSO3eY+8P/wy/scPhEvQU2mrz1Ys6Yvsf8c9NWH0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">12d65284d83903107f440f1d303307ba</block>
+        <comment/>
+        <connected_to>a0dff093-7af1-4251-b951-55c72971305e</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project">ce993fa779a503107f4423b77ae415b1</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>367cab86-542e-4dc9-8b99-e8968234dc98</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-26 00:01:16</sys_created_on>
+        <sys_id>76d69284d83903107f440f1d3033071d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-26 00:01:16</sys_updated_on>
+        <ui_id>13faba93-ae7c-4071-8403-e4edebdd9c66</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=ce993fa779a503107f4423b77ae415b1"/>
@@ -810,24 +910,24 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>7b545fa7792503107f4423b77ae41546</sys_id>
         <latest_snapshot>ce993fa779a503107f4423b77ae415b1</latest_snapshot>
-        <compiler_build/>
+        <compiler_build>glide-zurich-07-01-2025__patch1-08-20-2025_09-08-2025_1328.zip</compiler_build>
         <version_record/>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=7b545fa7792503107f4423b77ae41546"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=7b545fa7792503107f4423b77ae41546^sys_idNOT INe6993fa779a503107f4423b77ae415e7"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@44c80584</plan>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"e6993fa779a503107f4423b77ae415e7","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Xero - Create/Update Project">7b545fa7792503107f4423b77ae41546</plan_id>
-        <snapshot>ce993fa779a503107f4423b77ae415b1</snapshot>
+        <snapshot>b5075684d83903107f440f1d30330714</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 17:55:44</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e6993fa779a503107f4423b77ae415e7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 02:14:50</sys_updated_on>
+        <sys_updated_on>2026-06-26 00:01:17</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

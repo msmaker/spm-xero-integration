@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>xero__createupdate_project_daily</internal_name>
+        <label_cache>null</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Xero - Create/Update Project Daily</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 19:48:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1c1d9904d87503107f440f1d30330769</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Xero - Create/Update Project Daily</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_hub_flow_1c1d9904d87503107f440f1d30330769</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 19:55:50</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2026-06-25 16:55:41">1dae9d44d87503107f440f1d303307a9</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=1c1d9904d87503107f440f1d30330769"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1c1d9904d87503107f440f1d30330769"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1c1d9904d87503107f440f1d30330769^sys_idNOT IN742dd904d87503107f440f1d303307d1"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Xero - Create/Update Project Daily">1c1d9904d87503107f440f1d30330769</flow>
+        <label>Xero - Create/Update Project</label>
+        <order>0</order>
+        <stage_id>ce993fa779a503107f4423b77ae415b1</stage_id>
+        <states>{}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 19:49:06</sys_created_on>
+        <sys_id>742dd904d87503107f440f1d303307d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 19:49:06</sys_updated_on>
+        <type>subflow</type>
+        <value>11209e31-f0e3-41b6-ba4e-f81e2cbca375</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1c1d9904d87503107f440f1d30330769^sys_idNOT IN501d9904d87503107f440f1d3033076a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1c1d9904d87503107f440f1d30330769</id>
+        <name>Xero - Create/Update Project Daily</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 19:48:47</sys_created_on>
+        <sys_id>501d9904d87503107f440f1d3033076a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 19:48:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=501d9904d87503107f440f1d3033076a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1c1d9904d87503107f440f1d30330769"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=1c1d9904d87503107f440f1d30330769"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1c1d9904d87503107f440f1d30330769"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=1c1d9904d87503107f440f1d30330769^sys_idNOT IN229e9d44d87503107f440f1d3033070f"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project Daily">1c1d9904d87503107f440f1d30330769</flow>
+        <generation_source/>
+        <name>Daily</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 19:55:29</sys_created_on>
+        <sys_id>229e9d44d87503107f440f1d3033070f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 19:55:40</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/21Sy27bMBD8lYJnVZDs9KVbkMBAgTQBaiOXIBBW5MomyldIyolq+N+7lGTFSSPwwtnd2ZkRHw5MQYOKVWwjNbKMSRPRG1Cb3iGhWyUF1nGsaTACovU9q6LvMGOtt3qD2imI1NyCCgRaL9CzqiyKjO1Bdbjuw09BXMRgQCfWiW+o0rX88a34XJR0PpWLqijoUFXIQMT9/dRECN9JJTwaVj08ZsyBJ7aYdh1m2TfS/PmoWSYBSxAXKHjBlwv6imLx/aJsvi6bciGWgPiFpt6l8VZv/CCThN28HToPAF8iGoFiTue/DD2CuDOqnzt25GW0oOElyL84UXlskfzwKYz5Wk9BjXB7DRHWRM1j5+fcrOQYxiQEttCpeHWOjQ13LkprxpEIjTpNW9VpczsmwWaCs//SBRKBLhlN0icf7Xpnn3+fVK6kGVKZispyUPMNYvSy6WLSc2CoUBNRrcE5aba183Yvh2HSovMh/rxV9pmWBrk1OfAkPKdcIV8Rfj3A9+BlcvGLaGj4mLHQhysFIbx6oRDrpy4pGZ1NHuoxhuP8CFcS1fSEA/fSxUtauT+9+ePjP9zRTLRIAwAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=1c1d9904d87503107f440f1d30330769"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=1c1d9904d87503107f440f1d30330769^sys_idNOT IN271dd904d87503107f440f1d303307ca"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project Daily">1c1d9904d87503107f440f1d30330769</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <show_stages>true</show_stages>
+        <subflow display_value="Xero - Create/Update Project">ce993fa779a503107f4423b77ae415b1</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 19:49:01</sys_created_on>
+        <sys_id>271dd904d87503107f440f1d303307ca</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 19:49:06</sys_updated_on>
+        <ui_id>11209e31-f0e3-41b6-ba4e-f81e2cbca375</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=1c1d9904d87503107f440f1d30330769"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1c1d9904d87503107f440f1d30330769"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1c1d9904d87503107f440f1d30330769"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1c1d9904d87503107f440f1d30330769"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1c1d9904d87503107f440f1d30330769"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=1c1d9904d87503107f440f1d30330769"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1c1d9904d87503107f440f1d30330769"/>
+</record_update>
