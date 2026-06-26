@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ac1919b379e903107f4423b77ae415a0" extends="pm_project_task" label="Xero Project Task" max_length="40" name="x_snc_spm_xero_i_0_xero_project_task" type="collection">
+        <element label="Estimated hours" max_length="40" name="xero_hours" type="string"/>
+        <element label="Rate" max_length="40" name="xero_rate" type="string"/>
+        <element label="Estimated amount" max_length="20" name="xero_amount" type="decimal"/>
+    </element>
+</database>

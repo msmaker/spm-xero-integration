@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ac2b436f79e103107f4423b77ae415ba" extends="task" label="OLD Xero Task" max_length="40" name="x_snc_spm_xero_i_0_xero_task" type="collection">
+        <element label="Estimated hours" max_length="40" name="task_hours" type="string"/>
+        <element label="Name" max_length="40" name="task_name" type="string"/>
+        <element label="Rate" max_length="40" name="rate" type="string"/>
+        <element label="Estimated amount" max_length="20" name="task_amount" type="decimal"/>
+    </element>
+</database>

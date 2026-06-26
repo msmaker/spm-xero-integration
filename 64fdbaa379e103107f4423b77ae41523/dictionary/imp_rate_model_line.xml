@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="76063610355103107f44fd0c1b979189" extends="sys_import_set_row" label="Rate Line Import Set" max_length="40" name="imp_rate_model_line" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=default_value" label="default_value" max_length="40" name="u_default_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=display" label="display" max_length="40" name="u_display" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=text_index" label="text_index" max_length="40" name="u_text_index" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=element" label="element" max_length="40" name="u_element" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sys_updated_on" label="sys_updated_on" max_length="40" name="u_sys_updated_on" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=internal_type" label="internal_type" max_length="40" name="u_internal_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=audit" label="audit" max_length="40" name="u_audit" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=reference" label="reference" max_length="40" name="u_reference" type="string"/>
+    </element>
+</database>
