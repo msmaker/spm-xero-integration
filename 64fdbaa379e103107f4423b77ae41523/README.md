@@ -29,3 +29,4 @@ If you find yourself unable to import your repository due to the presence of fil
    * Project Management
    * Rate Model
    * Service Management Basics
+   * Time Card Management

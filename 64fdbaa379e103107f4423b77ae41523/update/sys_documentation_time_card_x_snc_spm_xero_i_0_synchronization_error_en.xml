@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_snc_spm_xero_i_0_synchronization_error" label="Synchronization Error" language="en" table="time_card">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_snc_spm_xero_i_0_synchronization_error</element>
+            <help/>
+            <hint/>
+            <label>Synchronization Error</label>
+            <language>en</language>
+            <name>time_card</name>
+            <plural>Synchronization Errors</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-26 23:33:08</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Synchronization Error</sys_name>
+            <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+            <sys_update_name>sys_documentation_time_card_x_snc_spm_xero_i_0_synchronization_error_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-26 23:33:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
