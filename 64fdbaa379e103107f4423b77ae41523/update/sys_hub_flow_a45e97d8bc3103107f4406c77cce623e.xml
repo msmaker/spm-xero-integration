@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3020000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=93098000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,14 +15,14 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>xero__create_time_entries_on_time_card_approval_new</internal_name>
-        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Time Card Record","reference":"time_card","reference_display":"Time Card","type":"reference","base_type":"reference","usedInstances":{"97c2139e-cb4d-489b-a2cb-e2eab5bd29ec":["record"]},"attributes":{}},{"name":"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4.xero_user_id","label":"1 - Xero - Get Users➛Xero User ID","reference_display":"Xero User ID","type":"string","base_type":"string","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["user_id"],"cb21ce5f-2a50-465b-a77c-276cd5cae83e":["condition"],"75a85aaf-e184-4885-9d84-655ba23f0710":["user_id"],"0bad3bcd-bd68-4a68-b703-dd72475660d0":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f9fffb1c-fd69-47ff-b8cd-3309c7fbaaaf"}},{"name":"Created or Updated_1.current.user.email","label":"Trigger - Record Created or Updated➛Time Card Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4":["email"]}},{"name":"Created or Updated_1.current.resource_assignment.task.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["task_id"],"75a85aaf-e184-4885-9d84-655ba23f0710":["task_id"]}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"time_card","column_name":"sys_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["time_card_sysid"]}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.time_entries","label":"5 - Xero - Get Time Card➛Time Entries","reference_display":"Time Entries","type":"array.object","base_type":"array.object","usedInstances":{"9d77a6f2-9907-4319-b61f-e5e535474979":["items"]},"attributes":{"sourceId":"c61e078a-5d25-4c54-8840-f3a6fb58afba","child_name":"root_array_object","uiUniqueId":"004556f7-a581-40bb-8e4c-fd1daa77b956","uiTypeLabel":"Array.Object","co_type_name":"FD616d8dc4a53503104d32df72dd144ffc","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"8fe3327d-ca7d-4667-8786-7e9a0d730811","uiType":"array.object","child_type":"object","child_uiUniqueId":"6e7e48e1-01cd-4582-9c0f-d34e9d9a3778"}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.__action_status__.message","label":"5 - Xero - Get Time Card➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"af5d47b4-666c-45b5-9936-4b223be174e9":["condition"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.userId","label":"7 - For Each➛root_array_object➛userId","reference":"","reference_display":"userId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.taskId","label":"7 - For Each➛root_array_object➛taskId","reference":"","reference_display":"taskId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.dateUtc","label":"7 - For Each➛root_array_object➛dateUtc","reference":"","reference_display":"dateUtc","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["dateutc"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.duration","label":"7 - For Each➛root_array_object➛duration","reference":"","reference_display":"duration","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["duration"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.description","label":"7 - For Each➛root_array_object➛description","reference":"","reference_display":"description","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["description"]},"attributes":{}},{"name":"Created or Updated_1.current.resource_assignment.task.parent.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Parent➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["project_id"]}}]</label_cache>
+        <label_cache>[{"name":"Created or Updated_1.current.resource_assignment.task.parent.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Parent➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["project_id"]}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.description","label":"7 - For Each➛root_array_object➛description","reference":"","reference_display":"description","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["description"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.duration","label":"7 - For Each➛root_array_object➛duration","reference":"","reference_display":"duration","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["duration"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.dateUtc","label":"7 - For Each➛root_array_object➛dateUtc","reference":"","reference_display":"dateUtc","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["dateutc"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.taskId","label":"7 - For Each➛root_array_object➛taskId","reference":"","reference_display":"taskId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.userId","label":"7 - For Each➛root_array_object➛userId","reference":"","reference_display":"userId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.__action_status__.message","label":"5 - Xero - Get Time Card➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"af5d47b4-666c-45b5-9936-4b223be174e9":["condition"]},"attributes":{}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.time_entries","label":"5 - Xero - Get Time Card➛Time Entries","reference_display":"Time Entries","type":"array.object","base_type":"array.object","usedInstances":{"9d77a6f2-9907-4319-b61f-e5e535474979":["items"]},"attributes":{"sourceId":"c61e078a-5d25-4c54-8840-f3a6fb58afba","child_name":"root_array_object","uiUniqueId":"004556f7-a581-40bb-8e4c-fd1daa77b956","uiTypeLabel":"Array.Object","co_type_name":"FD616d8dc4a53503104d32df72dd144ffc","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"8fe3327d-ca7d-4667-8786-7e9a0d730811","uiType":"array.object","child_type":"object","child_uiUniqueId":"6e7e48e1-01cd-4582-9c0f-d34e9d9a3778"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"time_card","column_name":"sys_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["time_card_sysid"]}},{"name":"Created or Updated_1.current.resource_assignment.task.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["task_id"],"75a85aaf-e184-4885-9d84-655ba23f0710":["task_id"]}},{"name":"Created or Updated_1.current.user.email","label":"Trigger - Record Created or Updated➛Time Card Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4":["email"]}},{"name":"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4.xero_user_id","label":"1 - Xero - Get Users➛Xero User ID","reference_display":"Xero User ID","type":"string","base_type":"string","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["user_id"],"cb21ce5f-2a50-465b-a77c-276cd5cae83e":["condition"],"75a85aaf-e184-4885-9d84-655ba23f0710":["user_id"],"0bad3bcd-bd68-4a68-b703-dd72475660d0":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f9fffb1c-fd69-47ff-b8cd-3309c7fbaaaf"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Time Card Record","reference":"time_card","reference_display":"Time Card","type":"reference","base_type":"reference","usedInstances":{"97c2139e-cb4d-489b-a2cb-e2eab5bd29ec":["record"]},"attributes":{}}]</label_cache>
         <master_snapshot>36192354bc7103107f4406c77cce62ce</master_snapshot>
         <master_snapshot_digest/>
         <name>Xero – Create Time Entries on Time Card Approval</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>8fd9eb54bc7103107f4406c77cce6280</remote_trigger_id>
+        <remote_trigger_id>4371cdf84c7103107f449d4b5ccbf0f5</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a45e97d8bc3103107f4406c77cce623e</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>Xero – Create Time Entries on Time Card Approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -44,11 +44,11 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_flow_a45e97d8bc3103107f4406c77cce623e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:28</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:45</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record display_value="Created 2026-06-26 21:42:26">afd9eb54bc7103107f4406c77cce62dd</version_record>
+        <version_record display_value="Created 2026-06-27 22:43:45">2f71013c4c7103107f449d4b5ccbf030</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=a45e97d8bc3103107f4406c77cce623e"/>
     <sys_variable_value action="delete_multiple" query="document_key=a45e97d8bc3103107f4406c77cce623e"/>
@@ -71,15 +71,15 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-27 00:42:23</sys_created_on>
+        <sys_created_on>2026-06-28 01:43:43</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>8fd9eb54bc7103107f4406c77cce6280</sys_id>
+        <sys_id>4371cdf84c7103107f449d4b5ccbf0f5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:23</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:43</sys_updated_on>
         <table>time_card</table>
         <trigger_definition/>
     </sys_flow_record_trigger>
@@ -89,14 +89,14 @@
         <identifier>a45e97d8bc3103107f4406c77cce623e</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-27 00:42:23</sys_created_on>
-        <sys_id>47d9eb54bc7103107f4406c77cce6281</sys_id>
+        <sys_created_on>2026-06-28 01:43:43</sys_created_on>
+        <sys_id>4b71cdf84c7103107f449d4b5ccbf0f5</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:23</sys_updated_on>
-        <trigger display_value="">8fd9eb54bc7103107f4406c77cce6280</trigger>
+        <sys_updated_on>2026-06-28 01:43:43</sys_updated_on>
+        <trigger display_value="">4371cdf84c7103107f449d4b5ccbf0f5</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a45e97d8bc3103107f4406c77cce623e^sys_idNOT IN47d9eb54bc7103107f4406c77cce6281"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a45e97d8bc3103107f4406c77cce623e^sys_idNOT IN4b71cdf84c7103107f449d4b5ccbf0f5"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=a45e97d8bc3103107f4406c77cce623e^sys_idNOT IN3c5e97d8bc3103107f4406c77cce626d"/>
     <sys_hub_flow_stage action="INSERT_OR_UPDATE">
         <always_show>true</always_show>
@@ -401,12 +401,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-26 23:52:00</sys_created_on>
         <sys_id>745e97d8bc3103107f4406c77cce626d</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:39:04</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:37</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
-        <trigger_inputs>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</trigger_inputs>
+        <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create_or_update</trigger_type>
         <updation_source/>
@@ -417,7 +417,7 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Xero – Create Time Entries on Time Card Approval">a45e97d8bc3103107f4406c77cce623e</flow>
         <generation_source/>
@@ -427,13 +427,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:38:16</sys_created_on>
         <sys_id>2ae8ebd0bc7103107f4406c77cce6234</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:39:04</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:57</sys_updated_on>
         <ui_id>97c2139e-cb4d-489b-a2cb-e2eab5bd29ec</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8bPxthxGtq8jYbAHtZC1/WlK0KWbhKBLHmSnCYN+e+7suU0TbcuhMAYzE/Wle75uDrocRMLHo/jIfAsv8pHrMiLYpBlg8thXo6KMh/wggLkcRIrWgGeNMC04bheUtn4wmZzbYA64JE20bea+1+Sp6wxBpTbbvEoF7aWdP0QOrDCFkJy3I/Hj09JXFOD4A5MPN4cbLl1DUTSEiQ2TjRrKgSNPk8Q41jhffddr/zQiefANQ/oRPgibnk9eZbEsHKgOCDdjEoLSVxRhTa1WcdjZxos4AD4rZLr3YmFUK5zWtGVFS+IP8z8uRmgNRamsFuSMKF+OFowuK2d0KqrOFrKfnJaNpW66Sz42cKMNtLtzbaxiAe1l+xFdApnXxf6+a7nmwrVugtqpWZU7lbUOSPKxoH11wES2qFUtK6FmpPa6KVom1FKlc4lLtKZ1M/IacVcpZR53SkOiKZTrE/a8gM1wpv4gjDYvG3Nkx+N5+1sBMGk9dwaJu1F4VHLjKjdJwReQpC5TUJyy4uPAsCuXu97D/M1vU5UQBhtc3AQ03vciq67rdPyeu8Zo5uO8Vi1b5p/oz4k9k0tBPbibIG9/EuBDYr+scT+KafZ4MOHau+m22javYyuiFWM2LoiKzCaCJIRu1ZsYbQSL9RrJ2CMNt+bLCu4v+D3YT4J48TUQ4XMDqKOOznafw8wFSC5/cVA+tgHArIMBLu3+mzZz0dZ+/1/ss/4ZD/9BPGs1j5uCAAA</values>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPKEqAopa3CYQ0qWultuOlqyxj3xRLjp3ZDoUi/vuuEwcQrTo69QWNJ3y/fM7JucnjhkhBRmQAIs2usiHvZ/1+L017l4NsPuzPs57oM4CMdIlmBWClBW6swPOSqSoENpuxBeZBdIzt/CxF+EuzhFfWgvbbLZYK6UrF1rPYgRG+kEpgnowen7qkZBaHe7BktDlKnYpOsTkoLL1r4R3D9esynIXhVYG4qGyD17FzEjOd7xPMYFOAk6VdAisPWgACyZly0CUF08jS2DUZeVthAPmLW63Wu4qF1L4hWrCVk6948yANdTkgMx5F2B1pFKgJ5xPm2T1O5r6yO72M5OAaTQTkrFJ+fBhrCm5LL41uWjybq7bbqKrQN40iZDfg4HlUDkFAGXgG5A2t/H5hXu5akFOpa0kiRWU4U7sT897KeeUDnA0BBbXGBStLqZ9pac1S1s0IpUieFR6SXJkXvNPJZ50wHnAnqCpLphif1OEZszKQ+IFjsHnbJW7txoo5t6eCGtLfVUDSEIsUaK1CLQGtnRCauZWl/4ZXLSEC33aj/+cXHzmMX+0NdTBzvwNeFkA5q412ZPYHTHXGTepzrj8BU+v6h/pZv48xGv9N7Pqwt3PTJKLtL77M9pfnZPtI4+x9/ze3p70P36cHTqoN7g6cvqJOc+rKgq7AGippSt1a84U1Wr6ywIaCtcb+qtK0L4JP3q7EP8343O6cwLDdnakEJdw7lNvFgQLBe6CNBEfLE5OdWUzuvhtftkHZMK1/Z7RH/83n4+kPQK82gEAJAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ae8ebd0bc7103107f4406c77cce6234"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -451,13 +451,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-26 23:52:00</sys_created_on>
         <sys_id>b85e97d8bc3103107f4406c77cce626c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:39:05</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:57</sys_updated_on>
         <ui_id>2191986f-ba7f-4ae8-bd4e-070218aa7ee5</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Vy04bMRT9lWjW8cjOvNlVICSktkjlsanQyGPfIVY9D2wPkEb5914nk0AjQJSyYMFufHxf51wfzc9loGRwECRFKnMpYplHCY0Yzeo4pjWTEY0imsk8mAYtbwAjHbe/SsyZBrdcDx5ZLg8NcAdy0pnJRS/9Z8lCMRgDrQsN2G4wAkpurbpuG4/5IqHoMEBzp7oWC65WWFIq22u+uHz/ymKutMSs4ODn1TTouUE2DkxwsNy7coseSs0r0DjAmTOqvcb014q0TTzHMSYnR0/J5hsgYLelOyP9HGwawL2DVgK2qrm2MA0a3iLnzix2CMohT1v9AMxV67Ba4IPvrfqNpXNKqY+sAUkJ2NzujuWo8QYW804JOO29VBvE8UqPOaLTQ9N+3xDw24GaD9ptt4PIYLEe9H5qP8Y4U3027+5+bBseq3ZNcLzUneB6d+IOZagGB9ZvYlDne+JskK/76wANfttlw/sekbI33a1ad8Ghm/Ba4yGsdXeH0/mnEXLhGYaoJg+PET9aw5fcKE/3G5bBZN/uolU3A5z4dQOvZAIFI3ESA4llUZAcFSBJljEOVU7TGQ1Wa2nLm8GT2og0ylFuFMUAK4zq3Rcc4RZG5qvpaDwpX3xT/NELUg2UghtZ2oX9FwNi+Nv89SjxPezzCqo7+yDXySFynZwt7Il8SYRn7DT7tNMHs1ORV1AXDAibcUriKMlJFUtG0EWiyGTFaJz+t50yKWSUCCHz6ok3xh7ZCbU2+/8xKSiOlcxIzcSMxJDlJK8jSVKe5jWfAcPXG96D6cox+2lTva3Me1jsFfS3iRfY+q8/1IMgz1gq+rTUR7NUBqzmmSBpWhUkZowSfGL4r6q5ZCxJo7jO32ypqz8PvG5MHAoAAA==</values>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Wf6yhuvnmbipCQtiGNjxeEIse+ptbcJDgO0FX8912TtHQMIYrYy8RbfHy/zvE9yuWaaEkOSFKkMpcilnmUhBELMxXHoWIyCqMozGROpqTmS8BIx7ufJeZMyS03vUfW67kF7kBOGjs5b6X/LFkgemuhdoGFrumtgJJ3nb6ulx7zRQLRYIDhTjc1Fnx4wJJSd63hq4uPrywW2kjMIgeXV1PScotsHFhysH529VY5DK/AYOgZNpwcH74kkFu1Huic1fX1eP46pp1uwMZKPwabErh3UEvA/oqbDqZkyWuk3NjVFkE15EltnoCFrh1WIz74vtO/sF8ehqGPVICcBAy322M5SjzA6pA7jqP0wvV2DBWLRgvoBjUkKN4bN9/FhoCT1ss7pDhemU12Y/pl/X2QgmwLbF4Ukb7DIaD1VP3sIxF1umjufmymPNL1oyrjpWkEN9sTd6hd1Ts/z5r0+uyZzAPyl9BgwG9IueRti0jZ2uZWP3bBoZfBtcFDoExzh9P5dQq48AwDfAIeHCF++AhfcKs93W9YBpN9u/Na3/Rw7BcHeCUTKBiNkxhoLIuC5qgATbKMcajyMJ2F5GFKulU3N7i2T0LhC5U3vac5yDYKVA4a+xRhdeu+4FC3MGrxMB3tK+Wr+8p3tlMvoRTcyhJH2MfGGP4+l+4k7mfCN5DamhBZTebIanK66o7la3T3MeXs05T/gymLvAJVMKBsxkMaR0lOq1gyil4URSYrFsbpPzBlJoWMEiFkXr2wv2zHlKi+ff5PlSLEQZMZVUzMaAxZTnMVSZryNFd8BgydEdyDbcox+2Vrvq/MfkZ9A9GNUc+xyR9/yyfq+xgz+jTmf2HMDJjimaBpWhU0ZiykuJb431RcMpakUazyDzTm1W/3MNNV7goAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=b85e97d8bc3103107f4406c77cce626c"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -475,13 +475,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-26 23:52:00</sys_created_on>
         <sys_id>bc5e97d8bc3103107f4406c77cce626c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:39:05</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:57</sys_updated_on>
         <ui_id>75a85aaf-e184-4885-9d84-655ba23f0710</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+2XTW/bOBCG/0qgsymQEimJuS02KFCgu11sm16KQqDIYaKtLKkSlSYb5L/v0JLtxBu7QewAPvhmDcn5eDmPxvp6H5QmOA94BIKzjJosFjRmNLWcU8tMTOOYppkJZkGt5oA72675B7TLS2+7UdXgjff3v3egHJizpju7bI3/mbNQD10HtQs76Juh05Crvi+v6rm3OdV/D1u1WNcN7quUK5sa/T48oGdT9m2l7r68WQB9XVYGF4Pzr99mAe7D8hx0wfn9xpK7ayGvVAEV5vHJdWV9hcdfqtry4F+jbGfvL7ZI6cOgrV8GaDrjs2GzAG4d1AYwoFVVD7NgrmoUoOnuVhbUxnysq7Xhuqwdegv85tu+/BddZ5RSv9MClqZhXF095pPgo1lfN6WGj60XbLQ4VVTTGd1Uw7z+c6zBXxVYNVRueVVoGXr0B63P2qcx5WQ/XTc//14GfFfWiwKnxarRqlo9KYcyFIOD3t/HUH7eEGe0fNi8FKjAX30+V22LlhwFvikXUTDpeXhV4UNoq+YnZuf7JFTaVxiimip8h/aLhfmL6kpf7h/oBg/7cJd1+WOA9/7SI5EaBbogCQVBeCwLoiQDEkfSyAxknBU0eFhIm/8YfFGjSJMc+agobuh1V7buN0zhBqbKH2YTj3p3Z9l1E6HW3SaMRtNYZCIilumIcEgzktnYkEQlmVURMKN5eAtdk0+nn0fudW4OAdYLyl8evMTQT6haC7IFqeiE1JEhlYkkSmyiiIi0JJxKRSTlipjYRkLqtBAs3hspnuzqKcnWHeQnx2Hm29sNtreaaL8WaXnwM6bxBLy1bFvAi0/gHRl4VBRUMZkRpfwbvihwllnBieWaWc3wTWuL/WfZ7p6K1x3ku39w+gl40qSpSmxEpKQpjlsmSZEwS0CAiAVPuUxlWDqY+8rh0unnKXudm4PMsl+Xvzx4MYZ+TpAtSPETUkeGVJIk3KQUGbLGEp6lHimcajFXGjiLqOH7I0V3/j9S0aMOGrrFkHgtU9PxvaF67OcQVL1AgRVVawn+L8oWrsSJqyPjimbCJhY/uziYmHAWI1eJtSQzjDLJhMHPk725ynZ3FX/UQjD62QOttYe96dpwdQjAXiDFCrAnWjwr0BbMkhNmR4aZxjlFrdREp4YRriNLJESCFAWPRIIXnyXRqzH79h+xxcFfbxQAAA==</values>
+        <values>H4sIAAAAAAAA/+2XwW7bOBCGXyXQ2RRIiZTE3IoEBQp0t4tt00tRGBQ5TLSVJVWi0mSNvPsOLdlK0qwbJ/XF8M0aksP5f83nsb8sg8IEpwGPQHCWUZPFgsaMppZzapmJaRzTNDPBLKjUAnBn09b/gHbzwseuVdn74HJ51oJyYE7q9uSiMf7jnIW6b1uoXNhCV/ethrnquuKyWviYU923sFGrdV3jvlK5oq4w790dZjZF15Tq9vPeLtBXRWlwMTj98nUW4D6U56ANTpePlp7rT6lyKHHrX4NBJ+/O/8c0d9v4WOfaorocn9+Phz+ug3VrfDFsFsCNg8oAVmFV2cEsWKgK9dft7SaC1pgPVTkFrorKYbbAb77pin/xvoxS6ndaQGUahtXN43z0ewjbc+UUltJr17fjVn1VFxq6wRMDVvWlO7sfGzZ8aLzJwxGn8nJ9ui77RfXn4EawSbB+vRjpOywCGi/V1z4KsR+v6h9/r6t8W1QrV8bFstaq3Dwph97lvfP1LIO++PTI5iHyk9FQgm+X+UI1DUbm+Kqui9UtWPQivCzxIbRl/QOr870VKu0VhvgKVPgW4+er8GfVFl7uH5gGD/vrLqriew/vfPtEIjUKdE4SCoLwWOZESQYkjqSRGcg4y2lwNwu62+6sxB6ejMI3NP/ee5mDbaNB88Fjf0S3RePeYFHXMHpxNxup1tu71k4Niu63j5E2msYiExGxTEeEQ5qRzMaGJCrJrIqAGc3DG2jr+Xj6aXBflmY3PJ8hdI3nBV7ygM1J+i5gRkcwDwHMTCRRYhNFRKQl4VQqIilXxMQ2ElKnuWDxHsDkybZ+lWzqTj/Ffs+s3d+Qff10/bUda3w/4YUP8J0M2gXf+IjvIeBLRU4VkxlRys+WPMe5agUnlmtmNcNvfpvvY65u79d46k7PUO/0A3ylSVOV2IhISVP8McAkyRNmCQgQseApl6kMCwcL7wVcOP00qy9Ls+Nc/bXQNZjnwyVPSd8FTH4E8xDATJKEm5QiidZYwrPUg4kTNuZKA2cRNXwfYNKtvwNVdK87+3Y1sF5K5nj81Wjez7Mbm8/QumFzEvuz/F3oFEc6D4FOmgmbWPw7ysHEhLMY6UysJZlhlEkmDP5J2wOd2faO5ffaE4Y8rwB0yvBqRh+l2g3TZ4jeYPpA9ZNW7AJrcoT1EGDVODOplZro1DDCdWSJhEiQPOeRSLCFsiT6jbB+/Q/I9UopExYAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=bc5e97d8bc3103107f4406c77cce626c"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a45e97d8bc3103107f4406c77cce623e^sys_idNOT INf45e97d8bc3103107f4406c77cce626d"/>
@@ -527,10 +527,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:37:35</sys_created_on>
         <sys_id>e0c86b14bc7103107f4406c77cce62f8</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:19</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:37</sys_updated_on>
         <ui_id>0bad3bcd-bd68-4a68-b703-dd72475660d0</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VXW/TMBT9KyjPaZSPpnR9m4BJk9gGtJqEYEQ3ttNaOHawnX5Q5b/vOh9txTqBJiReeIuPfe895/Qede+p2la1NQt1aQxfSm/25cH3uHQYfu89CSXzZh5RknLLlcxawPfWIGp3gZ+Um0rA7v6IkBUXVLO+WwUaayzT3mz/y5XdVSwTkDOBhXOruVxiOad4KkIoogsSkSSeJHEYxtNxlE+SPIppAgwSfDcUvhnIvXrfIv6zrN08xM0wSWnqaEWh77GtZZIyHF2AMMz3SpAUrNK7A6IZ0DspjsCKS9spLmFr+E/sHaepe1gw1Eh6Ow7HrLdqcElxwu4qR7BDLORisFCJupS3nQ5nMiugFvbE5NpgP1Y50o5FT6mYr9Tm0zDwistWYH8pFAFxOIFFG/LaMuN+GCZYiY2yEqoKzckqrda8LUYuZbAUeAgKoTY41G1KAMQRD9AjCK4Qf9vC96C5U3GDbbC4o5mD4SRrtwrbWY0SmtaW7EftCHUCeylZ5wY+METzyl7inDXrWTf+05U82cb9npIwSadpPCoiEo/G7PV0NC0SOprAZFpAzCJKxsGWaZUhMZ1x2jRf6zBMaNv+2+3HF7W4nr+7+bD4/DQM/57Q38jiBaRFGoXp+SyOJ+eyeCaFzwcw/k0A3cr8Yf7CMPwfwNMAcpN1Qeq1tcNfnL8HF7Zugun2hjLCDRJZOOx6+OdwFztcAE5OoY3S352EI9Y8AlsaWqWDBgAA</values>
@@ -554,10 +554,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-26 23:52:00</sys_created_on>
         <sys_id>305e97d8bc3103107f4406c77cce626c</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:19</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:37</sys_updated_on>
         <ui_id>af5d47b4-666c-45b5-9936-4b223be174e9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWZBky69b0CJAgbYB6iCXNiBW5MomSpGqSNlxDf97l3rYRuKgRZFjb+JQuzsz2tEhMI2rGmfvzY21cq2D5bfHMJDaY/R8CDSUGCwDbrSQThrNWiAMtqAaf0GPQtpKwf7hjPCNVKLGvlsFNdU4rIPl4dmV21fIFOSoqHDlaqnXVC4FnYoYimTBEz5Op+M0jtP5JMmn4zxJxRgQxvTeUPh+IPfuU4uEr7L28wi3wyRTC08ricMAnxxqgTS6AGUxDErQApyp9yekRhB3Wp2BjdSuU1zCk5W/qHeaZf7FAkkj7+04HVlv1eCSkRzvKk+wQxzkarDQqKbUXzod3mQsoFHuwuTGUj+sPGnPoqdUrDZm93UYeCt1K7C/VIaDOp3AkQ1549D6D4MKS2rESqgqModVtdnKtpi4lNFa0SEqlNnRUL8pEXBPPCKPILol/EMLP0AtvYrP1IaKO5o5WMlZu1XUztUk4djawn42nlAnsJfCOjfoBctrWbkbmrPFnvUxfLmSF9t4OKTJIlnMp8Uoh1kxmgDOR7mY4CiexWkyB5ghZhFjHXlmHbjGMhaVaC2s8Xj83sTxWKwazgl5udxvP+AtsrKArMiSOLuelcn0WlaupOT1gKR/CIj/pH+ZjziO/wfkMiDSsm7Re23t8H/Ox6MPQzfBdnsjkEtLRO499nH4s/uLPS2A5JfQztQ/vIQzdvwNDPN0NSMGAAA=</values>
@@ -581,10 +581,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-26 23:52:00</sys_created_on>
         <sys_id>f45e97d8bc3103107f4406c77cce626c</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:19</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:37</sys_updated_on>
         <ui_id>9d77a6f2-9907-4319-b61f-e5e535474979</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6VSTW/bMAz9Lzonhu1kSZxbgaFAD22BruhlKAxaohNhsqTpI6ln+L+Pip106HUnm4/k43siB2ZisDH4V3PnvTxotv/5vmBSJ4z+B6ahQ7ZnMmDn2YKdQMUUD0NZVEW127TLBrbtcg24WzZijct8m5fFDmCL+C0LssMadXAS/ThSv5DeKujf/pOGH6USDme5FhypDOjYfviSCr3FWkGDiqa9IDdOJBtSUFhUoq2KvOKrcrMq87zcrYtms2qKUqwAxYbqrp0Ps/0vr5HYKXQ3XvokFWW+YPgRUAukQS0ojwvWgRYQjOvZPrhIgEMQz1r1t4qj1IHoWKr98PIPcRd5ngpbJEccp+QtrOfXnGB+NJLjsw3S6AkJ0Ki5hxsVO/00yU97wBaiCtc9EBI98aFNmpOKWVL742jOL9eB91Jf/M1JZTioWwSB9tPEgD6tARV2RFR3YK3Uh9o6c5KXZtLSZQdFQdYqc6ah6fAy4El4Rk8E2T3h3y/wGziZXDwSDTWPF/f175jmTj5mxfVkmgo8d9KGO6I74SxufE+XOzH56TAEculp4GvCHq73nhI9LVnyf6Gzcb+S1E9s/AvVA0LFOQMAAA==</values>
@@ -608,10 +608,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:38:43</sys_created_on>
         <sys_id>9d09ef14bc7103107f4406c77cce6291</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:19</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:37</sys_updated_on>
         <ui_id>082b13e2-f054-474a-b839-6fde02cd4097</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
@@ -704,7 +704,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>xero__create_time_entries_on_time_card_approval_new</internal_name>
-        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Time Card Record","reference":"time_card","reference_display":"Time Card","type":"reference","base_type":"reference","usedInstances":{"97c2139e-cb4d-489b-a2cb-e2eab5bd29ec":["record"]},"attributes":{}},{"name":"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4.xero_user_id","label":"1 - Xero - Get Users➛Xero User ID","reference_display":"Xero User ID","type":"string","base_type":"string","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["user_id"],"cb21ce5f-2a50-465b-a77c-276cd5cae83e":["condition"],"75a85aaf-e184-4885-9d84-655ba23f0710":["user_id"],"0bad3bcd-bd68-4a68-b703-dd72475660d0":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f9fffb1c-fd69-47ff-b8cd-3309c7fbaaaf"}},{"name":"Created or Updated_1.current.user.email","label":"Trigger - Record Created or Updated➛Time Card Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4":["email"]}},{"name":"Created or Updated_1.current.resource_assignment.task.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["task_id"],"75a85aaf-e184-4885-9d84-655ba23f0710":["task_id"]}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"time_card","column_name":"sys_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["time_card_sysid"]}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.time_entries","label":"5 - Xero - Get Time Card➛Time Entries","reference_display":"Time Entries","type":"array.object","base_type":"array.object","usedInstances":{"9d77a6f2-9907-4319-b61f-e5e535474979":["items"]},"attributes":{"sourceId":"c61e078a-5d25-4c54-8840-f3a6fb58afba","child_name":"root_array_object","uiUniqueId":"004556f7-a581-40bb-8e4c-fd1daa77b956","uiTypeLabel":"Array.Object","co_type_name":"FD616d8dc4a53503104d32df72dd144ffc","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"8fe3327d-ca7d-4667-8786-7e9a0d730811","uiType":"array.object","child_type":"object","child_uiUniqueId":"6e7e48e1-01cd-4582-9c0f-d34e9d9a3778"}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.__action_status__.message","label":"5 - Xero - Get Time Card➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"af5d47b4-666c-45b5-9936-4b223be174e9":["condition"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.userId","label":"7 - For Each➛root_array_object➛userId","reference":"","reference_display":"userId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.taskId","label":"7 - For Each➛root_array_object➛taskId","reference":"","reference_display":"taskId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.dateUtc","label":"7 - For Each➛root_array_object➛dateUtc","reference":"","reference_display":"dateUtc","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["dateutc"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.duration","label":"7 - For Each➛root_array_object➛duration","reference":"","reference_display":"duration","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["duration"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.description","label":"7 - For Each➛root_array_object➛description","reference":"","reference_display":"description","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["description"]},"attributes":{}},{"name":"Created or Updated_1.current.resource_assignment.task.parent.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Parent➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["project_id"]}}]</label_cache>
+        <label_cache>[{"name":"Created or Updated_1.current.resource_assignment.task.parent.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Parent➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["project_id"]}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.description","label":"7 - For Each➛root_array_object➛description","reference":"","reference_display":"description","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["description"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.duration","label":"7 - For Each➛root_array_object➛duration","reference":"","reference_display":"duration","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["duration"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.dateUtc","label":"7 - For Each➛root_array_object➛dateUtc","reference":"","reference_display":"dateUtc","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["dateutc"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.taskId","label":"7 - For Each➛root_array_object➛taskId","reference":"","reference_display":"taskId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.userId","label":"7 - For Each➛root_array_object➛userId","reference":"","reference_display":"userId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.__action_status__.message","label":"5 - Xero - Get Time Card➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"af5d47b4-666c-45b5-9936-4b223be174e9":["condition"]},"attributes":{}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.time_entries","label":"5 - Xero - Get Time Card➛Time Entries","reference_display":"Time Entries","type":"array.object","base_type":"array.object","usedInstances":{"9d77a6f2-9907-4319-b61f-e5e535474979":["items"]},"attributes":{"sourceId":"c61e078a-5d25-4c54-8840-f3a6fb58afba","child_name":"root_array_object","uiUniqueId":"004556f7-a581-40bb-8e4c-fd1daa77b956","uiTypeLabel":"Array.Object","co_type_name":"FD616d8dc4a53503104d32df72dd144ffc","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"8fe3327d-ca7d-4667-8786-7e9a0d730811","uiType":"array.object","child_type":"object","child_uiUniqueId":"6e7e48e1-01cd-4582-9c0f-d34e9d9a3778"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"time_card","column_name":"sys_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["time_card_sysid"]}},{"name":"Created or Updated_1.current.resource_assignment.task.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["task_id"],"75a85aaf-e184-4885-9d84-655ba23f0710":["task_id"]}},{"name":"Created or Updated_1.current.user.email","label":"Trigger - Record Created or Updated➛Time Card Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4":["email"]}},{"name":"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4.xero_user_id","label":"1 - Xero - Get Users➛Xero User ID","reference_display":"Xero User ID","type":"string","base_type":"string","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["user_id"],"cb21ce5f-2a50-465b-a77c-276cd5cae83e":["condition"],"75a85aaf-e184-4885-9d84-655ba23f0710":["user_id"],"0bad3bcd-bd68-4a68-b703-dd72475660d0":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f9fffb1c-fd69-47ff-b8cd-3309c7fbaaaf"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Time Card Record","reference":"time_card","reference_display":"Time Card","type":"reference","base_type":"reference","usedInstances":{"97c2139e-cb4d-489b-a2cb-e2eab5bd29ec":["record"]},"attributes":{}}]</label_cache>
         <master>true</master>
         <name>Xero – Create Time Entries on Time Card Approval</name>
         <natlang/>
@@ -721,7 +721,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>36192354bc7103107f4406c77cce62ce</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -729,7 +729,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:22</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:41</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -836,14 +836,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:39:06</sys_created_on>
         <sys_id>72192354bc7103107f4406c77cce62cf</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:21</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1004,14 +1004,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:39:06</sys_created_on>
         <sys_id>f6196354bc7103107f4406c77cce6208</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:21</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1039,12 +1039,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:39:07</sys_created_on>
         <sys_id>c7196354bc7103107f4406c77cce6212</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:39:07</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:40</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
-        <trigger_inputs>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</trigger_inputs>
+        <trigger_inputs>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</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create_or_update</trigger_type>
         <updation_source/>
@@ -1165,10 +1165,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:39:07</sys_created_on>
         <sys_id>0b196354bc7103107f4406c77cce6210</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:22</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:41</sys_updated_on>
         <ui_id>0bad3bcd-bd68-4a68-b703-dd72475660d0</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1V247TMBD9FeTnNMqlKd2+rbqstNJegK5WQrBEE9tpLZw42E4vRP33HSfpRWwRLCDxwlt87Jk553SO2hBV26q25l6dGyPmJZl8fPSIKB2G3w0poeBkQqgqmbBClWkLeGQJsnYX+MmEqSRsHg4IXQjJNO+7VaCxxnJNJs13V4JhQR5AHp7RkMbRKI6CIBoPw2wUZ2HEYuAQY0MJGZf4dLqj8eq6Rbwf8rObyuHGalHO+/N132W2A5VmjlUYeISvLS8ZRz45SMM9UkDJwCq92SOaA7sr5QFYiNJ2ggtYG/ENB0ZJ4h7mHCXS3o39Me2d6uD8AiwglZraWu+NU4Jy05nDeA61tNNjrHtwVzmpXYmFTO6qlayL8rZzhOwbHP0wtUESvHJKHfVeRz5bqNX7HctLUbau9JdSUZD7E1j0Lqut49MQLnmBjdICqgodTSutlqItRi6FP5d48HOpVjjUbZcP1BH30VjwLxG/aOEH0MKpuME2WNzRzMAImrabiO3QJk62HjEbM5VgzEEkupt+rR3FTnIvLu38cSVUi8qe4+Ql73VsveeLfbTTTcNoECfjJBrkIY0GQ/56PBjnMRuMYDTOIeIho0N/zbVKkapOBdtuP9VBELO2/efbd7/V4mr25ubt/Yfnkfr3hF6W6DNI8iQMktOJHo5OJfpEll8Y4+gnMXY79IspDoLgf4z/OMbCpF34em3t8L+Y4kcX2W7m3msqDFK7d9jV7l/MXWxwuQQ9hlZKf3GiDtj2CRqZ83kPBwAA</values>
@@ -1192,10 +1192,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:39:07</sys_created_on>
         <sys_id>4f196354bc7103107f4406c77cce6210</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:22</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:41</sys_updated_on>
         <ui_id>082b13e2-f054-474a-b839-6fde02cd4097</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
@@ -1219,10 +1219,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:39:07</sys_created_on>
         <sys_id>83196354bc7103107f4406c77cce6211</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:22</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:41</sys_updated_on>
         <ui_id>af5d47b4-666c-45b5-9936-4b223be174e9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjrGdOF9vJaUw6FZYS1+2Iq5lORGTJc+SkmYm/31XtuOENmMr6+PerCPde8850sEN0c5WzpoHfWWMWCuy/PoUEKE8ht8NUVBysiRMq1xYoRVtgYBsQTq/gZ+5MJWE/eMJYRsh85r33SqoscbymiybF1six4IigiJesJiNk+k4iaJkPomz6TiLk3wMHMbYUELGJR5dHWl8uG2R4Lf87L7yuLG1UOt+fdt3uT+Cus49qzgKCH+2XOUc+RQgDQ9ICSoHq+v9gNQc8jslT8BGKNsJLuHZiJ84MElTf7DgKJH1bgxL2jvVwcU1WEAqjllXD8ZpwbjpzMl5AU7a1TnWHbirvNSuxEImj9VaulJ97hwhQ4Ozi3EGSfDKK/XUex3F/UbvvhxZ3gjVutJvSs1ADiuw6F3mrOfTEC55iY1oCVWFjtKq1lvRFiOXMlxLXISF1Dsc6l9XCMwTD9FYCG8Qv27hR6iFV/EJ22BxRzMDIxhtXyK2Q5s4OQTE7M1KgjEnkegu/eE8xU5yL452/vgSVovKXuHkLe91HILXD/vsTTdNEi/ixXxajDKYFaMJ8Pkoyyd8FM2iJJ4DzDhPQ0o7OdRYsM5QGpbcGFjzw+Gbi6Jxfu8YXpx5HZH3H/C2xC0gLdI4Si8nbjK9lLgLWXtjzJI/xMzf8V+mLIqi/zH755gJQ7tw9Nra4e+YsicfqW7m4DUTBqk9eOzj8S/jN/b4uAQ7h3a6/u5FnbDDL/y3TTuvBgAA</values>
@@ -1246,10 +1246,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:39:07</sys_created_on>
         <sys_id>c7196354bc7103107f4406c77cce6211</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:22</sys_updated_on>
+        <sys_updated_on>2026-06-28 01:43:41</sys_updated_on>
         <ui_id>9d77a6f2-9907-4319-b61f-e5e535474979</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6VTXW+jMBD8L34mCEguCXmrWlWqdHeV2qovpwot9pJYZ2zONkk5xH+/dfho1dd7gh3vzs4Mpmem9U3r3Yu5cU4eNTv8eouY1AGj955pqJEdmPRYOxaxM6g21H2fpXma77fVqoRdtdoA7lel2OAq2SVZugfYIX6LvayxQO2tRDcMNC+kaxR0r/9Jw09SCYuT3AYsqfRo2aH/ciQFbUlzUeVpkvN1tl1nSZLtN2m5XZdpJtaAYkuECkpU1Pow+fxi23dNKC1yY8UMfJ9mnhaUHkFElkQM3z1qgbS+AuUwYjVoAd7Yjh28bQmwCOJRq27pOEntiY6F3ncn/9LGNElCY4VkiON4uJTFFOYIV3fg4ZmouW/t1MpPRnJ0YxQCK2iVv/2MjQ2PjZdGjyMeSjVPG9XW+ueYBFsI5m9HSOtIBDbBaJA++aieT+byNKu8l/oaynSoDAe1VODpm5atD3p6hgprIipqaBqpj0VjzVleh0lLHR8VFXGlzIWWhssaAw/CY8oV4nvC767wK1gZXPwgGhoeIuY6d6vAuQ8vFGLxpw1KRmeTh2KMIYxwKxt/QwvOOMkd3sL9H7mXTLl0JOElYA/zXxMOOrpBkn+GLsb+DuI/sOEfJc42qH8DAAA=</values>
@@ -1336,21 +1336,21 @@
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a45e97d8bc3103107f4406c77cce623e^sys_idNOT IN53196354bc7103107f4406c77cce622f"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
-        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
-        <plan/>
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"53196354bc7103107f4406c77cce622f","name":"plan","plan_signature":null}}</plan>
         <plan_id>a45e97d8bc3103107f4406c77cce623e</plan_id>
-        <snapshot>36192354bc7103107f4406c77cce62ce</snapshot>
+        <snapshot>6e81013c4c7103107f449d4b5ccbf0d4</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-27 00:39:08</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>53196354bc7103107f4406c77cce622f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:23</sys_updated_on>
-        <trigger display_value="">8fd9eb54bc7103107f4406c77cce6280</trigger>
+        <sys_updated_on>2026-06-28 01:43:43</sys_updated_on>
+        <trigger display_value="">4371cdf84c7103107f449d4b5ccbf0f5</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a45e97d8bc3103107f4406c77cce623e"/>
 </record_update>

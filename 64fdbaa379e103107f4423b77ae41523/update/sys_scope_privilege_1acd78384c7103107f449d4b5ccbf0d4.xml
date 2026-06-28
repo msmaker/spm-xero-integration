@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>write</operation>
+        <source_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-28 01:27:33</sys_created_on>
+        <sys_id>1acd78384c7103107f449d4b5ccbf0d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>time_card</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_scope_privilege_1acd78384c7103107f449d4b5ccbf0d4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-28 01:27:33</sys_updated_on>
+        <target_name>time_card</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>
