@@ -15,10 +15,10 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>xero__create_time_entries_on_time_card_approval</internal_name>
-        <label_cache>[{"name":"Created or Updated_1.current.resource_assignment.task.parent.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Parent➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["project_id"]}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.description","label":"4 - For Each➛root_array_object➛description","reference":"","reference_display":"description","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["description"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.duration","label":"4 - For Each➛root_array_object➛duration","reference":"","reference_display":"duration","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["duration"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.dateUtc","label":"4 - For Each➛root_array_object➛dateUtc","reference":"","reference_display":"dateUtc","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["dateutc"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.taskId","label":"4 - For Each➛root_array_object➛taskId","reference":"","reference_display":"taskId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.userId","label":"4 - For Each➛root_array_object➛userId","reference":"","reference_display":"userId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.__action_status__.message","label":"2 - Xero - Get Time Card➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"af5d47b4-666c-45b5-9936-4b223be174e9":["condition"]},"attributes":{}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.time_entries","label":"2 - Xero - Get Time Card➛Time Entries","reference_display":"Time Entries","type":"array.object","base_type":"array.object","usedInstances":{"9d77a6f2-9907-4319-b61f-e5e535474979":["items"]},"attributes":{"sourceId":"c61e078a-5d25-4c54-8840-f3a6fb58afba","child_name":"root_array_object","uiUniqueId":"004556f7-a581-40bb-8e4c-fd1daa77b956","uiTypeLabel":"Array.Object","co_type_name":"FD616d8dc4a53503104d32df72dd144ffc","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"8fe3327d-ca7d-4667-8786-7e9a0d730811","uiType":"array.object","child_type":"object","child_uiUniqueId":"6e7e48e1-01cd-4582-9c0f-d34e9d9a3778"}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"time_card","column_name":"sys_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["time_card_sysid"]}},{"name":"Created or Updated_1.current.resource_assignment.task.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["task_id"],"75a85aaf-e184-4885-9d84-655ba23f0710":["task_id"]}},{"name":"Created or Updated_1.current.user.email","label":"Trigger - Record Created or Updated➛Time Card Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4":["email"]}},{"name":"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4.xero_user_id","label":"1 - Xero - Get Users➛Xero User ID","reference_display":"Xero User ID","type":"string","base_type":"string","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["user_id"],"cb21ce5f-2a50-465b-a77c-276cd5cae83e":["condition"],"75a85aaf-e184-4885-9d84-655ba23f0710":["user_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f9fffb1c-fd69-47ff-b8cd-3309c7fbaaaf"}}]</label_cache>
+        <label_cache>[{"name":"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4.xero_user_id","label":"1 - Xero - Get Users➛Xero User ID","reference_display":"Xero User ID","type":"string","base_type":"string","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["user_id"],"cb21ce5f-2a50-465b-a77c-276cd5cae83e":["condition"],"75a85aaf-e184-4885-9d84-655ba23f0710":["user_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f9fffb1c-fd69-47ff-b8cd-3309c7fbaaaf"}},{"name":"Created or Updated_1.current.user.email","label":"Trigger - Record Created or Updated➛Time Card Record➛User➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"dc035852-f1c2-4e78-8f3d-6a68fa2e1dc4":["email"]}},{"name":"Created or Updated_1.current.resource_assignment.task.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["task_id"],"75a85aaf-e184-4885-9d84-655ba23f0710":["task_id"]}},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"time_card","column_name":"sys_id","usedInstances":{"2191986f-ba7f-4ae8-bd4e-070218aa7ee5":["time_card_sysid"]}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.time_entries","label":"2 - Xero - Get Time Card➛Time Entries","reference_display":"Time Entries","type":"array.object","base_type":"array.object","usedInstances":{"9d77a6f2-9907-4319-b61f-e5e535474979":["items"]},"attributes":{"sourceId":"c61e078a-5d25-4c54-8840-f3a6fb58afba","child_name":"root_array_object","uiUniqueId":"004556f7-a581-40bb-8e4c-fd1daa77b956","uiTypeLabel":"Array.Object","co_type_name":"FD616d8dc4a53503104d32df72dd144ffc","child_label":"root_array_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"8fe3327d-ca7d-4667-8786-7e9a0d730811","uiType":"array.object","child_type":"object","child_uiUniqueId":"6e7e48e1-01cd-4582-9c0f-d34e9d9a3778"}},{"name":"2191986f-ba7f-4ae8-bd4e-070218aa7ee5.__action_status__.message","label":"2 - Xero - Get Time Card➛Action Status➛Message","reference":"","reference_display":"Message","type":"string","base_type":"string","usedInstances":{"af5d47b4-666c-45b5-9936-4b223be174e9":["condition"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.userId","label":"4 - For Each➛root_array_object➛userId","reference":"","reference_display":"userId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.taskId","label":"4 - For Each➛root_array_object➛taskId","reference":"","reference_display":"taskId","type":"string","base_type":"string","usedInstances":{},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.dateUtc","label":"4 - For Each➛root_array_object➛dateUtc","reference":"","reference_display":"dateUtc","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["dateutc"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.duration","label":"4 - For Each➛root_array_object➛duration","reference":"","reference_display":"duration","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["duration"]},"attributes":{}},{"name":"9d77a6f2-9907-4319-b61f-e5e535474979.item.description","label":"4 - For Each➛root_array_object➛description","reference":"","reference_display":"description","type":"string","base_type":"string","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["description"]},"attributes":{}},{"name":"Created or Updated_1.current.resource_assignment.task.parent.correlation_id","label":"Trigger - Record Created or Updated➛Time Card Record➛Resource assignment➛Task➛Parent➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"task","column_name":"correlation_id","usedInstances":{"75a85aaf-e184-4885-9d84-655ba23f0710":["project_id"]}}]</label_cache>
         <master_snapshot>9b9f8d48d83503107f440f1d3033075a</master_snapshot>
         <master_snapshot_digest/>
-        <name>Xero – Create Time Entries on Time Card Approval OLD</name>
+        <name>OLD Xero – Create Time Entries on Time Card Approval</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -36,19 +36,19 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>35c68980d83503107f440f1d3033075c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Xero – Create Time Entries on Time Card Approval OLD</sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>OLD Xero – Create Time Entries on Time Card Approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_flow_35c68980d83503107f440f1d3033075c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:42:04</sys_updated_on>
+        <sys_updated_on>2026-06-30 00:33:13</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record display_value="Created 2026-06-26 21:41:59">81c9ab54bc7103107f4406c77cce620c</version_record>
+        <version_record display_value="Created 2026-06-29 21:33:11">dd84c399a03103107f44bcae66bd7b9d</version_record>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=35c68980d83503107f440f1d3033075c"/>
     <sys_variable_value action="delete_multiple" query="document_key=35c68980d83503107f440f1d3033075c"/>
@@ -104,7 +104,7 @@
         <ancestral_if_else_logic/>
         <component_indexes/>
         <duration>1970-01-01 00:00:00</duration>
-        <flow display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</flow>
+        <flow display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
         <label>Xero - Get Users</label>
         <order>0</order>
         <stage_id>de8246c0d8f503107f440f1d303307e0</stage_id>
@@ -173,7 +173,7 @@
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</model>
+        <model display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</model>
         <model_id>35c68980d83503107f440f1d3033075c</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c</name>
@@ -257,7 +257,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</model>
+        <model display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</model>
         <model_id>35c68980d83503107f440f1d3033075c</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c</name>
@@ -341,7 +341,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</model>
+        <model display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</model>
         <model_id>35c68980d83503107f440f1d3033075c</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_35c68980d83503107f440f1d3033075c</name>
@@ -391,7 +391,7 @@
     <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</flow>
+        <flow display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
         <generation_source/>
         <name>Created or Updated</name>
         <published_version/>
@@ -417,7 +417,7 @@
         <comment/>
         <compiled_snapshot>196d8dc4d83503107f440f1d303307d7</compiled_snapshot>
         <display_text/>
-        <flow display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</flow>
+        <flow display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
         <generation_source/>
         <order>2</order>
         <parent_ui_id/>
@@ -441,7 +441,7 @@
         <comment/>
         <compiled_snapshot>c2e54180d83503107f440f1d3033078c</compiled_snapshot>
         <display_text/>
-        <flow display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</flow>
+        <flow display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
         <generation_source/>
         <order>5</order>
         <parent_ui_id>9d77a6f2-9907-4319-b61f-e5e535474979</parent_ui_id>
@@ -463,7 +463,7 @@
         <attributes/>
         <comment/>
         <display_text/>
-        <flow display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</flow>
+        <flow display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
@@ -490,7 +490,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</flow>
+        <flow display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -501,10 +501,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:43:56</sys_created_on>
         <sys_id>d63ec908d83503107f440f1d303307c8</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:41:57</sys_updated_on>
+        <sys_updated_on>2026-06-30 00:33:09</sys_updated_on>
         <ui_id>af5d47b4-666c-45b5-9936-4b223be174e9</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWZBky69b0CJAgbYB6iCXNiBW5MomSpGqSNlxDf97l3rYRuKgRZFjb+JQuzsz2tEhMI2rGmfvzY21cq2D5bfHMJDaY/R8CDSUGCwDbrSQThrNWiAMtqAaf0GPQtpKwf7hjPCNVKLGvlsFNdU4rIPl4dmV21fIFOSoqHDlaqnXVC4FnYoYimTBEz5Op+M0jtP5JMmn4zxJxRgQxvTeUPh+IPfuU4uEr7L28wi3wyRTC08ricMAnxxqgTS6AGUxDErQApyp9yekRhB3Wp2BjdSuU1zCk5W/qHeaZf7FAkkj7+04HVlv1eCSkRzvKk+wQxzkarDQqKbUXzod3mQsoFHuwuTGUj+sPGnPoqdUrDZm93UYeCt1K7C/VIaDOp3AkQ1549D6D4MKS2rESqgqModVtdnKtpi4lNFa0SEqlNnRUL8pEXBPPCKPILol/EMLP0AtvYrP1IaKO5o5WMlZu1XUztUk4djawn42nlAnsJfCOjfoBctrWbkbmrPFnvUxfLmSF9t4OKTJIlnMp8Uoh1kxmgDOR7mY4CiexWkyB5ghZhFjHXlmHbjGMhaVaC2s8Xj83sTxWKwazgl5udxvP+AtsrKArMiSOLuelcn0WlaupOT1gKR/CIj/pH+ZjziO/wfkMiDSsm7Re23t8H/Ox6MPQzfBdnsjkEtLRO499nH4s/uLPS2A5JfQztQ/vIQzdvwNDPN0NSMGAAA=</values>
@@ -517,7 +517,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</flow>
+        <flow display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
@@ -528,10 +528,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:43:07</sys_created_on>
         <sys_id>9e0e894cd8f103107f440f1d303307a9</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-27 00:41:57</sys_updated_on>
+        <sys_updated_on>2026-06-30 00:33:09</sys_updated_on>
         <ui_id>9d77a6f2-9907-4319-b61f-e5e535474979</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6VSTW/bMAz9Lzonhu1kSZxbgaFAD22BruhlKAxaohNhsqTpI6ln+L+Pip106HUnm4/k43siB2ZisDH4V3PnvTxotv/5vmBSJ4z+B6ahQ7ZnMmDn2YKdQMUUD0NZVEW127TLBrbtcg24WzZijct8m5fFDmCL+C0LssMadXAS/ThSv5DeKujf/pOGH6USDme5FhypDOjYfviSCr3FWkGDiqa9IDdOJBtSUFhUoq2KvOKrcrMq87zcrYtms2qKUqwAxYbqrp0Ps/0vr5HYKXQ3XvokFWW+YPgRUAukQS0ojwvWgRYQjOvZPrhIgEMQz1r1t4qj1IHoWKr98PIPcRd5ngpbJEccp+QtrOfXnGB+NJLjsw3S6AkJ0Ki5hxsVO/00yU97wBaiCtc9EBI98aFNmpOKWVL742jOL9eB91Jf/M1JZTioWwSB9tPEgD6tARV2RFR3YK3Uh9o6c5KXZtLSZQdFQdYqc6ah6fAy4El4Rk8E2T3h3y/wGziZXDwSDTWPF/f175jmTj5mxfVkmgo8d9KGO6I74SxufE+XOzH56TAEculp4GvCHq73nhI9LVnyf6Gzcb+S1E9s/AvVA0LFOQMAAA==</values>
@@ -629,7 +629,7 @@
         <name>Xero – Create Time Entries on Time Card Approval</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Xero – Create Time Entries on Time Card Approval OLD">35c68980d83503107f440f1d3033075c</parent_flow>
+        <parent_flow display_value="OLD Xero – Create Time Entries on Time Card Approval">35c68980d83503107f440f1d3033075c</parent_flow>
         <remote_trigger_id/>
         <run_as>user</run_as>
         <run_with_roles/>
