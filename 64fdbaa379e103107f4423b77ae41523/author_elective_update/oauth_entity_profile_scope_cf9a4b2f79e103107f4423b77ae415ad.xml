@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile_scope">
+    <oauth_entity_profile_scope action="DELETE">
+        <oauth_entity_profile display_value="Xero OAuth Privider default_profile">1d798beb79e103107f4423b77ae41587</oauth_entity_profile>
+        <oauth_entity_scope display_value="accounting.invoices">f54a472f79e103107f4423b77ae41577</oauth_entity_scope>
+        <sys_class_name>oauth_entity_profile_scope</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 14:30:52</sys_created_on>
+        <sys_id>cf9a4b2f79e103107f4423b77ae415ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1d798beb79e103107f4423b77ae41587</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>oauth_entity_profile_scope_cf9a4b2f79e103107f4423b77ae415ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 14:30:52</sys_updated_on>
+    </oauth_entity_profile_scope>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>71870e16973d0b1007d2fd81c153af20</instance_id>
+        <instance_name>nowlearning-nlinst04382434-8g66s-0001</instance_name>
+        <name>oauth_entity_profile_scope_cf9a4b2f79e103107f4423b77ae415ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile_scope">
+    <oauth_entity_profile_scope action="INSERT_OR_UPDATE">
+        <oauth_entity_profile display_value="Xero OAuth Privider default_profile">1d798beb79e103107f4423b77ae41587</oauth_entity_profile>
+        <oauth_entity_scope display_value="accounting.invoices">f54a472f79e103107f4423b77ae41577</oauth_entity_scope>
+        <sys_class_name>oauth_entity_profile_scope</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 14:30:52</sys_created_on>
+        <sys_id>cf9a4b2f79e103107f4423b77ae415ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1d798beb79e103107f4423b77ae41587</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>oauth_entity_profile_scope_cf9a4b2f79e103107f4423b77ae415ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 14:30:52</sys_updated_on>
+    </oauth_entity_profile_scope>
+</record_update>]]></payload>
+        <payload_hash>-1740897794</payload_hash>
+        <record_name>1d798beb79e103107f4423b77ae41587</record_name>
+        <reverted_from/>
+        <source>5b5da63a8d7103107f4467990d9deefc</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:43:19</sys_created_on>
+        <sys_id>157d2e3a8d7103107f4467990d9deea7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f2d957be00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 14:43:19</sys_updated_on>
+        <type>OAuth Entity Profile Scope</type>
+        <update_guid>d17d2e3abf710310eef9f8dc6d0604a7</update_guid>
+        <update_guid_history>d17d2e3abf710310eef9f8dc6d0604a7:-1740897794</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Xero OAuth Privider default_profile">7c7589e4408203107f44fd0dea9e03d2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-09 17:38:16</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_profile_scope">oauth_entity_profile_scope</sys_db_object>
+        <sys_id>c50ff79c7f8a4836a482d14e50cd2ab1</sys_id>
+        <sys_metadata>cf9a4b2f79e103107f4423b77ae415ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1d798beb79e103107f4423b77ae41587</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>oauth_entity_profile_scope_cf9a4b2f79e103107f4423b77ae415ad</sys_update_name>
+        <sys_update_version display_value="oauth_entity_profile_scope_cf9a4b2f79e103107f4423b77ae415ad">157d2e3a8d7103107f4467990d9deea7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-09 17:38:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

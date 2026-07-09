@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_scope">
+    <oauth_entity_scope action="DELETE">
+        <in_default_profile>true</in_default_profile>
+        <name>accounting.invoices.read</name>
+        <oauth_entity display_value="Xero OAuth Privider">b6d8c3eb79e103107f4423b77ae41555</oauth_entity>
+        <oauth_entity_scope>accounting.invoices.read</oauth_entity_scope>
+        <sys_class_name>oauth_entity_scope</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 14:30:01</sys_created_on>
+        <sys_id>e34a472f79e103107f4423b77ae41579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>accounting.invoices.read</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>oauth_entity_scope_e34a472f79e103107f4423b77ae41579</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 14:30:01</sys_updated_on>
+    </oauth_entity_scope>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>71870e16973d0b1007d2fd81c153af20</instance_id>
+        <instance_name>nowlearning-nlinst04382434-8g66s-0001</instance_name>
+        <name>oauth_entity_scope_e34a472f79e103107f4423b77ae41579</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_scope">
+    <oauth_entity_scope action="INSERT_OR_UPDATE">
+        <in_default_profile>true</in_default_profile>
+        <name>accounting.invoices.read</name>
+        <oauth_entity display_value="Xero OAuth Privider">b6d8c3eb79e103107f4423b77ae41555</oauth_entity>
+        <oauth_entity_scope>accounting.invoices.read</oauth_entity_scope>
+        <sys_class_name>oauth_entity_scope</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 14:30:01</sys_created_on>
+        <sys_id>e34a472f79e103107f4423b77ae41579</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>accounting.invoices.read</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>oauth_entity_scope_e34a472f79e103107f4423b77ae41579</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 14:30:01</sys_updated_on>
+    </oauth_entity_scope>
+</record_update>]]></payload>
+        <payload_hash>-1422627046</payload_hash>
+        <record_name>accounting.invoices.read</record_name>
+        <reverted_from/>
+        <source>5b5da63a8d7103107f4467990d9deefc</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:43:19</sys_created_on>
+        <sys_id>617d2e3a8d7103107f4467990d9deead</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f2d957da20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 14:43:19</sys_updated_on>
+        <type>OAuth Entity Scope</type>
+        <update_guid>217d2e3aff710310dcdc0d35b4bcc8ad</update_guid>
+        <update_guid_history>217d2e3aff710310dcdc0d35b4bcc8ad:-1422627046</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="accounting.invoices.read">747589e4408203107f44fd0dea9e0367</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-09 17:38:15</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_scope">oauth_entity_scope</sys_db_object>
+        <sys_id>4aecec408ffd4058b0fd63810845b851</sys_id>
+        <sys_metadata>e34a472f79e103107f4423b77ae41579</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>accounting.invoices.read</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>oauth_entity_scope_e34a472f79e103107f4423b77ae41579</sys_update_name>
+        <sys_update_version display_value="oauth_entity_scope_e34a472f79e103107f4423b77ae41579">617d2e3a8d7103107f4467990d9deead</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-09 17:38:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

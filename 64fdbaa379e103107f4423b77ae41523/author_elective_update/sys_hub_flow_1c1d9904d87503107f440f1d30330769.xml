@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_hub_flow action="DELETE">
+<access>public</access>
+<acls/>
+<active>false</active>
+<annotation/>
+<attributes>labelCacheCleanUpExecuted=true</attributes>
+<authored_on_release_version>28100</authored_on_release_version>
+<callable_by_client_api>false</callable_by_client_api>
+<category display_value=""/>
+<compiler_build/>
+<copied_from/>
+<copied_from_name/>
+<description/>
+<display_name_after_preview/>
+<flow_priority>MEDIUM</flow_priority>
+<generation_source/>
+<internal_name>xero__createupdate_project_daily</internal_name>
+<label_cache>null</label_cache>
+<latest_snapshot/>
+<master_snapshot/>
+<master_snapshot_digest/>
+<name>Xero - Create/Update Project Daily</name>
+<natlang/>
+<outputs/>
+<pre_compiled>false</pre_compiled>
+<remote_trigger_id/>
+<run_as>user</run_as>
+<run_with_roles/>
+<sc_callable>false</sc_callable>
+<show_draft_actions>false</show_draft_actions>
+<show_triggered_flows>false</show_triggered_flows>
+<status>draft</status>
+<substatus/>
+<sys_class_name>sys_hub_flow</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-25 19:48:47</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>1c1d9904d87503107f440f1d30330769</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_name>Xero - Create/Update Project Daily</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+<sys_policy/>
+<sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+<sys_update_name>sys_hub_flow_1c1d9904d87503107f440f1d30330769</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-25 19:55:50</sys_updated_on>
+<type>flow</type>
+<updation_source/>
+<version>2</version>
+<version_record display_value="1dae9d44d87503107f440f1d303307a9">1dae9d44d87503107f440f1d303307a9</version_record>
+</sys_hub_flow>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>71870e16973d0b1007d2fd81c153af20</instance_id>
+        <instance_name>nowlearning-nlinst04382434-8g66s-0001</instance_name>
+        <name>sys_hub_flow_1c1d9904d87503107f440f1d30330769</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_hub_flow action="INSERT_OR_UPDATE">
+<access>public</access>
+<acls/>
+<active>false</active>
+<annotation/>
+<attributes>labelCacheCleanUpExecuted=true</attributes>
+<authored_on_release_version>28100</authored_on_release_version>
+<callable_by_client_api>false</callable_by_client_api>
+<category display_value=""/>
+<compiler_build/>
+<copied_from/>
+<copied_from_name/>
+<description/>
+<display_name_after_preview/>
+<flow_priority>MEDIUM</flow_priority>
+<generation_source/>
+<internal_name>xero__createupdate_project_daily</internal_name>
+<label_cache>null</label_cache>
+<latest_snapshot/>
+<master_snapshot/>
+<master_snapshot_digest/>
+<name>Xero - Create/Update Project Daily</name>
+<natlang/>
+<outputs/>
+<pre_compiled>false</pre_compiled>
+<remote_trigger_id/>
+<run_as>user</run_as>
+<run_with_roles/>
+<sc_callable>false</sc_callable>
+<show_draft_actions>false</show_draft_actions>
+<show_triggered_flows>false</show_triggered_flows>
+<status>draft</status>
+<substatus/>
+<sys_class_name>sys_hub_flow</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-06-25 19:48:47</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>1c1d9904d87503107f440f1d30330769</sys_id>
+<sys_mod_count>7</sys_mod_count>
+<sys_name>Xero - Create/Update Project Daily</sys_name>
+<sys_overrides display_value=""/>
+<sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+<sys_policy/>
+<sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+<sys_update_name>sys_hub_flow_1c1d9904d87503107f440f1d30330769</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-06-25 19:55:50</sys_updated_on>
+<type>flow</type>
+<updation_source/>
+<version>2</version>
+<version_record display_value="1dae9d44d87503107f440f1d303307a9">1dae9d44d87503107f440f1d303307a9</version_record>
+</sys_hub_flow></record_update>]]></payload>
+        <payload_hash>-1031430823</payload_hash>
+        <record_name>Xero - Create/Update Project Daily</record_name>
+        <reverted_from/>
+        <source>856f6eba8d7103107f4467990d9dee28</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 15:03:58</sys_created_on>
+        <sys_id>4432767e8d7103107f4467990d9dee32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f2da866060000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 15:03:58</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>8c32767ef171031043ab9c636e5da531</update_guid>
+        <update_guid_history>8c32767ef171031043ab9c636e5da531:-1031430823,889d627a437103107c7b0946f61c18ed:0,c49d627aff71031029feb2d6948166ec:-792128180</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-09 17:20:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>46d9a03d000e403095e251308b653a04</sys_id>
+        <sys_metadata>1c1d9904d87503107f440f1d30330769</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero - Create/Update Project Daily</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_1c1d9904d87503107f440f1d30330769</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_1c1d9904d87503107f440f1d30330769">4432767e8d7103107f4467990d9dee32</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-09 17:20:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

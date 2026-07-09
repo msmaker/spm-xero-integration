@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 14:37:30</sys_created_on>
+        <sys_id>763ccf6f79e103107f4423b77ae415ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_spm_xero_i_0_xero_task.x_snc_spm_xero_i_0.xero_task_user</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_security_acl display_value="x_snc_spm_xero_i_0_xero_task">e23ccf6f79e103107f4423b77ae415ab</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_763ccf6f79e103107f4423b77ae415ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 14:37:30</sys_updated_on>
+        <sys_user_role display_value="x_snc_spm_xero_i_0.xero_task_user" name="x_snc_spm_xero_i_0.xero_task_user">263c4f6f79e103107f4423b77ae415e0</sys_user_role>
+    </sys_security_acl_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>71870e16973d0b1007d2fd81c153af20</instance_id>
+        <instance_name>nowlearning-nlinst04382434-8g66s-0001</instance_name>
+        <name>sys_security_acl_role_763ccf6f79e103107f4423b77ae415ad</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 14:37:30</sys_created_on>
+        <sys_id>763ccf6f79e103107f4423b77ae415ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_spm_xero_i_0_xero_task.x_snc_spm_xero_i_0.xero_task_user</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_security_acl display_value="x_snc_spm_xero_i_0_xero_task">e23ccf6f79e103107f4423b77ae415ab</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_763ccf6f79e103107f4423b77ae415ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 14:37:30</sys_updated_on>
+        <sys_user_role display_value="x_snc_spm_xero_i_0.xero_task_user" name="x_snc_spm_xero_i_0.xero_task_user">263c4f6f79e103107f4423b77ae415e0</sys_user_role>
+    </sys_security_acl_role>
+</record_update>]]></payload>
+        <payload_hash>-867124869</payload_hash>
+        <record_name>x_snc_spm_xero_i_0_xero_task.x_snc_spm_xero_i_0.xero_task_user</record_name>
+        <reverted_from/>
+        <source>5b5da63a8d7103107f4467990d9deefc</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-04 14:44:09</sys_created_on>
+        <sys_id>b1ada67a8d7103107f4467990d9dee03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f2d9640c20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-04 14:44:09</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>71ada67ac87103106ca821e154270f03</update_guid>
+        <update_guid_history>71ada67ac87103106ca821e154270f03:-867124869</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_spm_xero_i_0_xero_task.x_snc_spm_xero_i_0.xero_task_user">196970ac404203107f44fd0dea9e032c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-09 16:45:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0f607c826672464c82fe2b8027889d64</sys_id>
+        <sys_metadata>763ccf6f79e103107f4423b77ae415ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_spm_xero_i_0_xero_task.x_snc_spm_xero_i_0.xero_task_user</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent display_value="">e23ccf6f79e103107f4423b77ae415ab</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_763ccf6f79e103107f4423b77ae415ad</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_763ccf6f79e103107f4423b77ae415ad">b1ada67a8d7103107f4467990d9dee03</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-09 16:45:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
