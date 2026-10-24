@@ -24,8 +24,9 @@ If you find yourself unable to import your repository due to the presence of fil
    2.2 Activate/install all required dependencies
    2.3 Re-import the application from source control
    Currently listed dependencies:
-   * Task table schema
    * Project Management
+   * Task table schema
    * Rate Model
    * Service Management Basics
    * System (apps/system_user)
+   * Time Card Management

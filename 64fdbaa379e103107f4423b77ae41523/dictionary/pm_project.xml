@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="afa13295adb203107f442875d3223dfd" extends="planned_task" label="Project" max_length="40" name="pm_project" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Xero Legacy" max_length="40" name="x_snc_spm_xero_i_0_u_xero_legacy" type="boolean"/>
+    </element>
+</database>

@@ -6,10 +6,11 @@
         <caller_access/>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
-        <create_access>false</create_access>
+        <create_access>true</create_access>
         <create_access_controls>false</create_access_controls>
-        <delete_access>false</delete_access>
+        <delete_access>true</delete_access>
         <filter_extension/>
+        <is_data_interface>false</is_data_interface>
         <is_df_table>false</is_df_table>
         <is_extendable>false</is_extendable>
         <label>Xero Project Task</label>
@@ -19,20 +20,20 @@
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
-        <super_class display_value="Project Task" name="pm_project_task">cba57a1c351103107f44fd0c1b9791ae</super_class>
+        <super_class display_value="Project Task" name="pm_project_task">36a1fe55adb203107f442875d3223d8d</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 00:53:43</sys_created_on>
         <sys_id>ac1919b379e903107f4423b77ae415a0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Xero Project Task</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_db_object_ac1919b379e903107f4423b77ae415a0</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 00:53:43</sys_updated_on>
-        <update_access>false</update_access>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-09-21 23:21:32</sys_updated_on>
+        <update_access>true</update_access>
         <user_role/>
         <ws_access>true</ws_access>
     </sys_db_object>

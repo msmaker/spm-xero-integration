@@ -19,33 +19,49 @@ XeroIntegrationUtils.prototype = {
             is_new_company: false
         };
 
+        // Without ContactID and Name there is nothing safe to search for.
+        // (A query with an empty/invalid value can return ALL rows.)
+        if (!contact || (!contact.ContactID && !contact.Name)) {
+            return result;
+        }
+
         var address = this.getAddress(contact);
         var phones = this.getPhones(contact);
 
-        var company = new GlideRecord('core_company');
+        var company;
 
-        // Search by Xero Contact ID
-        company.addQuery(
-            'x_691473_spm_xer_0_u_xero_contact_id',
-            contact.ContactID
-        );
+        // Search by Xero Contact ID (only when Xero sent one)
+        if (contact.ContactID) {
 
-        company.query();
+            company = new GlideRecord('core_company');
 
-        if (company.next()) {
-
-            this.updateCompany(
-                company,
-                contact,
-                address,
-                phones
+            company.addQuery(
+                'x_snc_spm_xero_i_0_xero_contact_id',
+                contact.ContactID
             );
 
-            company.update();
+            company.query();
 
-            result.company_sys_id =
-                company.getUniqueValue();
+            if (company.next()) {
 
+                this.updateCompany(
+                    company,
+                    contact,
+                    address,
+                    phones
+                );
+
+                company.update();
+
+                result.company_sys_id =
+                    company.getUniqueValue();
+
+                return result;
+            }
+        }
+
+        // Without a name we cannot search by name nor create a company
+        if (!contact.Name) {
             return result;
         }
 
@@ -173,14 +189,6 @@ XeroIntegrationUtils.prototype = {
         phones
     ) {
 
-        if (contact.EmailAddress) {
-
-            company.setValue(
-                'email',
-                contact.EmailAddress
-            );
-        }
-
         if (phones.phone) {
 
             company.setValue(
@@ -243,7 +251,7 @@ XeroIntegrationUtils.prototype = {
         );
 
         company.setValue(
-            'xx_snc_spm_xero_i_0_xero_contact_id',
+            'x_snc_spm_xero_i_0_xero_contact_id',
             contact.ContactID
         );
     },
@@ -279,13 +287,13 @@ XeroIntegrationUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 16:01:24</sys_created_on>
         <sys_id>260edb23796503107f4423b77ae41536</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>XeroIntegrationUtils</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_script_include_260edb23796503107f4423b77ae41536</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-24 16:03:11</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-23 00:47:56</sys_updated_on>
     </sys_script_include>
 </record_update>

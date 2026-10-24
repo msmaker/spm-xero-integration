@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>49ae340cd8f103107f440f1d30330767</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Xero - Get Time Card</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_49ae340cd8f103107f440f1d30330767</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:23</sys_updated_on>
+        <sys_updated_on>2026-10-24 00:42:52</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -67,10 +67,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 17:39:53</sys_created_on>
         <sys_id>889f704cd8f103107f440f1d3033074f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 17:39:53</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-07 22:08:05</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">fb8f704cd8f103107f440f1d30330735</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=49ae340cd8f103107f440f1d30330767"/>
@@ -140,10 +140,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 17:39:52</sys_created_on>
         <sys_id>b38f304cd8f103107f440f1d303307d4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:20</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:12</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b38f304cd8f103107f440f1d303307d4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -168,60 +168,101 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 17:39:52</sys_created_on>
         <sys_id>bb8f704cd8f103107f440f1d30330734</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:11:41</sys_updated_on>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:12</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     try {&#13;
         var payloadsList = [];&#13;
         var timeCardGR = new GlideRecord('time_card');&#13;
-        &#13;
-        if (timeCardGR.get(inputs.time_card_id)) {&#13;
-            var weekStartStr = timeCardGR.getValue('week_starts_on'); &#13;
 &#13;
-            var daysMapping = [&#13;
-                { field: 'sunday',    offset: 0 },&#13;
-                { field: 'monday',    offset: 1 },&#13;
-                { field: 'tuesday',   offset: 2 },&#13;
-                { field: 'wednesday', offset: 3 },&#13;
-                { field: 'thursday',  offset: 4 },&#13;
-                { field: 'friday',    offset: 5 },&#13;
-                { field: 'saturday',  offset: 6 }&#13;
-            ];&#13;
+        if (!timeCardGR.get(inputs.time_card_id)) {&#13;
+            throw new Error('Time card not found.');&#13;
+        }&#13;
 &#13;
-            for (var i = 0; i &lt; daysMapping.length; i++) {&#13;
-                var dayInfo = daysMapping[i];&#13;
-                var hours = parseFloat(timeCardGR.getValue(dayInfo.field)) || 0;&#13;
+        var weekStartStr = timeCardGR.getValue('week_starts_on');&#13;
 &#13;
-                if (hours &gt; 0) {&#13;
-                    var gdt = new GlideDateTime(weekStartStr);&#13;
-                    gdt.addDaysLocalTime(dayInfo.offset);&#13;
-                    &#13;
-                    var dateOnly = gdt.getDate().toString();&#13;
-                    var dateUtcFormatted = dateOnly + "T09:00:00.0000000+00:00"; &#13;
-                    var durationInMinutes = Math.round(hours * 60);&#13;
+        if (!weekStartStr) {&#13;
+            throw new Error('Time card is missing week_starts_on.');&#13;
+        }&#13;
 &#13;
-                    var entryPayload = {&#13;
-                        "userId": inputs.user_id, &#13;
-                        "taskId": inputs.task_id, &#13;
-                        "dateUtc": dateUtcFormatted,&#13;
-                        "duration": durationInMinutes,&#13;
-                        "description": "ServiceNow Time Entry - " + dayInfo.field&#13;
-                    };&#13;
+        // Read notes from oldest to newest.&#13;
+        var notesList = [];&#13;
+        var journalGR = new GlideRecord('sys_journal_field');&#13;
 &#13;
-                    payloadsList.push(entryPayload);&#13;
-                }&#13;
+        journalGR.addQuery('element_id', timeCardGR.getUniqueValue());&#13;
+        journalGR.addQuery('element', 'notes');&#13;
+        journalGR.orderBy('sys_created_on');&#13;
+        journalGR.orderBy('sys_id');&#13;
+        journalGR.query();&#13;
+&#13;
+        while (journalGR.next()) {&#13;
+            var noteText = (journalGR.getValue('value') || '')&#13;
+                .replace(/^\s+|\s+$/g, '');&#13;
+&#13;
+            if (noteText) {&#13;
+                notesList.push(noteText);&#13;
             }&#13;
         }&#13;
 &#13;
-        // Retorna a String JSON compactada (sem espaços extras) para o Flow&#13;
+        // Number each note and separate them with a pipe.&#13;
+        var formattedNotes = [];&#13;
+&#13;
+        for (var n = 0; n &lt; notesList.length; n++) {&#13;
+            formattedNotes.push(&#13;
+                'Note ' + (n + 1) + ': ' + notesList[n]&#13;
+            );&#13;
+        }&#13;
+&#13;
+        var timeCardComment = formattedNotes.join(' | ');&#13;
+&#13;
+        // Map daily fields for weeks starting on Monday.&#13;
+        var daysMapping = [&#13;
+            { field: 'monday',    offset: 0 },&#13;
+            { field: 'tuesday',   offset: 1 },&#13;
+            { field: 'wednesday', offset: 2 },&#13;
+            { field: 'thursday',  offset: 3 },&#13;
+            { field: 'friday',    offset: 4 },&#13;
+            { field: 'saturday',  offset: 5 },&#13;
+            { field: 'sunday',    offset: 6 }&#13;
+        ];&#13;
+&#13;
+        for (var i = 0; i &lt; daysMapping.length; i++) {&#13;
+            var dayInfo = daysMapping[i];&#13;
+            var hours =&#13;
+                parseFloat(timeCardGR.getValue(dayInfo.field)) || 0;&#13;
+&#13;
+            if (hours &lt;= 0) {&#13;
+                continue;&#13;
+            }&#13;
+&#13;
+            // Calculate dates entirely in UTC.&#13;
+            var gdt = new GlideDateTime(&#13;
+                weekStartStr.substring(0, 10) + ' 09:00:00'&#13;
+            );&#13;
+&#13;
+            gdt.addDaysUTC(dayInfo.offset);&#13;
+&#13;
+            var dateOnly = gdt.getDate().getValue();&#13;
+            var dateUtcFormatted =&#13;
+                dateOnly + 'T09:00:00.0000000+00:00';&#13;
+&#13;
+            payloadsList.push({&#13;
+                userId: inputs.user_id,&#13;
+                taskId: inputs.task_id,&#13;
+                dateUtc: dateUtcFormatted,&#13;
+                duration: Math.round(hours * 60),&#13;
+                description: timeCardComment&#13;
+            });&#13;
+        }&#13;
+&#13;
         outputs.time_entries_json = JSON.stringify(payloadsList);&#13;
 &#13;
     } catch (ex) {&#13;
-        outputs.time_entries_json = "[]";&#13;
+        gs.error('[Xero time card] Error: ' + ex.message);&#13;
+        throw ex;&#13;
     }&#13;
-})(inputs, outputs);&#13;
-</value>
+})(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=b38f304cd8f103107f440f1d303307d4"/>
@@ -289,6 +330,7 @@
         <order>0</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -373,6 +415,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -422,7 +465,7 @@
         <sys_created_on>2026-06-25 17:39:52</sys_created_on>
         <sys_id>f78f704cd8f103107f440f1d30330730</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Time Entries JSON</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -548,15 +591,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ba01058cd8f103107f440f1d303307a1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:20</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:12</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -607,6 +650,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -656,7 +700,7 @@
         <sys_created_on>2026-06-25 17:46:21</sys_created_on>
         <sys_id>3201058cd8f103107f440f1d303307a3</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>root</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -715,6 +759,7 @@
         <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -799,6 +844,7 @@
         <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -883,6 +929,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -932,15 +979,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7601058cd8f103107f440f1d303307a7</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:20</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:13</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -993,6 +1040,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -1080,6 +1128,7 @@
         <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -1095,14 +1144,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 17:39:52</sys_created_on>
         <sys_id>809f704cd8f103107f440f1d30330748</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:20</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1167,6 +1216,7 @@
         <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -1229,7 +1279,7 @@
         <sys_created_on>2026-06-25 22:11:40</sys_created_on>
         <sys_id>11cdf1ccd8b503107f440f1d303307cb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>User ID</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -1252,7 +1302,7 @@
         <sys_created_on>2026-06-25 18:40:18</sys_created_on>
         <sys_id>896d8dc4d83503107f440f1d3033078d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Time Card SysId</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -1275,7 +1325,7 @@
         <sys_created_on>2026-06-25 17:46:21</sys_created_on>
         <sys_id>be01c18cd8f103107f440f1d3033072e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Task ID</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -1299,7 +1349,7 @@
         <sys_created_on>2026-06-25 17:39:52</sys_created_on>
         <sys_id>849f704cd8f103107f440f1d30330744</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -1322,7 +1372,7 @@
         <sys_created_on>2026-06-25 17:46:22</sys_created_on>
         <sys_id>8701058cd8f103107f440f1d303307a9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Time Entries</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -1345,7 +1395,7 @@
         <sys_created_on>2026-06-25 17:39:53</sys_created_on>
         <sys_id>c89f704cd8f103107f440f1d3033074b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -1359,18 +1409,18 @@
     <sys_hub_action_plan action="delete_multiple" query="action_id=49ae340cd8f103107f440f1d30330767^sys_idNOT IN316dcdc4d83503107f440f1d3033071e"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero - Get Time Card">49ae340cd8f103107f440f1d30330767</action_id>
-        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"316dcdc4d83503107f440f1d3033071e","name":"plan","plan_signature":null}}</plan>
-        <snapshot>31050e44d8f503107f440f1d30330797</snapshot>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"316dcdc4d83503107f440f1d3033071e","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <snapshot>e24f5832d14813107f445ecf887f0451</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>316dcdc4d83503107f440f1d3033071e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:23</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:15</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1436,10 +1486,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:20</sys_created_on>
         <sys_id>616dcdc4d83503107f440f1d30330708</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 18:40:20</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-07 22:08:08</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">616d8dc4d83503107f440f1d303307ff</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=196d8dc4d83503107f440f1d303307d7"/>
@@ -1596,15 +1646,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2d6d8dc4d83503107f440f1d303307f6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:22</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:15</sys_updated_on>
         <type>complex_object_schema</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -1655,6 +1705,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -1704,7 +1755,7 @@
         <sys_created_on>2026-06-25 18:40:20</sys_created_on>
         <sys_id>e16d8dc4d83503107f440f1d303307f8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>root</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -1731,10 +1782,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:19</sys_created_on>
         <sys_id>dd6d8dc4d83503107f440f1d303307ed</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:22</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:15</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=dd6d8dc4d83503107f440f1d303307ed"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1759,60 +1810,101 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:19</sys_created_on>
         <sys_id>256d8dc4d83503107f440f1d303307f5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:11:43</sys_updated_on>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:15</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     try {&#13;
         var payloadsList = [];&#13;
         var timeCardGR = new GlideRecord('time_card');&#13;
-        &#13;
-        if (timeCardGR.get(inputs.time_card_id)) {&#13;
-            var weekStartStr = timeCardGR.getValue('week_starts_on'); &#13;
 &#13;
-            var daysMapping = [&#13;
-                { field: 'sunday',    offset: 0 },&#13;
-                { field: 'monday',    offset: 1 },&#13;
-                { field: 'tuesday',   offset: 2 },&#13;
-                { field: 'wednesday', offset: 3 },&#13;
-                { field: 'thursday',  offset: 4 },&#13;
-                { field: 'friday',    offset: 5 },&#13;
-                { field: 'saturday',  offset: 6 }&#13;
-            ];&#13;
+        if (!timeCardGR.get(inputs.time_card_id)) {&#13;
+            throw new Error('Time card not found.');&#13;
+        }&#13;
 &#13;
-            for (var i = 0; i &lt; daysMapping.length; i++) {&#13;
-                var dayInfo = daysMapping[i];&#13;
-                var hours = parseFloat(timeCardGR.getValue(dayInfo.field)) || 0;&#13;
+        var weekStartStr = timeCardGR.getValue('week_starts_on');&#13;
 &#13;
-                if (hours &gt; 0) {&#13;
-                    var gdt = new GlideDateTime(weekStartStr);&#13;
-                    gdt.addDaysLocalTime(dayInfo.offset);&#13;
-                    &#13;
-                    var dateOnly = gdt.getDate().toString();&#13;
-                    var dateUtcFormatted = dateOnly + "T09:00:00.0000000+00:00"; &#13;
-                    var durationInMinutes = Math.round(hours * 60);&#13;
+        if (!weekStartStr) {&#13;
+            throw new Error('Time card is missing week_starts_on.');&#13;
+        }&#13;
 &#13;
-                    var entryPayload = {&#13;
-                        "userId": inputs.user_id, &#13;
-                        "taskId": inputs.task_id, &#13;
-                        "dateUtc": dateUtcFormatted,&#13;
-                        "duration": durationInMinutes,&#13;
-                        "description": "ServiceNow Time Entry - " + dayInfo.field&#13;
-                    };&#13;
+        // Read notes from oldest to newest.&#13;
+        var notesList = [];&#13;
+        var journalGR = new GlideRecord('sys_journal_field');&#13;
 &#13;
-                    payloadsList.push(entryPayload);&#13;
-                }&#13;
+        journalGR.addQuery('element_id', timeCardGR.getUniqueValue());&#13;
+        journalGR.addQuery('element', 'notes');&#13;
+        journalGR.orderBy('sys_created_on');&#13;
+        journalGR.orderBy('sys_id');&#13;
+        journalGR.query();&#13;
+&#13;
+        while (journalGR.next()) {&#13;
+            var noteText = (journalGR.getValue('value') || '')&#13;
+                .replace(/^\s+|\s+$/g, '');&#13;
+&#13;
+            if (noteText) {&#13;
+                notesList.push(noteText);&#13;
             }&#13;
         }&#13;
 &#13;
-        // Retorna a String JSON compactada (sem espaços extras) para o Flow&#13;
+        // Number each note and separate them with a pipe.&#13;
+        var formattedNotes = [];&#13;
+&#13;
+        for (var n = 0; n &lt; notesList.length; n++) {&#13;
+            formattedNotes.push(&#13;
+                'Note ' + (n + 1) + ': ' + notesList[n]&#13;
+            );&#13;
+        }&#13;
+&#13;
+        var timeCardComment = formattedNotes.join(' | ');&#13;
+&#13;
+        // Map daily fields for weeks starting on Monday.&#13;
+        var daysMapping = [&#13;
+            { field: 'monday',    offset: 0 },&#13;
+            { field: 'tuesday',   offset: 1 },&#13;
+            { field: 'wednesday', offset: 2 },&#13;
+            { field: 'thursday',  offset: 3 },&#13;
+            { field: 'friday',    offset: 4 },&#13;
+            { field: 'saturday',  offset: 5 },&#13;
+            { field: 'sunday',    offset: 6 }&#13;
+        ];&#13;
+&#13;
+        for (var i = 0; i &lt; daysMapping.length; i++) {&#13;
+            var dayInfo = daysMapping[i];&#13;
+            var hours =&#13;
+                parseFloat(timeCardGR.getValue(dayInfo.field)) || 0;&#13;
+&#13;
+            if (hours &lt;= 0) {&#13;
+                continue;&#13;
+            }&#13;
+&#13;
+            // Calculate dates entirely in UTC.&#13;
+            var gdt = new GlideDateTime(&#13;
+                weekStartStr.substring(0, 10) + ' 09:00:00'&#13;
+            );&#13;
+&#13;
+            gdt.addDaysUTC(dayInfo.offset);&#13;
+&#13;
+            var dateOnly = gdt.getDate().getValue();&#13;
+            var dateUtcFormatted =&#13;
+                dateOnly + 'T09:00:00.0000000+00:00';&#13;
+&#13;
+            payloadsList.push({&#13;
+                userId: inputs.user_id,&#13;
+                taskId: inputs.task_id,&#13;
+                dateUtc: dateUtcFormatted,&#13;
+                duration: Math.round(hours * 60),&#13;
+                description: timeCardComment&#13;
+            });&#13;
+        }&#13;
+&#13;
         outputs.time_entries_json = JSON.stringify(payloadsList);&#13;
 &#13;
     } catch (ex) {&#13;
-        outputs.time_entries_json = "[]";&#13;
+        gs.error('[Xero time card] Error: ' + ex.message);&#13;
+        throw ex;&#13;
     }&#13;
-})(inputs, outputs);&#13;
-</value>
+})(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=dd6d8dc4d83503107f440f1d303307ed"/>
@@ -1880,6 +1972,7 @@
         <order>0</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -1964,6 +2057,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -2013,7 +2107,7 @@
         <sys_created_on>2026-06-25 18:40:19</sys_created_on>
         <sys_id>6d6d8dc4d83503107f440f1d303307f1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Time Entries JSON</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -2072,6 +2166,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -2156,6 +2251,7 @@
         <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -2240,6 +2336,7 @@
         <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -2289,15 +2386,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>256d8dc4d83503107f440f1d303307fc</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:22</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:15</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -2350,6 +2447,7 @@
         <order>1</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -2437,6 +2535,7 @@
         <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -2524,6 +2623,7 @@
         <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
+        <read_only_option/>
         <read_roles/>
         <reference/>
         <reference_cascade_rule/>
@@ -2539,14 +2639,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:20</sys_created_on>
         <sys_id>656dcdc4d83503107f440f1d30330701</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 22:43:22</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-08 01:26:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2586,7 +2686,7 @@
         <sys_created_on>2026-06-25 18:40:19</sys_created_on>
         <sys_id>156d8dc4d83503107f440f1d303307da</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Task ID</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -2609,7 +2709,7 @@
         <sys_created_on>2026-06-25 22:11:42</sys_created_on>
         <sys_id>3dcd35ccd8b503107f440f1d3033071c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>User ID</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -2632,7 +2732,7 @@
         <sys_created_on>2026-06-25 18:40:19</sys_created_on>
         <sys_id>dd6d8dc4d83503107f440f1d303307e8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Time Card SysId</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -2656,7 +2756,7 @@
         <sys_created_on>2026-06-25 18:40:20</sys_created_on>
         <sys_id>656dcdc4d83503107f440f1d30330704</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -2679,7 +2779,7 @@
         <sys_created_on>2026-06-25 18:40:20</sys_created_on>
         <sys_id>a56d8dc4d83503107f440f1d303307fe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Time Entries</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -2702,7 +2802,7 @@
         <sys_created_on>2026-06-25 18:40:20</sys_created_on>
         <sys_id>a96dcdc4d83503107f440f1d30330700</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
@@ -2716,6 +2816,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>49ae340cd8f103107f440f1d30330767</sys_id>
         <latest_snapshot>196d8dc4d83503107f440f1d303307d7</latest_snapshot>
-        <compiler_build>glide-zurich-07-01-2025__patch1-08-20-2025_09-08-2025_1328.zip</compiler_build>
+        <compiler_build>glide-australia-02-11-2026__patch2-hotfix2-06-18-2026_06-18-2026_2231.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

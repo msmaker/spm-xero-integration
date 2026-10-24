@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_retry_policy">
+    <sys_retry_policy action="INSERT_OR_UPDATE">
+        <condition table="http_retry_conditions">http_method=get^status_code=408^ORstatus_code=429^ORstatus_code=500^ORstatus_code=502^ORstatus_code=503^ORstatus_code=504^ORerror=org.apache.commons.httpclient.ConnectTimeoutException^EQ<item display_value="GET" endquery="false" field="http_method" goto="false" newquery="false" operator="=" or="false" value="get"/>
+            <item endquery="false" field="status_code" goto="false" newquery="false" operator="=" or="false" value="408"/>
+            <item endquery="false" field="status_code" goto="false" newquery="false" operator="=" or="true" value="429"/>
+            <item endquery="false" field="status_code" goto="false" newquery="false" operator="=" or="true" value="500"/>
+            <item endquery="false" field="status_code" goto="false" newquery="false" operator="=" or="true" value="502"/>
+            <item endquery="false" field="status_code" goto="false" newquery="false" operator="=" or="true" value="503"/>
+            <item endquery="false" field="status_code" goto="false" newquery="false" operator="=" or="true" value="504"/>
+            <item display_value="Connection Timeout" endquery="false" field="error" goto="false" newquery="false" operator="=" or="true" value="org.apache.commons.httpclient.ConnectTimeoutException"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <connection_type>http_retry_conditions</connection_type>
+        <count>3</count>
+        <interval>10</interval>
+        <max_elapsed_time/>
+        <name>Xero - GET Retry Policy</name>
+        <restrict_to>http_method,status_code,error,response_body,response_headers</restrict_to>
+        <retry_strategy>exponential_backoff</retry_strategy>
+        <sys_class_name>sys_retry_policy</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-12 18:55:22</sys_created_on>
+        <sys_id>a1d5e68b2b730b109748faa6fe91bf93</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Xero - GET Retry Policy</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_retry_policy_a1d5e68b2b730b109748faa6fe91bf93</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-23 01:06:54</sys_updated_on>
+    </sys_retry_policy>
+</record_update>
