@@ -37,7 +37,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2ed5d244d83903107f440f1d30330701</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Xero - Create/Update Project/Task Daily</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -45,11 +45,11 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_flow_2ed5d244d83903107f440f1d30330701</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-24 01:16:08</sys_updated_on>
+        <sys_updated_on>2026-10-26 00:31:43</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
-        <version_record>31c6ec3ed14813107f445ecf887f041a</version_record>
+        <version_record/>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=2ed5d244d83903107f440f1d30330701"/>
     <sys_variable_value action="delete_multiple" query="document_key=2ed5d244d83903107f440f1d30330701"/>
@@ -67,16 +67,16 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>10ccb9df3b1a4b10ebe9c15765e45ac7</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-24 01:16:08</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-23 13:16:58</sys_updated_on>
         <time/>
         <timer_type>1</timer_type>
         <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
     </sys_flow_timer_trigger>
-    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:10ccb9df3b1a4b10ebe9c15765e45ac7^sys_idNOT IN9dc6ac3ed14813107f445ecf887f0483"/>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:10ccb9df3b1a4b10ebe9c15765e45ac7^sys_idNOT IN28ccb9df3b1a4b10ebe9c15765e45ac7"/>
     <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
         <active>true</active>
         <advanced>false</advanced>
@@ -99,23 +99,23 @@
         <run_end/>
         <run_month/>
         <run_period>1970-01-02 00:00:00</run_period>
-        <run_start>2026-10-25 01:16:08</run_start>
+        <run_start>2026-10-24 13:16:58</run_start>
         <run_time/>
         <run_type>periodically</run_type>
         <run_weekinmonth/>
         <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('10ccb9df3b1a4b10ebe9c15765e45ac7');]]></script>
         <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-10-24 01:16:08</sys_created_on>
-        <sys_id>9dc6ac3ed14813107f445ecf887f0483</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-07-30 20:58:53</sys_created_on>
+        <sys_id>28ccb9df3b1a4b10ebe9c15765e45ac7</sys_id>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-24 01:16:08</sys_updated_on>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-23 13:16:58</sys_updated_on>
         <time_zone/>
         <trigger display_value="">10ccb9df3b1a4b10ebe9c15765e45ac7</trigger>
         <upgrade_safe>true</upgrade_safe>
@@ -362,7 +362,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"68e5d244d83903107f440f1d303307c2","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id>2ed5d244d83903107f440f1d30330701</plan_id>
-        <snapshot>3b4fd832d14813107f445ecf887f0408</snapshot>
+        <snapshot>eedfa6dbd58c13107f447c0a75427270</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 23:57:02</sys_created_on>
         <sys_domain>global</sys_domain>

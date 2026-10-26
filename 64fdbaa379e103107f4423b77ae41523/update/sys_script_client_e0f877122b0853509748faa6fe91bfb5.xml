@@ -11,11 +11,15 @@
         <name>Xero sync error message</name>
         <order/>
         <script><![CDATA[function onLoad() {
-
-    if (g_form.getValue('x_snc_spm_xero_i_0_synchronization_error') == 'true') {
-        g_form.addErrorMessage('Not sent to Xero. The user may be missing in Xero: fix it, uncheck this box and save. If it fails again, contact support.');
+    if (g_form.getValue('x_snc_spm_xero_i_0_synchronization_error') != 'true') {
+        return;
     }
-
+    var detail = g_form.getValue('x_snc_spm_xero_i_0_xero_sync_message');
+    g_form.addErrorMessage(
+        'Not sent to Xero, or sent only partially. ' +
+        (detail ? 'Details: ' + detail + ' ' : '') +
+        'Fix the cause, uncheck Synchronization Error and save to resend. Days already in Xero will be skipped.'
+    );
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
@@ -23,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e0f877122b0853509748faa6fe91bfb5</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Xero sync error message</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -31,7 +35,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_script_client_e0f877122b0853509748faa6fe91bfb5</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-23 03:35:42</sys_updated_on>
+        <sys_updated_on>2026-10-24 23:16:08</sys_updated_on>
         <table>time_card</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

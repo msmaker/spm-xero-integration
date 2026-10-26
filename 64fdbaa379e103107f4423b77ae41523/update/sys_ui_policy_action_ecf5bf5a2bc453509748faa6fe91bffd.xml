@@ -19,7 +19,7 @@
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
         <sys_updated_on>2026-10-23 03:04:32</sys_updated_on>
         <table>time_card</table>
-        <ui_policy display_value="Sent to Xero, Read only = True">4cd57b5a2bc453509748faa6fe91bf27</ui_policy>
+        <ui_policy display_value="Sent to Xero, Xero Sync Message, Read only = True">4cd57b5a2bc453509748faa6fe91bf27</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <visible>ignore</visible>

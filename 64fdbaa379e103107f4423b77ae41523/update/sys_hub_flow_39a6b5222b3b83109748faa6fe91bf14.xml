@@ -5,7 +5,7 @@
         <active>true</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4886000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1261384000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>29000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -16,7 +16,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>xero__link_legacy_tasks</internal_name>
-        <label_cache>[{"name":"subflow.project.correlation_id","label":"Input➛Project➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"correlation_id","usedInstances":{"b395134f-bec8-46f3-b1d6-9843a5ef525c":["project_id"]}},{"name":"2b50caf0-88fc-43af-ad79-9d6f15e58cd5.Record","label":"5 - Look Up Record➛Project Task Record","reference":"pm_project_task","reference_display":"Project Task","type":"reference","base_type":"reference","usedInstances":{"80c65277-6acb-442d-a60b-37210aad6100":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b50caf0-88fc-43af-ad79-9d6f15e58cd5.status","label":"5 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"7a128bc2-92b7-4602-9b29-b4241bbe3b83":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"subflow.project","label":"Input➛Project","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","usedInstances":{"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null,"conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"dd39c6be-43f7-4034-9740-dc9e8f620734","uiTypeLabel":"Reference"}},{"name":"96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45.item.name","label":"2➛items_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null,"conditions"]},"attributes":{}},{"name":"25abb511-ec6d-4e51-9ca3-bbc435d54060.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"60750053-3098-40df-a0ef-da1409b55e3b":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45.item.taskId","label":"2➛items_object➛taskId","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"25abb511-ec6d-4e51-9ca3-bbc435d54060":[null,"conditions"],"80c65277-6acb-442d-a60b-37210aad6100":["correlation_id"]},"attributes":{}},{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{"25abb511-ec6d-4e51-9ca3-bbc435d54060":[null],"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null]},"attributes":{}},{"name":"b395134f-bec8-46f3-b1d6-9843a5ef525c.tasks","label":"1 - Xero - Get Task by Project ID➛Tasks","reference_display":"Tasks","type":"array.object","base_type":"array.object","usedInstances":{"96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45":["items"]},"attributes":{"sourceId":"a1bdb3df-296f-4d69-bad2-0da8d189e40d","child_name":"items_object","uiUniqueId":"8fe63844-aca1-435a-80cd-411811e659ab","uiTypeLabel":"Array.Object","co_type_name":"FDceeb632f90650310643c194f4ad20890","child_label":"items_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f3628333-806f-4484-940f-b1d04c2b1a68","uiType":"array.object","child_type":"object","child_uiUniqueId":"99c72426-b1cd-422d-aad9-79b60fac9279"}},{"name":"subflow.project_correlation_id","label":"Input➛Project Correlation ID","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"42a0bc88-7745-4e3a-8fa2-ee0367e56e3b"}}]</label_cache>
+        <label_cache>[{"name":"4d840916-e918-460e-a383-c67e63fc2fe2.page_count","label":"3 - Xero - Process Legacy Tasks Page➛page_count","reference_display":"page_count","type":"integer","base_type":"integer","usedInstances":{"239ea3ee-ce63-4f1c-89b4-8a687b7f71eb":["page_count-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"52629e91-4c51-4ff4-9c2a-73264ed2f426"}},{"name":"flow_variable.page_count","label":"Flow Variables➛page_count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"51d25996-d992-4d1e-948f-8488913da28e":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b856d7e9-5558-4412-bfb8-9d8d729d2f1e"}},{"name":"flow_variable.page","label":"Flow Variables➛page","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"51d25996-d992-4d1e-948f-8488913da28e":["condition"],"4d840916-e918-460e-a383-c67e63fc2fe2":["page"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5b620e8e-8cc1-4dab-992d-e2c802e4e097"}},{"name":"subflow.project.correlation_id","label":"Input➛Project➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"correlation_id","usedInstances":{"b395134f-bec8-46f3-b1d6-9843a5ef525c":["project_id"]}},{"name":"2b50caf0-88fc-43af-ad79-9d6f15e58cd5.Record","label":"5 - Look Up Record➛Project Task Record","reference":"pm_project_task","reference_display":"Project Task","type":"reference","base_type":"reference","usedInstances":{"80c65277-6acb-442d-a60b-37210aad6100":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b50caf0-88fc-43af-ad79-9d6f15e58cd5.status","label":"5 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"7a128bc2-92b7-4602-9b29-b4241bbe3b83":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"subflow.project","label":"Input➛Project","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","column_name":"","usedInstances":{"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null,"conditions"],"4d840916-e918-460e-a383-c67e63fc2fe2":["project"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dd39c6be-43f7-4034-9740-dc9e8f620734","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"25abb511-ec6d-4e51-9ca3-bbc435d54060.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"60750053-3098-40df-a0ef-da1409b55e3b":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"undefined","label":"4 - Set Flow Variables","type":"SETFLOWVARIABLES","base_type":"SETFLOWVARIABLES","usedInstances":{"25abb511-ec6d-4e51-9ca3-bbc435d54060":[null],"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null]},"attributes":{}},{"name":"subflow.project_correlation_id","label":"Input➛Project Correlation ID","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"42a0bc88-7745-4e3a-8fa2-ee0367e56e3b"}}]</label_cache>
         <master_snapshot>d60df9ee2b3b83109748faa6fe91bf40</master_snapshot>
         <master_snapshot_digest/>
         <name>Xero - Link Legacy Tasks</name>
@@ -45,7 +45,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_flow_39a6b5222b3b83109748faa6fe91bf14</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-24 00:43:05</sys_updated_on>
+        <sys_updated_on>2026-10-26 00:31:44</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
@@ -156,188 +156,283 @@
     <sys_hub_flow_output action="delete_multiple" query="model=39a6b5222b3b83109748faa6fe91bf14"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=39a6b5222b3b83109748faa6fe91bf14"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=39a6b5222b3b83109748faa6fe91bf14"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=39a6b5222b3b83109748faa6fe91bf14^sys_idNOT IN2c37b5622b3b83109748faa6fe91bf34,0567b5aa2bf783109748faa6fe91bfe4,0d58f5262b3b83109748faa6fe91bfc8,c66bf52a2b3b83109748faa6fe91bfba"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Xero - Get Task by Project ID">35eb632f796503107f4423b77ae4157b</action_type>
-        <action_type_parent display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</action_type_parent>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=39a6b5222b3b83109748faa6fe91bf14"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=39a6b5222b3b83109748faa6fe91bf14^sys_idNOT INaa7189533bc09b50ebe9c15765e45ab4"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <comment>Gets the project tasks from Xero.</comment>
-        <compiled_snapshot>35eb632f796503107f4423b77ae4157b</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</flow>
-        <generation_source/>
-        <order>1</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:13:20</sys_created_on>
-        <sys_id>2c37b5622b3b83109748faa6fe91bf34</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-10-24 00:43:37</sys_updated_on>
-        <ui_id>b395134f-bec8-46f3-b1d6-9843a5ef525c</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/5VSXW/bMAz8K4OeHcNJnDjO29CiQIFtHdatL0Vh0DKVaJBlVx9pMyP/fVTkpEWHAt0jj0fx7qj7gcmGrZmYYr2cz0RRLhfZfJoVIs9n87ooAPPpouAsYRpaJGZvut/IXUVjCduB8gEcButrobqndGynvDMGFTjZaaIeDkRupO0V7O/+Z4ZvpWoMara+f0hYD4ZEODRsPbxpfdSFghoVUb/HnZ+um3esuX0fMOuM1Jux/jIO357AzjRBzDRh+OxQN0gqBCiLCWtBN+A6sz8jBqG50eoF2Ert6DUWyM9W/qF9qyzLAlMgOeMYu+eyGiOMsLgEByTFc+fNSOXbTnK0MZMGBXjlLl5jkXDTh5DjiINanaY75Vv9LabBzg+cLkaItyQC+2A1aB+NiNtt9/TjpPJK6mMqY1N1HNS5AkfZ1d4FPQPz8uebmCPyT9CosKWNVQt9T0hFp9rJ4xYS3aYbRUUaPhOps3KjU+DBYUongPSK8MsjfAdGBrtf6RkaDut+afno8Tp8H14uplk2W05EWdaTfIH1BMp8NVnRf1oWZZ4V85odEmb39kKBtS9B0YWqRx9sxtjGgKqYcRjhRvbuM4na4ZjF4eEvBEOKPH0DAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2c37b5622b3b83109748faa6fe91bf34"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment>Checks if this Xero task is already connected in SPM.</comment>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <comment>Links the Xero tasks of one page.</comment>
         <display_text/>
         <flow display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</flow>
         <generation_source/>
         <order>3</order>
-        <parent_ui_id>96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <parent_ui_id>51d25996-d992-4d1e-948f-8488913da28e</parent_ui_id>
+        <show_stages>false</show_stages>
+        <subflow display_value="Xero - Process Legacy Tasks Page">90dfb4133bc09b50ebe9c15765e45a74</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/8VT227bMAz9Fz/bhhPLt7wVGAoU2NZhl74UhSFLdKJBll1ZTpsF+fdRseIk7VoUQ7G9iRcdHh6St1tPcG/hzSJeV2QWxxWLiiqJoIKCzZIsTYAkNEs931O0Aczs6BLQWlM5WHO7rWX7UK6pFrSSENrwbocJXPSdpJsbl4cethKSa1De4vbORxyNgAa0t9g+CZlNB6WkFUj8eKUMLDHLfzPRw0/H9Jy3xUZLTKit5pbDzPfg0YDigFVqKnvwvYYqTk2rN5NHA+XXSh4dKwQau2voYy9+ITaJbF4N2A5znU9m6VQ5CNIKBtedEa0aPcZq6IKtHBr1eSRv9YSaDtKc6Dn0iAed5WxJOEb1t1X78PVQ8FKofXsuKFtG5WRRY7SoBgO9ncEgvj/VZnR9fDYJkNBgzbKhXSfUsux0uxb7Oki7CZcSjXC/Fxx6sVQhZbbHENWk4SX6P+zdN25pPiGMq/dDifsBruyko3iWQjyfB3mekoCkSY4vHgdpkVZRRNIsycDb7cUt7wfb1iiTE6QcNcWEnmnRmQuksAbX+853e1/kr61TTk/2R7c/gZmz1e+HynYZuti77v00wsPmv4Hq4e+Xiesz8m7/9Qm6u4D5u11APD+/gK4pjwT+dAtHvi+fxBnI/zuOU+HOz+N0YP/kQDiPC5ZWEJC4zgISxSQoMhIFnBWQ1+k8ymLy1wdy9xtWbDODGgYAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:14:11</sys_created_on>
-        <sys_id>0567b5aa2bf783109748faa6fe91bfe4</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_created_on>2026-10-25 16:29:47</sys_created_on>
+        <sys_id>aa7189533bc09b50ebe9c15765e45ab4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-10-24 00:43:37</sys_updated_on>
-        <ui_id>25abb511-ec6d-4e51-9ca3-bbc435d54060</ui_id>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-25 16:32:33</sys_updated_on>
+        <ui_id>4d840916-e918-460e-a383-c67e63fc2fe2</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsgEOjbqRVSpb3tacvty97Kcmyn+NbYWdtpt0X89xvHCSCgQHRUanWPHo/H38x838TwbRlyGl6FdBJN8slkOE6jaDCIotFoQHCcZYMRyaIMJ2EnlHjBwNPiTDBYPmJRunWxQIVW/zBikcXmB+xQbgqBn7/WDn/63WDmd8mcC6qZDK++fe+EBdYQ1jIdXi13ts7FJXDGBLjOamA7OO1zsV6ias/bPm0fCz77DaWpgxJ1QvbLMkkZYMixMKwTLrCk2Cr9vLZohumdFBvDnEsLEUPn/MvwF7h3HDm/nEFWhPm99RLVhfLm/AZbfG91SWypa1cyV5ww4+tBWY5LYa+3bd7hrrBcSX/Ep+1PK1Eu5GdfjnAdoOkLWEoDIFjhEnXI6zTy+7l6+tKgnHJZ1aTeFIpgsV5hazXPSuvwLEMm2AICoQUuCi4fHC8eeXUYsCx6DwIWvVyoJ7jU8AfZw8QB70FdcW8K9pvK/BVr7rL4A8LAYQDEBTAE+RYaVeqqlI+IiNJUGxpL42OFq05ons21wMZsMoeSo5+lw+3rUGeMfNHcEaJ5YX+HEI+sTm7VaaQxPErByYZyREnKHQqzpQ+itGYCOzPi9O8SgtDlcjLCOM9p3B2zNOomg4R1x2REu4wklAyzLMXJsMctW/ScqG7parUvrAtGbinK0xVpRHm9XZJDZarluWf7dChALc/4YvJMougjCRQuf3/6bK84X4ITsovpUZLRDZ+M0hb5Wm7pbl8vrXl+BoSG53eOmUH2/BqqmuY5Z4Ie+gpN3cbOV6j///wKvUuSAyCKfPe4FFxWTwoA+lbsHx6lXhbv8Kyi14b7lQ0bsq8BHFgVvLRWwhlwGiXcw93BzOM5ALGZ9xVldmd9Y6wFMLiYAAb9ywhguU5zXcgDNW9eka6bjf+L88e7/kDBrQPx6pDAWt0Zt72zv9oX8KCVgrfJ5nduXuHchZ+bryiy85YjYA5H6/uQ1y964vSB2c3tjRdV9gmLH4f2a8ahplFVem/wdI2P/nrKtp6uPEcL6Bwv4IWtGbwsqUFYM5SrUlJUv603RHKdzLk2tnbeHzRfGOhHBgqEGdg5CyrvYO3d8kN8Oo+mlLd50CRS32YCSCSoEgnWibRLu83QSi74OL300JpiLqpuwM+mYqudTGulXxlcJxp5hBFnTrUzQcUXBfXfx94hCRwcfyewfojf4JcfTYThLOnjUTqI4yiKI5pG4zSNx6MsH+E0yTcaRchIAtMUIudAFQiPGmo0fY735089bNvNmTNANQy8UdL94u6nNnCooL1Bg+o07nqeZEoJhuXOQJkB8t+m1RdhTdfhuxsqH+IPqZLPdivtTQdr/VbPhpL/JfnPkt06io1Z1B/HlHTHaZx2k5yOuhOKh108yYbpgDKS5Jd8CXz/FxUC9krhFQAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0567b5aa2bf783109748faa6fe91bfe4"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment>Looks for an SPM task with the same name in this project.</comment>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</flow>
-        <generation_source/>
-        <order>5</order>
-        <parent_ui_id>60750053-3098-40df-a0ef-da1409b55e3b</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:18:18</sys_created_on>
-        <sys_id>0d58f5262b3b83109748faa6fe91bfc8</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-10-24 00:43:37</sys_updated_on>
-        <ui_id>2b50caf0-88fc-43af-ad79-9d6f15e58cd5</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsgEOjbqb1KlXa3qy270mpvz3Jsp/jWxFnbaZci/vuO4wQioEB0VGp1j/GMx9/MfPPZ8G3pc+pf+HQSTNLJZDiOg2AwCILRaEBwmCSDEUmCBEd+x8/wnIGnwYlg8PmARWG/8znKlfyXEYMM1j/AQrnOBV58qRw+Oqs3dVYy44IqlvkX3753/BwrCGuY8i+WW6ZTcQmcMAGu0wrYFk6zyNefqLS5tXfNbd4HZ5CKWihBx2e/DMsoAwwpFpp1/DnOKDZSLdYrimF6m4nNwoxnBiL61vmX5k9w7jiwfimDrAhztvUnqgrlltMrbPCdUQUxhapcyUxywrSrB2UpLoS5bK45h9vccJm5LS5tt1uKYp59cOXw1wHqvsBKoQEEy22iFnmVRno3k4+fapTXPCtrUhmFJFisv7AxiieFsXiWPhNsDoHQHOc5z+4tLx54uRmwzHv3Aj56qZCPcKjm91kPEwu8B3XFvWtYvyqXv2DFbRbvIQxsBkBcAEOQa6GWhSpL+YCIKHRpUDjTLpa/6vh6oS8F1nqTOZQc/SwsbleHKmPkima3EMVz8yeEeGBVcqtOPRrDgxScbChHZEa5RaEb86FnUhmbcHkEGP8uIA5dLicjjNOUht0xi4NuNIhYd0xGtMtIRMkwSWIcDXvcsHnPhl+t/jEyL0esDqCLxBazV40feBCpFBPYnoI4vbn76/3H6dfdiXwNkFrKwPEe1DJw2WzCvsZUgrCz9m5fgEoQwrMJQhQEb0kS4PDXpwjtZ9yV4Migh/QgyeiGT9rOj6tlY9J3B601z0+AUPP81jLTSxbPoaponnIm6L5779oatu69/v/z3nuVJAdAFLnu8UzwrHzEANCXYv/wIPWScItnJb0at5xdw5rszgD2jPSeWk/CCXDqSbiDs72pw7MHYq33JWW2tb5erAZgcLYBGPTPMwDLdZrrQu6pef1utd2s/Z+sP972t7d+415b7RuwVmeGbc/sr3YHeNBqgptkc5arZzh35gfuMxPZeUkJmMHW6jzk5hc9cnrPzOb02otK84jFj332inGoblSZ3gs8lsODv9eSxmOZp2gOneM5vOkVg2ci1QgrhlJZZBRVr/kNkWwnU660qZx3heYTg/nJPAmD6ZkZ80pvb+3d8iI+nkddypvUqxOpTtMeJOKViXjrRNql3Ua0ojM+Ts8tWteYi7Ib8EMtb7STKSXVM8J1pJEHGHGiqp0IKjwrqP8ue/tGYK/8HcH6Jn71n1+aCMNJ1MejeBCGQRAGNA7GcRyOR0k6wnGUbmYUIZ0RUFOInAJVIDyqqVH3OdzVn0ps2+nMCaBqBl653+n92HgWFbTXq1Edx13pSSKlYDjbEpQpIP/jurwR1nQdvjpReRN/gRV8ul1pt7S31i/1bCj454z/LNiNpdiYBf1xSEl3HIdxN0rpqDuheNjFk2QYDygjUXrOl8D331gAiJ1TFgAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0d58f5262b3b83109748faa6fe91bfc8"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment>Connects it to the Xero task. No other data is changed.</comment>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</flow>
-        <generation_source/>
-        <order>7</order>
-        <parent_ui_id>7a128bc2-92b7-4602-9b29-b4241bbe3b83</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:31:45</sys_created_on>
-        <sys_id>c66bf52a2b3b83109748faa6fe91bfba</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-10-24 00:43:37</sys_updated_on>
-        <ui_id>80c65277-6acb-442d-a60b-37210aad6100</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVTU/cMBD9KyufN1GySZbs3ipWSEgUKkBcWhRN7Am4dT7qOMB2tf+948RZVoAoSFxQc/OMZ/zeyxv7+4ZJwZYsRhGEi3DOozCKZkEwS+Mwn0d5OBMRIIZsyiookXZq5LUWtL4D1dnAZjPLk4BDEXhpWnAvjqDwQBwsvIWYF2GCScpF4p/3ddstVQrZNgrWV64BRfitVEJjxZbfr6esAU1nGdRsuXmSeitYBTkq2no+on2K3qwbuxY170qsTCbH4ImrXLnM5HhFGSqycMJgyvDBYCWQgBSgWpyyEioBptZrtjS6o4BGEGeVWu923MrKDERLeGjlHzo5Duy+AokZdyLslpkTaAgXKzBwQZ256fROr1pybAdNBBbQKXO4Hxs2nDVG1tVQYiBXY3WturI6HRRhuwZ7/6NrCQQ2lqdFPtAqLm7r+/MR5JGsekkcRVVzULsVGKNl3hkLZ8NQYa9xCU0jq5us0fWd7IsJSunfKFr4harv6cxW3lQ+cIvbJ1XBP6L4qg9fgZaWxFdqQ8XbKWvX7aGCtn2kQhpmvzuLZCDmKGS9Cr0EWe8EW8y1bMwXOuoOHfDt1I1DnrzmML54NNRez8eRaErL8Sdykxlofz23/LchO7kcsu+z/xvAjfa/7H/6y2DdBDyLnezXTk6HhPN/8mH+Tz+T/x2NTz8A/7J9MHv1Yt1zUu/0ds/ydK1qVGBh0136owuCSGw2izlAUYjQS/EgoJchRi/lc+EhjwVP8vwA4sSXBkvfzsnxi8/DB3Z+35y9QY1xzo4kKtG+IM84ZFgSJYPZINeTQXPJyZVL7h6bD5u2cB703yeauf/mzbn+C0wDg/6ECQAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c66bf52a2b3b83109748faa6fe91bfba"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=39a6b5222b3b83109748faa6fe91bf14"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=39a6b5222b3b83109748faa6fe91bf14^sys_idNOT IN58f6f1622b3b83109748faa6fe91bf66,fe4bb92a2b3b83109748faa6fe91bf29,383839222b3b83109748faa6fe91bf7f"/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=39a6b5222b3b83109748faa6fe91bf14^sys_idNOT IN61d049933bc09b50ebe9c15765e45a20,f73149533bc09b50ebe9c15765e45a1c,f6b109533bc09b50ebe9c15765e45a94"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">fc9bf12e2b3b83109748faa6fe91bf79</block>
-        <comment>Repeats the steps below for each Xero task.</comment>
+        <block display_value="">d71205573bc09b50ebe9c15765e45a28</block>
+        <comment>Starts at page 1. The loop updates the page count after each page.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</flow>
+        <flow_variables_assigned>page,page_count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-25 16:26:59</sys_created_on>
+        <sys_id>61d049933bc09b50ebe9c15765e45a20</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-25 16:34:02</sys_updated_on>
+        <ui_id>bb79c444-eff3-4986-8e53-8fda5a68d929</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1W32vbMBD+X/QcB9u1EztvhVEIbCtsWV9GMfpxTsRkyZWlpFnI/75T7KRttkLZw9hG3nyfTnffffo4vCPGu9a7bmGuu04uNZl9vR8RqQOG3zuiaQNkRlq6BDIia6p8CBP8FrJrFd3ePYP4SiphYajSUouXHVgy250duW0LlaIMFN6cawdLzMK+AkORxzFPkqsrxuOS5TEwKHmSTyc5ZDmFDPOONwdWLzmG2hjJU1VjReCQjAg8OtACsEtNVQcj0lAtqDN2e0IsUHGr1ROwwkJYjoTkx05+x9pZHPJqwHE49GensBpk6WG+MpLDbeuk0T3iKFPDHW6Ub/THnnwQFGrqlTsKiojvsB60gXMgMTCqP6/M5tOx4Y3Uh/GGQ2U4VaeIOmcl8w668AZeLs616aH3P70EKGiwZ9XQtpV6WbXWrOWhD9JuxkuFwbhWZoP8gm/GlIcZx6gmHd8g/u4A31Erw8AfsMzQ74uWDx7m4aVzNkljKCAqOE+iTFAWlWUqIkh5EaeQQVxOyf4gbvXgw1i9TIMgVa8pJnTcytZdI4U1DLPvRy+8W3HjUcI/4+CkjONMvOZgCmcOPnH7Fd/X3Jxe3PyXuZkV+URMoYzyPC+iLEvSiNWsiEpRiGlairRO4LfdfB+c23fv9/JbV+Vlf18c/6/u77cu08uev7j+/9nzArjskNUiUJgf/8TDwRaNI/lzaGPstzDPE7b/AcFYa7HTCwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">db1205573bc09b50ebe9c15765e45a2a</block>
+        <comment>Repeats until all Xero pages are processed.</comment>
         <connected_to/>
         <decision_table/>
         <display_text/>
         <flow display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
         <order>2</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:12:13</sys_created_on>
-        <sys_id>58f6f1622b3b83109748faa6fe91bf66</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_created_on>2026-10-25 16:28:47</sys_created_on>
+        <sys_id>f73149533bc09b50ebe9c15765e45a1c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:24</sys_updated_on>
-        <ui_id>96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45</ui_id>
+        <sys_updated_on>2026-10-25 16:34:02</sys_updated_on>
+        <ui_id>51d25996-d992-4d1e-948f-8488913da28e</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhj8SI86twFCgh7VAV/QyFAYt0YlQWVIlOaln+L+Pip106HEnm4/k43siR2b6YPvgX8yd9/Kg2f7324pJHTH6H5mGDtmeyYCdZyt2AtXHeBybotpmxaZdN8h3603ZFusmE+W62m0K2GK7zbc8CeDf/TRRo5DeKhhe/7efH6USDheBFhzpCujYfvyWCoPFWkGDisY8IzdOROFSUJhVoq2ytOJFXhZ5mua7TdaURZPlogAUJdVdOx8Ww9/8R3YK3Y2XPlFFnq4YfgbUAmlQC8rjinWgBQTjBrYPrifAIYgnrYZbxVHqQHQs1n56+Ye4szSNhS2SI45z8hbWyzPOMD8ayfHJBmn0jARo1NLDjeo7/TjLjwvAFnoVrgsgpPfEhzZqjioWSe2vozk/XwfeS33xtySV4aBuEYTgZNMH9HENqLAjoroDa6U+1NaZk7w0k5YuOSgKklaZMw2Np5YAj8ITeiJI7gn/cYFfwcno4ifRUPN0cV9/9HHu7GNRXM+mqcBzJ224I7oTLuKmt3irM5OfD0Mgl54GvkTs4XrhMTHQkiX/Fzob9x6lfmHTX4SlZh4rAwAA</values>
+        <values>H4sIAAAAAAAA/+1UTY/TMBD9KyjnKEobul31tgKthASsxK72AqtoYk9aC8c2/mi3RPnvjPPRVmwrEHAkp/iNZ957k6e0iQ7eBO8e9I1zYq2S1eenNBEqYvTeJgoaTFYJ04oLL7QqeyBNtiBDLNArF85I2D8eEbYRklscpxmw1OPRJqv2p5LfGywlVCip8d5bodbULjidKg5zVuWvl0VezIo8v5rN2XxZ1PRcwXKR072p8c0k7tX7Hkkvqo58hLuJSVseZc3yPE3w2aPiSNw1SIdp0oDi4LXdHxCLwO+UPAIbofxguYFnJ77T8PliES/WSCbZuI/DsRx3Na1JC4Z3JiocEA+VnHaoZWjUx8FI3DLWEKQ/2XJwNA9NFB1VjJLq+43efZoIb4XqHY5FqRnIwwk87aEKHl38MiixoUFlA8bQdkpj9Vb0zaSlydaSDlkt9Y5IY1QyYFF4RjuC7Jbwtz38CFZEFx9oDDV3vfvyW4i8g49RcTmYpguOWWH8DY3b4iiuS19G7yR1bdsL2Y5cmYE1dt2XkOcFnquVTAflu+5lWv9i0r9IOV/Oiuv6Usqv2bmUn8n35WjPfxVtb8PvJjuPs/5He4o2fUJXDtkdvfXkfxz5p5jvgcENweHIhCMhDxF7N/2UY2FPCRDsFNpp+zVaOGLdD6uh4IHeBQAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">f49bf12e2b3b83109748faa6fe91bf7f</block>
-        <comment>If one is found:</comment>
+        <block display_value="">d31205573bc09b50ebe9c15765e45a2d</block>
+        <comment>Saves the page count and moves to the next page.</comment>
         <connected_to/>
         <decision_table/>
         <display_text/>
         <flow display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</flow>
-        <flow_variables_assigned/>
+        <flow_variables_assigned>page_count,page</flow_variables_assigned>
         <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>6</order>
-        <outputs_assigned/>
-        <parent_ui_id>60750053-3098-40df-a0ef-da1409b55e3b</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:31:15</sys_created_on>
-        <sys_id>fe4bb92a2b3b83109748faa6fe91bf29</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:24</sys_updated_on>
-        <ui_id>7a128bc2-92b7-4602-9b29-b4241bbe3b83</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUBnWaAky7V9C1oEKNA2QBPk0gbCig+bCEWqJGXHNfzvXerhGInTFkGPvZmzj5lZDbyPTOub1rtbc+mcXOlo+e0+jqQOGP7eRxpqHi0jajSTXhpddkAcbUC1oaD4CujuwoN7uBCm1QxrTLpGwe7uNy10LRWzfOBrwOJWz2203D8r+V3DSwUVV7jpxlupVzguGb4EAZEuaErzbJZnhGTzaVrN8irNWA4ccuwbB9+P8i8+dUj8qq/Ah7gbmYxlQVZK4og/eq4ZR2oByvE4qkEz8MbujojlwK61egLWUntcF4XmRyd/4u6sKEKj4OiR8r54fJbD7XqYro2k/LoJAnvEQ6WGGWpUW+svvY9wdS6gVX68OiKtw328CaKDikGSuFmb7deR8ErqzuBQVIaCOr7A4xmq1nMXPgxXvMZFZQ1Ng8cpG2s2shtGLXWyUvhIhDJbJA1ZSoAG4QneCJIrxD908B1YGVx8xjU43MuswEladrnDdd6ihUN3lvJHGwT1BgcrZX8NbHDUysZfIs+GD6oP8cvQnuR1v8+qglAQZDKfCzqZ5iAmwN4tJgs2E2nBizllReI8+NYdDt9bQnJGXob6zXv+RfIXUIgiJcX55E9n55J/JvOvxz37Q9zDB/rLtBNC/sf9NO7SlX1sB28d+ZvTfh+i3TO4PjeMU+lQyG3APo7/5KGwwwBIegptjX0IFp6wwy/hr3k6EwYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">f09bf12e2b3b83109748faa6fe91bf7d</block>
-        <comment>If it is not connected yet:</comment>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>4</order>
         <outputs_assigned/>
-        <parent_ui_id>96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45</parent_ui_id>
+        <parent_ui_id>51d25996-d992-4d1e-948f-8488913da28e</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:17:44</sys_created_on>
-        <sys_id>383839222b3b83109748faa6fe91bf7f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_created_on>2026-10-25 16:30:53</sys_created_on>
+        <sys_id>f6b109533bc09b50ebe9c15765e45a94</sys_id>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:24</sys_updated_on>
-        <ui_id>60750053-3098-40df-a0ef-da1409b55e3b</ui_id>
+        <sys_updated_on>2026-10-25 16:34:02</sys_updated_on>
+        <ui_id>239ea3ee-ce63-4f1c-89b4-8a687b7f71eb</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8XPjpHtOCx9KxuFwbbCWvqyFXMtXSdisuRJctIs5L/vyh9paFM2yh73Zp2re+45VwfvI9P5tvPuzlw5J1c6uvz2EEdSB4y+95GGBqPLiBstpJdGlz0QRxtQXSho4y9q02lBmJCuVbC7P1Pia6mExZG/BUssHm10uX9W8rsWSwUVKmK49VbqFbVLQaeaQZ0uecrzbJFnjGXv5mm1yKs0Ezkg5HRvanw/yb341CPxqz7CPMLdNMlYEWSlLI7w0aMWSKNrUA7jqAEtwBu7OyIWQdxo9QSspfZEF4XLj07+Iu6sKMLFGskjx6F4PJbjzgaYr43keNMGgQPioVJjDzeqa/SXwUfYNtbQKT9tm5DOER+2QXRQMUqqb9dm+3UaeC11b3AsKsNBHU/gaQ1V59GFh0GFDRGVDbQtLadsrdnIvpm0NMlK0SGpldnS0JCdBHgQntCOILkm/EMP34OVwcVnoqHmQWYFTvKyzxnReUsWDv1ayp9dEDQYHK2UwzboguNWtv6K5mxwVH2IX4b0JJ/7fVZAVRVpOkO+ELM5FulsySGfVRWf54Uo5mzBEufBd+5w+N4xlov0ZZjfzPMvkr+Eoi5SVpxP/nxxLvlnMv963LM/xD080F+mnTH2P+6ncZeuHGI7euuHvzntDyHawwQ35EYgl46E3AXs4/TnDoUdBUDyU2hr7I9g4Qk7/Ab9NlaYAwYAAA==</values>
+        <values>H4sIAAAAAAAA/+1X0WrbMBT9laCnjcXBdmzH7p4Ko1DYVti6voxiZOk6FZMlV5bTZsH/vivbSdqsK2VQ6EOebB1J995zdKyLN0S3tm5tc6lPm0YsFTn5eT0lQjkM3zdE0QrICanpEnKmW2XJlKyobB242UQ8jfwsSDzIgtSLEh88Ok/nHksWkMxLFpYQzvZ7uw53c9HUkq6vxiCIsBshuYExeU0N5rRgyMnmYMqua8glLUDixnNlYYmrsFyOwyDz/YgH83nB/KyIfSggY0G8SGKIYkoB1213PiLzFEGXBzGxy6ANd/WEUwL3FhQHzFhS2cCUVFRxarVZ7xADlF8ouQduMNDAtKL3jfiNsSPfrSsBqbFRhd0wHxXaiqMFg4vaCq0GxNJCbpXTsq3U14GC0xZK2kr7QNu2wXhQu5pdEWNF5fcbffdtm/BMqJ7eOCk1o3I3otYaUbQWGncerbg81GaAPv91KiChwpx5RetaqGVeG70SfR4su5otJQ5mpdR3WJ+z3owyx3GGatLZGeKfeviKGuEIf8EwY74fSty2cO5OvUjjhC8g8+I4RgNGQegVZZF6GU/5Isx4WAZAul7c/LZ1tAaZRkHyQVNc0DAjanuKJaxg5N5NH9n/gfFfz8U89n0W/MvFEB24+LF/n3FucHTuG3NuXCShDyl4KWOBF3FaeFkWcg9ClvohROBni/9wrjUtbDFHu/cFPp9bRSaTiQHbGjVB2zaASrwred7T6WmuqOlv8feTD5PgI+m67tp9DAO9oU+89A4+9pNjP3nDX+Vr95OXXvLHvnN0+LHvPNl3ODDRIO1Lx/F8+6fiJtboScEeQnfa/HKR9lj3B1jyDcTzDAAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=39a6b5222b3b83109748faa6fe91bf14"/>
-    <sys_hub_flow_variable action="delete_multiple" query="model=39a6b5222b3b83109748faa6fe91bf14"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=39a6b5222b3b83109748faa6fe91bf14^sys_idNOT IN19004d133bc09b50ebe9c15765e45aae,d500c1133bc09b50ebe9c15765e45ae4"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b856d7e9-5558-4412-bfb8-9d8d729d2f1e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>page_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>page_count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</model>
+        <model_id>39a6b5222b3b83109748faa6fe91bf14</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_39a6b5222b3b83109748faa6fe91bf14</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-25 16:23:25</sys_created_on>
+        <sys_id>19004d133bc09b50ebe9c15765e45aae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-25 16:32:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=5b620e8e-8cc1-4dab-992d-e2c802e4e097</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>page</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>page</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</model>
+        <model_id>39a6b5222b3b83109748faa6fe91bf14</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_39a6b5222b3b83109748faa6fe91bf14</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-25 16:23:25</sys_created_on>
+        <sys_id>d500c1133bc09b50ebe9c15765e45ae4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-25 16:32:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>project</element>
         <help/>
@@ -355,7 +450,7 @@
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_39a6b5222b3b83109748faa6fe91bf14_project_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
         <sys_updated_on>2026-10-11 02:29:25</sys_updated_on>
         <url/>
@@ -378,7 +473,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>xero__link_legacy_tasks</internal_name>
-        <label_cache>[{"name":"subflow.project.correlation_id","label":"Input➛Project➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"correlation_id","usedInstances":{"b395134f-bec8-46f3-b1d6-9843a5ef525c":["project_id"]}},{"name":"2b50caf0-88fc-43af-ad79-9d6f15e58cd5.Record","label":"5 - Look Up Record➛Project Task Record","reference":"pm_project_task","reference_display":"Project Task","type":"reference","base_type":"reference","usedInstances":{"80c65277-6acb-442d-a60b-37210aad6100":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b50caf0-88fc-43af-ad79-9d6f15e58cd5.status","label":"5 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"7a128bc2-92b7-4602-9b29-b4241bbe3b83":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"subflow.project","label":"Input➛Project","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","usedInstances":{"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null,"conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"dd39c6be-43f7-4034-9740-dc9e8f620734","uiTypeLabel":"Reference"}},{"name":"96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45.item.name","label":"2➛items_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null,"conditions"]},"attributes":{}},{"name":"25abb511-ec6d-4e51-9ca3-bbc435d54060.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"60750053-3098-40df-a0ef-da1409b55e3b":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45.item.taskId","label":"2➛items_object➛taskId","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"25abb511-ec6d-4e51-9ca3-bbc435d54060":[null,"conditions"],"80c65277-6acb-442d-a60b-37210aad6100":["correlation_id"]},"attributes":{}},{"name":"undefined","label":" - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record - Update Record","usedInstances":{"25abb511-ec6d-4e51-9ca3-bbc435d54060":[null],"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null]},"attributes":{}},{"name":"b395134f-bec8-46f3-b1d6-9843a5ef525c.tasks","label":"1 - Xero - Get Task by Project ID➛Tasks","reference_display":"Tasks","type":"array.object","base_type":"array.object","usedInstances":{"96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45":["items"]},"attributes":{"sourceId":"a1bdb3df-296f-4d69-bad2-0da8d189e40d","child_name":"items_object","uiUniqueId":"8fe63844-aca1-435a-80cd-411811e659ab","uiTypeLabel":"Array.Object","co_type_name":"FDceeb632f90650310643c194f4ad20890","child_label":"items_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f3628333-806f-4484-940f-b1d04c2b1a68","uiType":"array.object","child_type":"object","child_uiUniqueId":"99c72426-b1cd-422d-aad9-79b60fac9279"}},{"name":"subflow.project_correlation_id","label":"Input➛Project Correlation ID","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"42a0bc88-7745-4e3a-8fa2-ee0367e56e3b"}}]</label_cache>
+        <label_cache>[{"name":"4d840916-e918-460e-a383-c67e63fc2fe2.page_count","label":"3 - Xero - Process Legacy Tasks Page➛page_count","reference_display":"page_count","type":"integer","base_type":"integer","usedInstances":{"239ea3ee-ce63-4f1c-89b4-8a687b7f71eb":["page_count-0"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"52629e91-4c51-4ff4-9c2a-73264ed2f426"}},{"name":"flow_variable.page_count","label":"Flow Variables➛page_count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"51d25996-d992-4d1e-948f-8488913da28e":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b856d7e9-5558-4412-bfb8-9d8d729d2f1e"}},{"name":"flow_variable.page","label":"Flow Variables➛page","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"51d25996-d992-4d1e-948f-8488913da28e":["condition"],"4d840916-e918-460e-a383-c67e63fc2fe2":["page"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5b620e8e-8cc1-4dab-992d-e2c802e4e097"}},{"name":"subflow.project.correlation_id","label":"Input➛Project➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"pm_project","column_name":"correlation_id","usedInstances":{"b395134f-bec8-46f3-b1d6-9843a5ef525c":["project_id"]}},{"name":"2b50caf0-88fc-43af-ad79-9d6f15e58cd5.Record","label":"5 - Look Up Record➛Project Task Record","reference":"pm_project_task","reference_display":"Project Task","type":"reference","base_type":"reference","usedInstances":{"80c65277-6acb-442d-a60b-37210aad6100":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"2b50caf0-88fc-43af-ad79-9d6f15e58cd5.status","label":"5 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"7a128bc2-92b7-4602-9b29-b4241bbe3b83":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"subflow.project","label":"Input➛Project","reference":"pm_project","reference_display":"Project","type":"reference","base_type":"reference","column_name":"","usedInstances":{"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null,"conditions"],"4d840916-e918-460e-a383-c67e63fc2fe2":["project"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"dd39c6be-43f7-4034-9740-dc9e8f620734","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"25abb511-ec6d-4e51-9ca3-bbc435d54060.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"60750053-3098-40df-a0ef-da1409b55e3b":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"undefined","label":"4 - Set Flow Variables","type":"SETFLOWVARIABLES","base_type":"SETFLOWVARIABLES","usedInstances":{"25abb511-ec6d-4e51-9ca3-bbc435d54060":[null],"2b50caf0-88fc-43af-ad79-9d6f15e58cd5":[null]},"attributes":{}},{"name":"subflow.project_correlation_id","label":"Input➛Project Correlation ID","type":"string","base_type":"string","usedInstances":{},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"42a0bc88-7745-4e3a-8fa2-ee0367e56e3b"}}]</label_cache>
         <master>true</master>
         <name>Xero - Link Legacy Tasks</name>
         <natlang/>
@@ -395,7 +490,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d60df9ee2b3b83109748faa6fe91bf40</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -403,7 +498,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:26</sys_updated_on>
+        <sys_updated_on>2026-10-25 16:34:05</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -512,188 +607,283 @@
     <sys_hub_flow_output action="delete_multiple" query="model=d60df9ee2b3b83109748faa6fe91bf40"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=d60df9ee2b3b83109748faa6fe91bf40"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d60df9ee2b3b83109748faa6fe91bf40"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d60df9ee2b3b83109748faa6fe91bf40^sys_idNOT IN6a0df9ee2b3b83109748faa6fe91bf73,220df9ee2b3b83109748faa6fe91bf74,ae0df9ee2b3b83109748faa6fe91bf74,ea0df9ee2b3b83109748faa6fe91bf72"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d60df9ee2b3b83109748faa6fe91bf40"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d60df9ee2b3b83109748faa6fe91bf40^sys_idNOT IN6d7241973bc09b50ebe9c15765e45a46"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <comment>Checks if this Xero task is already connected in SPM.</comment>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <comment>Links the Xero tasks of one page.</comment>
         <display_text/>
         <flow display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</flow>
         <generation_source/>
         <order>3</order>
-        <parent_ui_id>96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <parent_ui_id>51d25996-d992-4d1e-948f-8488913da28e</parent_ui_id>
+        <show_stages>false</show_stages>
+        <subflow display_value="Xero - Process Legacy Tasks Page">90dfb4133bc09b50ebe9c15765e45a74</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/71Ty27bMBD8F54lQbbeuQUJDARomyJucwkCgSJXNgvqEZJy4hr+95IWo0fSFjkYuXGHS+7s7M7DATGKLtDCp2URLoKgIH5WRD4UkJFFlMQRhBFOYuSgGlegM1u8AR3tMO9MeDiUvHnOd1gwXHDwzPXxqBMoky3H+3ubpxGyZZwKqNHFw6Oj/xH6QwUCXRzeXH2UEccF8JHSnKDatyZitYKNLtIDX+yLmwFtBDUUFg6CFwU1BV27xFyCgypcU6wasR8QAZje1nwEtvr7vrkKv0j2W1cMfZNXgu6G2MaHMLei9HB5jRVeK9ER1YlBo4YRkL0OFErccXU1xfqE21axpu6fKKO7fd3wrqq/9Tqg4YPJDDqpSUBrGjXMbRvlets8372yXLH6pIm95A3BfIiwUoIVnTJ8DqhjP97K3EPvhQYOla6ZV7htWb3JW9Hs2KmOpl15G64D77RLFCTb1B4mpkdPjwB7K41fn+B7u2hf9Te23s+aPXVwY5bGDxYxBMulm6Zx6IZxlOoTDdw4iwvfD+MkSgAdHST38opjKUep9Izyp8402gtnJcp7lc0TIlirLjWpHVg1jo51T5b+b1dTPFlO0fwComYGkl1h+vbs3Vnc8wFGr+75PlB6x9F6aFznuYvuJrj10fJsPgqWcx+1VT4S+5ujxj7ObKxZ5U+wWLkGLMh2xYCbUcptI5QxxWkBDbt/unA6qLkPp6P6FCdSGmQkLsANgzJxQz8I3SwJfZeSDNIyXvpJEJ7RiY9/AI525L3JBgAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:38:52</sys_created_on>
-        <sys_id>6a0df9ee2b3b83109748faa6fe91bf73</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2026-10-25 16:34:05</sys_created_on>
+        <sys_id>6d7241973bc09b50ebe9c15765e45a46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:26</sys_updated_on>
-        <ui_id>25abb511-ec6d-4e51-9ca3-bbc435d54060</ui_id>
+        <sys_updated_on>2026-10-25 16:34:05</sys_updated_on>
+        <ui_id>4d840916-e918-460e-a383-c67e63fc2fe2</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsgEOjbqRVSpb3tacvty97Kcmyn+NbYWdtpt0X89xvHCSCgQHRUanWPHo/H38x838TwbRlyGl6FdBJN8slkOE6jaDCIotFoQHCcZYMRyaIMJ2EnlHjBwNPiTDBYPmJRunWxQIVW/zBikcXmB+xQbgqBn7/WDn/63WDmd8mcC6qZDK++fe+EBdYQ1jIdXi13ts7FJXDGBLjOamA7OO1zsV6ias/bPm0fCz77DaWpgxJ1QvbLMkkZYMixMKwTLrCk2Cr9vLZohumdFBvDnEsLEUPn/MvwF7h3HDm/nEFWhPm99RLVhfLm/AZbfG91SWypa1cyV5ww4+tBWY5LYa+3bd7hrrBcSX/Ep+1PK1Eu5GdfjnAdoOkLWEoDIFjhEnXI6zTy+7l6+tKgnHJZ1aTeFIpgsV5hazXPSuvwLEMm2AICoQUuCi4fHC8eeXUYsCx6DwIWvVyoJ7jU8AfZw8QB70FdcW8K9pvK/BVr7rL4A8LAYQDEBTAE+RYaVeqqlI+IiNJUGxpL42OFq05ons21wMZsMoeSo5+lw+3rUGeMfNHcEaJ5YX+HEI+sTm7VaaQxPErByYZyREnKHQqzpQ+itGYCOzPi9O8SgtDlcjLCOM9p3B2zNOomg4R1x2REu4wklAyzLMXJsMctW/ScqG7parUvrAtGbinK0xVpRHm9XZJDZarluWf7dChALc/4YvJMougjCRQuf3/6bK84X4ITsovpUZLRDZ+M0hb5Wm7pbl8vrXl+BoSG53eOmUH2/BqqmuY5Z4Ie+gpN3cbOV6j///wKvUuSAyCKfPe4FFxWTwoA+lbsHx6lXhbv8Kyi14b7lQ0bsq8BHFgVvLRWwhlwGiXcw93BzOM5ALGZ9xVldmd9Y6wFMLiYAAb9ywhguU5zXcgDNW9eka6bjf+L88e7/kDBrQPx6pDAWt0Zt72zv9oX8KCVgrfJ5nduXuHchZ+bryiy85YjYA5H6/uQ1y964vSB2c3tjRdV9gmLH4f2a8ahplFVem/wdI2P/nrKtp6uPEcL6Bwv4IWtGbwsqUFYM5SrUlJUv603RHKdzLk2tnbeHzRfGOhHBgqEGdg5CyrvYO3d8kN8Oo+mlLd50CRS32YCSCSoEgnWibRLu83QSi74OL300JpiLqpuwM+mYqudTGulXxlcJxp5hBFnTrUzQcUXBfXfx94hCRwcfyewfojf4JcfTYThLOnjUTqI4yiKI5pG4zSNx6MsH+E0yTcaRchIAtMUIudAFQiPGmo0fY735089bNvNmTNANQy8UdL94u6nNnCooL1Bg+o07nqeZEoJhuXOQJkB8t+m1RdhTdfhuxsqH+IPqZLPdivtTQdr/VbPhpL/JfnPkt06io1Z1B/HlHTHaZx2k5yOuhOKh108yYbpgDKS5Jd8CXz/FxUC9krhFQAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6a0df9ee2b3b83109748faa6fe91bf73"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
-        <attributes/>
-        <comment>Looks for an SPM task with the same name in this project.</comment>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</flow>
-        <generation_source/>
-        <order>5</order>
-        <parent_ui_id>60750053-3098-40df-a0ef-da1409b55e3b</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:38:52</sys_created_on>
-        <sys_id>220df9ee2b3b83109748faa6fe91bf74</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:26</sys_updated_on>
-        <ui_id>2b50caf0-88fc-43af-ad79-9d6f15e58cd5</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsgEOjbqb1KlXa3qy270mpvz3Jsp/jWxFnbaZci/vuO4wQioEB0VGp1j/GMx9/MfPPZ8G3pc+pf+HQSTNLJZDiOg2AwCILRaEBwmCSDEUmCBEd+x8/wnIGnwYlg8PmARWG/8znKlfyXEYMM1j/AQrnOBV58qRw+Oqs3dVYy44IqlvkX3753/BwrCGuY8i+WW6ZTcQmcMAGu0wrYFk6zyNefqLS5tXfNbd4HZ5CKWihBx2e/DMsoAwwpFpp1/DnOKDZSLdYrimF6m4nNwoxnBiL61vmX5k9w7jiwfimDrAhztvUnqgrlltMrbPCdUQUxhapcyUxywrSrB2UpLoS5bK45h9vccJm5LS5tt1uKYp59cOXw1wHqvsBKoQEEy22iFnmVRno3k4+fapTXPCtrUhmFJFisv7AxiieFsXiWPhNsDoHQHOc5z+4tLx54uRmwzHv3Aj56qZCPcKjm91kPEwu8B3XFvWtYvyqXv2DFbRbvIQxsBkBcAEOQa6GWhSpL+YCIKHRpUDjTLpa/6vh6oS8F1nqTOZQc/SwsbleHKmPkima3EMVz8yeEeGBVcqtOPRrDgxScbChHZEa5RaEb86FnUhmbcHkEGP8uIA5dLicjjNOUht0xi4NuNIhYd0xGtMtIRMkwSWIcDXvcsHnPhl+t/jEyL0esDqCLxBazV40feBCpFBPYnoI4vbn76/3H6dfdiXwNkFrKwPEe1DJw2WzCvsZUgrCz9m5fgEoQwrMJQhQEb0kS4PDXpwjtZ9yV4Migh/QgyeiGT9rOj6tlY9J3B601z0+AUPP81jLTSxbPoaponnIm6L5779oatu69/v/z3nuVJAdAFLnu8UzwrHzEANCXYv/wIPWScItnJb0at5xdw5rszgD2jPSeWk/CCXDqSbiDs72pw7MHYq33JWW2tb5erAZgcLYBGPTPMwDLdZrrQu6pef1utd2s/Z+sP972t7d+415b7RuwVmeGbc/sr3YHeNBqgptkc5arZzh35gfuMxPZeUkJmMHW6jzk5hc9cnrPzOb02otK84jFj332inGoblSZ3gs8lsODv9eSxmOZp2gOneM5vOkVg2ci1QgrhlJZZBRVr/kNkWwnU660qZx3heYTg/nJPAmD6ZkZ80pvb+3d8iI+nkddypvUqxOpTtMeJOKViXjrRNql3Ua0ojM+Ts8tWteYi7Ib8EMtb7STKSXVM8J1pJEHGHGiqp0IKjwrqP8ue/tGYK/8HcH6Jn71n1+aCMNJ1MejeBCGQRAGNA7GcRyOR0k6wnGUbmYUIZ0RUFOInAJVIDyqqVH3OdzVn0ps2+nMCaBqBl653+n92HgWFbTXq1Edx13pSSKlYDjbEpQpIP/jurwR1nQdvjpReRN/gRV8ul1pt7S31i/1bCj454z/LNiNpdiYBf1xSEl3HIdxN0rpqDuheNjFk2QYDygjUXrOl8D331gAiJ1TFgAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=220df9ee2b3b83109748faa6fe91bf74"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
-        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
-        <attributes/>
-        <comment>Connects it to the Xero task. No other data is changed.</comment>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</flow>
-        <generation_source/>
-        <order>7</order>
-        <parent_ui_id>7a128bc2-92b7-4602-9b29-b4241bbe3b83</parent_ui_id>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:38:52</sys_created_on>
-        <sys_id>ae0df9ee2b3b83109748faa6fe91bf74</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:26</sys_updated_on>
-        <ui_id>80c65277-6acb-442d-a60b-37210aad6100</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+VVTU/cMBD9KyufN1GySZbs3ipWSEgUKkBcWhRN7Am4dT7qOMB2tf+948RZVoAoSFxQc/OMZ/zeyxv7+4ZJwZYsRhGEi3DOozCKZkEwS+Mwn0d5OBMRIIZsyiookXZq5LUWtL4D1dnAZjPLk4BDEXhpWnAvjqDwQBwsvIWYF2GCScpF4p/3ddstVQrZNgrWV64BRfitVEJjxZbfr6esAU1nGdRsuXmSeitYBTkq2no+on2K3qwbuxY170qsTCbH4ImrXLnM5HhFGSqycMJgyvDBYCWQgBSgWpyyEioBptZrtjS6o4BGEGeVWu923MrKDERLeGjlHzo5Duy+AokZdyLslpkTaAgXKzBwQZ256fROr1pybAdNBBbQKXO4Hxs2nDVG1tVQYiBXY3WturI6HRRhuwZ7/6NrCQQ2lqdFPtAqLm7r+/MR5JGsekkcRVVzULsVGKNl3hkLZ8NQYa9xCU0jq5us0fWd7IsJSunfKFr4harv6cxW3lQ+cIvbJ1XBP6L4qg9fgZaWxFdqQ8XbKWvX7aGCtn2kQhpmvzuLZCDmKGS9Cr0EWe8EW8y1bMwXOuoOHfDt1I1DnrzmML54NNRez8eRaErL8Sdykxlofz23/LchO7kcsu+z/xvAjfa/7H/6y2DdBDyLnezXTk6HhPN/8mH+Tz+T/x2NTz8A/7J9MHv1Yt1zUu/0ds/ydK1qVGBh0136owuCSGw2izlAUYjQS/EgoJchRi/lc+EhjwVP8vwA4sSXBkvfzsnxi8/DB3Z+35y9QY1xzo4kKtG+IM84ZFgSJYPZINeTQXPJyZVL7h6bD5u2cB703yeauf/mzbn+C0wDg/6ECQAA</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ae0df9ee2b3b83109748faa6fe91bf74"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Xero - Get Task by Project ID">35eb632f796503107f4423b77ae4157b</action_type>
-        <action_type_parent display_value="Xero - Get Task by Project ID">7d8bebeb796503107f4423b77ae4157f</action_type_parent>
-        <attributes/>
-        <comment>Gets the project tasks from Xero.</comment>
-        <compiled_snapshot>35eb632f796503107f4423b77ae4157b</compiled_snapshot>
-        <display_text/>
-        <flow display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</flow>
-        <generation_source/>
-        <order>1</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:38:52</sys_created_on>
-        <sys_id>ea0df9ee2b3b83109748faa6fe91bf72</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:26</sys_updated_on>
-        <ui_id>b395134f-bec8-46f3-b1d6-9843a5ef525c</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/5VSXW/bMAz8K4OeHcNJnDjO29CiQIFtHdatL0Vh0DKVaJBlVx9pMyP/fVTkpEWHAt0jj0fx7qj7gcmGrZmYYr2cz0RRLhfZfJoVIs9n87ooAPPpouAsYRpaJGZvut/IXUVjCduB8gEcButrobqndGynvDMGFTjZaaIeDkRupO0V7O/+Z4ZvpWoMara+f0hYD4ZEODRsPbxpfdSFghoVUb/HnZ+um3esuX0fMOuM1Jux/jIO357AzjRBzDRh+OxQN0gqBCiLCWtBN+A6sz8jBqG50eoF2Ert6DUWyM9W/qF9qyzLAlMgOeMYu+eyGiOMsLgEByTFc+fNSOXbTnK0MZMGBXjlLl5jkXDTh5DjiINanaY75Vv9LabBzg+cLkaItyQC+2A1aB+NiNtt9/TjpPJK6mMqY1N1HNS5AkfZ1d4FPQPz8uebmCPyT9CosKWNVQt9T0hFp9rJ4xYS3aYbRUUaPhOps3KjU+DBYUongPSK8MsjfAdGBrtf6RkaDut+afno8Tp8H14uplk2W05EWdaTfIH1BMp8NVnRf1oWZZ4V85odEmb39kKBtS9B0YWqRx9sxtjGgKqYcRjhRvbuM4na4ZjF4eEvBEOKPH0DAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ea0df9ee2b3b83109748faa6fe91bf72"/>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d60df9ee2b3b83109748faa6fe91bf40"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d60df9ee2b3b83109748faa6fe91bf40^sys_idNOT IN1a0df9ee2b3b83109748faa6fe91bf6e,920df9ee2b3b83109748faa6fe91bf70,aa0df9ee2b3b83109748faa6fe91bf71"/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d60df9ee2b3b83109748faa6fe91bf40^sys_idNOT IN2d7241973bc09b50ebe9c15765e45a42,e17241973bc09b50ebe9c15765e45a44,2d7241973bc09b50ebe9c15765e45a45"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">fc9bf12e2b3b83109748faa6fe91bf79</block>
-        <comment>Repeats the steps below for each Xero task.</comment>
+        <block display_value="">d71205573bc09b50ebe9c15765e45a28</block>
+        <comment>Starts at page 1. The loop updates the page count after each page.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</flow>
+        <flow_variables_assigned>page,page_count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-25 16:34:04</sys_created_on>
+        <sys_id>2d7241973bc09b50ebe9c15765e45a42</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-25 16:34:05</sys_updated_on>
+        <ui_id>bb79c444-eff3-4986-8e53-8fda5a68d929</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1XXWvbMBT9L3qOg+3aiZ230lIIbCusWV9GMbJ0nYgplquPpFnIf99V7DhptkEHfenIm+/Rle65R/cgvCXK2cZZM1PXxoh5TSbfnwZE1B7D7y0RnEwIT8OQRdHVVcnCvExDKCFnUToepZCkFBIyIDVdAmY2dA4Yrah0PozwmwvTSLp5PIHYQkiuoavWUI2bLWgy2Z4tvbW6pCXIY/nXZOym8ZGoLcyxSAt86nZMe1Rp7ilEAwIvFmoOWLui0sCALGnNqVV60yMaKL+v5RFY4PF4HPHJL0b8xIpJ6PMqwG4YtGt9WHSqtHB1Sy19sNox63SXyhZKMDCtDhwq6qS9OcXahPvGClW3Wywt5WG3km5Zf2l1IP0Bh0tAxBkkAY1v1DPv2qgeFmr99cDyTtR7TbpFqRiVfUSt1aJ01vPZEidm5zK30O9Cg4Ql1iyWtGlEPS8arVZiXwdpL4dzicGwkmqN/PxMDinzPQ7xCujwDvHbPfxItfANf8ZjunrfavHsYOqHJi1HcQgZBBljUZBwWgZ5HvMAYpaFMSQQ5mOyGxCzMTeSGnOUCu+oeHa+0Va4TqKiVdlvYVo09hpJraBTYzfonBLlYZjwv80qPRvOgimH4r+zX97A4dQvPYk/Efs378QX7/wP3imzdMTHkAdpmmZBkkRxUFZlFuQ84+M453EVwTt658nPf8vn8uZcfPNxfXN5cy5vzsU7H+XN4cCEQZ4zT2p6+OPxCxucSsFOobXSP3yHR2z3Czt5Lvk7DQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">db1205573bc09b50ebe9c15765e45a2a</block>
+        <comment>Repeats until all Xero pages are processed.</comment>
         <connected_to/>
         <decision_table/>
         <display_text/>
         <flow display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</flow>
         <flow_variables_assigned/>
         <generation_source/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
         <order>2</order>
         <outputs_assigned/>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:38:52</sys_created_on>
-        <sys_id>1a0df9ee2b3b83109748faa6fe91bf6e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_created_on>2026-10-25 16:34:04</sys_created_on>
+        <sys_id>e17241973bc09b50ebe9c15765e45a44</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:26</sys_updated_on>
-        <ui_id>96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45</ui_id>
+        <sys_updated_on>2026-10-25 16:34:05</sys_updated_on>
+        <ui_id>51d25996-d992-4d1e-948f-8488913da28e</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/51TXWvjMBD8L3pOjD+SkOSttBQKd1doS1+OYtbSKhGVJZ8kJ/UZ//dbxY5b+nhP9o52Z2fGcs9sG5o2+Bd74706GLb//bZgykSM3ntmoEa2Zypg7dmCnUC3se77qtits2IllxXy7XK1kcWyysRmuduuClijXOdrngTw734YaFAo32joXv93nh+VFg4ngQ040hXQsX3/7UgJos92Qu6ydMeLfFPkaZpvV1m1KaosFwWg2BChhgo1tT5Mzr4ZDV0TS4fcOnEFfkwzTzNKjygiTxcMPwIagbRegva4YDUYAcG6ju2DawlwCOLR6G7uOCoTiI7F3g+v/tLGLE1jo0QyxHE8nMtySnGE5R0EeCZqHlo3tfKjVRz9GIVACa0Ot1+xseGxCcqacSRApa/TVre1+TUmwWaC60cjpPUkAptoNEqffMjnoz0/XVXeK3MJZTrUloOeKwjBqaoNUU/PUGNNRGUNTaPMoWycPanLMGmpk4OmIpHanmlpvJ4J8Cg8oVwhuSf87gK/glPRxU+ioeFhwXznbzV4/+mFQiz/tFHJ6GzyUI4xxBHuVBNuaMEJJ7nDW7zxI/ecKVeeJLxE7OH6n8SDjm6Q4l+hs3XvUfwnNvwDUNKI03EDAAA=</values>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPxjjx0pS+lZTCoFthLX3ZirmR5ERMljR9JM2M//uubMUJbcpWusflyTryvfeck3twS3TwJnh3ry+dEytFLr49ZkSoiOFzSxQ0nFwQqhUTXmhV9UBGNiBDvMBHJpyRsHs4IHQtJLM8dTNgscZzSy7aZ1eCYcGSwZQui4/zsignZVGcTaZ0Oi9r/J3BfFZgQwlLLvHVxZ7Gh5seyV7l53cm4s5boVbpfJO63O1BbVlkNSmKjPAnzxXjSKgG6XhGGlAMvLa7EbEc2K2SB2AtlB8UN/DkxC+cOJ3N4os1R4002TEeq2TVANdX4AG5BOqDHZ3TgnI3uMN4DUH6xTE2vHBrotahxMNS7qu1DI36MlhCxgZH/0xwSIKbqDRSTzrqu7Xeft2zvBaqtyVdSk1BjifwaN4y+MinJVzyBhtVDRiDllbG6o3oi5FLk68kHvJa6i0OjeuVA43EczQW8mvEr3r4AayIKj5jGyzuMuJ2biHBuYMWNLH6GSKTQVnSUA02xBJqhfGXOGDDE90ue7nAR7vbtj21TZqeG1jxrvseiqLkp+4qqoPyXfdy59/R6W1ZYfNJeV6/lpVzeiorJ1LyxoBM/xQQXOK/zUcRe/0PyLsCgsvgqmHfk7Z++D8MzmNMyTBz9JoKh9TuI/Zp/4GIFzvcLkGPoa22P6KoA9b9BiWgFw5qBgAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">f09bf12e2b3b83109748faa6fe91bf7d</block>
-        <comment>If it is not connected yet:</comment>
+        <block display_value="">d31205573bc09b50ebe9c15765e45a2d</block>
+        <comment>Saves the page count and moves to the next page.</comment>
         <connected_to/>
         <decision_table/>
         <display_text/>
         <flow display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</flow>
-        <flow_variables_assigned/>
+        <flow_variables_assigned>page_count,page</flow_variables_assigned>
         <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
         <order>4</order>
         <outputs_assigned/>
-        <parent_ui_id>96aaffd1-8e70-434e-8c6d-ec4dc5bb7a45</parent_ui_id>
+        <parent_ui_id>51d25996-d992-4d1e-948f-8488913da28e</parent_ui_id>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:38:52</sys_created_on>
-        <sys_id>920df9ee2b3b83109748faa6fe91bf70</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_created_on>2026-10-25 16:34:04</sys_created_on>
+        <sys_id>2d7241973bc09b50ebe9c15765e45a45</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:26</sys_updated_on>
-        <ui_id>60750053-3098-40df-a0ef-da1409b55e3b</ui_id>
+        <sys_updated_on>2026-10-25 16:34:05</sys_updated_on>
+        <ui_id>239ea3ee-ce63-4f1c-89b4-8a687b7f71eb</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWaAky6hzCxwEKJA2QBPk0gbCiqRsohSpiqQd1/C/d6mHbSQu2rQ99mbOcpczox14R4x3jXf2wVxZK5eaXH5+iojUAcPfO6KhFuSSMKO5dNLoogMisgblQ0Ebd1EZrzliXNpGwfbxTImtpOKtGOY30OIUJ1pyuXtRkhw7KwpVMmcJy9JZllKavpsm5Swrk5RnICDDgQpKofDqYiR2cdsh0U8Zu20TcOtaqZfD+XaYcj+CpuWBVUIjIp6d0FwgnwqUFRGpQXNwpt0ekFYAv9PqCKykdjiOhMvPVn7HB9M8DxcrgRKZ6IuHYzFY1sPVNThAKp453w5X2cpIJmxvDhcVeOUWp1h/4a4JUvsWB6Uau43ytf7YO0IOA8YvhIi3SEI0QWmgPuio7ldm82lkeSN158pQVIaBOpzAoXeld4HPjgglahxU1NA06GjRtGYtu2bkUsdLhYe4UmaDj4Z9i4EF4jEaC/EN4tcd/AitDCo+4Bhs7mmWYCUrut3EcWiTIPuI2K1dKLD2KBLdLb75QLGXPIgren9CC2tl467w5bUYdOyj16t+suW7XZpDWeZJMhFsxidTkSeTOYNsUpZsmuU8n9IZja0D5+1+/8VTmvHkdST+eM7b8jOHvMoTmp/Pz3R2Lj9nkvPG0KS/CE34Yr+ZGUrp/9D8dWikLfpVH7R1j//DzDyFgPRvHrxm0iK1h4C9H/9FQmGLyyXZKbQx7dcg6ojtfwB2SJd2jwYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">f49bf12e2b3b83109748faa6fe91bf7f</block>
-        <comment>If one is found:</comment>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>6</order>
-        <outputs_assigned/>
-        <parent_ui_id>60750053-3098-40df-a0ef-da1409b55e3b</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-11 02:38:52</sys_created_on>
-        <sys_id>aa0df9ee2b3b83109748faa6fe91bf71</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:26</sys_updated_on>
-        <ui_id>7a128bc2-92b7-4602-9b29-b4241bbe3b83</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1VyW7bMBD9lYBn2aAky7V9CxwEKJA2QBPk0gbCiItNhCZVkUziGv73DrXYQZIuaXvszXyzvTeaB++IDb4O3l3bU+fUypDF59uEKBMx/L0jBjaCLAizhiuvrClbICH3oEMMaLECtj3x4O5OpA2GY4wrV2vY3vwkha2V5o3o59XQYFcvGrLYPQspjh0kBZnOWcrybJpnlGazSVpN8yrNeA4CcmyooRIaU5cD0ZOLFkl+qMBv64g73yiz6t8XfZerAbQNj6xSmhDx6IXhAvlI0E4kZAOGg7fN9oA0Avil0UdgrYzHdiQmPzr1DQdmRRETpUCJTHTBw7PsV9fB8gw8IJXAfGj6VLa2ignXLYcLCUH75VOsS7iso9SuxEOlh2qrw8Z87DZCDg2GL4VIcEhC1FFppN7rkFdr+/BpYHmuTLuVPqgtA314gcfdVcFHPjsitNhgo3IDdY0bLevG3qu2GLlsxiuNj7HU9gGHxvsbA4vEx7hYGJ8jftbCN9CoqOIDtsHijmYFTrGyvVVsh2sSZJ8Qt3VLDc4dReJ2y68hUuwk9+LKbj+xhDWq9qc4+V70OvbJy9N/cvW7XVYVlIGko9lMstEkBzkC/m4+mvOpTAtRzBgvxs6DD26//xIozTl9aY0/7vM2/8yhkEVKi9f9M5m+5p9XnPNG02S/ME38Yr/pGUrpf9P8tWmUK7tT77W1w/+hZ26jQbqZh10z5ZDadcTeD/8qMbDF41LsKfRgm7so6ojtvwMGll11nwYAAA==</values>
+        <values>H4sIAAAAAAAA/+1XXU/bMBT9K5WfNq2pkjRJE/aEQEhI25AG42VClWPfFGuOE2yn0FX571wn6cdgm5jE0+hT62Nf33OO79VV1qRqbN1Yc1UdGyMWihx9vxkToRyG/9dEcHJEgsz3Ix5Mpznzszz2IYeMBfEsiSGKKQUyJoqWgCdruoA5qxplEVtS2ThwvY54GvlZkHiQBakXJT54dJpOPZbMIJkWLCwgnOxi2xajuTC1pKvr4RJE2K2QXMNAsqYac1rQ5Gj9ZOulpCXNQT5l/TsldlU7TCgLC0zYA5+G6PMtWmnu6IRjAg8WFAfkUVBpYExKqji1lV5tEQ2UXyi5A27x+l5oSR+M+IkZI9+dKwCVscGE7XI+GNTDxSm19NLqhtlGb/2qBAPTe8KhoI20J/tYf+CitqJSfYiludxEV7Ip1ZfeDbK9YO89GoMkoHZCHfNBRnF5W91/3bA8E6rzZNiUFaNyu6LWapE31vFZk0ZcPbW5h54bDRJKzDkvaV0LtZjXulqKLg/SLicLiYtJIat75OfKekKZ0zjBJ6CTM8RPO/iaauEEf8ZrhnzflLhr4NwVUJ7GCZ9B5sVxjEUbBaGXF3nqZTzlszDjYREAacfErMyJpMbsrMI3mt81Tmhv3GDRvHfZhTAtanuMpJYwuNGOh2bjse+z4E91C9GvJbrXZq/QMy/Ivd8zz6j8W58Ehz75H/okzpPQhxS8lLHAizjNvSwLuQchS/0QIvCz2av0Cb4abDBnRFd0+Pu3U2Q0GmnAt1YjLH4D6M27gs87gZ3wJdXd5Hk/+jAKPpK2bW9cS/WCDzPwMAPfdG8fZuBhBh765E3OQA5MGDTiyqk+33wRuo0VFrxg+9B9pX+4m3ZY+wifk6knWw4AAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=d60df9ee2b3b83109748faa6fe91bf40"/>
-    <sys_hub_flow_variable action="delete_multiple" query="model=d60df9ee2b3b83109748faa6fe91bf40"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d60df9ee2b3b83109748faa6fe91bf40^sys_idNOT IN1d7241973bc09b50ebe9c15765e45a34,e57241973bc09b50ebe9c15765e45a3a"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=5b620e8e-8cc1-4dab-992d-e2c802e4e097</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>page</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>page</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</model>
+        <model_id>d60df9ee2b3b83109748faa6fe91bf40</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_d60df9ee2b3b83109748faa6fe91bf40</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-25 16:34:04</sys_created_on>
+        <sys_id>1d7241973bc09b50ebe9c15765e45a34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-25 16:34:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b856d7e9-5558-4412-bfb8-9d8d729d2f1e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>page_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>page_count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Xero - Link Legacy Tasks">d60df9ee2b3b83109748faa6fe91bf40</model>
+        <model_id>d60df9ee2b3b83109748faa6fe91bf40</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_d60df9ee2b3b83109748faa6fe91bf40</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-25 16:34:04</sys_created_on>
+        <sys_id>e57241973bc09b50ebe9c15765e45a3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-25 16:34:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>project</element>
         <help/>
@@ -711,7 +901,7 @@
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d60df9ee2b3b83109748faa6fe91bf40_project_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
         <sys_updated_on>2026-10-11 02:38:52</sys_updated_on>
         <url/>
@@ -730,16 +920,16 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_subflow_plan","id":"ea0df9ee2b3b83109748faa6fe91bf94","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id display_value="Xero - Link Legacy Tasks">39a6b5222b3b83109748faa6fe91bf14</plan_id>
-        <snapshot>455f5c32d14813107f445ecf887f0449</snapshot>
+        <snapshot>4fdf2adbd58c13107f447c0a754272b7</snapshot>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-11 02:38:53</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ea0df9ee2b3b83109748faa6fe91bf94</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-11 03:32:27</sys_updated_on>
+        <sys_updated_on>2026-10-25 16:34:06</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

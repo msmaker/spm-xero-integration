@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="01817215adb203107f442875d3223d80" label="Time Card" max_length="40" name="time_card" type="collection">
         <element label="Synchronization Error" max_length="40" name="x_snc_spm_xero_i_0_synchronization_error" type="boolean"/>
+        <element label="Xero Sync Message" max_length="4000" name="x_snc_spm_xero_i_0_xero_sync_message" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Sent to Xero" max_length="40" name="x_snc_spm_xero_i_0_sent_to_xero" type="boolean"/>
     </element>
 </database>

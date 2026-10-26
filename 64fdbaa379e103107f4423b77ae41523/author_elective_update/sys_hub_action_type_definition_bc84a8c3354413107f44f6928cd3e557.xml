@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>xero__get_time_entries</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Xero - Get Time Entries</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 19:44:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc84a8c3354413107f44f6928cd3e557</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero - Get Time Entries</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_bc84a8c3354413107f44f6928cd3e557</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 19:44:45</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_variable_value action="DELETE" query="document_key=bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_hub_step_instance action="DELETE" query="action=bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_hub_action_input action="DELETE" query="model=bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_hub_action_output action="DELETE" query="model=bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_hub_action_plan action="DELETE" query="action_id=bc84a8c3354413107f44f6928cd3e557"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>40755fe2c388db5078dbf19f0501318c</instance_id>
+        <instance_name>nowlearning-nlinst04802975-5xbtz-0001</instance_name>
+        <name>sys_hub_action_type_definition_bc84a8c3354413107f44f6928cd3e557</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><acls/><action_status/><action_template/><active>true</active><annotation/><attributes>{labelCacheCleanUpExecuted=true}</attributes><authored_on_release_version>29000</authored_on_release_version><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><flow_priority/><ih_action>false</ih_action><internal_name>xero__get_time_entries</internal_name><label_cache/><latest_snapshot/><master_snapshot/><master_snapshot_digest/><name>Xero - Get Time Entries</name><natlang/><outputs/><pre_compiled>false</pre_compiled><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-10-24 19:44:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bc84a8c3354413107f44f6928cd3e557</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Xero - Get Time Entries</sys_name><sys_overrides/><sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package><sys_policy/><sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope><sys_update_name>sys_hub_action_type_definition_bc84a8c3354413107f44f6928cd3e557</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-10-24 19:44:45</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=bc84a8c3354413107f44f6928cd3e557"/><sys_variable_value action="delete_multiple" query="document_key=bc84a8c3354413107f44f6928cd3e557"/><sys_hub_step_instance action="delete_multiple" query="action=bc84a8c3354413107f44f6928cd3e557"/><sys_hub_action_input action="delete_multiple" query="model=bc84a8c3354413107f44f6928cd3e557"/><sys_hub_action_output action="delete_multiple" query="model=bc84a8c3354413107f44f6928cd3e557"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=bc84a8c3354413107f44f6928cd3e557"/><sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=bc84a8c3354413107f44f6928cd3e557"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_bc84a8c3354413107f44f6928cd3e557"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_bc84a8c3354413107f44f6928cd3e557"/><sys_hub_action_plan action="delete_multiple" query="action_id=bc84a8c3354413107f44f6928cd3e557"/></record_update>]]></payload>
+        <payload_hash>-1538970661</payload_hash>
+        <record_name>Xero - Get Time Entries</record_name>
+        <reverted_from/>
+        <source>14a9d8b6d10813107f445ecf887f045a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 19:44:45</sys_created_on>
+        <sys_id>c984a8c3354413107f44f6928cd3e55f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a16f71b6a50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 19:44:45</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>c984a8c3eb4413100972aabda9ac5c5e</update_guid>
+        <update_guid_history>c984a8c3eb4413100972aabda9ac5c5e:-1538970661</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-24 19:54:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>a17ce5d8d4fc49e4abe01de8f8b70ed1</sys_id>
+        <sys_metadata>bc84a8c3354413107f44f6928cd3e557</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero - Get Time Entries</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_bc84a8c3354413107f44f6928cd3e557</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_bc84a8c3354413107f44f6928cd3e557">c984a8c3354413107f44f6928cd3e55f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-24 19:54:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
