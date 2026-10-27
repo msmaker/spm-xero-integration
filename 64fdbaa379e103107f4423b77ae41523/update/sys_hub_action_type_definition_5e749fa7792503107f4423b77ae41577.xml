@@ -39,7 +39,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_5e749fa7792503107f4423b77ae41577</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-26 00:31:37</sys_updated_on>
+        <sys_updated_on>2026-10-26 23:33:44</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -160,6 +160,34 @@
         <sys_updated_on>2026-10-25 01:31:00</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6429532f792503107f4423b77ae41558"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6429532f792503107f4423b77ae41558</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 15:33:54</sys_created_on>
+        <sys_id>3429532f792503107f4423b77ae4156d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 15:33:54</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6429532f792503107f4423b77ae41558</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 15:33:54</sys_created_on>
+        <sys_id>b429532f792503107f4423b77ae4156d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 15:33:54</sys_updated_on>
+        <value>https://api.xero.com/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>6429532f792503107f4423b77ae41558</document_key>
@@ -285,34 +313,6 @@
         <sys_updated_on>2026-06-24 15:33:54</sys_updated_on>
         <value>projects.xro/2.0/Projects</value>
         <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>6429532f792503107f4423b77ae41558</document_key>
-        <order>13</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-24 15:33:54</sys_created_on>
-        <sys_id>3429532f792503107f4423b77ae4156d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-24 15:33:54</sys_updated_on>
-        <value>18409d8007482000dada43c0d1021e8f</value>
-        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>6429532f792503107f4423b77ae41558</document_key>
-        <order>15</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-24 15:33:54</sys_created_on>
-        <sys_id>b429532f792503107f4423b77ae4156d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-24 15:33:54</sys_updated_on>
-        <value>https://api.xero.com/</value>
-        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
@@ -2113,7 +2113,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero  - Get Projects">5e749fa7792503107f4423b77ae41577</action_id>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"b3ac1bef792503107f4423b77ae41557","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
-        <snapshot>1ddf26dbd58c13107f447c0a75427290</snapshot>
+        <snapshot>b63ce76f690013107f44df0df4b07270</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 15:49:23</sys_created_on>
         <sys_domain>global</sys_domain>

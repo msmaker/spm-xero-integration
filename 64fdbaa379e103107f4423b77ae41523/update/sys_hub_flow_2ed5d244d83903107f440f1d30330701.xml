@@ -45,7 +45,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_flow_2ed5d244d83903107f440f1d30330701</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-26 00:31:43</sys_updated_on>
+        <sys_updated_on>2026-10-26 23:33:52</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
@@ -362,7 +362,7 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"68e5d244d83903107f440f1d303307c2","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id>2ed5d244d83903107f440f1d30330701</plan_id>
-        <snapshot>eedfa6dbd58c13107f447c0a75427270</snapshot>
+        <snapshot>034c2f6f690013107f44df0df4b072cf</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 23:57:02</sys_created_on>
         <sys_domain>global</sys_domain>

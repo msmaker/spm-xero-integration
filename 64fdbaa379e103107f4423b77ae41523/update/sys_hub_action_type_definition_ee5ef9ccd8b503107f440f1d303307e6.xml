@@ -39,7 +39,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_ee5ef9ccd8b503107f440f1d303307e6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-26 00:31:41</sys_updated_on>
+        <sys_updated_on>2026-10-26 23:33:49</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1251,7 +1251,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero - Get User">ee5ef9ccd8b503107f440f1d303307e6</action_id>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"d9a0ca40d8f503107f440f1d30330740","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
-        <snapshot>69df66dbd58c13107f447c0a7542721f</snapshot>
+        <snapshot>af3c6b6f690013107f44df0df4b0721e</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 22:24:13</sys_created_on>
         <sys_domain>global</sys_domain>

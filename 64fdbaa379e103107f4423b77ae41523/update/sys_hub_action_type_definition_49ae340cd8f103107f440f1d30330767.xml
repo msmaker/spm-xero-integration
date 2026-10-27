@@ -39,7 +39,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_49ae340cd8f103107f440f1d30330767</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-26 00:31:36</sys_updated_on>
+        <sys_updated_on>2026-10-26 23:33:42</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1433,7 +1433,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero - Get Time Card">49ae340cd8f103107f440f1d30330767</action_id>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"316dcdc4d83503107f440f1d3033071e","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
-        <snapshot>49df26dbd58c13107f447c0a75427273</snapshot>
+        <snapshot>ae3ce76f690013107f44df0df4b07238</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:21</sys_created_on>
         <sys_domain>global</sys_domain>
