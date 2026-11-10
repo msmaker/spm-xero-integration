@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=427000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Daily retry for users not yet found in Xero. Called by a scheduled job (Mon–Fri). If there are users with Status = Not found in External User Mapping, it calls Xero - Sync Not Found Users, which makes a single call to Xero and maps all of them by email. If there are none, it ends without calling Xero.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>xero__retry_not_found_users</internal_name>
+        <label_cache>[{"name":"321c59cd-478a-40e3-9439-0d848dbfeffe.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"2fdcd69f-33b7-4d4b-a6b0-f10bec175386":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>9bf227fa3b90d350ebe9c15765e45a58</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Xero - Retry Not Found Users</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:10:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3302e7b63b90d350ebe9c15765e45ad2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero - Retry Not Found Users</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_hub_flow_3302e7b63b90d350ebe9c15765e45ad2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:54:48</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3302e7b63b90d350ebe9c15765e45ad2^sys_idNOT IN7302e7b63b90d350ebe9c15765e45ad3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3302e7b63b90d350ebe9c15765e45ad2</id>
+        <name>Xero - Retry Not Found Users</name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:10:05</sys_created_on>
+        <sys_id>7302e7b63b90d350ebe9c15765e45ad3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:10:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7302e7b63b90d350ebe9c15765e45ad3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3302e7b63b90d350ebe9c15765e45ad2^sys_idNOT INd9422f363b90d350ebe9c15765e45add,16b2e37a3b90d350ebe9c15765e45a2e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>Checks if there are users still marked as Not found for Xero.</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Retry Not Found Users">3302e7b63b90d350ebe9c15765e45ad2</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:11:01</sys_created_on>
+        <sys_id>d9422f363b90d350ebe9c15765e45add</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:55:31</sys_updated_on>
+        <ui_id>321c59cd-478a-40e3-9439-0d848dbfeffe</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXbU/bMBD+K1E+R1VCS2F8m2BIk3iRgPGFMcuJndaaa2e20xeq/vedYyeN2sBaqUigffT5zn7u7nkuztMyZCQ8C0/zQRzj5Pj0JI77/TgeDvsZTtK0P8zSOB2kYRQKPKHgaXDKKSynmJd2PUdaZEgXEzSnSiKGYkTnhiqBOSo1VWiCi4KJEYQQpguOF48+8pt3C36AW3DduGVjxomiIjx7eo7CAiu4GDzDs+XG1q7IOU4pB9cHD30jE7MomiWq9pztqh0W3LgNqYiFEkehzVIQChhyzDWNwgkWBBupFo1FUUxuBV8bxkwYODG0znPNXuDe09j65RSyyqjba5bIV8yZ8wts8L1RZWZK5V2zsWQZ1a4ehOa45Oa8bXMOt4VhUrgQl7aLlryciBtXjrA5oG4QWKCDiNDCJmqR+zTy+7Gc3dUoL5moauI3ucwwb1bYGMXS0lg8y5ByOoGDak6gQskpq4IBy6Q34rDo5VzO4FLNRqKHMwu8B3XFvUuwX1TmR6yYzcJyBoIBEOPAEORaqGWpqlJOUcZLXW0oLLQ7K1xFoV7oc461XmcOJUd/Sovb1cFnjFzRbEimWGG+whFT6pNbRTuJ5zheUy6TgjCLQrcUZKTkP0sIJVZBv7TBptTOIKRBuSwF2VbPjlGHFFOVSS2m83YqXel5WW3ZrroO8LJKDiYryOMzCQsu/3i62l8prgT/kEt28ibJjtd80lIZ5GrZ0su2Fvbm+Q4Qap7fWmYG6eI1VJ7mOaOcdH09Lu3Gxtfj6P/8enxIkgMgglz3mOBMVLMVgL4X++O3R+yXDZ5V9Fpzv7JhnW1rAAdGBi97K2EHOLUS7uHu4MHh6YBYz/uKMpuzvjZ6AfQPJoD+0WEEsGzSbArZUfP69We7Wfu/WH+86Q8UbAUkqy6B7XVnsu+dR6ttAff3UnCbbG7n4hXOHfiZ+Ioio/ccAWMI9fchp180Y2REzfr22otIM8P8d9e+ZxyqG1Wl9w5PzsGbsh0ma4mCUpCiGprXfnMm8DzaniFJ5Mz7jZAdsNTluMbz4K4B04nQjxFQOh1VvWnPke+N1ZN8cMAH44f9ktbN6tRg3bNP8ad2OCE8/wVhchDsuhAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d9422f363b90d350ebe9c15765e45add"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Sync Not Found Users">f5c163b63b90d350ebe9c15765e45ab1</action_type>
+        <action_type_parent display_value="Xero - Sync Not Found Users">b700a7b23b90d350ebe9c15765e45a7d</action_type_parent>
+        <attributes/>
+        <comment>Xero - Sync Not Found Users: One call to Xero returns all users. Matches pending users by email and updates them to Matched, or keeps them as Not found.</comment>
+        <compiled_snapshot>f5c163b63b90d350ebe9c15765e45ab1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Retry Not Found Users">3302e7b63b90d350ebe9c15765e45ad2</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>2fdcd69f-33b7-4d4b-a6b0-f10bec175386</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:12:59</sys_created_on>
+        <sys_id>16b2e37a3b90d350ebe9c15765e45a2e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-11-09 17:55:31</sys_updated_on>
+        <ui_id>138d4b8b-e8ac-4559-9b89-b8876ad22f02</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=16b2e37a3b90d350ebe9c15765e45a2e"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3302e7b63b90d350ebe9c15765e45ad2^sys_idNOT IN4992e37a3b90d350ebe9c15765e45a2a"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c3f2e3fa3b90d350ebe9c15765e45af9</block>
+        <comment>Only continues when at least one user is pending, so Xero is not called when there is nothing to retry.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Retry Not Found Users">3302e7b63b90d350ebe9c15765e45ad2</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:12:22</sys_created_on>
+        <sys_id>4992e37a3b90d350ebe9c15765e45a2a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:17:12</sys_updated_on>
+        <ui_id>2fdcd69f-33b7-4d4b-a6b0-f10bec175386</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWaAedm3fghQBCrQN0AS5tIGwIlc2UYpURcqOa/jfu9TDNhIHLYIeexNnubszw4H2gWld3Tp7b66slSsdLL89hoHUHqPvfaChwmAZcKOFdNLovAPCYAOq9QX6FNLWCnYPJ4SvpRINDtNqaKjHYRMs989KbldjrqBARY13rpF6Re1S0KlkUMYLHvM0maUJY8k8i4tZWsSJSAEhpXtj4/VI7t2nDglfZe33EW7HTaYRnlbMwgCfHGqBtLoEZTEMKtACnGl2R6RBELdanYC11K5XXMGTlb9odjKd+oslkkY+2HE85oNVo0tGcrytPcEecVCo0UKj2kp/6XV4k7GEVrkzk1tL87D2pD2LgVJ5tzbbr+PCG6k7gUNRGQ7qeAJHNhStQ+sfBhVWNCivoK7JnLxuzEZ2zcSlilaKDlGpzJaW+qREwD3xiDyC6IbwDx38AI30Kj7TGGruaRZgJc+7VNE415CEQ2dL/rP1hHqBg5S8d4MuWN7I2l3Rng0OrA/hy0iepXG/T5OYTxdcTLL3c5hkDNPJIksXEybm2VwUJZYlRtem1e5w+N4yliJ7GeG3jvkXuV/AtJzGbHo599nsUu4vJP71sCd/CLt/nr/MOmPsf9jPwy5t3od20NYtf3PWH32w+w22z41ALi0RuffYx/Ev7Qs7CoDk59DWND+8hBN2+A2g5M5Q7wUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Daily retry for users not yet found in Xero. Called by a scheduled job (Mon–Fri). If there are users with Status = Not found in External User Mapping, it calls Xero - Sync Not Found Users, which makes a single call to Xero and maps all of them by email. If there are none, it ends without calling Xero.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>xero__retry_not_found_users</internal_name>
+        <label_cache>[{"name":"321c59cd-478a-40e3-9439-0d848dbfeffe.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"2fdcd69f-33b7-4d4b-a6b0-f10bec175386":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Xero - Retry Not Found Users</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Xero - Retry Not Found Users">3302e7b63b90d350ebe9c15765e45ad2</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:14:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9bf227fa3b90d350ebe9c15765e45a58</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:17:14</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9bf227fa3b90d350ebe9c15765e45a58^sys_idNOT INdbf227fa3b90d350ebe9c15765e45a59"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9bf227fa3b90d350ebe9c15765e45a58</id>
+        <name>Xero - Retry Not Found Users</name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:14:09</sys_created_on>
+        <sys_id>dbf227fa3b90d350ebe9c15765e45a59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:14:09</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=dbf227fa3b90d350ebe9c15765e45a59"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9bf227fa3b90d350ebe9c15765e45a58^sys_idNOT IN17f227fa3b90d350ebe9c15765e45a6a,dbf227fa3b90d350ebe9c15765e45a6a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>Checks if there are users still marked as Not found for Xero.</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Retry Not Found Users">9bf227fa3b90d350ebe9c15765e45a58</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:14:09</sys_created_on>
+        <sys_id>17f227fa3b90d350ebe9c15765e45a6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:14:09</sys_updated_on>
+        <ui_id>321c59cd-478a-40e3-9439-0d848dbfeffe</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXbU/bMBD+K1E+R1VCS2F8m2BIk3iRgPGFMcuJndaaa2e20xeq/vedYyeN2sBaqUigffT5zn7u7nkuztMyZCQ8C0/zQRzj5Pj0JI77/TgeDvsZTtK0P8zSOB2kYRQKPKHgaXDKKSynmJd2PUdaZEgXEzSnSiKGYkTnhiqBOSo1VWiCi4KJEYQQpguOF48+8pt3C36AW3DduGVjxomiIjx7eo7CAiu4GDzDs+XG1q7IOU4pB9cHD30jE7MomiWq9pztqh0W3LgNqYiFEkehzVIQChhyzDWNwgkWBBupFo1FUUxuBV8bxkwYODG0znPNXuDe09j65RSyyqjba5bIV8yZ8wts8L1RZWZK5V2zsWQZ1a4ehOa45Oa8bXMOt4VhUrgQl7aLlryciBtXjrA5oG4QWKCDiNDCJmqR+zTy+7Gc3dUoL5moauI3ucwwb1bYGMXS0lg8y5ByOoGDak6gQskpq4IBy6Q34rDo5VzO4FLNRqKHMwu8B3XFvUuwX1TmR6yYzcJyBoIBEOPAEORaqGWpqlJOUcZLXW0oLLQ7K1xFoV7oc461XmcOJUd/Sovb1cFnjFzRbEimWGG+whFT6pNbRTuJ5zheUy6TgjCLQrcUZKTkP0sIJVZBv7TBptTOIKRBuSwF2VbPjlGHFFOVSS2m83YqXel5WW3ZrroO8LJKDiYryOMzCQsu/3i62l8prgT/kEt28ibJjtd80lIZ5GrZ0su2Fvbm+Q4Qap7fWmYG6eI1VJ7mOaOcdH09Lu3Gxtfj6P/8enxIkgMgglz3mOBMVLMVgL4X++O3R+yXDZ5V9Fpzv7JhnW1rAAdGBi97K2EHOLUS7uHu4MHh6YBYz/uKMpuzvjZ6AfQPJoD+0WEEsGzSbArZUfP69We7Wfu/WH+86Q8UbAUkqy6B7XVnsu+dR6ttAff3UnCbbG7n4hXOHfiZ+Ioio/ccAWMI9fchp180Y2REzfr22otIM8P8d9e+ZxyqG1Wl9w5PzsGbsh0ma4mCUpCiGprXfnMm8DzaniFJ5Mz7jZAdsNTluMbz4K4B04nQjxFQOh1VvWnPke+N1ZN8cMAH44f9ktbN6tRg3bNP8ad2OCE8/wVhchDsuhAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=17f227fa3b90d350ebe9c15765e45a6a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Sync Not Found Users">f5c163b63b90d350ebe9c15765e45ab1</action_type>
+        <action_type_parent display_value="Xero - Sync Not Found Users">b700a7b23b90d350ebe9c15765e45a7d</action_type_parent>
+        <attributes/>
+        <comment>Xero - Sync Not Found Users: One call to Xero returns all users. Matches pending users by email and updates them to Matched, or keeps them as Not found.</comment>
+        <compiled_snapshot>f5c163b63b90d350ebe9c15765e45ab1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Retry Not Found Users">9bf227fa3b90d350ebe9c15765e45a58</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>2fdcd69f-33b7-4d4b-a6b0-f10bec175386</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:14:09</sys_created_on>
+        <sys_id>dbf227fa3b90d350ebe9c15765e45a6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:14:09</sys_updated_on>
+        <ui_id>138d4b8b-e8ac-4559-9b89-b8876ad22f02</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dbf227fa3b90d350ebe9c15765e45a6a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9bf227fa3b90d350ebe9c15765e45a58^sys_idNOT IN5bf227fa3b90d350ebe9c15765e45a68"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c3f2e3fa3b90d350ebe9c15765e45af9</block>
+        <comment>Only continues when at least one user is pending, so Xero is not called when there is nothing to retry.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Retry Not Found Users">9bf227fa3b90d350ebe9c15765e45a58</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:14:09</sys_created_on>
+        <sys_id>5bf227fa3b90d350ebe9c15765e45a68</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:17:14</sys_updated_on>
+        <ui_id>2fdcd69f-33b7-4d4b-a6b0-f10bec175386</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/TMBT9K8jPaeR8lbZvU6dJSINJbNoLTNGN7bQWjh1ip12p+t+5TtK0YkUw4JG3+Nj3+pzje5Q9Ma2rW2cfzJW1cqXJ4tNTQKT2GH7viYZKkAVhRnPppNF5BwRkA6r1G/jJpa0V7B5PCFtLxRsxdKuhwRonGrLY/7AlORaUFMpoziKWxNMkpjSepVExTYoo5gkISLChgkIoPLo80nhz2yHBT/m5Xe1x6xqpV8P6duhyfwRNwz2riAZEPDuhuUA+JSgrAlKB5uBMsxuRRgC/0+oErKV2veAKnq38hhfGWeYPlgIlssGNcZkPTvVweQ0OkErLXNuMxhnJhO3N4aKEVrnlOdYfuKu91L7EQaGO1Ua1lf7QO0LGBmcP01okIWqv1FMfdJT3a7P9eGR5I3XnyrCpDAM1rsChd0XrPJ89EUpU2CivoK7R0bxuzEZ2xcilClcKF2GpzBYv9dMVAvPEQzQWwhvErzv4ERrpVbzHNljc0yzASpZ3k4jt0CZBDgGxO7tUYO1JJLqbf209xV7yIC7v/fElrJG1u8KbN2LQcQheDvbZTO/3SRyxbM74JH07g0lKRTKZp8l8QvksnfGiFGUpwqVptTscPreUJoK+DMKftnldeuaQlVlEs8vpSaeX0nMhN6+MTPyLyPj3+s3EUEr/R+avIyNt3g/6oK27/B8m5snHo79z9JpJi9QePPbu+MfwGzscLsnOoa1pvnhRJ+zwHVosnel7BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9bf227fa3b90d350ebe9c15765e45a58"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3302e7b63b90d350ebe9c15765e45ad2</sys_id>
+        <latest_snapshot>9bf227fa3b90d350ebe9c15765e45a58</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch2-hotfix2-06-18-2026_06-18-2026_2231.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3302e7b63b90d350ebe9c15765e45ad2"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3302e7b63b90d350ebe9c15765e45ad2^sys_idNOT IN1bf227fa3b90d350ebe9c15765e45aa6"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_subflow_plan","id":"1bf227fa3b90d350ebe9c15765e45aa6","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id display_value="Xero - Retry Not Found Users">3302e7b63b90d350ebe9c15765e45ad2</plan_id>
+        <snapshot>bcf4e608392413107f447d76a5a8f27e</snapshot>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 01:14:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1bf227fa3b90d350ebe9c15765e45aa6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:17:15</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

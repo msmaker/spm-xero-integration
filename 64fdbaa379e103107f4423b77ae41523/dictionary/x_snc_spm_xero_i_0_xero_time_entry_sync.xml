@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="d377ffbe3b54d350ebe9c15765e45a12" label="Xero Time Entry Sync" max_length="40" name="x_snc_spm_xero_i_0_xero_time_entry_sync" type="collection">
+        <element label="Xero time entry ID" max_length="100" name="xero_time_entry_id" type="string"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Error message" max_length="4000" name="error_message" type="string"/>
+        <element label="Idempotency key" max_length="128" name="idempotency_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Time card" max_length="32" name="time_card" reference="time_card" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Duration" max_length="40" name="duration" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Sent" value="sent"/>
+                <element inactive_on_update="false" label="Error" value="error"/>
+            </choice>
+        </element>
+        <element label="Last attempt" max_length="40" name="last_attempt" type="glide_date_time"/>
+        <index name="index" unique="true">
+            <element name="time_card"/>
+            <element name="date"/>
+        </index>
+    </element>
+</database>

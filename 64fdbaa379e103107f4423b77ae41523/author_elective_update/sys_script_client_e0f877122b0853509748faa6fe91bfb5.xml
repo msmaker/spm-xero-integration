@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Xero sync error message</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    if (g_form.getValue('x_snc_spm_xero_i_0_synchronization_error') != 'true') {
+        return;
+    }
+    var detail = g_form.getValue('x_snc_spm_xero_i_0_xero_sync_message');
+    g_form.addErrorMessage(
+        'Not sent to Xero, or sent only partially. ' +
+        (detail ? 'Details: ' + detail + ' ' : '') +
+        'Fix the cause, uncheck Synchronization Error and save to resend. Days already in Xero will be skipped.'
+    );
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-23 03:18:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e0f877122b0853509748faa6fe91bfb5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Xero sync error message</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_script_client_e0f877122b0853509748faa6fe91bfb5</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-24 23:16:08</sys_updated_on>
+        <table>time_card</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>33127efac314d390d7299dcd2b0131fa</instance_id>
+        <instance_name>nowlearning-nlinst04834064-5hxfx-0001</instance_name>
+        <name>sys_script_client_e0f877122b0853509748faa6fe91bfb5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;
+    &lt;sys_script_client action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;applies_extended&gt;false&lt;/applies_extended&gt;
+        &lt;condition/&gt;
+        &lt;description/&gt;
+        &lt;field/&gt;
+        &lt;global&gt;true&lt;/global&gt;
+        &lt;isolate_script&gt;true&lt;/isolate_script&gt;
+        &lt;messages/&gt;
+        &lt;name&gt;Xero sync error message&lt;/name&gt;
+        &lt;order/&gt;
+        &lt;script&gt;&lt;![CDATA[function onLoad() {
+    if (g_form.getValue('x_snc_spm_xero_i_0_synchronization_error') != 'true') {
+        return;
+    }
+    var detail = g_form.getValue('x_snc_spm_xero_i_0_xero_sync_message');
+    g_form.addErrorMessage(
+        'Not sent to Xero, or sent only partially. ' +
+        (detail ? 'Details: ' + detail + ' ' : '') +
+        'Fix the cause, uncheck Synchronization Error and save to resend. Days already in Xero will be skipped.'
+    );
+}]]&gt;&lt;/script&gt;
+        &lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2026-10-23 03:18:29&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;
+        &lt;sys_id&gt;e0f877122b0853509748faa6fe91bfb5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Xero sync error message&lt;/sys_name&gt;
+        &lt;sys_overrides/&gt;
+        &lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_script_client_e0f877122b0853509748faa6fe91bfb5&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2026-10-24 23:16:08&lt;/sys_updated_on&gt;
+        &lt;table&gt;time_card&lt;/table&gt;
+        &lt;type&gt;onLoad&lt;/type&gt;
+        &lt;ui_type&gt;10&lt;/ui_type&gt;
+        &lt;view/&gt;
+    &lt;/sys_script_client&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-1931440177</payload_hash>
+        <record_name>Xero sync error message</record_name>
+        <reverted_from/>
+        <source>57dec557951413107f442884be286d3d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-07 03:45:04</sys_created_on>
+        <sys_id>931f81d7951413107f442884be286d5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1b41c1e080000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-07 03:45:04</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>531f81d71d14131067a88f701f39835d</update_guid>
+        <update_guid_history>531f81d71d14131067a88f701f39835d:-1931440177</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-07 04:25:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>22eaea36d31644708cc93fc1d99c5900</sys_id>
+        <sys_metadata>e0f877122b0853509748faa6fe91bfb5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero sync error message</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>sys_script_client_e0f877122b0853509748faa6fe91bfb5</sys_update_name>
+        <sys_update_version display_value="sys_script_client_e0f877122b0853509748faa6fe91bfb5">931f81d7951413107f442884be286d5d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-07 04:25:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -12,7 +12,7 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>Reads the time card in ServiceNow (no call to Xero) and builds one entry per day with hours, with the idempotency key &lt;time card sys_id&gt;_&lt;date&gt;, skipping the dates received in Existing dates.</description>
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>xero__get_time_card</internal_name>
@@ -39,7 +39,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_49ae340cd8f103107f440f1d30330767</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-26 23:33:42</sys_updated_on>
+        <sys_updated_on>2026-11-09 17:54:28</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -67,9 +67,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 17:39:53</sys_created_on>
         <sys_id>889f704cd8f103107f440f1d3033074f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 20:38:25</sys_updated_on>
+        <sys_updated_on>2026-11-08 20:10:13</sys_updated_on>
         <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
         <variable display_value="Action Status">fb8f704cd8f103107f440f1d30330735</variable>
     </sys_variable_value>
@@ -140,10 +140,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 17:39:52</sys_created_on>
         <sys_id>b38f304cd8f103107f440f1d303307d4</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:33</sys_updated_on>
+        <sys_updated_on>2026-11-06 03:22:04</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b38f304cd8f103107f440f1d303307d4"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -168,9 +168,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 17:39:52</sys_created_on>
         <sys_id>bb8f704cd8f103107f440f1d30330734</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:33</sys_updated_on>
+        <sys_updated_on>2026-11-06 03:22:04</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     try {&#13;
         var payloadsList = [];&#13;
@@ -258,7 +258,11 @@
             payloadsList.push({&#13;
                 dateUtc: dateUtcFormatted,&#13;
                 duration: String(Math.round(hours * 60)),&#13;
-                description: timeCardComment&#13;
+                description: timeCardComment,&#13;
+                // Day of the work (YYYY-MM-DD), used as key in the tracking table&#13;
+                date: dateOnly,&#13;
+                // Fixed key per time card and day, sent as Idempotency-Key to Xero&#13;
+                idempotency_key: timeCardGR.getUniqueValue() + '_' + dateOnly&#13;
             });&#13;
         }&#13;
 &#13;
@@ -476,14 +480,14 @@
         <name>FDd78ef8476a44d750cf2aa446e6466552</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>64fdbaa379e103107f4423b77ae41523</scope_name>
-        <serialized_content>{"FlowDesigner:FDd78ef8476a44d750cf2aa446e6466552":{"$COCollectionField":[{"entry":{"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"92253a99-5537-41ba-aa47-283488a5fd50\"}"},"dateUtc":"String","dateUtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateUtc\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"cef353b4-e33c-4f7c-b79b-c6643292ebf8\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1742e84d-ecc1-4845-a1d9-ff73c303fd3f\"}"},"userId":"String","userId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"userId\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"df68e5a3-6037-4071-b3aa-efa372b7be32\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"466d5833-7245-4d18-bbc4-11499e472abd\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDd78ef8476a44d750cf2aa446e6466552\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDd78ef8476a44d750cf2aa446e6466552.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDd78ef8476a44d750cf2aa446e6466552\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FDd78ef8476a44d750cf2aa446e6466552":{"$COCollectionField":[{"entry":{"date":"String","date.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"date\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"748cb41b-dde2-4bf3-9b33-344e3cfbf1ae\"}"},"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"92253a99-5537-41ba-aa47-283488a5fd50\"}"},"dateUtc":"String","dateUtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateUtc\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"cef353b4-e33c-4f7c-b79b-c6643292ebf8\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1742e84d-ecc1-4845-a1d9-ff73c303fd3f\"}"},"idempotency_key":"String","idempotency_key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"idempotency_key\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"d2bda998-686c-4ca5-965a-eabdbe97d287\"}"},"userId":"String","userId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"userId\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"df68e5a3-6037-4071-b3aa-efa372b7be32\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"466d5833-7245-4d18-bbc4-11499e472abd\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDd78ef8476a44d750cf2aa446e6466552\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDd78ef8476a44d750cf2aa446e6466552.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDd78ef8476a44d750cf2aa446e6466552\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-24 21:38:31</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>db8ef8472b44d7509748faa6fe91bf52</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -491,7 +495,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:33</sys_updated_on>
+        <sys_updated_on>2026-11-08 20:10:21</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -619,7 +623,7 @@
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_b38f304cd8f103107f440f1d303307d4_time_entries_json_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-06-25 17:39:52</sys_updated_on>
         <url/>
@@ -972,14 +976,14 @@
         <name>FDb201058c5cf1031030d37494f03a6ba7</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>64fdbaa379e103107f4423b77ae41523</scope_name>
-        <serialized_content>{"FlowDesigner:FDb201058c5cf1031030d37494f03a6ba7":{"$COCollectionField":[{"entry":{"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"92253a99-5537-41ba-aa47-283488a5fd50\"}"},"dateUtc":"String","dateUtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateUtc\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"cef353b4-e33c-4f7c-b79b-c6643292ebf8\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1742e84d-ecc1-4845-a1d9-ff73c303fd3f\"}"},"userId":"String","userId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"userId\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"df68e5a3-6037-4071-b3aa-efa372b7be32\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"466d5833-7245-4d18-bbc4-11499e472abd\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"16485e36-f3a6-43e9-9820-1ed7243ffa6c\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Time Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"004556f7-a581-40bb-8e4c-fd1daa77b956\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDb201058c5cf1031030d37494f03a6ba7\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDb201058c5cf1031030d37494f03a6ba7.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"16485e36-f3a6-43e9-9820-1ed7243ffa6c\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Time Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"004556f7-a581-40bb-8e4c-fd1daa77b956\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDb201058c5cf1031030d37494f03a6ba7\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FDb201058c5cf1031030d37494f03a6ba7":{"$COCollectionField":[{"entry":{"date":"String","date.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"date\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"748cb41b-dde2-4bf3-9b33-344e3cfbf1ae\"}"},"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"92253a99-5537-41ba-aa47-283488a5fd50\"}"},"dateUtc":"String","dateUtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateUtc\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"cef353b4-e33c-4f7c-b79b-c6643292ebf8\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1742e84d-ecc1-4845-a1d9-ff73c303fd3f\"}"},"idempotency_key":"String","idempotency_key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"idempotency_key\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"d2bda998-686c-4ca5-965a-eabdbe97d287\"}"},"userId":"String","userId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"userId\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"df68e5a3-6037-4071-b3aa-efa372b7be32\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"466d5833-7245-4d18-bbc4-11499e472abd\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"16485e36-f3a6-43e9-9820-1ed7243ffa6c\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Time Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"004556f7-a581-40bb-8e4c-fd1daa77b956\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDb201058c5cf1031030d37494f03a6ba7\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDb201058c5cf1031030d37494f03a6ba7.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"16485e36-f3a6-43e9-9820-1ed7243ffa6c\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Time Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"004556f7-a581-40bb-8e4c-fd1daa77b956\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDb201058c5cf1031030d37494f03a6ba7\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 17:46:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7601058cd8f103107f440f1d303307a7</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -987,7 +991,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:33</sys_updated_on>
+        <sys_updated_on>2026-11-08 20:10:21</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -1144,14 +1148,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 17:39:52</sys_created_on>
         <sys_id>809f704cd8f103107f440f1d30330748</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:34</sys_updated_on>
+        <sys_updated_on>2026-11-08 20:10:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1433,17 +1437,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero - Get Time Card">49ae340cd8f103107f440f1d30330767</action_id>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"316dcdc4d83503107f440f1d3033071e","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
-        <snapshot>ae3ce76f690013107f44df0df4b07238</snapshot>
+        <snapshot>06e4a208392413107f447d76a5a8f2ba</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:21</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>316dcdc4d83503107f440f1d3033071e</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:36</sys_updated_on>
+        <sys_updated_on>2026-11-08 20:10:23</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1457,7 +1461,7 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>Reads the time card in ServiceNow (no call to Xero) and builds one entry per day with hours, with the idempotency key &lt;time card sys_id&gt;_&lt;date&gt;, skipping the dates received in Existing dates.</description>
         <flow_priority/>
         <internal_name>xero__get_time_card</internal_name>
         <label_cache>[{"name":"{{action.time_card_id}}","label":"action➛time_card_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.time_card_id1}}","label":"action➛Time Card ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.task_id}}","label":"action➛Task ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.time_card_sysid}}","label":"action➛Time Card SysId","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.user_id}}","label":"action➛User ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.existing_dates}}","label":"action➛Existing dates","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[16485e36-f3a6-43e9-9820-1ed7243ffa6c].entries}}","label":"step➛Script step➛Entries","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
@@ -1473,7 +1477,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>196d8dc4d83503107f440f1d303307d7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1481,12 +1485,26 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 21:38:33</sys_updated_on>
+        <sys_updated_on>2026-11-08 20:10:22</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=196d8dc4d83503107f440f1d303307d7"/>
     <sys_variable_value action="delete_multiple" query="document_key=196d8dc4d83503107f440f1d303307d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>196d8dc4d83503107f440f1d303307d7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 18:40:20</sys_created_on>
+        <sys_id>616dcdc4d83503107f440f1d30330708</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-08 20:10:23</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <variable display_value="Action Status">616d8dc4d83503107f440f1d303307ff</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_snapshot</document>
         <document_key>196d8dc4d83503107f440f1d303307d7</document_key>
@@ -1500,20 +1518,6 @@
         <sys_updated_on>2026-06-25 18:40:20</sys_updated_on>
         <value>0</value>
         <variable display_value="Don't Treat as Error">656dcdc4d83503107f440f1d30330701</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_type_snapshot</document>
-        <document_key>196d8dc4d83503107f440f1d303307d7</document_key>
-        <order>2</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-25 18:40:20</sys_created_on>
-        <sys_id>616dcdc4d83503107f440f1d30330708</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 20:38:33</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
-        <variable display_value="Action Status">616d8dc4d83503107f440f1d303307ff</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=196d8dc4d83503107f440f1d303307d7"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -1570,10 +1574,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:19</sys_created_on>
         <sys_id>dd6d8dc4d83503107f440f1d303307ed</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:35</sys_updated_on>
+        <sys_updated_on>2026-11-06 03:27:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=dd6d8dc4d83503107f440f1d303307ed"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1598,9 +1602,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:19</sys_created_on>
         <sys_id>256d8dc4d83503107f440f1d303307f5</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:35</sys_updated_on>
+        <sys_updated_on>2026-11-06 03:27:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     try {&#13;
         var payloadsList = [];&#13;
@@ -1688,7 +1692,11 @@
             payloadsList.push({&#13;
                 dateUtc: dateUtcFormatted,&#13;
                 duration: String(Math.round(hours * 60)),&#13;
-                description: timeCardComment&#13;
+                description: timeCardComment,&#13;
+                // Day of the work (YYYY-MM-DD), used as key in the tracking table&#13;
+                date: dateOnly,&#13;
+                // Fixed key per time card and day, sent as Idempotency-Key to Xero&#13;
+                idempotency_key: timeCardGR.getUniqueValue() + '_' + dateOnly&#13;
             });&#13;
         }&#13;
 &#13;
@@ -1906,14 +1914,14 @@
         <name>FD049e3c479344d7508ffa86f7005b510b</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>64fdbaa379e103107f4423b77ae41523</scope_name>
-        <serialized_content>{"FlowDesigner:FD049e3c479344d7508ffa86f7005b510b":{"$COCollectionField":[{"entry":{"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"92253a99-5537-41ba-aa47-283488a5fd50\"}"},"dateUtc":"String","dateUtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateUtc\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"cef353b4-e33c-4f7c-b79b-c6643292ebf8\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1742e84d-ecc1-4845-a1d9-ff73c303fd3f\"}"},"userId":"String","userId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"userId\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"df68e5a3-6037-4071-b3aa-efa372b7be32\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"466d5833-7245-4d18-bbc4-11499e472abd\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD049e3c479344d7508ffa86f7005b510b\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD049e3c479344d7508ffa86f7005b510b.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD049e3c479344d7508ffa86f7005b510b\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD049e3c479344d7508ffa86f7005b510b":{"$COCollectionField":[{"entry":{"date":"String","date.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"date\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"748cb41b-dde2-4bf3-9b33-344e3cfbf1ae\"}"},"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"92253a99-5537-41ba-aa47-283488a5fd50\"}"},"dateUtc":"String","dateUtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateUtc\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"cef353b4-e33c-4f7c-b79b-c6643292ebf8\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1742e84d-ecc1-4845-a1d9-ff73c303fd3f\"}"},"idempotency_key":"String","idempotency_key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"idempotency_key\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"d2bda998-686c-4ca5-965a-eabdbe97d287\"}"},"userId":"String","userId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"userId\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"df68e5a3-6037-4071-b3aa-efa372b7be32\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"466d5833-7245-4d18-bbc4-11499e472abd\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD049e3c479344d7508ffa86f7005b510b\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD049e3c479344d7508ffa86f7005b510b.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD049e3c479344d7508ffa86f7005b510b\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-24 21:38:34</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>089e3c472b44d7509748faa6fe91bf0b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1921,7 +1929,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:35</sys_updated_on>
+        <sys_updated_on>2026-11-08 20:10:23</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
@@ -2049,7 +2057,7 @@
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_dd6d8dc4d83503107f440f1d303307ed_time_entries_json_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-06-25 18:40:19</sys_updated_on>
         <url/>
@@ -2402,14 +2410,14 @@
         <name>FD616d8dc4a53503104d32df72dd144ffc</name>
         <namespace>FlowDesigner</namespace>
         <scope_name>64fdbaa379e103107f4423b77ae41523</scope_name>
-        <serialized_content>{"FlowDesigner:FD616d8dc4a53503104d32df72dd144ffc":{"$COCollectionField":[{"entry":{"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"92253a99-5537-41ba-aa47-283488a5fd50\"}"},"dateUtc":"String","dateUtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateUtc\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"cef353b4-e33c-4f7c-b79b-c6643292ebf8\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1742e84d-ecc1-4845-a1d9-ff73c303fd3f\"}"},"userId":"String","userId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"userId\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"df68e5a3-6037-4071-b3aa-efa372b7be32\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"466d5833-7245-4d18-bbc4-11499e472abd\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"16485e36-f3a6-43e9-9820-1ed7243ffa6c\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Time Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"004556f7-a581-40bb-8e4c-fd1daa77b956\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD616d8dc4a53503104d32df72dd144ffc\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD616d8dc4a53503104d32df72dd144ffc.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"16485e36-f3a6-43e9-9820-1ed7243ffa6c\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Time Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"004556f7-a581-40bb-8e4c-fd1daa77b956\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD616d8dc4a53503104d32df72dd144ffc\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"}}</serialized_content>
+        <serialized_content>{"FlowDesigner:FD616d8dc4a53503104d32df72dd144ffc":{"$COCollectionField":[{"entry":{"date":"String","date.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"date\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"748cb41b-dde2-4bf3-9b33-344e3cfbf1ae\"}"},"duration":"String","duration.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"duration\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"92253a99-5537-41ba-aa47-283488a5fd50\"}"},"dateUtc":"String","dateUtc.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"dateUtc\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"cef353b4-e33c-4f7c-b79b-c6643292ebf8\"}"},"description":"String","description.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"description\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1742e84d-ecc1-4845-a1d9-ff73c303fd3f\"}"},"idempotency_key":"String","idempotency_key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"idempotency_key\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"d2bda998-686c-4ca5-965a-eabdbe97d287\"}"},"userId":"String","userId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"userId\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"df68e5a3-6037-4071-b3aa-efa372b7be32\"}"},"taskId":"String","taskId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"taskId\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"466d5833-7245-4d18-bbc4-11499e472abd\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"16485e36-f3a6-43e9-9820-1ed7243ffa6c\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Time Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"004556f7-a581-40bb-8e4c-fd1daa77b956\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD616d8dc4a53503104d32df72dd144ffc\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD616d8dc4a53503104d32df72dd144ffc.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"16485e36-f3a6-43e9-9820-1ed7243ffa6c\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Time Entries\",\"mandatory\":\"false\",\"child_name\":\"entry\",\"uiUniqueId\":\"004556f7-a581-40bb-8e4c-fd1daa77b956\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD616d8dc4a53503104d32df72dd144ffc\",\"child_label\":\"entry\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c541bc57-bff0-47df-9c3e-2228f7601ad0\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7ad8b3dd-7a2f-4193-8df0-92ffffd6871b\"}"}}</serialized_content>
         <sys_class_name>sys_complex_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:20</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>256d8dc4d83503107f440f1d303307fc</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2417,7 +2425,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:36</sys_updated_on>
+        <sys_updated_on>2026-11-08 20:10:23</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
@@ -2662,14 +2670,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:20</sys_created_on>
         <sys_id>656dcdc4d83503107f440f1d30330701</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-24 23:51:36</sys_updated_on>
+        <sys_updated_on>2026-11-08 20:10:23</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

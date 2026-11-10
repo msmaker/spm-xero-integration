@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <access_method>btree</access_method>
+        <col_name_string>time_card,date</col_name_string>
+        <index_col_name element="time_card" name="x_snc_spm_xero_i_0_xero_time_entry_sync">7777ffbe3b54d350ebe9c15765e45ab1,16c737ba3b54d350ebe9c15765e45aed</index_col_name>
+        <logical_table_name>x_snc_spm_xero_i_0_xero_time_entry_sync</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-11-06 02:49:19</sys_created_on>
+        <sys_id>19c8b3fa2bdc53509748faa6fe91bfe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_spm_xero_i_0_xero_time_entry_sync</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_index_x_snc_spm_xero_i_0_xero_time_entry_sync_time_card_date</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:49:19</sys_updated_on>
+        <table display_value="Xero Time Entry Sync" name="x_snc_spm_xero_i_0_xero_time_entry_sync">d377ffbe3b54d350ebe9c15765e45a12</table>
+        <unique_index>true</unique_index>
+    </sys_index>
+</record_update>

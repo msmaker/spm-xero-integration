@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="idempotency_key" label="Idempotency key" language="en" table="x_snc_spm_xero_i_0_xero_time_entry_sync">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>idempotency_key</element>
+            <help/>
+            <hint/>
+            <label>Idempotency key</label>
+            <language>en</language>
+            <name>x_snc_spm_xero_i_0_xero_time_entry_sync</name>
+            <plural>Idempotency keys</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>marco.silva-snadmin</sys_created_by>
+            <sys_created_on>2026-11-06 02:47:27</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Idempotency key</sys_name>
+            <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_spm_xero_i_0_xero_time_entry_sync_idempotency_key_en</sys_update_name>
+            <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+            <sys_updated_on>2026-11-06 02:47:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

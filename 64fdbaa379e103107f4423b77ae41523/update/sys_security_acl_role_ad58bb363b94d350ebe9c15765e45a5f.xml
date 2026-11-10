@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 02:47:25</sys_created_on>
+        <sys_id>ad58bb363b94d350ebe9c15765e45a5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_spm_xero_i_0_xero_time_entry_sync.x_snc_spm_xero_i_0.xero_time_entry_sync_user</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_security_acl display_value="x_snc_spm_xero_i_0_xero_time_entry_sync">a158bb363b94d350ebe9c15765e45a51</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ad58bb363b94d350ebe9c15765e45a5f</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:47:25</sys_updated_on>
+        <sys_user_role display_value="x_snc_spm_xero_i_0.xero_time_entry_sync_user" name="x_snc_spm_xero_i_0.xero_time_entry_sync_user">8d587b363b94d350ebe9c15765e45ae4</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

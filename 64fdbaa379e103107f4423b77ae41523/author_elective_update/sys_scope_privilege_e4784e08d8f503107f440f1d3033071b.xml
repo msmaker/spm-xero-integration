@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>write</operation>
+        <source_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 22:58:19</sys_created_on>
+        <sys_id>e4784e08d8f503107f440f1d3033071b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_scope_privilege_e4784e08d8f503107f440f1d3033071b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:58:19</sys_updated_on>
+        <target_name>sys_user</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>33127efac314d390d7299dcd2b0131fa</instance_id>
+        <instance_name>nowlearning-nlinst04834064-5hxfx-0001</instance_name>
+        <name>sys_scope_privilege_e4784e08d8f503107f440f1d3033071b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>write</operation>
+        <source_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 22:58:19</sys_created_on>
+        <sys_id>e4784e08d8f503107f440f1d3033071b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_scope_privilege_e4784e08d8f503107f440f1d3033071b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 22:58:19</sys_updated_on>
+        <target_name>sys_user</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>]]></payload>
+        <payload_hash>-1622332794</payload_hash>
+        <record_name>sys_user</record_name>
+        <reverted_from/>
+        <source>57dec557951413107f442884be286d3d</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-07 03:45:03</sys_created_on>
+        <sys_id>131f81d7951413107f442884be286d31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1b41c1d020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-07 03:45:03</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>df1f81d72e141310c69d19e5dd95eb30</update_guid>
+        <update_guid_history>df1f81d72e141310c69d19e5dd95eb30:-1622332794</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-07 04:25:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>30897469a7174db482956063d8ffe3c9</sys_id>
+        <sys_metadata>e4784e08d8f503107f440f1d3033071b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_user</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_e4784e08d8f503107f440f1d3033071b</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_e4784e08d8f503107f440f1d3033071b">131f81d7951413107f442884be286d31</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-07 04:25:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

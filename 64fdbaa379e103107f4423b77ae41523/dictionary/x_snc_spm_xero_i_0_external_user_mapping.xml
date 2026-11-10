@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1f641f363b10d350ebe9c15765e45a66" label="External User Mapping" max_length="40" name="x_snc_spm_xero_i_0_external_user_mapping" type="collection">
+        <element label="Message" max_length="1000" name="message" type="string"/>
+        <element label="Email" max_length="100" name="email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Tool" max_length="40" name="tool" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Xero" value="xero"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Matched" sequence="0" value="matched"/>
+                <element inactive_on_update="false" label="Not found" sequence="1" value="not_found"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Last checked" max_length="40" name="last_checked" type="glide_date_time"/>
+        <element label="External ID" max_length="100" name="external_id" type="string"/>
+        <index name="index" unique="true">
+            <element name="user"/>
+            <element name="tool"/>
+        </index>
+    </element>
+</database>
