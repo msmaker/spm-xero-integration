@@ -39,7 +39,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_be297f363b94d350ebe9c15765e45a29</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-09 17:54:40</sys_updated_on>
+        <sys_updated_on>2026-11-14 04:13:12</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -137,6 +137,20 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>603a737a3b94d350ebe9c15765e45a53</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 02:55:34</sys_created_on>
+        <sys_id>b03a737a3b94d350ebe9c15765e45a76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:55:34</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>603a737a3b94d350ebe9c15765e45a53</document_key>
         <order>600</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
@@ -159,20 +173,6 @@
     outputs.existing_dates = dates.join(',');&#13;
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>603a737a3b94d350ebe9c15765e45a53</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-11-06 02:55:34</sys_created_on>
-        <sys_id>b03a737a3b94d350ebe9c15765e45a76</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-06 02:55:34</sys_updated_on>
-        <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=603a737a3b94d350ebe9c15765e45a53"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
@@ -845,7 +845,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero - Get Sent Dates">be297f363b94d350ebe9c15765e45a29</action_id>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"d53ab37a3b94d350ebe9c15765e45aae","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
-        <snapshot>03e42608392413107f447d76a5a8f2c8</snapshot>
+        <snapshot>42d8912dbca413107f44dfd45f1a9c7a</snapshot>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 02:55:36</sys_created_on>
         <sys_domain>global</sys_domain>

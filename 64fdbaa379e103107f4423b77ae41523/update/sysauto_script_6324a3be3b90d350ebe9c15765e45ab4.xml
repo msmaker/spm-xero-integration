@@ -13,7 +13,7 @@
         <offset/>
         <offset_type>0</offset_type>
         <repeat_every/>
-        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as display_value="KNVL MS Service Account Xero">5a33346d3b68d750ebe9c15765e45abd</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
@@ -40,14 +40,14 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 01:22:06</sys_created_on>
         <sys_id>6324a3be3b90d350ebe9c15765e45ab4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Xero - Retry Not Found Users (Mon-Fri)</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sysauto_script_6324a3be3b90d350ebe9c15765e45ab4</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-06 01:27:52</sys_updated_on>
+        <sys_updated_on>2026-11-14 01:33:41</sys_updated_on>
         <time_zone>Europe/London</time_zone>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>

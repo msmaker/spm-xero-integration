@@ -12,7 +12,7 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description>Looks for the open incident with correlation ID xero_time_entries. If found, adds the failure as a work note; if not, creates the incident for Managed Services. Keeps only one open incident at a time.</description>
+        <description>Looks for the open defect with correlation ID xero_time_entries. If found, adds the failure as a work note; if not, creates the defect for Managed Services. Keeps only one open defect at a time.</description>
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>xero__register_integration_failure</internal_name>
@@ -38,7 +38,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_9b8d37323bd4d350ebe9c15765e45a75</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-09 17:54:36</sys_updated_on>
+        <sys_updated_on>2026-11-14 04:13:10</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -52,10 +52,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:14:05</sys_created_on>
         <sys_id>847eb3b23bd4d350ebe9c15765e45a23</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-08 20:11:54</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_updated_on>2026-11-14 02:55:48</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">887eb3b23bd4d350ebe9c15765e45a0d</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -91,10 +91,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:14:04</sys_created_on>
         <sys_id>ff6e73b23bd4d350ebe9c15765e45ad0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-06 03:14:04</sys_updated_on>
+        <sys_updated_on>2026-11-14 02:55:48</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ff6e73b23bd4d350ebe9c15765e45ad0"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -119,63 +119,101 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:14:04</sys_created_on>
         <sys_id>f36e73b23bd4d350ebe9c15765e45afc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-06 03:14:04</sys_updated_on>
+        <sys_updated_on>2026-11-14 02:55:48</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-    // Keeps only one open incident per integration process (identified by Correlation ID).&#13;
-    // Open = any state except Resolved (6), Closed (7) and Canceled (8).&#13;
+    // Keeps only one open defect per integration process (identified by Correlation ID).&#13;
+    // Open = active defect (closed states of rm_defect: 3 Closed Complete, 7 Cancelled).&#13;
     var corr = inputs.correlation_id;&#13;
 &#13;
-    function openIncidents() {&#13;
-        var gr = new GlideRecord('incident');&#13;
+    // Same values as the record producer "Raise a Defect", kept in system properties&#13;
+    var GROUP = gs.getProperty('x_snc_spm_xero_i_0.defect_assignment_group', '');&#13;
+    var COMPANY = gs.getProperty('x_snc_spm_xero_i_0.defect_company', '');&#13;
+    var SERVICE_ACCOUNT = gs.getProperty('x_snc_spm_xero_i_0.service_account', '');&#13;
+&#13;
+    function openDefects() {&#13;
+        var gr = new GlideRecord('rm_defect');&#13;
         gr.addQuery('correlation_id', corr);&#13;
-        gr.addQuery('state', 'NOT IN', '6,7,8');&#13;
+        gr.addActiveQuery();&#13;
         gr.orderBy('sys_created_on');&#13;
         gr.query();&#13;
         return gr;&#13;
     }&#13;
 &#13;
-    // 1. An incident is already open: add the failure as a work note&#13;
-    var open = openIncidents();&#13;
+    // 1. A defect is already open: add the failure as a work note&#13;
+    var open = openDefects();&#13;
     if (open.next()) {&#13;
         open.work_notes = inputs.details;&#13;
         open.update();&#13;
-        outputs.incident_number = open.getValue('number');&#13;
         return;&#13;
     }&#13;
 &#13;
-    // 2. None open: create one assigned to Managed Services&#13;
-    var grp = new GlideRecord('sys_user_group');&#13;
-    var hasGroup = grp.get('name', 'Managed Services');&#13;
-    if (!hasGroup) {&#13;
-        gs.error('[Xero] Group "Managed Services" not found; incident created without assignment group.');&#13;
+    // 2. None open: create one with the same structure as the record producer&#13;
+    var def = new GlideRecord('rm_defect');&#13;
+    def.initialize();&#13;
+    def.short_description = inputs.short_description;&#13;
+    def.description = [&#13;
+        '====================================================',&#13;
+        'Raised via SPM Xero Integration',&#13;
+        '====================================================',&#13;
+        '',&#13;
+        'Environment:',&#13;
+        '-----------',&#13;
+        'Production',&#13;
+        '',&#13;
+        'Steps to Reproduce:',&#13;
+        '-----------',&#13;
+        '',&#13;
+        '',&#13;
+        'Expected Result:',&#13;
+        '-----------',&#13;
+        '',&#13;
+        '',&#13;
+        'Actual Result:',&#13;
+        '-----------',&#13;
+        inputs.details || '',&#13;
+        '',&#13;
+        'Business Impact:',&#13;
+        '-----------',&#13;
+        '',&#13;
+        '',&#13;
+        'Additional Information:',&#13;
+        '-----------',&#13;
+        ''&#13;
+    ].join('\n');&#13;
+    def.correlation_id = corr;&#13;
+    def.priority = 3;&#13;
+    if (GROUP) {&#13;
+        def.assignment_group = GROUP;&#13;
+    } else {&#13;
+        gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_assignment_group is empty; defect created without assignment group.');&#13;
     }&#13;
-    var inc = new GlideRecord('incident');&#13;
-    inc.initialize();&#13;
-    inc.short_description = inputs.short_description;&#13;
-    inc.description = inputs.details;&#13;
-    inc.correlation_id = corr;&#13;
-    if (hasGroup) {&#13;
-        inc.assignment_group = grp.getUniqueValue();&#13;
+    if (COMPANY) {&#13;
+        def.company = COMPANY;&#13;
+    } else {&#13;
+        gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_company is empty; defect created with the default company.');&#13;
     }&#13;
-    var newId = inc.insert();&#13;
+    var usr = new GlideRecord('sys_user');&#13;
+    if (SERVICE_ACCOUNT &amp;&amp; usr.get('user_name', SERVICE_ACCOUNT)) {&#13;
+        def.opened_by = usr.getUniqueValue();&#13;
+    } else {&#13;
+        gs.error('[Xero] Service account "' + SERVICE_ACCOUNT + '" not found; defect created with the default Opened by.');&#13;
+    }&#13;
+    var newId = def.insert();&#13;
 &#13;
-    // 3. Two failures at the same time may create two incidents:&#13;
+    // 3. Two failures at the same time may create two defects:&#13;
     //    keep the oldest, add the failure to it and cancel the new one as duplicate&#13;
-    var all = openIncidents();&#13;
+    var all = openDefects();&#13;
     if (all.next() &amp;&amp; all.getUniqueValue() != newId) {&#13;
         all.work_notes = inputs.details;&#13;
         all.update();&#13;
-        var dup = new GlideRecord('incident');&#13;
+        var dup = new GlideRecord('rm_defect');&#13;
         if (dup.get(newId)) {&#13;
-            dup.state = 8;&#13;
+            dup.state = 7; // Cancelled&#13;
             dup.work_notes = 'Duplicate of ' + all.getValue('number') + ' (created at the same time).';&#13;
             dup.update();&#13;
         }&#13;
-        outputs.incident_number = all.getValue('number');&#13;
-    } else {&#13;
-        outputs.incident_number = inc.getValue('number');&#13;
     }&#13;
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -993,14 +1031,14 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:14:05</sys_created_on>
         <sys_id>c47eb3b23bd4d350ebe9c15765e45a14</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-08 20:11:58</sys_updated_on>
+        <sys_updated_on>2026-11-14 03:09:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1148,17 +1186,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero - Register Integration Failure">9b8d37323bd4d350ebe9c15765e45a75</action_id>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"798fff363bd4d350ebe9c15765e45a19","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
-        <snapshot>bee42608392413107f447d76a5a8f21b</snapshot>
+        <snapshot>cad8912dbca413107f44dfd45f1a9c4b</snapshot>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:18:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>798fff363bd4d350ebe9c15765e45a19</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-08 20:12:01</sys_updated_on>
+        <sys_updated_on>2026-11-14 03:09:54</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1172,7 +1210,7 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description>Looks for the open incident with correlation ID xero_time_entries. If found, adds the failure as a work note; if not, creates the incident for Managed Services. Keeps only one open incident at a time.</description>
+        <description>Looks for the open defect with correlation ID xero_time_entries. If found, adds the failure as a work note; if not, creates the defect for Managed Services. Keeps only one open defect at a time.</description>
         <flow_priority/>
         <internal_name>xero__register_integration_failure</internal_name>
         <label_cache>[{"name":"{{action.correlation_id}}","label":"action➛Correlation ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.short_description}}","label":"action➛Short description","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.details}}","label":"action➛Details","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
@@ -1187,7 +1225,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>618fbf363bd4d350ebe9c15765e45aa9</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1195,12 +1233,26 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-08 20:11:59</sys_updated_on>
+        <sys_updated_on>2026-11-14 03:09:53</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=618fbf363bd4d350ebe9c15765e45aa9"/>
     <sys_variable_value action="delete_multiple" query="document_key=618fbf363bd4d350ebe9c15765e45aa9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>618fbf363bd4d350ebe9c15765e45aa9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 03:18:51</sys_created_on>
+        <sys_id>758fff363bd4d350ebe9c15765e45a14</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-14 03:09:54</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">f98fbf363bd4d350ebe9c15765e45aff</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_type_snapshot</document>
         <document_key>618fbf363bd4d350ebe9c15765e45aa9</document_key>
@@ -1214,20 +1266,6 @@
         <sys_updated_on>2026-11-06 03:18:51</sys_updated_on>
         <value>0</value>
         <variable display_value="Don't Treat as Error">318fff363bd4d350ebe9c15765e45a06</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_action_type_snapshot</document>
-        <document_key>618fbf363bd4d350ebe9c15765e45aa9</document_key>
-        <order>1</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-11-06 03:18:51</sys_created_on>
-        <sys_id>758fff363bd4d350ebe9c15765e45a14</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-08 20:12:01</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
-        <variable display_value="Action Status">f98fbf363bd4d350ebe9c15765e45aff</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_618fbf363bd4d350ebe9c15765e45aa9^id=618fbf363bd4d350ebe9c15765e45aa9"/>
     <sys_hub_step_instance action="delete_multiple" query="action=618fbf363bd4d350ebe9c15765e45aa9^sys_idNOT INa98fbf363bd4d350ebe9c15765e45ac3"/>
@@ -1248,10 +1286,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:18:50</sys_created_on>
         <sys_id>a98fbf363bd4d350ebe9c15765e45ac3</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-06 03:18:50</sys_updated_on>
+        <sys_updated_on>2026-11-14 03:09:54</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a98fbf363bd4d350ebe9c15765e45ac3"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1276,63 +1314,101 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:18:50</sys_created_on>
         <sys_id>b98fbf363bd4d350ebe9c15765e45afb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-06 03:18:50</sys_updated_on>
+        <sys_updated_on>2026-11-14 03:09:54</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-    // Keeps only one open incident per integration process (identified by Correlation ID).&#13;
-    // Open = any state except Resolved (6), Closed (7) and Canceled (8).&#13;
+    // Keeps only one open defect per integration process (identified by Correlation ID).&#13;
+    // Open = active defect (closed states of rm_defect: 3 Closed Complete, 7 Cancelled).&#13;
     var corr = inputs.correlation_id;&#13;
 &#13;
-    function openIncidents() {&#13;
-        var gr = new GlideRecord('incident');&#13;
+    // Same values as the record producer "Raise a Defect", kept in system properties&#13;
+    var GROUP = gs.getProperty('x_snc_spm_xero_i_0.defect_assignment_group', '');&#13;
+    var COMPANY = gs.getProperty('x_snc_spm_xero_i_0.defect_company', '');&#13;
+    var SERVICE_ACCOUNT = gs.getProperty('x_snc_spm_xero_i_0.service_account', '');&#13;
+&#13;
+    function openDefects() {&#13;
+        var gr = new GlideRecord('rm_defect');&#13;
         gr.addQuery('correlation_id', corr);&#13;
-        gr.addQuery('state', 'NOT IN', '6,7,8');&#13;
+        gr.addActiveQuery();&#13;
         gr.orderBy('sys_created_on');&#13;
         gr.query();&#13;
         return gr;&#13;
     }&#13;
 &#13;
-    // 1. An incident is already open: add the failure as a work note&#13;
-    var open = openIncidents();&#13;
+    // 1. A defect is already open: add the failure as a work note&#13;
+    var open = openDefects();&#13;
     if (open.next()) {&#13;
         open.work_notes = inputs.details;&#13;
         open.update();&#13;
-        outputs.incident_number = open.getValue('number');&#13;
         return;&#13;
     }&#13;
 &#13;
-    // 2. None open: create one assigned to Managed Services&#13;
-    var grp = new GlideRecord('sys_user_group');&#13;
-    var hasGroup = grp.get('name', 'Managed Services');&#13;
-    if (!hasGroup) {&#13;
-        gs.error('[Xero] Group "Managed Services" not found; incident created without assignment group.');&#13;
+    // 2. None open: create one with the same structure as the record producer&#13;
+    var def = new GlideRecord('rm_defect');&#13;
+    def.initialize();&#13;
+    def.short_description = inputs.short_description;&#13;
+    def.description = [&#13;
+        '====================================================',&#13;
+        'Raised via SPM Xero Integration',&#13;
+        '====================================================',&#13;
+        '',&#13;
+        'Environment:',&#13;
+        '-----------',&#13;
+        'Production',&#13;
+        '',&#13;
+        'Steps to Reproduce:',&#13;
+        '-----------',&#13;
+        '',&#13;
+        '',&#13;
+        'Expected Result:',&#13;
+        '-----------',&#13;
+        '',&#13;
+        '',&#13;
+        'Actual Result:',&#13;
+        '-----------',&#13;
+        inputs.details || '',&#13;
+        '',&#13;
+        'Business Impact:',&#13;
+        '-----------',&#13;
+        '',&#13;
+        '',&#13;
+        'Additional Information:',&#13;
+        '-----------',&#13;
+        ''&#13;
+    ].join('\n');&#13;
+    def.correlation_id = corr;&#13;
+    def.priority = 3;&#13;
+    if (GROUP) {&#13;
+        def.assignment_group = GROUP;&#13;
+    } else {&#13;
+        gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_assignment_group is empty; defect created without assignment group.');&#13;
     }&#13;
-    var inc = new GlideRecord('incident');&#13;
-    inc.initialize();&#13;
-    inc.short_description = inputs.short_description;&#13;
-    inc.description = inputs.details;&#13;
-    inc.correlation_id = corr;&#13;
-    if (hasGroup) {&#13;
-        inc.assignment_group = grp.getUniqueValue();&#13;
+    if (COMPANY) {&#13;
+        def.company = COMPANY;&#13;
+    } else {&#13;
+        gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_company is empty; defect created with the default company.');&#13;
     }&#13;
-    var newId = inc.insert();&#13;
+    var usr = new GlideRecord('sys_user');&#13;
+    if (SERVICE_ACCOUNT &amp;&amp; usr.get('user_name', SERVICE_ACCOUNT)) {&#13;
+        def.opened_by = usr.getUniqueValue();&#13;
+    } else {&#13;
+        gs.error('[Xero] Service account "' + SERVICE_ACCOUNT + '" not found; defect created with the default Opened by.');&#13;
+    }&#13;
+    var newId = def.insert();&#13;
 &#13;
-    // 3. Two failures at the same time may create two incidents:&#13;
+    // 3. Two failures at the same time may create two defects:&#13;
     //    keep the oldest, add the failure to it and cancel the new one as duplicate&#13;
-    var all = openIncidents();&#13;
+    var all = openDefects();&#13;
     if (all.next() &amp;&amp; all.getUniqueValue() != newId) {&#13;
         all.work_notes = inputs.details;&#13;
         all.update();&#13;
-        var dup = new GlideRecord('incident');&#13;
+        var dup = new GlideRecord('rm_defect');&#13;
         if (dup.get(newId)) {&#13;
-            dup.state = 8;&#13;
+            dup.state = 7; // Cancelled&#13;
             dup.work_notes = 'Duplicate of ' + all.getValue('number') + ' (created at the same time).';&#13;
             dup.update();&#13;
         }&#13;
-        outputs.incident_number = all.getValue('number');&#13;
-    } else {&#13;
-        outputs.incident_number = inc.getValue('number');&#13;
     }&#13;
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -2062,14 +2138,14 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:18:51</sys_created_on>
         <sys_id>318fff363bd4d350ebe9c15765e45a06</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-08 20:12:00</sys_updated_on>
+        <sys_updated_on>2026-11-14 03:09:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
