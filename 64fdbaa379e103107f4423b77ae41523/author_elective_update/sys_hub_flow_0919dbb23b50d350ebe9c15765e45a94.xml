@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5375000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Maps a user to their Xero user ID when the user is created with Company = Konversational America, or when the Company changes to Konversational America (internal transfers). Calls Xero by email and stores the result in External User Mapping: Matched with the Xero ID, or Not found. Not found users are retried daily (Mon–Fri) by the Xero - Retry Not Found Users subflow.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>xero__map_user_on_company_change</internal_name>
+        <label_cache>[{"name":"trigger.current.email","label":"Trigger - Record Created or Updated➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7df898ca-9fba-441d-b094-be39991ef65d":["email"],"7dde38e9-111a-4dfa-993d-5b273c52840e":["email"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]}},{"name":"7df898ca-9fba-441d-b094-be39991ef65d.user_xero_id","label":"1 - Xero - Get User➛User Xero ID","reference_display":"User Xero ID","type":"string","base_type":"string","usedInstances":{"9318a2a3-c912-41f8-b6d1-3b97c528877b":["condition"],"7dde38e9-111a-4dfa-993d-5b273c52840e":["external_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e75e6e61-4f7e-45ba-bf3d-b1c3921a3699"}},{"name":"trigger.current","label":"Trigger - Record Created or Updated➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"7dde38e9-111a-4dfa-993d-5b273c52840e":["user"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]},"attributes":{}},{"name":"trigger.run_start_date_time","label":"Trigger - Record Created or Updated➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"7dde38e9-111a-4dfa-993d-5b273c52840e":["last_checked"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master_snapshot>bbaed3fe3b50d350ebe9c15765e45adc</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Xero - Map User on Company Change</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>9a9da3363b14d350ebe9c15765e45a34</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:30:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0919dbb23b50d350ebe9c15765e45a94</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Xero - Map User on Company Change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_hub_flow_0919dbb23b50d350ebe9c15765e45a94</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-14 01:21:51</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>f69d27363b14d350ebe9c15765e45a10</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_variable_value action="DELETE" query="document_key=0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_flow_record_trigger action="DELETE">
+        <active>true</active>
+        <condition table="sys_user">companyCHANGESTO6ad9a6992b8eaa10b088fb64b891bfb7<item display_table="core_company" display_value="Konversational America" endquery="false" field="company" goto="false" newquery="false" operator="CHANGESTO" or="false" value="6ad9a6992b8eaa10b088fb64b891bfb7"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 02:00:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9a9da3363b14d350ebe9c15765e45a34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:31</sys_updated_on>
+        <table>sys_user</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="DELETE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>0919dbb23b50d350ebe9c15765e45a94</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 02:00:31</sys_created_on>
+        <sys_id>1a9da3363b14d350ebe9c15765e45a35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:31</sys_updated_on>
+        <trigger display_value="">9a9da3363b14d350ebe9c15765e45a34</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN1a9da3363b14d350ebe9c15765e45a35"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT INcd199fb23b50d350ebe9c15765e45ae4"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>0919dbb23b50d350ebe9c15765e45a94</id>
+        <name>Xero - Map User on Company Change</name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:30:51</sys_created_on>
+        <sys_id>cd199fb23b50d350ebe9c15765e45ae4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:30:51</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=cd199fb23b50d350ebe9c15765e45ae4"/>
+    <sys_hub_flow_input action="DELETE" query="model=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN6e69dbf23b50d350ebe9c15765e45a49,92699bf23b50d350ebe9c15765e45a5e,d269dbf23b50d350ebe9c15765e45a32"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</model>
+        <model_id>0919dbb23b50d350ebe9c15765e45a94</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:32:19</sys_created_on>
+        <sys_id>6e69dbf23b50d350ebe9c15765e45a49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:32:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=6e69dbf23b50d350ebe9c15765e45a49"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</model>
+        <model_id>0919dbb23b50d350ebe9c15765e45a94</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:32:18</sys_created_on>
+        <sys_id>92699bf23b50d350ebe9c15765e45a5e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:55:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=92699bf23b50d350ebe9c15765e45a5e"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</model>
+        <model_id>0919dbb23b50d350ebe9c15765e45a94</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:32:19</sys_created_on>
+        <sys_id>d269dbf23b50d350ebe9c15765e45a32</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:55:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=d269dbf23b50d350ebe9c15765e45a32"/>
+    <sys_hub_flow_output action="DELETE" query="model=0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN39699fbe3b10d350ebe9c15765e45a1a"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:32:17</sys_created_on>
+        <sys_id>39699fbe3b10d350ebe9c15765e45a1a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:15:33</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN5c1bd77e3b10d350ebe9c15765e45a6b,beac1b7a3b50d350ebe9c15765e45a94,0dbb573a3b50d350ebe9c15765e45ae8"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Xero - Get User">b0a0ca40d8f503107f440f1d3033070a</action_type>
+        <action_type_parent display_value="Xero - Get User">ee5ef9ccd8b503107f440f1d303307e6</action_type_parent>
+        <attributes/>
+        <comment>Looks up the user in Xero by email. Returns the Xero ID, or "false" when not found.</comment>
+        <compiled_snapshot>b0a0ca40d8f503107f440f1d3033070a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:39:32</sys_created_on>
+        <sys_id>5c1bd77e3b10d350ebe9c15765e45a6b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:39:27</sys_updated_on>
+        <ui_id>7df898ca-9fba-441d-b094-be39991ef65d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41STU/jMBD9Lz6nkbMtStvbCoS0Eh8SLFwQiib2OLXkOMEfhW7U/864SQvqXji+5zeeN2/mZWBasjUrOXABCy6X6oLPC16qxYKrQs75fM5LXrOMWWiRlNiCNgS3YGLCwxCcbhp0uYjOoQ35QbHfk0Zq3xvYPf9AKjbaSOLY+uU1Yz046hbQsfVw9vRTuwZqNN/8ntkPuz5BT45sM+GbqeTxSHZOJgtFxvAjoJVIvRUYjxlrwUoIndudGIcg7635IjbaBvqNJfGH1/+o35JznpQKaR6B4+sJVlNeI62uIABZiSJEN0nFptMC/ZiERAXRhMvv3Ci474Pu7FgSoDbH6s7E1t6NQbDTB8f1EBM9mcA+jZq8T4Oox033/nB0ea3tIZXp0XQCzAlBoOzqGJKfgUX99yzmkfkvaDTYUseqhb4npupdt9WHLmS6zRtDIFemeyd3Xjc2B5EmzGkFkF8Tf3Wgn8HpNO4tfUPFqd2T1W8R/6SjoVtZSbkqZmpZy9liWfJZXaqLWfFLlLJeSUW3w/YZ8zt/acD7r6BoQ9VbTGOOsU0BVWPGqUQ43YffZGqLUxb7108hMzxUXAMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=5c1bd77e3b10d350ebe9c15765e45a6b"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Creates or updates the user's mapping as Not found, with no Xero ID. It will be retried by the daily job.</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>f8d41e53-8332-4732-ab04-2fa597b60c38</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:46:33</sys_created_on>
+        <sys_id>beac1b7a3b50d350ebe9c15765e45a94</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:39:27</sys_updated_on>
+        <ui_id>8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUTW/bMAz9K4bOhpEmTTvkNvTjtLXA2hUDukZgJDoRJkueJLfJgvz3UZadFmm6j2I7DDuKfKTeo6h3u2ZKsgkbHo+Px4DD8Wg2Go4Gg9GhOJISsSyPZwfD8pDlzECFhAww08jbQ87uQTcxuOTeCO7rii/RWa74gOMyoDOgeePR8QrqWpk5lUjlaw2rm67yrINlHwmWvd/CxEJp6dCwye1dzmpwdCEh2WS9k/pV+hpmqAl6HflnF4n/Pk1hVe+NvdvXwDoZSQ1yFvUaicSmBO0xZxUYCcG6FZsE11DAIchLo1dbxEKZQA1ZxC69+kbXvhlEXIkkT2DKbY+8G10Kl6cQ4Io6i9C4DioWVgn0aTASS2h0OHkaS4DLOihrUkkrs6u2uqnMRRoJ2zboX4oi9JRcYh11RuadjPJqYR8+9CzPlWlH0iW1FaC3JwjBqVkTIp81Q40VNeqXg9fO3qu2mLhUxVzToSi1faBLvZqbAkQkXtBYoTin+GkbvgGnooq4PFRMNNX1njdM0f4V45OwTc78yp9o8P5RNs2bf20i6TSETi5PE4slwqk6vCUu99gp2+T9P5r9cBHhcedKhVr6J38o/pPPDZXI9ZqmNJ+jK0TjaKhhs5kGa3XKxh82xQqUfgFdtEmq8QFC4xPK2MBL2xg5JbWBiwWKLyh3O7jGcKpygdOMkQdVIfXZfmXVFUwr9B7mmE5n8bqMLsjaCzJlsk/EsZgKCxo9LW7SmtBRZh7VPPeC/3ACv2lzP9+u3ubO+/XaXbfe3rCi0ZPCtH47Ftcls5su2dncwZ+yuaPxYPAvOV1S9mqjezSk3anvMaX87/liTZsXeEK/3gOfuOoLbnj3HfbBmqZXCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=beac1b7a3b50d350ebe9c15765e45a94"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Creates or updates the user's mapping as Matched, with the Xero ID. User + Tool identify the record, so it is never duplicated.</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>9318a2a3-c912-41f8-b6d1-3b97c528877b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:42:20</sys_created_on>
+        <sys_id>0dbb573a3b50d350ebe9c15765e45ae8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:39:27</sys_updated_on>
+        <ui_id>7dde38e9-111a-4dfa-993d-5b273c52840e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FYNnWZBfcexbkTSnNgGaNJc0JlbkyiZKPUpSiV3D/96lKdmG6/QRtIcCvUm7s+Ts7HIe1kxJNmX98Wg8AuyPBumgP0iSwVCcSYmYZeO018+GLGIF5EhIB6lGvv2J2BPo2geX3BaC2yrnSzQlVzzhuHRoCtC8tmh4DlWlijmVSGUrDav7pvJtA+t8JFjn/Q4mFkpLgwWbPjxGrAJDFxKSTddHqV+lryFFTdA7z79zHfif6smtqpOxd6cOKI30pJKI+X4LicQmA20xYjkUElxpVmzqTE0BgyBvCr3aIRaqcHQg89ilVV/p2vPE4zKk9gSG3O6XN9KFcHYJDm7pZOFq00DFolQCbRBGYga1dheHsQC4qZwqi1CybbOpLnWdF9dBErY7oJ0URWiUXGLl+/TMmzay20X5/KFleaWKrSRNUpcC9O4PnDMqrZ3ns2aoMaeD2uXglSmf1LaYuOTxXNNPnOnymS61al7EIDzxmGSF+Iril9vwPRjlu/DLQ8VEU92dmGGItlP0I2GbiNmVvdBg7b5t0pt/qT3pIELTLg+K+RJhVOXeEJcnbDrbRO07Sn+4iLDfuUyhlvbgDfl38qmmErlek0rzOZpY1IZEdZvNzJWlDln/wma716VkWzOW2fnkXEB3kqXQHQ57spsmk2E3xcFkMulhdjaS8fYxhjcq6VTMQekXLo23SQJZB662AZWDEwuUM5LMcfoSn1Ee15u64FRjHKdBIXcqRzolR2thjgE8EyVotLTTQYYQ9eQi3+j3NvFfnENxftMcf76TrTletUt5vKStKWJOUyHeYWmPjLFJdu6bZGOOvT9ljmejJPmX/DF09mp73NvYseonrCz6e25a0eY5HtCvd84DL37BQx+/AW/AOn6NCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=0dbb573a3b50d350ebe9c15765e45ae8"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN415b93f63b50d350ebe9c15765e45aa3,c1ac1b7a3b50d350ebe9c15765e45a91"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">e7aed3fe3b50d350ebe9c15765e45a5a</block>
+        <comment>User found in Xero.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:40:42</sys_created_on>
+        <sys_id>415b93f63b50d350ebe9c15765e45aa3</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:26</sys_updated_on>
+        <ui_id>9318a2a3-c912-41f8-b6d1-3b97c528877b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lVZnWZAsy418C1oEKNA2QBPk0gTCilzZRClSJSk/avjfu9TDNhoHLYocexOH2t2Z0az2gW5d0zp7r6+tFUsVLL49hYFQHqPnfaCgxmARMK24cEKrogPCYA2y9Rf0yIVtJOweTghbCckNDt0aMFTj0ASL/W9XbtdgIaFESYV3zgi1pHLB6VTFUCU5S1g6nafTOJ5ezZJynpbJlKeAkNJ7Y+H7kdybTx0SvsjazyPcjpO04Z5WEocBbh0qjjS6AmkxDGpQHJw2uyNiEPitkidgJZTrFdewteIn9Z5mmX+xQtLIBjuOx2KwanRJC4a3jSfYIw5KOVqoZVurL70ObzJW0Ep3ZnJrqR82nrRnMVCq7lZ683UceCNUJ3C4lJqBPJ7AkQ1l69D6D4MSa2pU1NA0ZE7RGL0WXTFxqaOlpENUSb2hoT4pETBPPCKPILoh/EMHP4ARXsVnakPFPc0SrGBFlypq5wxJOHS2FD9aT6gXOEgpejfoBcuMaNw1zVnjwPoQPo/kWRr3+3e8usqvGEzyqoTJbJbwSRnns0mJaZ7nCVbzjEfEyRRbNLoQ/HB4+9jGccq7/s/j/BotX2MfcsiqLImzy/swm1/ahwub8PISTP+wBP6z/eUOxHH8fwnOl0DYog/zoK0Pxr/uwJMPfD/B9rnhyIQlIvce+zj+vf3FjgIg2Dm00ea7l3DCDr8A3Nwp/AcGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">6faed3fe3b50d350ebe9c15765e45a69</block>
+        <comment>User not found in Xero.</comment>
+        <connected_to>9318a2a3-c912-41f8-b6d1-3b97c528877b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:46:26</sys_created_on>
+        <sys_id>c1ac1b7a3b50d350ebe9c15765e45a91</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:26</sys_updated_on>
+        <ui_id>f8d41e53-8332-4732-ab04-2fa597b60c38</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_hub_flow_variable action="DELETE" query="model=0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_variable_0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:32:19</sys_created_on>
+        <sys_id>6669dbf23b50d350ebe9c15765e45a51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:32:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:32:19</sys_created_on>
+        <sys_id>9e69dbf23b50d350ebe9c15765e45a2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:32:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:32:19</sys_created_on>
+        <sys_id>ee69dbf23b50d350ebe9c15765e45a38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:32:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Maps a user to their Xero user ID when the user is created with Company = Konversational America, or when the Company changes to Konversational America (internal transfers). Calls Xero by email and stores the result in External User Mapping: Matched with the Xero ID, or Not found. Not found users are retried daily (Mon–Fri) by the Xero - Retry Not Found Users subflow.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>xero__map_user_on_company_change</internal_name>
+        <label_cache>[{"name":"trigger.current.email","label":"Trigger - Record Created or Updated➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7df898ca-9fba-441d-b094-be39991ef65d":["email"],"7dde38e9-111a-4dfa-993d-5b273c52840e":["email"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]}},{"name":"7df898ca-9fba-441d-b094-be39991ef65d.user_xero_id","label":"1 - Xero - Get User➛User Xero ID","reference_display":"User Xero ID","type":"string","base_type":"string","usedInstances":{"9318a2a3-c912-41f8-b6d1-3b97c528877b":["condition"],"7dde38e9-111a-4dfa-993d-5b273c52840e":["external_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e75e6e61-4f7e-45ba-bf3d-b1c3921a3699"}},{"name":"trigger.current","label":"Trigger - Record Created or Updated➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"7dde38e9-111a-4dfa-993d-5b273c52840e":["user"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]},"attributes":{}},{"name":"trigger.run_start_date_time","label":"Trigger - Record Created or Updated➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"7dde38e9-111a-4dfa-993d-5b273c52840e":["last_checked"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master>true</master>
+        <name>Xero - Map User on Company Change</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Xero - Map User on Company Change">0919dbb23b50d350ebe9c15765e45a94</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bbaed3fe3b50d350ebe9c15765e45adc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:30</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_variable_value action="DELETE" query="document_key=bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN3baed3fe3b50d350ebe9c15765e45add"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>bbaed3fe3b50d350ebe9c15765e45adc</id>
+        <name>Xero - Map User on Company Change</name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:21</sys_created_on>
+        <sys_id>3baed3fe3b50d350ebe9c15765e45add</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:55:21</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=3baed3fe3b50d350ebe9c15765e45add"/>
+    <sys_hub_flow_input action="DELETE" query="model=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN37aed3fe3b50d350ebe9c15765e45af3,ccbe17fe3b50d350ebe9c15765e45a16,f3aed3fe3b50d350ebe9c15765e45adf"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Xero - Map User on Company Change">bbaed3fe3b50d350ebe9c15765e45adc</model>
+        <model_id>bbaed3fe3b50d350ebe9c15765e45adc</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:21</sys_created_on>
+        <sys_id>37aed3fe3b50d350ebe9c15765e45af3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:15:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=37aed3fe3b50d350ebe9c15765e45af3"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Xero - Map User on Company Change">bbaed3fe3b50d350ebe9c15765e45adc</model>
+        <model_id>bbaed3fe3b50d350ebe9c15765e45adc</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:22</sys_created_on>
+        <sys_id>ccbe17fe3b50d350ebe9c15765e45a16</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=ccbe17fe3b50d350ebe9c15765e45a16"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Xero - Map User on Company Change">bbaed3fe3b50d350ebe9c15765e45adc</model>
+        <model_id>bbaed3fe3b50d350ebe9c15765e45adc</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:21</sys_created_on>
+        <sys_id>f3aed3fe3b50d350ebe9c15765e45adf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=f3aed3fe3b50d350ebe9c15765e45adf"/>
+    <sys_hub_flow_output action="DELETE" query="model=bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN48be17fe3b50d350ebe9c15765e45a2c"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">bbaed3fe3b50d350ebe9c15765e45adc</flow>
+        <generation_source/>
+        <name>Created or Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:22</sys_created_on>
+        <sys_id>48be17fe3b50d350ebe9c15765e45a2c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:15:35</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN40be17fe3b50d350ebe9c15765e45a2a,4cbe17fe3b50d350ebe9c15765e45a2a,04be17fe3b50d350ebe9c15765e45a2b"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Xero - Get User">b0a0ca40d8f503107f440f1d3033070a</action_type>
+        <action_type_parent display_value="Xero - Get User">ee5ef9ccd8b503107f440f1d303307e6</action_type_parent>
+        <attributes/>
+        <comment>Looks up the user in Xero by email. Returns the Xero ID, or "false" when not found.</comment>
+        <compiled_snapshot>b0a0ca40d8f503107f440f1d3033070a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">bbaed3fe3b50d350ebe9c15765e45adc</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:22</sys_created_on>
+        <sys_id>40be17fe3b50d350ebe9c15765e45a2a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 01:15:36</sys_updated_on>
+        <ui_id>7df898ca-9fba-441d-b094-be39991ef65d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41STU/jMBD9Lz6nkbMtStvbCoS0Eh8SLFwQiib2OLXkOMEfhW7U/864SQvqXji+5zeeN2/mZWBasjUrOXABCy6X6oLPC16qxYKrQs75fM5LXrOMWWiRlNiCNgS3YGLCwxCcbhp0uYjOoQ35QbHfk0Zq3xvYPf9AKjbaSOLY+uU1Yz046hbQsfVw9vRTuwZqNN/8ntkPuz5BT45sM+GbqeTxSHZOJgtFxvAjoJVIvRUYjxlrwUoIndudGIcg7635IjbaBvqNJfGH1/+o35JznpQKaR6B4+sJVlNeI62uIABZiSJEN0nFptMC/ZiERAXRhMvv3Ci474Pu7FgSoDbH6s7E1t6NQbDTB8f1EBM9mcA+jZq8T4Oox033/nB0ea3tIZXp0XQCzAlBoOzqGJKfgUX99yzmkfkvaDTYUseqhb4npupdt9WHLmS6zRtDIFemeyd3Xjc2B5EmzGkFkF8Tf3Wgn8HpNO4tfUPFqd2T1W8R/6SjoVtZSbkqZmpZy9liWfJZXaqLWfFLlLJeSUW3w/YZ8zt/acD7r6BoQ9VbTGOOsU0BVWPGqUQ43YffZGqLUxb7108hMzxUXAMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=40be17fe3b50d350ebe9c15765e45a2a"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Creates or updates the user's mapping as Matched, with the Xero ID. User + Tool identify the record, so it is never duplicated.</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">bbaed3fe3b50d350ebe9c15765e45adc</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>9318a2a3-c912-41f8-b6d1-3b97c528877b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:22</sys_created_on>
+        <sys_id>4cbe17fe3b50d350ebe9c15765e45a2a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:29</sys_updated_on>
+        <ui_id>7dde38e9-111a-4dfa-993d-5b273c52840e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FYNnWZBfcexbkTSnNgGaNJc0JlbkyiZKPUpSiV3D/96lKdmG6/QRtIcCvUm7s+Ts7HIe1kxJNmX98Wg8AuyPBumgP0iSwVCcSYmYZeO018+GLGIF5EhIB6lGvv2J2BPo2geX3BaC2yrnSzQlVzzhuHRoCtC8tmh4DlWlijmVSGUrDav7pvJtA+t8JFjn/Q4mFkpLgwWbPjxGrAJDFxKSTddHqV+lryFFTdA7z79zHfif6smtqpOxd6cOKI30pJKI+X4LicQmA20xYjkUElxpVmzqTE0BgyBvCr3aIRaqcHQg89ilVV/p2vPE4zKk9gSG3O6XN9KFcHYJDm7pZOFq00DFolQCbRBGYga1dheHsQC4qZwqi1CybbOpLnWdF9dBErY7oJ0URWiUXGLl+/TMmzay20X5/KFleaWKrSRNUpcC9O4PnDMqrZ3ns2aoMaeD2uXglSmf1LaYuOTxXNNPnOnymS61al7EIDzxmGSF+Iril9vwPRjlu/DLQ8VEU92dmGGItlP0I2GbiNmVvdBg7b5t0pt/qT3pIELTLg+K+RJhVOXeEJcnbDrbRO07Sn+4iLDfuUyhlvbgDfl38qmmErlek0rzOZpY1IZEdZvNzJWlDln/wma716VkWzOW2fnkXEB3kqXQHQ57spsmk2E3xcFkMulhdjaS8fYxhjcq6VTMQekXLo23SQJZB662AZWDEwuUM5LMcfoSn1Ee15u64FRjHKdBIXcqRzolR2thjgE8EyVotLTTQYYQ9eQi3+j3NvFfnENxftMcf76TrTletUt5vKStKWJOUyHeYWmPjLFJdu6bZGOOvT9ljmejJPmX/DF09mp73NvYseonrCz6e25a0eY5HtCvd84DL37BQx+/AW/AOn6NCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=4cbe17fe3b50d350ebe9c15765e45a2a"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <attributes/>
+        <comment>Creates or updates the user's mapping as Not found, with no Xero ID. It will be retried by the daily job.</comment>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">bbaed3fe3b50d350ebe9c15765e45adc</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>f8d41e53-8332-4732-ab04-2fa597b60c38</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:22</sys_created_on>
+        <sys_id>04be17fe3b50d350ebe9c15765e45a2b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:29</sys_updated_on>
+        <ui_id>8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUTW/bMAz9K4bOhpEmTTvkNvTjtLXA2hUDukZgJDoRJkueJLfJgvz3UZadFmm6j2I7DDuKfKTeo6h3u2ZKsgkbHo+Px4DD8Wg2Go4Gg9GhOJISsSyPZwfD8pDlzECFhAww08jbQ87uQTcxuOTeCO7rii/RWa74gOMyoDOgeePR8QrqWpk5lUjlaw2rm67yrINlHwmWvd/CxEJp6dCwye1dzmpwdCEh2WS9k/pV+hpmqAl6HflnF4n/Pk1hVe+NvdvXwDoZSQ1yFvUaicSmBO0xZxUYCcG6FZsE11DAIchLo1dbxEKZQA1ZxC69+kbXvhlEXIkkT2DKbY+8G10Kl6cQ4Io6i9C4DioWVgn0aTASS2h0OHkaS4DLOihrUkkrs6u2uqnMRRoJ2zboX4oi9JRcYh11RuadjPJqYR8+9CzPlWlH0iW1FaC3JwjBqVkTIp81Q40VNeqXg9fO3qu2mLhUxVzToSi1faBLvZqbAkQkXtBYoTin+GkbvgGnooq4PFRMNNX1njdM0f4V45OwTc78yp9o8P5RNs2bf20i6TSETi5PE4slwqk6vCUu99gp2+T9P5r9cBHhcedKhVr6J38o/pPPDZXI9ZqmNJ+jK0TjaKhhs5kGa3XKxh82xQqUfgFdtEmq8QFC4xPK2MBL2xg5JbWBiwWKLyh3O7jGcKpygdOMkQdVIfXZfmXVFUwr9B7mmE5n8bqMLsjaCzJlsk/EsZgKCxo9LW7SmtBRZh7VPPeC/3ACv2lzP9+u3ubO+/XaXbfe3rCi0ZPCtH47Ftcls5su2dncwZ+yuaPxYPAvOV1S9mqjezSk3anvMaX87/liTZsXeEK/3gOfuOoLbnj3HfbBmqZXCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=04be17fe3b50d350ebe9c15765e45a2b"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN00be17fe3b50d350ebe9c15765e45a29,84be17fe3b50d350ebe9c15765e45a27"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">6faed3fe3b50d350ebe9c15765e45a69</block>
+        <comment>User not found in Xero.</comment>
+        <connected_to>9318a2a3-c912-41f8-b6d1-3b97c528877b</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">bbaed3fe3b50d350ebe9c15765e45adc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:22</sys_created_on>
+        <sys_id>00be17fe3b50d350ebe9c15765e45a29</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:29</sys_updated_on>
+        <ui_id>f8d41e53-8332-4732-ab04-2fa597b60c38</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">e7aed3fe3b50d350ebe9c15765e45a5a</block>
+        <comment>User found in Xero.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Map User on Company Change">bbaed3fe3b50d350ebe9c15765e45adc</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:22</sys_created_on>
+        <sys_id>84be17fe3b50d350ebe9c15765e45a27</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:29</sys_updated_on>
+        <ui_id>9318a2a3-c912-41f8-b6d1-3b97c528877b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lZZnWdDDci3fAgcBCqQN0AS5NIGwIimbKCWqJOVHBf97l5IsG42LNmiOvYlD7nJmuAO1RDW2bqx5UFfGiFVFFl+fPSIqh+F3SyooOVkQqiomrFBV1gEe2YBs3AZ+MmFqCfvHE0LXQjLNh241aKyxXJNF+8uWYFhQBFCEKQ1pHM3iKAii+TTMZ3EeRiwGDjE2lJBziUeXRxrvbjvE+y0/u68dbqwW1WpY3w5d7o+g0syxCgOP8J3lFePIpwBpuEdKqBhYpfcjojmwu0qegLWobC+4hJ0RP/DCKEncwYKjRDq4MS6zwakeLq7BAlJpqG30aJwSlJveHMYLaKRdnmP9gbvaSe1LLOTyWK1kU1afe0fI2ODsYRqDJHjtlDrqg47ifq22X44sb0TVuTJsSkVBjiuw6F3eWMenJVzyEhtlJdQ1OprVWm1EV4xcSn8lceEXUm3xUjddPlBH3Edjwb9B/LqDH0ELp+ITtsHinmYORtCsm0RshzZxcvCI2ZulBGNOItHd7HvjKPaSB3FZ748roVrU9gpv3vBBx8F7OdhnM922H1gxT+cUJmmRw2Q6DdkkD9LpJOdxmqYhL2YJ85GlznZcq0yww+H9UxMEMev6vwzFW7R8XapSSIokDJLLqZrOLqXqQp5eGaXoD1Fy7/iXSQqC4H+U/jlKwmR9AAZt/TC9XZKeXWz6O0evqTBI7cFhH49/Erexx+ES9BzaKv3NiTphh58KnefbkwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_hub_flow_variable action="DELETE" query="model=bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_variable_bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:22</sys_created_on>
+        <sys_id>04be17fe3b50d350ebe9c15765e45a1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:55:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:22</sys_created_on>
+        <sys_id>0cbed3fe3b50d350ebe9c15765e45af9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:55:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:21</sys_created_on>
+        <sys_id>ffaed3fe3b50d350ebe9c15765e45aee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 00:55:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_bbaed3fe3b50d350ebe9c15765e45adc"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>0919dbb23b50d350ebe9c15765e45a94</sys_id>
+        <latest_snapshot>bbaed3fe3b50d350ebe9c15765e45adc</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch5bw45-11-01-2026_11-03-2026_2134.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN18be17fe3b50d350ebe9c15765e45a62"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"18be17fe3b50d350ebe9c15765e45a62","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>0919dbb23b50d350ebe9c15765e45a94</plan_id>
+        <snapshot>8793526b2b94d3109748faa6fe91bfce</snapshot>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-06 00:55:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>18be17fe3b50d350ebe9c15765e45a62</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-06 02:00:31</sys_updated_on>
+        <trigger display_value="">9a9da3363b14d350ebe9c15765e45a34</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=0919dbb23b50d350ebe9c15765e45a94"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>33127efac314d390d7299dcd2b0131fa</instance_id>
+        <instance_name>nowlearning-nlinst04834064-5hxfx-0001</instance_name>
+        <name>sys_hub_flow_0919dbb23b50d350ebe9c15765e45a94</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;allow_high_security_roles&gt;false&lt;/allow_high_security_roles&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=5375000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;29000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;Maps a user to their Xero user ID when the user is created with Company = Konversational America, or when the Company changes to Konversational America (internal transfers). Calls Xero by email and stores the result in External User Mapping: Matched with the Xero ID, or Not found. Not found users are retried daily (Mon–Fri) by the Xero - Retry Not Found Users subflow.&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;xero__map_user_on_company_change&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"trigger.current.email","label":"Trigger - Record Created or Updated➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7df898ca-9fba-441d-b094-be39991ef65d":["email"],"7dde38e9-111a-4dfa-993d-5b273c52840e":["email"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]}},{"name":"7df898ca-9fba-441d-b094-be39991ef65d.user_xero_id","label":"1 - Xero - Get User➛User Xero ID","reference_display":"User Xero ID","type":"string","base_type":"string","usedInstances":{"9318a2a3-c912-41f8-b6d1-3b97c528877b":["condition"],"7dde38e9-111a-4dfa-993d-5b273c52840e":["external_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e75e6e61-4f7e-45ba-bf3d-b1c3921a3699"}},{"name":"trigger.current","label":"Trigger - Record Created or Updated➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"7dde38e9-111a-4dfa-993d-5b273c52840e":["user"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]},"attributes":{}},{"name":"trigger.run_start_date_time","label":"Trigger - Record Created or Updated➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"7dde38e9-111a-4dfa-993d-5b273c52840e":["last_checked"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]},"attributes":{"test_input_hidden":"true"}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Xero - Map User on Company Change&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;9a9da3363b14d350ebe9c15765e45a34&lt;/remote_trigger_id&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:30:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/sys_id&gt;&lt;sys_mod_count&gt;30&lt;/sys_mod_count&gt;&lt;sys_name&gt;Xero - Map User on Company Change&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_0919dbb23b50d350ebe9c15765e45a94&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-14 01:21:51&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;version_record&gt;f69d27363b14d350ebe9c15765e45a10&lt;/version_record&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_flow_record_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition table="sys_user"&gt;companyCHANGESTO6ad9a6992b8eaa10b088fb64b891bfb7&lt;item display_table="core_company" display_value="Konversational America" endquery="false" field="company" goto="false" newquery="false" operator="CHANGESTO" or="false" value="6ad9a6992b8eaa10b088fb64b891bfb7"/&gt;&lt;/condition&gt;&lt;name/&gt;&lt;on_delete&gt;false&lt;/on_delete&gt;&lt;on_insert&gt;true&lt;/on_insert&gt;&lt;on_update&gt;true&lt;/on_update&gt;&lt;published_version/&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;run_on_extended&gt;false&lt;/run_on_extended&gt;&lt;run_when_setting&gt;both&lt;/run_when_setting&gt;&lt;run_when_user_list/&gt;&lt;run_when_user_setting&gt;any&lt;/run_when_user_setting&gt;&lt;sys_class_name&gt;sys_flow_record_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 02:00:31&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9a9da3363b14d350ebe9c15765e45a34&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:31&lt;/sys_updated_on&gt;&lt;table&gt;sys_user&lt;/table&gt;&lt;trigger_definition/&gt;&lt;/sys_flow_record_trigger&gt;&lt;sys_trigger_runner_mapping action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;data&gt;{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}&lt;/data&gt;&lt;identifier&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/identifier&gt;&lt;identifier_type&gt;flow&lt;/identifier_type&gt;&lt;runner&gt;FDTriggerRunner&lt;/runner&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 02:00:31&lt;/sys_created_on&gt;&lt;sys_id&gt;1a9da3363b14d350ebe9c15765e45a35&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:31&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;9a9da3363b14d350ebe9c15765e45a34&lt;/trigger&gt;&lt;/sys_trigger_runner_mapping&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN1a9da3363b14d350ebe9c15765e45a35"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT INcd199fb23b50d350ebe9c15765e45ae4"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/id&gt;&lt;name&gt;Xero - Map User on Company Change&lt;/name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:30:51&lt;/sys_created_on&gt;&lt;sys_id&gt;cd199fb23b50d350ebe9c15765e45ae4&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:30:51&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cd199fb23b50d350ebe9c15765e45ae4"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN6e69dbf23b50d350ebe9c15765e45a49,92699bf23b50d350ebe9c15765e45a5e,d269dbf23b50d350ebe9c15765e45a32"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/model&gt;&lt;model_id&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:32:19&lt;/sys_created_on&gt;&lt;sys_id&gt;6e69dbf23b50d350ebe9c15765e45a49&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:32:19&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6e69dbf23b50d350ebe9c15765e45a49"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/model&gt;&lt;model_id&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:32:18&lt;/sys_created_on&gt;&lt;sys_id&gt;92699bf23b50d350ebe9c15765e45a5e&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:55:19&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=92699bf23b50d350ebe9c15765e45a5e"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/model&gt;&lt;model_id&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:32:19&lt;/sys_created_on&gt;&lt;sys_id&gt;d269dbf23b50d350ebe9c15765e45a32&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:55:19&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d269dbf23b50d350ebe9c15765e45a32"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN39699fbe3b10d350ebe9c15765e45a1a"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Created or Updated&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:32:17&lt;/sys_created_on&gt;&lt;sys_id&gt;39699fbe3b10d350ebe9c15765e45a1a&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 01:15:33&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN5c1bd77e3b10d350ebe9c15765e45a6b,beac1b7a3b50d350ebe9c15765e45a94,0dbb573a3b50d350ebe9c15765e45ae8"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Xero - Get User"&gt;b0a0ca40d8f503107f440f1d3033070a&lt;/action_type&gt;&lt;action_type_parent display_value="Xero - Get User"&gt;ee5ef9ccd8b503107f440f1d303307e6&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Looks up the user in Xero by email. Returns the Xero ID, or "false" when not found.&lt;/comment&gt;&lt;compiled_snapshot&gt;b0a0ca40d8f503107f440f1d3033070a&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:39:32&lt;/sys_created_on&gt;&lt;sys_id&gt;5c1bd77e3b10d350ebe9c15765e45a6b&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:39:27&lt;/sys_updated_on&gt;&lt;ui_id&gt;7df898ca-9fba-441d-b094-be39991ef65d&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/41STU/jMBD9Lz6nkbMtStvbCoS0Eh8SLFwQiib2OLXkOMEfhW7U/864SQvqXji+5zeeN2/mZWBasjUrOXABCy6X6oLPC16qxYKrQs75fM5LXrOMWWiRlNiCNgS3YGLCwxCcbhp0uYjOoQ35QbHfk0Zq3xvYPf9AKjbaSOLY+uU1Yz046hbQsfVw9vRTuwZqNN/8ntkPuz5BT45sM+GbqeTxSHZOJgtFxvAjoJVIvRUYjxlrwUoIndudGIcg7635IjbaBvqNJfGH1/+o35JznpQKaR6B4+sJVlNeI62uIABZiSJEN0nFptMC/ZiERAXRhMvv3Ci474Pu7FgSoDbH6s7E1t6NQbDTB8f1EBM9mcA+jZq8T4Oox033/nB0ea3tIZXp0XQCzAlBoOzqGJKfgUX99yzmkfkvaDTYUseqhb4npupdt9WHLmS6zRtDIFemeyd3Xjc2B5EmzGkFkF8Tf3Wgn8HpNO4tfUPFqd2T1W8R/6SjoVtZSbkqZmpZy9liWfJZXaqLWfFLlLJeSUW3w/YZ8zt/acD7r6BoQ9VbTGOOsU0BVWPGqUQ43YffZGqLUxb7108hMzxUXAMAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=5c1bd77e3b10d350ebe9c15765e45a6b"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Creates or updates the user's mapping as Not found, with no Xero ID. It will be retried by the daily job.&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;f8d41e53-8332-4732-ab04-2fa597b60c38&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:46:33&lt;/sys_created_on&gt;&lt;sys_id&gt;beac1b7a3b50d350ebe9c15765e45a94&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:39:27&lt;/sys_updated_on&gt;&lt;ui_id&gt;8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VUTW/bMAz9K4bOhpEmTTvkNvTjtLXA2hUDukZgJDoRJkueJLfJgvz3UZadFmm6j2I7DDuKfKTeo6h3u2ZKsgkbHo+Px4DD8Wg2Go4Gg9GhOJISsSyPZwfD8pDlzECFhAww08jbQ87uQTcxuOTeCO7rii/RWa74gOMyoDOgeePR8QrqWpk5lUjlaw2rm67yrINlHwmWvd/CxEJp6dCwye1dzmpwdCEh2WS9k/pV+hpmqAl6HflnF4n/Pk1hVe+NvdvXwDoZSQ1yFvUaicSmBO0xZxUYCcG6FZsE11DAIchLo1dbxEKZQA1ZxC69+kbXvhlEXIkkT2DKbY+8G10Kl6cQ4Io6i9C4DioWVgn0aTASS2h0OHkaS4DLOihrUkkrs6u2uqnMRRoJ2zboX4oi9JRcYh11RuadjPJqYR8+9CzPlWlH0iW1FaC3JwjBqVkTIp81Q40VNeqXg9fO3qu2mLhUxVzToSi1faBLvZqbAkQkXtBYoTin+GkbvgGnooq4PFRMNNX1njdM0f4V45OwTc78yp9o8P5RNs2bf20i6TSETi5PE4slwqk6vCUu99gp2+T9P5r9cBHhcedKhVr6J38o/pPPDZXI9ZqmNJ+jK0TjaKhhs5kGa3XKxh82xQqUfgFdtEmq8QFC4xPK2MBL2xg5JbWBiwWKLyh3O7jGcKpygdOMkQdVIfXZfmXVFUwr9B7mmE5n8bqMLsjaCzJlsk/EsZgKCxo9LW7SmtBRZh7VPPeC/3ACv2lzP9+u3ubO+/XaXbfe3rCi0ZPCtH47Ftcls5su2dncwZ+yuaPxYPAvOV1S9mqjezSk3anvMaX87/liTZsXeEK/3gOfuOoLbnj3HfbBmqZXCAAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=beac1b7a3b50d350ebe9c15765e45a94"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Creates or updates the user's mapping as Matched, with the Xero ID. User + Tool identify the record, so it is never duplicated.&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;9318a2a3-c912-41f8-b6d1-3b97c528877b&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:42:20&lt;/sys_created_on&gt;&lt;sys_id&gt;0dbb573a3b50d350ebe9c15765e45ae8&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:39:27&lt;/sys_updated_on&gt;&lt;ui_id&gt;7dde38e9-111a-4dfa-993d-5b273c52840e&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Uy27bMBD8FYNnWZBfcexbkTSnNgGaNJc0JlbkyiZKPUpSiV3D/96lKdmG6/QRtIcCvUm7s+Ts7HIe1kxJNmX98Wg8AuyPBumgP0iSwVCcSYmYZeO018+GLGIF5EhIB6lGvv2J2BPo2geX3BaC2yrnSzQlVzzhuHRoCtC8tmh4DlWlijmVSGUrDav7pvJtA+t8JFjn/Q4mFkpLgwWbPjxGrAJDFxKSTddHqV+lryFFTdA7z79zHfif6smtqpOxd6cOKI30pJKI+X4LicQmA20xYjkUElxpVmzqTE0BgyBvCr3aIRaqcHQg89ilVV/p2vPE4zKk9gSG3O6XN9KFcHYJDm7pZOFq00DFolQCbRBGYga1dheHsQC4qZwqi1CybbOpLnWdF9dBErY7oJ0URWiUXGLl+/TMmzay20X5/KFleaWKrSRNUpcC9O4PnDMqrZ3ns2aoMaeD2uXglSmf1LaYuOTxXNNPnOnymS61al7EIDzxmGSF+Iril9vwPRjlu/DLQ8VEU92dmGGItlP0I2GbiNmVvdBg7b5t0pt/qT3pIELTLg+K+RJhVOXeEJcnbDrbRO07Sn+4iLDfuUyhlvbgDfl38qmmErlek0rzOZpY1IZEdZvNzJWlDln/wma716VkWzOW2fnkXEB3kqXQHQ57spsmk2E3xcFkMulhdjaS8fYxhjcq6VTMQekXLo23SQJZB662AZWDEwuUM5LMcfoSn1Ee15u64FRjHKdBIXcqRzolR2thjgE8EyVotLTTQYYQ9eQi3+j3NvFfnENxftMcf76TrTletUt5vKStKWJOUyHeYWmPjLFJdu6bZGOOvT9ljmejJPmX/DF09mp73NvYseonrCz6e25a0eY5HtCvd84DL37BQx+/AW/AOn6NCAAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=0dbb573a3b50d350ebe9c15765e45ae8"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN415b93f63b50d350ebe9c15765e45aa3,c1ac1b7a3b50d350ebe9c15765e45a91"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;e7aed3fe3b50d350ebe9c15765e45a5a&lt;/block&gt;&lt;comment&gt;User found in Xero.&lt;/comment&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:40:42&lt;/sys_created_on&gt;&lt;sys_id&gt;415b93f63b50d350ebe9c15765e45aa3&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:26&lt;/sys_updated_on&gt;&lt;ui_id&gt;9318a2a3-c912-41f8-b6d1-3b97c528877b&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Uy27bMBD8lVZnWZAsy418C1oEKNA2QBPk0gTCilzZRClSJSk/avjfu9TDNhoHLYocexOH2t2Z0az2gW5d0zp7r6+tFUsVLL49hYFQHqPnfaCgxmARMK24cEKrogPCYA2y9Rf0yIVtJOweTghbCckNDt0aMFTj0ASL/W9XbtdgIaFESYV3zgi1pHLB6VTFUCU5S1g6nafTOJ5ezZJynpbJlKeAkNJ7Y+H7kdybTx0SvsjazyPcjpO04Z5WEocBbh0qjjS6AmkxDGpQHJw2uyNiEPitkidgJZTrFdewteIn9Z5mmX+xQtLIBjuOx2KwanRJC4a3jSfYIw5KOVqoZVurL70ObzJW0Ep3ZnJrqR82nrRnMVCq7lZ683UceCNUJ3C4lJqBPJ7AkQ1l69D6D4MSa2pU1NA0ZE7RGL0WXTFxqaOlpENUSb2hoT4pETBPPCKPILoh/EMHP4ARXsVnakPFPc0SrGBFlypq5wxJOHS2FD9aT6gXOEgpejfoBcuMaNw1zVnjwPoQPo/kWRr3+3e8usqvGEzyqoTJbJbwSRnns0mJaZ7nCVbzjEfEyRRbNLoQ/HB4+9jGccq7/s/j/BotX2MfcsiqLImzy/swm1/ahwub8PISTP+wBP6z/eUOxHH8fwnOl0DYog/zoK0Pxr/uwJMPfD/B9rnhyIQlIvce+zj+vf3FjgIg2Dm00ea7l3DCDr8A3Nwp/AcGAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;6faed3fe3b50d350ebe9c15765e45a69&lt;/block&gt;&lt;comment&gt;User not found in Xero.&lt;/comment&gt;&lt;connected_to&gt;9318a2a3-c912-41f8-b6d1-3b97c528877b&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:46:26&lt;/sys_created_on&gt;&lt;sys_id&gt;c1ac1b7a3b50d350ebe9c15765e45a91&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:26&lt;/sys_updated_on&gt;&lt;ui_id&gt;f8d41e53-8332-4732-ab04-2fa597b60c38&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:32:19&lt;/sys_created_on&gt;&lt;sys_id&gt;6669dbf23b50d350ebe9c15765e45a51&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:32:19&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:32:19&lt;/sys_created_on&gt;&lt;sys_id&gt;9e69dbf23b50d350ebe9c15765e45a2c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:32:19&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:32:19&lt;/sys_created_on&gt;&lt;sys_id&gt;ee69dbf23b50d350ebe9c15765e45a38&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:32:19&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;allow_high_security_roles&gt;false&lt;/allow_high_security_roles&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;29000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description&gt;Maps a user to their Xero user ID when the user is created with Company = Konversational America, or when the Company changes to Konversational America (internal transfers). Calls Xero by email and stores the result in External User Mapping: Matched with the Xero ID, or Not found. Not found users are retried daily (Mon–Fri) by the Xero - Retry Not Found Users subflow.&lt;/description&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;xero__map_user_on_company_change&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"trigger.current.email","label":"Trigger - Record Created or Updated➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"7df898ca-9fba-441d-b094-be39991ef65d":["email"],"7dde38e9-111a-4dfa-993d-5b273c52840e":["email"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]}},{"name":"7df898ca-9fba-441d-b094-be39991ef65d.user_xero_id","label":"1 - Xero - Get User➛User Xero ID","reference_display":"User Xero ID","type":"string","base_type":"string","usedInstances":{"9318a2a3-c912-41f8-b6d1-3b97c528877b":["condition"],"7dde38e9-111a-4dfa-993d-5b273c52840e":["external_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"e75e6e61-4f7e-45ba-bf3d-b1c3921a3699"}},{"name":"trigger.current","label":"Trigger - Record Created or Updated➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"7dde38e9-111a-4dfa-993d-5b273c52840e":["user"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]},"attributes":{}},{"name":"trigger.run_start_date_time","label":"Trigger - Record Created or Updated➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"7dde38e9-111a-4dfa-993d-5b273c52840e":["last_checked"],"8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8":["fields"]},"attributes":{"test_input_hidden":"true"}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Xero - Map User on Company Change&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Xero - Map User on Company Change"&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:21&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:30&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN3baed3fe3b50d350ebe9c15765e45add"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/id&gt;&lt;name&gt;Xero - Map User on Company Change&lt;/name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:21&lt;/sys_created_on&gt;&lt;sys_id&gt;3baed3fe3b50d350ebe9c15765e45add&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:55:21&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3baed3fe3b50d350ebe9c15765e45add"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN37aed3fe3b50d350ebe9c15765e45af3,ccbe17fe3b50d350ebe9c15765e45a16,f3aed3fe3b50d350ebe9c15765e45adf"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Xero - Map User on Company Change"&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/model&gt;&lt;model_id&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:21&lt;/sys_created_on&gt;&lt;sys_id&gt;37aed3fe3b50d350ebe9c15765e45af3&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 01:15:35&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=37aed3fe3b50d350ebe9c15765e45af3"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Xero - Map User on Company Change"&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/model&gt;&lt;model_id&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:22&lt;/sys_created_on&gt;&lt;sys_id&gt;ccbe17fe3b50d350ebe9c15765e45a16&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:29&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ccbe17fe3b50d350ebe9c15765e45a16"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Xero - Map User on Company Change"&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/model&gt;&lt;model_id&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_only_option/&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:21&lt;/sys_created_on&gt;&lt;sys_id&gt;f3aed3fe3b50d350ebe9c15765e45adf&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:29&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f3aed3fe3b50d350ebe9c15765e45adf"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN48be17fe3b50d350ebe9c15765e45a2c"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Created or Updated&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:22&lt;/sys_created_on&gt;&lt;sys_id&gt;48be17fe3b50d350ebe9c15765e45a2c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 01:15:35&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN40be17fe3b50d350ebe9c15765e45a2a,4cbe17fe3b50d350ebe9c15765e45a2a,04be17fe3b50d350ebe9c15765e45a2b"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Xero - Get User"&gt;b0a0ca40d8f503107f440f1d3033070a&lt;/action_type&gt;&lt;action_type_parent display_value="Xero - Get User"&gt;ee5ef9ccd8b503107f440f1d303307e6&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Looks up the user in Xero by email. Returns the Xero ID, or "false" when not found.&lt;/comment&gt;&lt;compiled_snapshot&gt;b0a0ca40d8f503107f440f1d3033070a&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:22&lt;/sys_created_on&gt;&lt;sys_id&gt;40be17fe3b50d350ebe9c15765e45a2a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 01:15:36&lt;/sys_updated_on&gt;&lt;ui_id&gt;7df898ca-9fba-441d-b094-be39991ef65d&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/41STU/jMBD9Lz6nkbMtStvbCoS0Eh8SLFwQiib2OLXkOMEfhW7U/864SQvqXji+5zeeN2/mZWBasjUrOXABCy6X6oLPC16qxYKrQs75fM5LXrOMWWiRlNiCNgS3YGLCwxCcbhp0uYjOoQ35QbHfk0Zq3xvYPf9AKjbaSOLY+uU1Yz046hbQsfVw9vRTuwZqNN/8ntkPuz5BT45sM+GbqeTxSHZOJgtFxvAjoJVIvRUYjxlrwUoIndudGIcg7635IjbaBvqNJfGH1/+o35JznpQKaR6B4+sJVlNeI62uIABZiSJEN0nFptMC/ZiERAXRhMvv3Ci474Pu7FgSoDbH6s7E1t6NQbDTB8f1EBM9mcA+jZq8T4Oox033/nB0ea3tIZXp0XQCzAlBoOzqGJKfgUX99yzmkfkvaDTYUseqhb4npupdt9WHLmS6zRtDIFemeyd3Xjc2B5EmzGkFkF8Tf3Wgn8HpNO4tfUPFqd2T1W8R/6SjoVtZSbkqZmpZy9liWfJZXaqLWfFLlLJeSUW3w/YZ8zt/acD7r6BoQ9VbTGOOsU0BVWPGqUQ43YffZGqLUxb7108hMzxUXAMAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=40be17fe3b50d350ebe9c15765e45a2a"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Creates or updates the user's mapping as Matched, with the Xero ID. User + Tool identify the record, so it is never duplicated.&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id&gt;9318a2a3-c912-41f8-b6d1-3b97c528877b&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:22&lt;/sys_created_on&gt;&lt;sys_id&gt;4cbe17fe3b50d350ebe9c15765e45a2a&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:29&lt;/sys_updated_on&gt;&lt;ui_id&gt;7dde38e9-111a-4dfa-993d-5b273c52840e&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Uy27bMBD8FYNnWZBfcexbkTSnNgGaNJc0JlbkyiZKPUpSiV3D/96lKdmG6/QRtIcCvUm7s+Ts7HIe1kxJNmX98Wg8AuyPBumgP0iSwVCcSYmYZeO018+GLGIF5EhIB6lGvv2J2BPo2geX3BaC2yrnSzQlVzzhuHRoCtC8tmh4DlWlijmVSGUrDav7pvJtA+t8JFjn/Q4mFkpLgwWbPjxGrAJDFxKSTddHqV+lryFFTdA7z79zHfif6smtqpOxd6cOKI30pJKI+X4LicQmA20xYjkUElxpVmzqTE0BgyBvCr3aIRaqcHQg89ilVV/p2vPE4zKk9gSG3O6XN9KFcHYJDm7pZOFq00DFolQCbRBGYga1dheHsQC4qZwqi1CybbOpLnWdF9dBErY7oJ0URWiUXGLl+/TMmzay20X5/KFleaWKrSRNUpcC9O4PnDMqrZ3ns2aoMaeD2uXglSmf1LaYuOTxXNNPnOnymS61al7EIDzxmGSF+Iril9vwPRjlu/DLQ8VEU92dmGGItlP0I2GbiNmVvdBg7b5t0pt/qT3pIELTLg+K+RJhVOXeEJcnbDrbRO07Sn+4iLDfuUyhlvbgDfl38qmmErlek0rzOZpY1IZEdZvNzJWlDln/wma716VkWzOW2fnkXEB3kqXQHQ57spsmk2E3xcFkMulhdjaS8fYxhjcq6VTMQekXLo23SQJZB662AZWDEwuUM5LMcfoSn1Ee15u64FRjHKdBIXcqRzolR2thjgE8EyVotLTTQYYQ9eQi3+j3NvFfnENxftMcf76TrTletUt5vKStKWJOUyHeYWmPjLFJdu6bZGOOvT9ljmejJPmX/DF09mp73NvYseonrCz6e25a0eY5HtCvd84DL37BQx+/AW/AOn6NCAAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=4cbe17fe3b50d350ebe9c15765e45a2a"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Create or Update Record"&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/action_type&gt;&lt;action_type_parent display_value="Create or Update Record"&gt;e057d2e253b3230034c6ddeeff7b1261&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Creates or updates the user's mapping as Not found, with no Xero ID. It will be retried by the daily job.&lt;/comment&gt;&lt;compiled_snapshot&gt;ab575ae253b3230034c6ddeeff7b12f1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;f8d41e53-8332-4732-ab04-2fa597b60c38&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:22&lt;/sys_created_on&gt;&lt;sys_id&gt;04be17fe3b50d350ebe9c15765e45a2b&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:29&lt;/sys_updated_on&gt;&lt;ui_id&gt;8fb88f3d-6ccd-4bc3-a7fc-a0d7d27616e8&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VUTW/bMAz9K4bOhpEmTTvkNvTjtLXA2hUDukZgJDoRJkueJLfJgvz3UZadFmm6j2I7DDuKfKTeo6h3u2ZKsgkbHo+Px4DD8Wg2Go4Gg9GhOJISsSyPZwfD8pDlzECFhAww08jbQ87uQTcxuOTeCO7rii/RWa74gOMyoDOgeePR8QrqWpk5lUjlaw2rm67yrINlHwmWvd/CxEJp6dCwye1dzmpwdCEh2WS9k/pV+hpmqAl6HflnF4n/Pk1hVe+NvdvXwDoZSQ1yFvUaicSmBO0xZxUYCcG6FZsE11DAIchLo1dbxEKZQA1ZxC69+kbXvhlEXIkkT2DKbY+8G10Kl6cQ4Io6i9C4DioWVgn0aTASS2h0OHkaS4DLOihrUkkrs6u2uqnMRRoJ2zboX4oi9JRcYh11RuadjPJqYR8+9CzPlWlH0iW1FaC3JwjBqVkTIp81Q40VNeqXg9fO3qu2mLhUxVzToSi1faBLvZqbAkQkXtBYoTin+GkbvgGnooq4PFRMNNX1njdM0f4V45OwTc78yp9o8P5RNs2bf20i6TSETi5PE4slwqk6vCUu99gp2+T9P5r9cBHhcedKhVr6J38o/pPPDZXI9ZqmNJ+jK0TjaKhhs5kGa3XKxh82xQqUfgFdtEmq8QFC4xPK2MBL2xg5JbWBiwWKLyh3O7jGcKpygdOMkQdVIfXZfmXVFUwr9B7mmE5n8bqMLsjaCzJlsk/EsZgKCxo9LW7SmtBRZh7VPPeC/3ACv2lzP9+u3ubO+/XaXbfe3rCi0ZPCtH47Ftcls5su2dncwZ+yuaPxYPAvOV1S9mqjezSk3anvMaX87/liTZsXeEK/3gOfuOoLbnj3HfbBmqZXCAAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=04be17fe3b50d350ebe9c15765e45a2b"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=bbaed3fe3b50d350ebe9c15765e45adc^sys_idNOT IN00be17fe3b50d350ebe9c15765e45a29,84be17fe3b50d350ebe9c15765e45a27"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;6faed3fe3b50d350ebe9c15765e45a69&lt;/block&gt;&lt;comment&gt;User not found in Xero.&lt;/comment&gt;&lt;connected_to&gt;9318a2a3-c912-41f8-b6d1-3b97c528877b&lt;/connected_to&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Else"&gt;1f781bf3c32232002841b63b12d3aee6&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:22&lt;/sys_created_on&gt;&lt;sys_id&gt;00be17fe3b50d350ebe9c15765e45a29&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:29&lt;/sys_updated_on&gt;&lt;ui_id&gt;f8d41e53-8332-4732-ab04-2fa597b60c38&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;e7aed3fe3b50d350ebe9c15765e45a5a&lt;/block&gt;&lt;comment&gt;User found in Xero.&lt;/comment&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Xero - Map User on Company Change"&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;2&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:22&lt;/sys_created_on&gt;&lt;sys_id&gt;84be17fe3b50d350ebe9c15765e45a27&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:29&lt;/sys_updated_on&gt;&lt;ui_id&gt;9318a2a3-c912-41f8-b6d1-3b97c528877b&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Vy27bMBD8lZZnWdDDci3fAgcBCqQN0AS5NIGwIimbKCWqJOVHBf97l5IsG42LNmiOvYlD7nJmuAO1RDW2bqx5UFfGiFVFFl+fPSIqh+F3SyooOVkQqiomrFBV1gEe2YBs3AZ+MmFqCfvHE0LXQjLNh241aKyxXJNF+8uWYFhQBFCEKQ1pHM3iKAii+TTMZ3EeRiwGDjE2lJBziUeXRxrvbjvE+y0/u68dbqwW1WpY3w5d7o+g0syxCgOP8J3lFePIpwBpuEdKqBhYpfcjojmwu0qegLWobC+4hJ0RP/DCKEncwYKjRDq4MS6zwakeLq7BAlJpqG30aJwSlJveHMYLaKRdnmP9gbvaSe1LLOTyWK1kU1afe0fI2ODsYRqDJHjtlDrqg47ifq22X44sb0TVuTJsSkVBjiuw6F3eWMenJVzyEhtlJdQ1OprVWm1EV4xcSn8lceEXUm3xUjddPlBH3Edjwb9B/LqDH0ELp+ITtsHinmYORtCsm0RshzZxcvCI2ZulBGNOItHd7HvjKPaSB3FZ748roVrU9gpv3vBBx8F7OdhnM922H1gxT+cUJmmRw2Q6DdkkD9LpJOdxmqYhL2YJ85GlznZcq0yww+H9UxMEMev6vwzFW7R8XapSSIokDJLLqZrOLqXqQp5eGaXoD1Fy7/iXSQqC4H+U/jlKwmR9AAZt/TC9XZKeXWz6O0evqTBI7cFhH49/Erexx+ES9BzaKv3NiTphh58KnefbkwYAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_variable_bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:22&lt;/sys_created_on&gt;&lt;sys_id&gt;04be17fe3b50d350ebe9c15765e45a1d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:55:22&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:22&lt;/sys_created_on&gt;&lt;sys_id&gt;0cbed3fe3b50d350ebe9c15765e45af9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:55:22&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:21&lt;/sys_created_on&gt;&lt;sys_id&gt;ffaed3fe3b50d350ebe9c15765e45aee&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 00:55:21&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_bbaed3fe3b50d350ebe9c15765e45adc"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/sys_id&gt;&lt;latest_snapshot&gt;bbaed3fe3b50d350ebe9c15765e45adc&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-australia-02-11-2026__patch5bw45-11-01-2026_11-03-2026_2134.zip&lt;/compiler_build&gt;&lt;version_record/&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=0919dbb23b50d350ebe9c15765e45a94^sys_idNOT IN18be17fe3b50d350ebe9c15765e45a62"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.Every&lt;/binding_strategy&gt;&lt;plan&gt;{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"18be17fe3b50d350ebe9c15765e45a62","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}&lt;/plan&gt;&lt;plan_id&gt;0919dbb23b50d350ebe9c15765e45a94&lt;/plan_id&gt;&lt;snapshot&gt;8793526b2b94d3109748faa6fe91bfce&lt;/snapshot&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-06 00:55:23&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;18be17fe3b50d350ebe9c15765e45a62&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-06 02:00:31&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;9a9da3363b14d350ebe9c15765e45a34&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=0919dbb23b50d350ebe9c15765e45a94"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>863953520</payload_hash>
+        <record_name>Xero - Map User on Company Change</record_name>
+        <reverted_from/>
+        <source>4a4d4da5bc6413107f44dfd45f1a9cb1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-14 03:23:53</sys_created_on>
+        <sys_id>216dc5e5bc6413107f44dfd45f1a9c55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1d8153d790000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-14 03:23:53</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>4a71b469ee68d7508a35d42a687a2ce5</update_guid>
+        <update_guid_history>4a71b469ee68d7508a35d42a687a2ce5:863953520,269da3362014d3507011b3fcadbef8d3:1678347550,919d2336bd14d350722e053dc5b86972:-2069239944,999def72849c5350f7519fa95e3e240e:-965356552,2c8d6f32619c53502abc3892c849bc04:471830065,7453e33e2b90d350a351babdf0f25cdb:468147328,f453e33eae90d350c6212dfc0af519d0:-1697356850,bf43a33e6190d350720b0b7a35677811:1813129183,1a43233eb690d3504eb5f0333faefef2:466680135,a633affa0590d3503987b00bfa04b5b5:359339623,19132bfa0190d35004050a7394439ea7:1518611595,dcbe17fee050d3506d19289a70ef5074:-1162552623,afaed3feaf50d35049fe7bfaaada6e86:-151517180,73fc93fa8150d350878ee70028b1b65f:-1632832582,32bc9bba3250d350eb07649e9f58f317:-513639438,bfac1bba4750d350eef23adafeb6268c:1824716295,2a6cd77688d85350057e04dcff13a659:-19820435,6bbb5b3a8350d350a4d06fdd5996c336:-6756075,fbab5336b4d85350fcfbcb951f45ed33:-186127392,84ab9ff273d85350a3eb40b17e4c7d67:398534865,a28b533a4350d350b7d6d40ebda5b7c1:17096842,f25bdbf62250d3503db3d37842cd8787:1751777696,e61bd3f6bf50d350c4d04d7f7ae381ac:-228592382,08da57b282d853507160e05cde3e0412:-55618969,4c0adf368150d350272fadec4131e051:-2144939914,e0791ff29f50d350a942b6e5b8686eb5:-1378011729,7b1913f23550d35024a9e0d2f09340f5:943563155,cd199fb21e50d350c27e15942edfb2eb:602043946</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-15 18:48:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>2099f652074a46f887977414c50709a9</sys_id>
+        <sys_metadata>0919dbb23b50d350ebe9c15765e45a94</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero - Map User on Company Change</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_0919dbb23b50d350ebe9c15765e45a94</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_0919dbb23b50d350ebe9c15765e45a94">216dc5e5bc6413107f44dfd45f1a9c55</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-15 18:48:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

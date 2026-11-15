@@ -281,19 +281,48 @@ XeroIntegrationUtils.prototype = {
 
         return company.insert();
     },
+
+    /**
+     * Resend failed days UI action (time_card): shows the button only when
+     * the user can read and write the time card and it has days in Error
+     * in the Xero Time Entry Sync.
+     */
+    canResendFailedDays: function(timeCard) {
+        if (!timeCard.canRead() || !timeCard.canWrite()) {
+            return false;
+        }
+        var gr = new GlideRecord('x_snc_spm_xero_i_0_xero_time_entry_sync');
+        gr.addQuery('time_card', timeCard.getUniqueValue());
+        gr.addQuery('status', 'error');
+        gr.setLimit(1);
+        gr.query();
+        return gr.hasNext();
+    },
+
+    /**
+     * Retry Xero user match UI action (External User Mapping): shows the
+     * button only when the user can read the record and it is a Xero
+     * mapping still Not found.
+     */
+    canRetryUserMatch: function(mapping) {
+        if (!mapping.canRead()) {
+            return false;
+        }
+        return mapping.tool + '' == 'xero' && mapping.status + '' == 'not_found';
+    },
     type: 'XeroIntegrationUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 16:01:24</sys_created_on>
         <sys_id>260edb23796503107f4423b77ae41536</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>XeroIntegrationUtils</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_script_include_260edb23796503107f4423b77ae41536</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-15 02:11:13</sys_updated_on>
+        <sys_updated_on>2026-11-15 16:23:28</sys_updated_on>
     </sys_script_include>
 </record_update>
