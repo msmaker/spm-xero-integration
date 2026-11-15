@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="8794810a2ba212105356fa97d891bfe6" extends="core_company" label="Account" max_length="40" name="customer_account" text_index="true" type="collection">
+        <element label="Xero Contact ID" max_length="200" name="x_snc_spm_xero_i_0_xero_contact_id" type="string"/>
+    </element>
+</database>

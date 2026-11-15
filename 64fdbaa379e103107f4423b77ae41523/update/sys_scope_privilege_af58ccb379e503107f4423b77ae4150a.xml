@@ -7,15 +7,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 19:00:15</sys_created_on>
         <sys_id>af58ccb379e503107f4423b77ae4150a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>core_company</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>customer_account</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_scope_privilege_af58ccb379e503107f4423b77ae4150a</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-24 19:00:15</sys_updated_on>
-        <target_name>core_company</target_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-15 02:12:27</sys_updated_on>
+        <target_name>customer_account</target_name>
         <target_scope display_value="Global">global</target_scope>
         <target_type>sys_db_object</target_type>
     </sys_scope_privilege>
