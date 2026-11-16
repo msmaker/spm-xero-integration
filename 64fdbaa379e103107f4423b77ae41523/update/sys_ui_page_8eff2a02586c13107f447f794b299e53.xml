@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[// On-demand Xero sync page. Server logic: XeroIntegrationUtils (via XeroOnDemandSyncAjax).
+var XS_AJAX = 'x_snc_spm_xero_i_0.XeroOnDemandSyncAjax';
+var XS_POLL_MS = 5000;
+var xsProjects = [];
+var xsSelected = '';
+var xsRunning = true;
+var xsTimer = null;
+var xsWasRunning = false;
+
+var XS_ERRORS = {
+    not_authorized: 'You need the it_project_manager role to run a sync.',
+    invalid_action: 'Unknown action.',
+    running: 'A sync is already running. Wait until it finishes.',
+    project_not_found: 'Select a project in the list first.',
+    start_failed: 'The sync could not be started. Try again later.',
+    no_response: 'No response from the server. Refresh the page.'
+};
+
+function xsCall(method, params, callback) {
+    var ga = new GlideAjax(XS_AJAX);
+    ga.addParam('sysparm_name', method);
+    for (var key in params) {
+        ga.addParam(key, params[key]);
+    }
+    ga.getXMLAnswer(function(answer) {
+        var result;
+        try {
+            result = JSON.parse(answer);
+        } catch (e) {
+            result = { ok: false, error: 'no_response' };
+        }
+        callback(result || { ok: false, error: 'no_response' });
+    });
+}
+
+function xsEscape(text) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(text == null ? '' : String(text)));
+    return div.innerHTML;
+}
+
+function xsRenderList() {
+    var filter = (gel('xs_search').value || '').toLowerCase();
+    var html = [];
+    for (var i = 0; i < xsProjects.length; i++) {
+        var p = xsProjects[i];
+        var text = ((p.number || '') + ' ' + (p.name || '')).toLowerCase();
+        if (filter && text.indexOf(filter) == -1) {
+            continue;
+        }
+        html.push('<tr data-id="' + xsEscape(p.id) + '" class="' + (p.id == xsSelected ? 'xs-selected' : '') +
+            '" onclick="xsSelect(this.getAttribute(\'data-id\'))"><td>' + xsEscape(p.number) + '</td><td>' + xsEscape(p.name) + '</td></tr>');
+    }
+    if (!html.length) {
+        html.push('<tr><td colspan="2" class="xs-hint">No project found.</td></tr>');
+    }
+    gel('xs_rows').innerHTML = html.join('');
+}
+
+function xsSelect(id) {
+    xsSelected = (xsSelected == id) ? '' : id;
+    xsRenderList();
+    xsRenderButtons();
+}
+
+function xsRenderButtons() {
+    gel('xs_btn_update').disabled = xsRunning || !xsSelected;
+    gel('xs_btn_fetch').disabled = xsRunning;
+    gel('xs_btn_sync').disabled = xsRunning;
+    var badge = gel('xs_badge');
+    badge.className = 'xs-badge' + (xsRunning ? ' xs-running' : '');
+    badge.innerHTML = xsRunning ? 'Sync running' : 'No sync running';
+}
+
+function xsRenderResult(last) {
+    var box = gel('xs_result');
+    if (!last) {
+        box.innerHTML = 'No execution yet.';
+        return;
+    }
+    var states = { COMPLETE: 'Complete', ERROR: 'Error', CANCELLED: 'Cancelled', PRESUMED_INTERRUPTED: 'Interrupted' };
+    var label = last.type == 'tasks' ? 'Update tasks' : 'Project sync';
+    var html = '<div class="xs-hint">' + xsEscape(label) + ' · ' + xsEscape(last.startedAt) + ' · ' +
+        xsEscape(states[last.state] || 'Running') + '</div>';
+    if (last.state == 'COMPLETE') {
+        if (last.type != 'tasks') {
+            html += '<div class="xs-row"><span>Projects created</span><b>' + last.projectsCreated + '</b></div>';
+        }
+        html += '<div class="xs-row"><span>Tasks created</span><b>' + last.tasksCreated + '</b></div>';
+        if (last.type != 'tasks') {
+            html += '<div class="xs-row"><span>Errors</span><b>' + last.errors + '</b></div>';
+        }
+        if (last.errors > 0) {
+            html += '<div class="xs-alert">' + last.errors + ' project(s) with error. Execution: ' +
+                xsEscape(last.startedAt) + ' · ' + xsEscape(last.contextId) + '</div>';
+        }
+    } else if (states[last.state]) {
+        html += '<div class="xs-alert xs-fail">Sync failed. Execution: ' + xsEscape(last.startedAt) + ' · ' +
+            xsEscape(last.contextId) + '</div>';
+    }
+    box.innerHTML = html;
+}
+
+function xsRefresh() {
+    xsCall('getState', {}, function(state) {
+        if (!state.ok) {
+            gel('xs_msg').innerHTML = xsEscape(XS_ERRORS[state.error] || state.error);
+            return;
+        }
+        xsRunning = !!state.running;
+        if (xsWasRunning && !xsRunning) {
+            xsLoadProjects();
+        }
+        xsWasRunning = xsRunning;
+        xsRenderButtons();
+        xsRenderResult(state.last);
+        clearTimeout(xsTimer);
+        if (xsRunning) {
+            xsTimer = setTimeout(xsRefresh, XS_POLL_MS);
+        }
+    });
+}
+
+function xsStart(action) {
+    gel('xs_msg').innerHTML = '';
+    xsRunning = true;
+    xsRenderButtons();
+    xsCall('startSync', { sysparm_xero_action: action, sysparm_xero_project: action == 'update_tasks' ? xsSelected : '' }, function(result) {
+        if (!result.ok) {
+            gel('xs_msg').innerHTML = xsEscape(XS_ERRORS[result.error] || result.error);
+        }
+        xsRefresh();
+    });
+}
+
+// Reloads the project list from the server (also after a sync ends, so new projects show up).
+function xsLoadProjects() {
+    xsCall('getProjects', {}, function(result) {
+        if (!result.ok) {
+            gel('xs_msg').innerHTML = xsEscape(XS_ERRORS[result.error] || result.error);
+            return;
+        }
+        xsProjects = result.projects || [];
+        var stillThere = false;
+        for (var i = 0; i < xsProjects.length; i++) {
+            if (xsProjects[i].id == xsSelected) {
+                stillThere = true;
+            }
+        }
+        if (!stillThere) {
+            xsSelected = '';
+        }
+        xsRenderList();
+        xsRenderButtons();
+    });
+}
+
+addLoadEvent(function() {
+    if (!gel('xs_rows')) {
+        return;
+    }
+    xsRenderButtons();
+    xsLoadProjects();
+    xsRefresh();
+});
+]]></client_script>
+        <description>On-demand Xero sync page (role it_project_manager). Logic in XeroIntegrationUtils via XeroOnDemandSyncAjax.</description>
+        <direct>false</direct>
+        <endpoint>x_snc_spm_xero_i_0_xero_sync.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g:evaluate var="jvar_can_use">
+    gs.hasRole('it_project_manager');
+</g:evaluate>
+<style>
+    .xs-page { font-family: inherit; padding: 16px 20px; max-width: 1180px; }
+    .xs-header { display: flex; justify-content: space-between; align-items: center; border: 1px solid #d7dce0; border-radius: 8px; background: #f5f7f8; padding: 12px 16px; margin-bottom: 16px; }
+    .xs-header h1 { font-size: 18px; margin: 0 0 4px 0; }
+    .xs-sub { color: #5a6470; font-size: 12px; }
+    .xs-badge { border-radius: 12px; padding: 4px 12px; font-size: 12px; border: 1px solid #2e8540; background: #e7f4ea; }
+    .xs-badge.xs-running { border-color: #b26b00; background: #fff4e0; }
+    .xs-grid { display: flex; gap: 16px; align-items: flex-start; }
+    .xs-card { border: 1px solid #d7dce0; border-radius: 8px; padding: 12px 16px; background: #fff; }
+    .xs-list { flex: 3; }
+    .xs-side { flex: 2; display: flex; flex-direction: column; gap: 16px; }
+    .xs-card h2 { font-size: 14px; margin: 0 0 12px 0; }
+    .xs-search { width: 100%; box-sizing: border-box; margin-bottom: 8px; }
+    .xs-table-wrap { max-height: 460px; overflow-y: auto; border-top: 1px solid #e4e7ea; }
+    .xs-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .xs-table th { text-align: left; color: #5a6470; font-weight: 600; padding: 6px 8px; border-bottom: 1px solid #e4e7ea; position: sticky; top: 0; background: #fff; }
+    .xs-table td { padding: 6px 8px; border-bottom: 1px solid #f0f2f4; cursor: pointer; }
+    .xs-table tr.xs-selected td { background: #e8f1fb; font-weight: 600; }
+    .xs-table tr:hover td { background: #f3f7fb; }
+    .xs-foot { color: #5a6470; font-size: 12px; margin-top: 8px; }
+    .xs-btn { display: block; width: 100%; margin-bottom: 8px; text-align: center; }
+    .xs-hint { color: #5a6470; font-size: 12px; }
+    .xs-row { display: flex; justify-content: space-between; font-size: 13px; padding: 4px 0; }
+    .xs-row b { font-size: 14px; }
+    .xs-alert { border-radius: 8px; padding: 8px 12px; font-size: 12px; margin-top: 8px; border: 1px solid #b26b00; background: #fff4e0; }
+    .xs-alert.xs-fail { border-color: #c0392b; background: #fdecea; }
+    .xs-msg { font-size: 12px; margin-top: 4px; color: #c0392b; min-height: 16px; }
+    .xs-denied { padding: 24px; }
+</style>
+<j:choose>
+<j:when test="${jvar_can_use}">
+<div class="xs-page">
+    <div class="xs-header">
+        <div>
+            <h1>Xero sync</h1>
+            <div class="xs-sub">Automatic sync: every Monday 00:00 (instance time zone). Use this page only when you cannot wait.</div>
+        </div>
+        <span id="xs_badge" class="xs-badge">Checking...</span>
+    </div>
+    <div class="xs-grid">
+        <div class="xs-card xs-list">
+            <h2>Xero projects in SPM</h2>
+            <input id="xs_search" class="form-control xs-search" type="text" placeholder="Search by name or number" onkeyup="xsRenderList()"/>
+            <div class="xs-table-wrap">
+                <table class="xs-table">
+                    <thead><tr><th style="width:120px">Number</th><th>Name</th></tr></thead>
+                    <tbody id="xs_rows"><tr><td colspan="2" class="xs-hint">Loading...</td></tr></tbody>
+                </table>
+            </div>
+            <div class="xs-foot">Projects that came from Xero (Correlation ID filled) for the US company. Opening this list does not call Xero.</div>
+        </div>
+        <div class="xs-side">
+            <div class="xs-card">
+                <h2>Actions</h2>
+                <button id="xs_btn_update" type="button" class="btn btn-primary xs-btn" onclick="xsStart('update_tasks')" disabled="disabled">Update tasks (selected project)</button>
+                <button id="xs_btn_fetch" type="button" class="btn btn-default xs-btn" onclick="xsStart('fetch_new')" disabled="disabled">Fetch new projects</button>
+                <button id="xs_btn_sync" type="button" class="btn btn-default xs-btn" onclick="xsStart('sync_all')" disabled="disabled">Sync all</button>
+                <div class="xs-hint">Buttons are locked while a sync is running, including the Monday sync.</div>
+                <div id="xs_msg" class="xs-msg"></div>
+            </div>
+            <div class="xs-card">
+                <h2>Last execution</h2>
+                <div id="xs_result" class="xs-hint">No execution yet.</div>
+            </div>
+        </div>
+    </div>
+</div>
+</j:when>
+<j:otherwise>
+<div class="xs-denied">You need the it_project_manager role to use this page.</div>
+</j:otherwise>
+</j:choose>
+</j:jelly>
+]]></html>
+        <name>xero_sync</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-15 23:51:30</sys_created_on>
+        <sys_id>8eff2a02586c13107f447f794b299e53</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>xero_sync</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_ui_page_8eff2a02586c13107f447f794b299e53</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 00:49:11</sys_updated_on>
+    </sys_ui_page>
+</record_update>

@@ -45,7 +45,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_flow_1d8fda793bec9310ebe9c15765e45a71</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-15 18:48:12</sys_updated_on>
+        <sys_updated_on>2026-11-16 02:59:54</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
@@ -1088,7 +1088,7 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_subflow_plan","id":"09a12abd3bec9310ebe9c15765e45ac4","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id display_value="Xero - Sync Project Tasks">1d8fda793bec9310ebe9c15765e45a71</plan_id>
-        <snapshot>5cbaa9c658a413107f447f794b299ede</snapshot>
+        <snapshot>813b130e586053107f447f794b299e5e</snapshot>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-15 04:10:26</sys_created_on>
         <sys_domain>global</sys_domain>

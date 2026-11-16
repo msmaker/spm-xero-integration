@@ -4,7 +4,7 @@
         <can_delegate>true</can_delegate>
         <description/>
         <elevated_privilege>false</elevated_privilege>
-        <federated_id>nk6dalcsANJHz6GrvBAVONCEQg1hav9qprQ9rkYODMU=</federated_id>
+        <federated_id/>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_snc_spm_xero_i_0.xero_time_entry_sync_user</name>

@@ -5,7 +5,7 @@
         <active>true</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=12287669000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=12369412000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>28100</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -16,7 +16,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>xero__createupdate_projecttask_daily</internal_name>
-        <label_cache>[]</label_cache>
+        <label_cache>[{"name":"11209e31-f0e3-41b6-ba4e-f81e2cbca375.errors","label":"1 - Xero - Create/Update Project➛errors","reference_display":"errors","type":"integer","base_type":"integer","usedInstances":{"c2d79e7d-c254-4919-a036-cea8a1bd62e4":["condition"],"fa988ec1-9f3c-4235-95c2-ba704af955bb":["details"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f38e7d35-7b82-4df8-ad7a-689e70cbb5b4"}},{"name":"11209e31-f0e3-41b6-ba4e-f81e2cbca375.projects_created","label":"1 - Xero - Create/Update Project➛projects_created","reference_display":"projects_created","type":"integer","base_type":"integer","usedInstances":{"fa988ec1-9f3c-4235-95c2-ba704af955bb":["details"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"25d442ba-e6b3-44d3-8b28-d72adca83748"}},{"name":"11209e31-f0e3-41b6-ba4e-f81e2cbca375.tasks_created","label":"1 - Xero - Create/Update Project➛tasks_created","reference_display":"tasks_created","type":"integer","base_type":"integer","usedInstances":{"fa988ec1-9f3c-4235-95c2-ba704af955bb":["details"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a62c41a5-4a9a-4c80-9063-75ef4c00c0af"}},{"name":"8e11a284-9b50-4c1b-b744-821055f0e8b5.__status__.message","label":"3➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"d4a7d744-edbd-4d87-a53e-b22f157e4f66":["details"]},"attributes":{}}]</label_cache>
         <master_snapshot>a0e5d244d83903107f440f1d3033079d</master_snapshot>
         <master_snapshot_digest/>
         <name>Xero - Create/Update Project/Task Weekly</name>
@@ -45,7 +45,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_flow_2ed5d244d83903107f440f1d30330701</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-15 18:48:12</sys_updated_on>
+        <sys_updated_on>2026-11-16 02:59:55</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>2</version>
@@ -183,16 +183,64 @@
         <trigger_type>weekly</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2ed5d244d83903107f440f1d30330701"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2ed5d244d83903107f440f1d30330701^sys_idNOT IN9454dbc63b249710ebe9c15765e45a14,be155b4a3b249710ebe9c15765e45a41"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Register Integration Failure">618fbf363bd4d350ebe9c15765e45aa9</action_type>
+        <action_type_parent display_value="Xero - Register Integration Failure">9b8d37323bd4d350ebe9c15765e45a75</action_type_parent>
+        <attributes/>
+        <comment>Opens the defect for Managed Services, or adds a work note if one is already open.</comment>
+        <compiled_snapshot>618fbf363bd4d350ebe9c15765e45aa9</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">2ed5d244d83903107f440f1d30330701</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>c2d79e7d-c254-4919-a036-cea8a1bd62e4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:30:19</sys_created_on>
+        <sys_id>9454dbc63b249710ebe9c15765e45a14</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-11-16 03:00:26</sys_updated_on>
+        <ui_id>fa988ec1-9f3c-4235-95c2-ba704af955bb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V227TQBD9FctPIMWWb4mTvqFWSEjcREtBQiga787WSze22V23DVH+nVlfkkKhagS8oD7u7Mz4zNlzxp82vuT+kQ/xXBQinaUFz3g6jbDABYun+WyK2RSA+RO/ghVSJqu1RgVW1tWSSif+FajWXdygrpeNrr8gs4biXJpGwfr8N9eslIprrPyjT58nfgOa2lvU/tHmp6uH4lNQoKLU4z1A78XJPcDtunFxY7WsLobzy6HJ6RisNXeg4omPNxYrjoRGgDI48VdQcbC1Xu8iGoG/qdQ+UMrKUjffJd8Y+Y2+N4+iyGUKpAkZ9re743JgrQ+LE7BAUFpmWz2ksrKWDE3PDUcBrbLHt2N9wpvGDdqXWCjUWF2rdlW97hnxdw3GR6JIawgENm5Uh30YRJyW9fW7EeVzWXWsDJeqZqB2J7DEXdFah2fjt/LsJ5r7yB2iUeGKvrhcQdNQxEnlSnZfIdCr8ELRIRSqviZ0Rl5UITA3YUhPAOFzip904XPQ0o37itpQsfvc+0p+bfGFk5HIC15kKQZ8nhRBlkIcFJwtAoxIR+kCUo6pv534Zm2OFRizJ4peaPm1dWP2tA0ELXuOXQnTsrHPCNQVDlxsJ4O7Zvw+9RbJXqSmrLV1E3bd3AvuDfaRHOSRoPBC9+oOvGvES7X2Blt5Zl0xT4BUpJZfWPDwBoeZ9AFjjiY9dXN6P855DwWHWDV5tOr/YNVZFkVxAosgm8V5kGE+D2jPRwFDniYI+XSWsH9gVVzcq+H5XqccLRnF3DLoWYmjoToj1cLrLDf+9TwhK2lK5N61tKW32cRxEi0wjQMRYRpkcTELCsgwEPMYE1YwSPNpiFrX2my3Y5sn5mlf312E3tuxOyNNW+RHD208wloOhdtt6J2BuTy8k3VVt9scl8guPUt8OBl4eIOs7TYOUeKiH3qWRK2740BleHdlPVL655QetsQfYIBxiZ/sHHDHEocs7PRxYf8PCztLYmDI4gDmpO0Mch4AZ0kgRC4KnmbTPIO/uLA/fweHl62UuwwAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9454dbc63b249710ebe9c15765e45a14"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Register Integration Failure">618fbf363bd4d350ebe9c15765e45aa9</action_type>
+        <action_type_parent display_value="Xero - Register Integration Failure">9b8d37323bd4d350ebe9c15765e45a75</action_type_parent>
+        <attributes/>
+        <comment>Unexpected error in the weekly sync: opens the defect for Managed Services.</comment>
+        <compiled_snapshot>618fbf363bd4d350ebe9c15765e45aa9</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">2ed5d244d83903107f440f1d30330701</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>8e11a284-9b50-4c1b-b744-821055f0e8b5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:33:46</sys_created_on>
+        <sys_id>be155b4a3b249710ebe9c15765e45a41</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-11-16 03:00:26</sys_updated_on>
+        <ui_id>d4a7d744-edbd-4d87-a53e-b22f157e4f66</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V72vbMBD9V4w/R8Y/YyffRrNCYVthXcegFHOWzok2xXYluU0W+r9Piu2ka1hoYGNQ+lGnu/N7T/fONxuXM3fqQpCVRRmNo4LFLEp8LHBCgyQdJxgnANQduRUs0WTSWkoUoHld5aZ05N6DaO3FCmWdN7L+jlQrE2dcNQLWX/9wTRdcMImVO725HbkNSNNeo3Snm2dXL8UnoEBhUs/2AJ2L2RHget3YuNKSV/P+/KFvcjUEa8ksqGDk4kpjxdCgKUEoHLlLqBjoWq53EYnALiuxDyx4pU031yavFP9pvpf5vm8zSzQMKXa3u2Peq9aFyxloMFBaqlvZp9JFzSmqThuGJbRCnz2NdQmXjSXalWgoxFBdi3ZZfeoUcXcNhkcykVYZENhYqhZ7T6S8WtQPnweU57zaqtJfipqC2J1AG+2KVls8G7flX57J3EUOhEaBS/PFfAlNYyJ2VO759isG9NKbC3PwSlE/GHSKzysPqGXomScA79zEZ9vwV5Dc0v1o2phi+7nrit+1eGHHqEwLVsQREpaFBYkjCEjB6ISgb+YomkDEMHIfR65aqzMBSu2FMi+U37WWZidbL1DeaWxLqOSNfmdA3WOvxeOod9eYHZveItwPqVrUUluG2272BfcG+2Yc5Dwg/hBrpzeSo9YVdYjTVrhqzBmZg1LW8tB+pxWfZs4X0BvMeWX5Ob/zO0L9FIuGbxZ9DRYdx74fhDAh8ThISYxpRsx+9wlFFoUIaTIO6T+wKE6OznC2n1OGGrhQT4x5/cxADq8cvcDBblub1aWzteDwB/Sc9zZ16mw2GQYBhFlMJkXik5gGBSnSOCZZGPhJUvqYFYmX50qDblWee0tUCub4+Ogd2vx/QjltabxA8GFpzHaKHzzBKQsielsQr2FBxGEAFGlAIIsCEkPKCDAakrJMy4JFcZLG8BcXxO0vK+BNKyMLAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=be155b4a3b249710ebe9c15765e45a41"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2ed5d244d83903107f440f1d30330701^sys_idNOT INaed5d244d83903107f440f1d30330709"/>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <comment/>
+        <comment>Syncs all Xero projects and their tasks (runs weekly).</comment>
         <display_text/>
         <flow display_value="Xero - Create/Update Project/Task Weekly">2ed5d244d83903107f440f1d30330701</flow>
         <generation_source/>
         <order>1</order>
-        <parent_ui_id/>
+        <parent_ui_id>9cf8ec58-7c81-4342-9574-afc1d64d24c6</parent_ui_id>
         <show_stages>true</show_stages>
         <subflow display_value="Xero - Create/Update Project">ce993fa779a503107f4423b77ae415b1</subflow>
         <subflow_inputs>H4sIAAAAAAAA/42Sy07rMBCGX+XI6zYnJZeedIeEKiFxkbhtEIomzqS15NjGsVt6EO/OODFdFBbsMt/c/vmd53cmWrZiRVfiouyKrEFeZYsUG6z4oliWBeYF5Es2Ywp6pEqt5KFWuCeyA+kDSum7FYORcHiKqAM5IGG+FbK1qNjq+WXGDFga4tCy1ftJyh0M1hIalNT9YD3+XccRv9X31XxLAv/cjAK/Sw5riDRaSwRFQNs2yFnMGL45VC3StlH8jPWgWnDaHo7EIrRh/BFshXI0joXit0H8p9l5Guo6pMs4TrljWEeXJsy3WnC8NU5oNREHjYw9XEvfq5vpgOAvduClO/U34ouf3fcDrUQTzgo6o+jufqv3d1+a1kKNDsSk1BzkMQLnrGi8wyG8mBcPp/ZN6Oqnd0OJPa2tezBGqE1trN6JcRUd1ycbSUHSSb0niYPYqAR4cCIhzyFZE78Y8RNYEWy5pjHUHFY+KvHq8TL8F1WaVmlV5fOyKNN5frb8N6+yAuZp3i6brOLAM2Qf4xPUrz5cNpkZPakn56lg4FYYd04SdhjP/3j5BJ4gfxEeAwAA</subflow_inputs>
@@ -200,15 +248,96 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 23:56:53</sys_created_on>
         <sys_id>aed5d244d83903107f440f1d30330709</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-15 04:10:50</sys_updated_on>
+        <sys_updated_on>2026-11-16 02:36:27</sys_updated_on>
         <ui_id>11209e31-f0e3-41b6-ba4e-f81e2cbca375</ui_id>
         <updation_source/>
         <wait_for_completion>true</wait_for_completion>
     </sys_hub_sub_flow_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2ed5d244d83903107f440f1d30330701"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2ed5d244d83903107f440f1d30330701^sys_idNOT IN7ed35b063b249710ebe9c15765e45afc,02f497863b249710ebe9c15765e45ab2,c2f497863b249710ebe9c15765e45ab3"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a275d78a3b249710ebe9c15765e45a65</block>
+        <comment>The weekly sync finished with projects in error: opens or updates the defect for Managed Services.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">2ed5d244d83903107f440f1d30330701</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>9cf8ec58-7c81-4342-9574-afc1d64d24c6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:28:18</sys_created_on>
+        <sys_id>7ed35b063b249710ebe9c15765e45afc</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:53:44</sys_updated_on>
+        <ui_id>c2d79e7d-c254-4919-a036-cea8a1bd62e4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2UX2/TMBTFv0qV5zRykqasfZtAk5CAITbtBaboxrlpDY4dbKddqfrduc6frmIdoIlH3upz7XvPufmp+0C3rmmdvdWX1oqVCpaf78NAKK/R732goMZgGXCtSuGEVnknhMEGZOsLH43+itzZyVa49QSN0YaqpbCNhN3dby/xtZClwWFmA4Y6OzTBcv9Lye0azCUUKKnXjTNCrei5KOlUMajiBY95mszThLHkYhYX87SIkzIFhJTujQ9fjxEm7zolfDabn0e6HSdpU3pbMQsDfHCoSqTRFUiLYVCDKsFpszsqBqG8VvJRWAvlqF3gLz9Y8YN6J1nmL1ZIGTn2xeMxH7bXy3ytBcfrxhvsFQeFHN5wLdtafehz+L1jBa10495JaS31w8ab9i4GS9XNWm8/jQOvhOoCDkWpOcjjCRytoWgdWv9hUGJNjfIamoaWkzdGb0T3mLzU0UrSIaqk3tJQz1ME3BuPaEcQXZH+ppPvwAif4j21QTPYLMAKnnfsUTtnKMKhW0v+vfWG+oBDlLzfBl2w3IjGXdKcDQ6uD+FTcE+Y3e/jOGELTONpxTCdemSmBcxwWl3EmPCCQ/oqizpO7eHwpWUsRfYU6xf3+RfkLyCrsphl58mfzc+Rf4b553FP/oC7/0B/STtj7D/up7gLm/fYDtm64S+m/d6j3U+wPTclcmHJyK3X3o7/5r6wIwAEP5W22nzzER61w0/ihXv8FwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ee75d78a3b249710ebe9c15765e45a0a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">2ed5d244d83903107f440f1d30330701</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:33:10</sys_created_on>
+        <sys_id>02f497863b249710ebe9c15765e45ab2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:53:44</sys_updated_on>
+        <ui_id>9cf8ec58-7c81-4342-9574-afc1d64d24c6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a275d78a3b249710ebe9c15765e45a68</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">2ed5d244d83903107f440f1d30330701</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:33:10</sys_created_on>
+        <sys_id>c2f497863b249710ebe9c15765e45ab3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:53:44</sys_updated_on>
+        <ui_id>8e11a284-9b50-4c1b-b744-821055f0e8b5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YUU/jOBD+K6eIR+ilbUqhbwi2EqcDpGuXlyuKHNttvefG2cQpsGj/+83YjpuksLuwXV62UhUlM5Px+JtvZpw+BarUWamLqTorCrFIg9G/d4eBSFEG909BSlY8GAVxXGiiyyKOg8NgTWSJwqdZsOZ5IVQ6C0azoNsJZ8HhLKBqlUn+cJN84lRP6JKvCOjBeCzV/QXHZXg+Gl+cnU8vb64n07Ppx4k1oIpx4+oy1XzBc+eO8c7BXHDJ4jmhXBfWeCJwmSuSjVFoXnuazWZBKaaPGf+bJFzi4wgvlb8ZeoRLzgmLVSofvcWcyIJ7/VKk2qu81Hr2ctFyyviclFLHBp7tt2UjonPcaqUiVAOIMc9zlcc2I95Q5+XGcEVSRrTKX4pb5cwGZHTd2nsPseTpQi+9Mgrx+hV+gPGKFwVZWOwnOhfpwkDvxD+LvvO4U/CLps9XYX/ldvuL4e99G/7QJwAz8I3a6Bxo2PkPof8qGM7Mtv+YmMLePRil+JiKzyW/ZN5geBoltB/1jk7pKTuKoig5Iv1574ixKDkmAxJ2h/1WwptMsj3Fm1AVG2iwSXmbVmOpbLnkK57qeEWyDJgTZ7lai3q6oG11FhJEnTnkImYmGR0LRwd2SjqbHN2SXJDEZCB7S1tJSymfY7Vq7u8V5Xw8aBGq0YUb7RXuDui6ujHk+UTWpCNJuujUqv9gbXTO36ZFvOF9dFBwwEyKLwQBHat8RSxx/5rcXIMNzBUmikySx9v9eMHLfrzsx8t+vOzHy3687Gi80KWQLOep+a4RDCYMCN33DcZe+7JpWsMXUUFzkWmk9Br0BvZKCIFCAFse3YZ+ximYZCQHd5rnIGhuwPRMU5/AEtTWCA2LuZEEaz5TcaDHWoPeXA/uO+G0oy/FhZ3XuCx4EH5FUzRyK5AKoEpzbjFvZkC3nRmSBqPuYcAfNE8ZZz423yK8BCvkBgrEC7Ak7KpA6kJ8Ad9RiHZzDhuhbuf+MXZHkCpbSlB+kyF+VqKxKp1SyXKVXtvg8fBie+PtBk8nuWieakBRFrAQz3AzGJ0LdT5Zqvt/qkjGIjX7dkqpKJH+iWgog6TUvLCJgfjjzyUa2HWd69iGjeT8DltsWb0jWYpqwQZXfBhtqlz5YtqqLt1y6PjS2yFfwt+OMXetxNg2XyUmnA97ME57g6Tb74XdMDnucgI3/eFJlw6j01riPiCR3Blgk73Gv0kugapaoip4RH1HKTx5vxTuNlOuTOvwNAvXJ6Z+VgF585QC+pfOJ6bzvvVkEvxA73muU2BHcoHyFN2x2pjsbn8Jmv7TbikvjcY2d6fw8p9jXLbiL2PDsHsypLR/zJG/g8GgnwyjkLAoZIzRGn834W3F63ibKCU5SX8Ncd9nVs0dOM+3n0r77lPrWebcIVEsBwubbMapwD8Jpii7rP65RsUj5EzQuuhe5f8hyTeyr/8DQmiRFQMXAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=2ed5d244d83903107f440f1d30330701"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=2ed5d244d83903107f440f1d30330701"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2ed5d244d83903107f440f1d30330701"/>
@@ -228,7 +357,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>xero__createupdate_projecttask_daily</internal_name>
-        <label_cache>[]</label_cache>
+        <label_cache>[{"name":"11209e31-f0e3-41b6-ba4e-f81e2cbca375.errors","label":"1 - Xero - Create/Update Project➛errors","reference_display":"errors","type":"integer","base_type":"integer","usedInstances":{"c2d79e7d-c254-4919-a036-cea8a1bd62e4":["condition"],"fa988ec1-9f3c-4235-95c2-ba704af955bb":["details"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f38e7d35-7b82-4df8-ad7a-689e70cbb5b4"}},{"name":"11209e31-f0e3-41b6-ba4e-f81e2cbca375.projects_created","label":"1 - Xero - Create/Update Project➛projects_created","reference_display":"projects_created","type":"integer","base_type":"integer","usedInstances":{"fa988ec1-9f3c-4235-95c2-ba704af955bb":["details"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"25d442ba-e6b3-44d3-8b28-d72adca83748"}},{"name":"11209e31-f0e3-41b6-ba4e-f81e2cbca375.tasks_created","label":"1 - Xero - Create/Update Project➛tasks_created","reference_display":"tasks_created","type":"integer","base_type":"integer","usedInstances":{"fa988ec1-9f3c-4235-95c2-ba704af955bb":["details"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a62c41a5-4a9a-4c80-9063-75ef4c00c0af"}},{"name":"8e11a284-9b50-4c1b-b744-821055f0e8b5.__status__.message","label":"3➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"d4a7d744-edbd-4d87-a53e-b22f157e4f66":["details"]},"attributes":{}}]</label_cache>
         <master>true</master>
         <name>Xero - Create/Update Project/Task Weekly</name>
         <natlang/>
@@ -245,7 +374,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a0e5d244d83903107f440f1d3033079d</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -253,7 +382,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-15 04:11:24</sys_updated_on>
+        <sys_updated_on>2026-11-16 02:53:47</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -321,16 +450,64 @@
         <trigger_type>weekly</trigger_type>
         <updation_source/>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=a0e5d244d83903107f440f1d3033079d"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=a0e5d244d83903107f440f1d3033079d^sys_idNOT INc7751b8a3b249710ebe9c15765e45a44,8f751b8a3b249710ebe9c15765e45a44"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Register Integration Failure">618fbf363bd4d350ebe9c15765e45aa9</action_type>
+        <action_type_parent display_value="Xero - Register Integration Failure">9b8d37323bd4d350ebe9c15765e45a75</action_type_parent>
+        <attributes/>
+        <comment>Opens the defect for Managed Services, or adds a work note if one is already open.</comment>
+        <compiled_snapshot>618fbf363bd4d350ebe9c15765e45aa9</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">a0e5d244d83903107f440f1d3033079d</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>c2d79e7d-c254-4919-a036-cea8a1bd62e4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:35:25</sys_created_on>
+        <sys_id>c7751b8a3b249710ebe9c15765e45a44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:35:25</sys_updated_on>
+        <ui_id>fa988ec1-9f3c-4235-95c2-ba704af955bb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V227TQBD9FctPIMWWb4mTvqFWSEjcREtBQiga787WSze22V23DVH+nVlfkkKhagS8oD7u7Mz4zNlzxp82vuT+kQ/xXBQinaUFz3g6jbDABYun+WyK2RSA+RO/ghVSJqu1RgVW1tWSSif+FajWXdygrpeNrr8gs4biXJpGwfr8N9eslIprrPyjT58nfgOa2lvU/tHmp6uH4lNQoKLU4z1A78XJPcDtunFxY7WsLobzy6HJ6RisNXeg4omPNxYrjoRGgDI48VdQcbC1Xu8iGoG/qdQ+UMrKUjffJd8Y+Y2+N4+iyGUKpAkZ9re743JgrQ+LE7BAUFpmWz2ksrKWDE3PDUcBrbLHt2N9wpvGDdqXWCjUWF2rdlW97hnxdw3GR6JIawgENm5Uh30YRJyW9fW7EeVzWXWsDJeqZqB2J7DEXdFah2fjt/LsJ5r7yB2iUeGKvrhcQdNQxEnlSnZfIdCr8ELRIRSqviZ0Rl5UITA3YUhPAOFzip904XPQ0o37itpQsfvc+0p+bfGFk5HIC15kKQZ8nhRBlkIcFJwtAoxIR+kCUo6pv534Zm2OFRizJ4peaPm1dWP2tA0ELXuOXQnTsrHPCNQVDlxsJ4O7Zvw+9RbJXqSmrLV1E3bd3AvuDfaRHOSRoPBC9+oOvGvES7X2Blt5Zl0xT4BUpJZfWPDwBoeZ9AFjjiY9dXN6P855DwWHWDV5tOr/YNVZFkVxAosgm8V5kGE+D2jPRwFDniYI+XSWsH9gVVzcq+H5XqccLRnF3DLoWYmjoToj1cLrLDf+9TwhK2lK5N61tKW32cRxEi0wjQMRYRpkcTELCsgwEPMYE1YwSPNpiFrX2my3Y5sn5mlf312E3tuxOyNNW+RHD208wloOhdtt6J2BuTy8k3VVt9scl8guPUt8OBl4eIOs7TYOUeKiH3qWRK2740BleHdlPVL655QetsQfYIBxiZ/sHHDHEocs7PRxYf8PCztLYmDI4gDmpO0Mch4AZ0kgRC4KnmbTPIO/uLA/fweHl62UuwwAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c7751b8a3b249710ebe9c15765e45a44"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Xero - Register Integration Failure">618fbf363bd4d350ebe9c15765e45aa9</action_type>
+        <action_type_parent display_value="Xero - Register Integration Failure">9b8d37323bd4d350ebe9c15765e45a75</action_type_parent>
+        <attributes/>
+        <comment>Unexpected error in the weekly sync: opens the defect for Managed Services.</comment>
+        <compiled_snapshot>618fbf363bd4d350ebe9c15765e45aa9</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">a0e5d244d83903107f440f1d3033079d</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>8e11a284-9b50-4c1b-b744-821055f0e8b5</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:35:25</sys_created_on>
+        <sys_id>8f751b8a3b249710ebe9c15765e45a44</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:53:47</sys_updated_on>
+        <ui_id>d4a7d744-edbd-4d87-a53e-b22f157e4f66</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V72vbMBD9V4w/R8Y/YyffRrNCYVthXcegFHOWzok2xXYluU0W+r9Piu2ka1hoYGNQ+lGnu/N7T/fONxuXM3fqQpCVRRmNo4LFLEp8LHBCgyQdJxgnANQduRUs0WTSWkoUoHld5aZ05N6DaO3FCmWdN7L+jlQrE2dcNQLWX/9wTRdcMImVO725HbkNSNNeo3Snm2dXL8UnoEBhUs/2AJ2L2RHget3YuNKSV/P+/KFvcjUEa8ksqGDk4kpjxdCgKUEoHLlLqBjoWq53EYnALiuxDyx4pU031yavFP9pvpf5vm8zSzQMKXa3u2Peq9aFyxloMFBaqlvZp9JFzSmqThuGJbRCnz2NdQmXjSXalWgoxFBdi3ZZfeoUcXcNhkcykVYZENhYqhZ7T6S8WtQPnweU57zaqtJfipqC2J1AG+2KVls8G7flX57J3EUOhEaBS/PFfAlNYyJ2VO759isG9NKbC3PwSlE/GHSKzysPqGXomScA79zEZ9vwV5Dc0v1o2phi+7nrit+1eGHHqEwLVsQREpaFBYkjCEjB6ISgb+YomkDEMHIfR65aqzMBSu2FMi+U37WWZidbL1DeaWxLqOSNfmdA3WOvxeOod9eYHZveItwPqVrUUluG2272BfcG+2Yc5Dwg/hBrpzeSo9YVdYjTVrhqzBmZg1LW8tB+pxWfZs4X0BvMeWX5Ob/zO0L9FIuGbxZ9DRYdx74fhDAh8ThISYxpRsx+9wlFFoUIaTIO6T+wKE6OznC2n1OGGrhQT4x5/cxADq8cvcDBblub1aWzteDwB/Sc9zZ16mw2GQYBhFlMJkXik5gGBSnSOCZZGPhJUvqYFYmX50qDblWee0tUCub4+Ogd2vx/QjltabxA8GFpzHaKHzzBKQsielsQr2FBxGEAFGlAIIsCEkPKCDAakrJMy4JFcZLG8BcXxO0vK+BNKyMLAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8f751b8a3b249710ebe9c15765e45a44"/>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a0e5d244d83903107f440f1d3033079d^sys_idNOT IN28e5d244d83903107f440f1d303307bc"/>
     <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <comment/>
+        <comment>Syncs all Xero projects and their tasks (runs weekly).</comment>
         <display_text/>
         <flow display_value="Xero - Create/Update Project/Task Weekly">a0e5d244d83903107f440f1d3033079d</flow>
         <generation_source/>
         <order>1</order>
-        <parent_ui_id/>
+        <parent_ui_id>9cf8ec58-7c81-4342-9574-afc1d64d24c6</parent_ui_id>
         <show_stages>true</show_stages>
         <subflow display_value="Xero - Create/Update Project">ce993fa779a503107f4423b77ae415b1</subflow>
         <subflow_inputs>H4sIAAAAAAAA/42Sy27bMBBFf6Xg2lbl6OHKuyCGgQJtAjRpNkEgjKiRTYAiFYq0oxr59w4lRi3cLLoTz7zu3NHTmYmabVjW5LjKmyypkBfJKsYKC77K1nmGaQbpmi2YghYpUys5lApPRI4gnUcxfdei7yQMjwE1IHskzA9C1gYV2zw9L1gHhppYNGxzvgj9rwoJFUpKvSMZn25HGf8Ks0PnSaW1RFABfAuVD8bh513Qp03t1awWDF8tqhpJxqh9wVpQNVhthpkYhNrPncFBKEsdmU9+7cUvGprGPq9BWozjFJufZTBpws0WLNxb47h1JqTygxYc+8mSGhtw0t78zaaEu84KraYSC5V8r9bStep2soPNDS5vEvD244u5nnRi573wy4VNm/uDPv14X2Qn1GhbCErNQc4vsNaIylkv+cyceLg8xoQ+PAdKbGls2ULXCbUvO6OPYhxFy7XRXtIjaqQ+kcRe7FUE3DsR0aEg2hHfjvgRjPC2fKc2VOxH/lTixeFX/5cVcVzERZEu8yyPl+nV+suySDJYxmm9rpKCA0+QvS1YP/Q3Evr+j6F0yfLF+V0ne4NL5XQLX8KN6Ow1iTpiMOTt+TcnFFTVZAMAAA==</subflow_inputs>
@@ -338,15 +515,96 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 23:57:01</sys_created_on>
         <sys_id>28e5d244d83903107f440f1d303307bc</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-15 04:10:52</sys_updated_on>
+        <sys_updated_on>2026-11-16 02:36:38</sys_updated_on>
         <ui_id>11209e31-f0e3-41b6-ba4e-f81e2cbca375</ui_id>
         <updation_source/>
         <wait_for_completion>true</wait_for_completion>
     </sys_hub_sub_flow_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a0e5d244d83903107f440f1d3033079d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a0e5d244d83903107f440f1d3033079d^sys_idNOT IN43751b8a3b249710ebe9c15765e45a47,8b751b8a3b249710ebe9c15765e45a48,4f751b8a3b249710ebe9c15765e45a45"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a275d78a3b249710ebe9c15765e45a65</block>
+        <comment>The weekly sync finished with projects in error: opens or updates the defect for Managed Services.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">a0e5d244d83903107f440f1d3033079d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>9cf8ec58-7c81-4342-9574-afc1d64d24c6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:35:25</sys_created_on>
+        <sys_id>43751b8a3b249710ebe9c15765e45a47</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:53:47</sys_updated_on>
+        <ui_id>c2d79e7d-c254-4919-a036-cea8a1bd62e4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWaAk2419CxwEKJA2RRPk0gbCilrZbClRJSk7ruF/71KSH2jcR9oeezNnyd2Z0Q68ZbpxdePsvb60Vi4qNvvwGDBZeYx+b1kFJbIZE7rKpZO6SlsgYCtQjS+8M/oTCmcHa+mWAzRGG6rm0tYKNg8/vSSWUuUG+5k1GOrs0LDZ9ruSzKlHwaGIpiISSTxJYs7ji1GUTZIsivMEEBJqqCBDRVfne7KDmxYJfqjCbWqPW2dktejPN32Xuz2oTe5ZRTxg+OSwypH4FKAsBqyEKgenzeaAGIT8tlJHYCkrR+2Yv/xk5VcaGI/H/mKBJFFgVzwc0968Di6uwAFRaYRrTH9VLLUUaDtzciygUW5+inUXbmsvtXviIFP711o1ZfW2c4QdGuy/FSGNJRJYe6Weeq+juFvq9fs9y2tZta70RaUFqMMJHHmXNc7z2TJUWFKjtIS6JkfT2uiVbB8TlzJcKDqEhdJrGup3MAThiYdkLITXhF+18AMY6VW8oTZoepoZWCnSdl+pHdmEbBcwu7FzBdYeRZK76ZfGU+wk9+LSzh//RBhZu0uavMJexy54vv4nm7/dRlHMp5hEw4JjMvTrOMxghMPiIsJYZAKSV+Ow3Xa7231sOE+QPw/HH/d5WX6mMC7GER+fz89oci4/Z5LzwtDEvwiN/2K/mRnO+f/Q/HVopE27Ve+1tcP/YWYefUC6mQevhbRE7d5jr/f/LL6woeWS4hRaa/PZizpiu28gv04eowYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a275d78a3b249710ebe9c15765e45a68</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">a0e5d244d83903107f440f1d3033079d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Catch">35d60003e6022010a5e40cdd1254dd23</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:35:25</sys_created_on>
+        <sys_id>8b751b8a3b249710ebe9c15765e45a48</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:53:47</sys_updated_on>
+        <ui_id>8e11a284-9b50-4c1b-b744-821055f0e8b5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Z30/jOBD+V04Rj6WXtimFviG4SpwWKl27+3JFkWM7xbuuk42dAov432/8I27SltXCFh0PkVCUzIwnM998M47pU5CVKi+VnGfnUrKlCMb/3nYCJrQM7p8CgVY0GAdxLBVSpYzjoBOsES+18GkRrGkhWSYWwXgR9LrhIugsApytck4fpslXitUM39EVAj0YT3h2f0n1a2gxnlyeX8yvpjez+fn888wa4IxQ4+pKKLqkhXNHaPcoZZSTOEWYKmmNZ0y/5hrlEy00y54Wi0VQsvljTj+hhHL9ONaXyt9Ce4RLQRGJM8EfvUWKuKRef8eE8iovtZ69nG05JTRFJVexgWd3NW9EdKFTrVQIKwAxpkWRFbGtiDdURbkxXCFBkMqKl+LOCmIDMrpebd1DzKlYqjuvjEJ9fYY/wHhFpURLi/1MFUwsDfRO/LvoO48HBV82fb4K+2uX7TvD3/85/KEvgK7AT3qje6Qg819C/1UwnJu0/5iZxj48GCX7LNj3kl4RbzA6ixI8iPrHZ/iMHEdRlByjQdo/JiRKTtAQhb3RYKvgTSbZmeJNcBYbaPSQ8jZbg6WypZyuqFDxCuU5MCfOi2zN6uWCsdVdchB1U6hFTEwxuhaOLmSKupsafUEFQ4mpQP6WsSJKzvexOmvm94p2PhluEaoxhRvjFe6O8Lq6MeT5itaoy5FYdmvdf7Q2OudvMyLesF47kBQw4+wH0oBOsmKFLHH/nk1vwAb2FcJkztHjl3Z70Zd2e2m3l3Z7abeXdns50PaC7xgnBRX1c42OGVQ5KuBZ0QLeGphpZJgP+GtBjSqwxA17WLWHy6DXLIap509JuxsbSCQuWK50i6xBYspYCeGNzx0z/QuB+CcmvtkltfDhiFayS+tUhwYGzEdlKMt3gmXEuqk0FzbzJg5qn7PdxA1xgnGvE9AHRQWhxOfg29ZLNGunQFov0DS1sQDRJPsBb4xCbZdSSA87hPxj7NCz4vQSWgVYUGJVFrRCJmOYSguMfZjmujRWrXQrOcuMlytxY3PWhbEDrVYYJ7ncqVgpIRKa62x1+C6XdHaX3f9ThTphwgDjlDzDiPsnpIC7Sal0oLrC8lFecCTlJhpIOf5e6iU2Evey2CbyvJc1zx3PZddCr6Sz7agPxmZZBdUgsw91m8vXPvMdKNQehzupOz73D8jnsGX0Wxl9u0Xgxtxuh3M7nD8kldtB2w7aD8vOW1fKMB314SDUHya9QT/shclJjyK4GYxOe3gUndVK/Zempzu9berd+B3AldyeKrZKPq2E1TjSdTpQ0U8PWXRXtYsDEuGw9XZjpA50c7B4qOvnVZA3T6qgf+mMaraYt55Og/f4lKVCv4DUfmvq7c5DMzG3B9xLXw5VBxAyCnunI4wHJ1R3wHA4HCSjKEQkCgkhuNYBmyB2onLMT7KMUyS2qD+HuP6c6Izeh/4H3I8PTf7UZb1/FFba/38evvjhuXbc9vhgpv8BPdeyq+pXUa14BE4wXBfdZ8U33Twb2fN/qUJS418dAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ee75d78a3b249710ebe9c15765e45a0a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Create/Update Project/Task Weekly">a0e5d244d83903107f440f1d3033079d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Top Level Try">e9060aa2c3013010ace8b740ad40dd51</logic_definition>
+        <order>0</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:35:25</sys_created_on>
+        <sys_id>4f751b8a3b249710ebe9c15765e45a45</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:53:47</sys_updated_on>
+        <ui_id>9cf8ec58-7c81-4342-9574-afc1d64d24c6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=a0e5d244d83903107f440f1d3033079d"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=a0e5d244d83903107f440f1d3033079d"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a0e5d244d83903107f440f1d3033079d"/>
@@ -362,17 +620,17 @@
         <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"68e5d244d83903107f440f1d303307c2","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id>2ed5d244d83903107f440f1d30330701</plan_id>
-        <snapshot>edba2dc658a413107f447f794b299e53</snapshot>
+        <snapshot>153b130e586053107f447f794b299eea</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 23:57:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>68e5d244d83903107f440f1d303307c2</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-15 03:46:50</sys_updated_on>
+        <sys_updated_on>2026-11-16 02:35:28</sys_updated_on>
         <trigger display_value="">5b3c9e713bec9310ebe9c15765e45a27</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=2ed5d244d83903107f440f1d30330701"/>

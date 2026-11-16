@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_spm_xero_i_0.XeroOnDemandSyncAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>GlideAjax entry point for the on-demand Xero sync UI Page. Logic in XeroIntegrationUtils.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>XeroOnDemandSyncAjax</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var XeroOnDemandSyncAjax = Class.create();
+XeroOnDemandSyncAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    // Thin GlideAjax entry point for the on-demand sync UI Page (x_snc_spm_xero_i_0_xero_sync).
+    // All rules (role it_project_manager, lock, subflow call) live in XeroIntegrationUtils.
+
+    startSync: function() {
+        var action = this.getParameter('sysparm_xero_action') + '';
+        var projectSysId = (this.getParameter('sysparm_xero_project') || '') + '';
+        return JSON.stringify(new XeroIntegrationUtils().startOnDemandSync(action, projectSysId));
+    },
+
+    getState: function() {
+        return JSON.stringify(new XeroIntegrationUtils().getOnDemandSyncState());
+    },
+
+    getProjects: function() {
+        return JSON.stringify(new XeroIntegrationUtils().getOnDemandProjects());
+    },
+
+    type: 'XeroOnDemandSyncAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-15 23:49:27</sys_created_on>
+        <sys_id>0c8fa602586c13107f447f794b299ef8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>XeroOnDemandSyncAjax</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_script_include_0c8fa602586c13107f447f794b299ef8</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 00:49:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

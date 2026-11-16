@@ -20,7 +20,7 @@ XeroIntegrationUtils.prototype = {
         };
 
         // Without ContactID and Name there is nothing safe to search for.
-        // (A query with an empty/invalid value can return ALL rows.)
+        // (A query with an empty/invalid value can return ALL rows)
         if (!contact || (!contact.ContactID && !contact.Name)) {
             return result;
         }
@@ -310,19 +310,170 @@ XeroIntegrationUtils.prototype = {
         }
         return mapping.tool + '' == 'xero' && mapping.status + '' == 'not_found';
     },
+    // ------------------------------------------------------------------
+    // On-demand sync page (UI Builder experience "Xero Sync").
+    // The page only calls these two methods through the data brokers.
+    // Lock and last result come from sys_flow_context (platform record of
+    // every execution), so nothing is stored by this feature.
+    // ------------------------------------------------------------------
+    ONDEMAND_ROLE: 'it_project_manager',
+    ONDEMAND_PROJECT_SUBFLOW: 'x_snc_spm_xero_i_0.xero__createupdate_project',
+    ONDEMAND_TASKS_SUBFLOW: 'x_snc_spm_xero_i_0.xero__sync_project_tasks',
+    ONDEMAND_WEEKLY_FLOW: 'x_snc_spm_xero_i_0.xero__createupdate_projecttask_daily',
+    ONDEMAND_RUNNING_STATES: 'QUEUED,IN_PROGRESS,WAITING,CONTINUE_SYNC,PAUSED',
+
+    /**
+     * Starts an on-demand sync in background.
+     * action: 'update_tasks' (needs projectSysId), 'fetch_new' or 'sync_all'.
+     * Returns { ok: true, contextId } or { ok: false, error }.
+     */
+    startOnDemandSync: function(action, projectSysId) {
+        if (!gs.hasRole(this.ONDEMAND_ROLE)) {
+            return { ok: false, error: 'not_authorized' };
+        }
+        if (action != 'update_tasks' && action != 'fetch_new' && action != 'sync_all') {
+            return { ok: false, error: 'invalid_action' };
+        }
+        if (this._getOnDemandRunning()) {
+            return { ok: false, error: 'running' };
+        }
+
+        var subflowName = this.ONDEMAND_PROJECT_SUBFLOW;
+        var inputs = {};
+        if (action == 'update_tasks') {
+            var project = new GlideRecord('pm_project');
+            if (!projectSysId || !project.get(projectSysId)) {
+                return { ok: false, error: 'project_not_found' };
+            }
+            subflowName = this.ONDEMAND_TASKS_SUBFLOW;
+            // FlowAPI Reference input needs the GlideRecord, not the sys_id string.
+            inputs.project = project;
+        } else {
+            inputs.only_new = (action == 'fetch_new');
+        }
+
+        try {
+            var result = sn_fd.FlowAPI.getRunner()
+                .subflow(subflowName)
+                .inBackground()
+                .withInputs(inputs)
+                .run();
+            return { ok: true, contextId: result.getContextId() };
+        } catch (ex) {
+            gs.error('XeroIntegrationUtils.startOnDemandSync (' + action + '): ' + ex);
+            return { ok: false, error: 'start_failed' };
+        }
+    },
+
+    /**
+     * State for the on-demand sync page.
+     * running: any Weekly / Create-Update Project / Sync Project Tasks execution not finished.
+     * last: most recent Create-Update Project or Sync Project Tasks execution, with totals.
+     */
+    getOnDemandSyncState: function() {
+        if (!gs.hasRole(this.ONDEMAND_ROLE)) {
+            return { ok: false, error: 'not_authorized' };
+        }
+
+        var state = { ok: true, running: this._getOnDemandRunning(), last: null };
+
+        var tasksFlowId = this._getOnDemandFlowIds([this.ONDEMAND_TASKS_SUBFLOW]);
+        var ctx = new GlideRecord('sys_flow_context');
+        ctx.addQuery('flow', 'IN',
+            this._getOnDemandFlowIds([this.ONDEMAND_PROJECT_SUBFLOW, this.ONDEMAND_TASKS_SUBFLOW]));
+        ctx.orderByDesc('sys_created_on');
+        ctx.setLimit(1);
+        ctx.query();
+        if (!ctx.next()) {
+            return state;
+        }
+
+        var isTasks = ctx.getValue('flow') == tasksFlowId;
+        var last = {
+            contextId: ctx.getUniqueValue(),
+            type: isTasks ? 'tasks' : 'projects',
+            state: ctx.getValue('state'),
+            startedAt: ctx.getDisplayValue('sys_created_on'),
+            projectsCreated: 0,
+            tasksCreated: 0,
+            errors: 0
+        };
+
+        if (last.state == 'COMPLETE') {
+            try {
+                var out = sn_fd.FlowAPI.getOutputs(last.contextId) || {};
+                last.tasksCreated = parseInt(out.tasks_created, 10) || 0;
+                if (!isTasks) {
+                    last.projectsCreated = parseInt(out.projects_created, 10) || 0;
+                    last.errors = parseInt(out.errors, 10) || 0;
+                }
+            } catch (ex) {
+                gs.warn('XeroIntegrationUtils.getOnDemandSyncState outputs (' + last.contextId + '): ' + ex);
+            }
+        }
+
+        state.last = last;
+        return state;
+    },
+
+    /**
+     * Projects listed on the on-demand sync page: came from Xero (correlation_id),
+     * company = property us_company, active. No call to Xero.
+     */
+    getOnDemandProjects: function() {
+        if (!gs.hasRole(this.ONDEMAND_ROLE)) {
+            return { ok: false, error: 'not_authorized' };
+        }
+        var list = [];
+        var gr = new GlideRecord('pm_project');
+        gr.addNotNullQuery('correlation_id');
+        gr.addQuery('company', gs.getProperty('x_snc_spm_xero_i_0.us_company'));
+        gr.addActiveQuery();
+        gr.orderBy('short_description');
+        gr.query();
+        while (gr.next()) {
+            list.push({ id: gr.getUniqueValue(), number: gr.getValue('number'), name: gr.getValue('short_description') });
+        }
+        return { ok: true, projects: list };
+    },
+
+    _getOnDemandRunning: function() {
+        var ctx = new GlideRecord('sys_flow_context');
+        ctx.addQuery('flow', 'IN', this._getOnDemandFlowIds(
+            [this.ONDEMAND_PROJECT_SUBFLOW, this.ONDEMAND_TASKS_SUBFLOW, this.ONDEMAND_WEEKLY_FLOW]));
+        ctx.addQuery('state', 'IN', this.ONDEMAND_RUNNING_STATES);
+        ctx.setLimit(1);
+        ctx.query();
+        return ctx.hasNext();
+    },
+
+    // sys_flow_context.flow holds the sys_hub_flow sys_id (string field):
+    // resolve it at run time from the scoped names, no fixed sys_id.
+    _getOnDemandFlowIds: function(scopedNames) {
+        var ids = [];
+        var flow = new GlideRecord('sys_hub_flow');
+        flow.addQuery('sys_scope.scope', 'x_snc_spm_xero_i_0');
+        flow.addQuery('internal_name', 'IN', scopedNames.map(function(n) { return n.split('.')[1]; }).join(','));
+        flow.query();
+        while (flow.next()) {
+            ids.push(flow.getUniqueValue());
+        }
+        return ids.join(',');
+    },
+
     type: 'XeroIntegrationUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 16:01:24</sys_created_on>
         <sys_id>260edb23796503107f4423b77ae41536</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>XeroIntegrationUtils</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_script_include_260edb23796503107f4423b77ae41536</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-15 16:23:28</sys_updated_on>
+        <sys_updated_on>2026-11-16 02:21:23</sys_updated_on>
     </sys_script_include>
 </record_update>
