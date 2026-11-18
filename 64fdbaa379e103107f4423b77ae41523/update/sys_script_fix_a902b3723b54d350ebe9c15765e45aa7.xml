@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
     <sys_script_fix action="INSERT_OR_UPDATE">
         <before>false</before>
-        <description>Initial load for the External User Mapping table. Creates a Not found mapping for every active Konversational America user who does not have a Xero mapping yet. Existing mappings (Matched or Not found) are left unchanged, so the script is safe to run more than once. Run once after the application is installed in a new instance. The daily job (Xero - Retry Not Found Users, Mon–Fri) then matches all pending users with a single call to Xero.</description>
+        <description>Initial load for the External User Mapping table. Creates a Not found mapping for every active Konversational America user who does not have a Xero mapping yet. Existing mappings (Matched or Not found) are left unchanged, so the script is safe to run more than once. After the load, the script starts the subflow Xero - Retry Not Found Users in the background, which checks all pending users in Xero with a single call, so users are matched right away and there is no need to wait for the daily job (Xero - Retry Not Found Users, Mon–Fri 06:00 Europe/London). Run once after the application is installed in a new instance and the Xero connection and credentials are configured. If it ran before the connection was configured, run it again.</description>
         <name>Xero - Initial load of External User Map</name>
         <record_for_rollback>true</record_for_rollback>
-        <script><![CDATA[(function () {
+        <script><![CDATA[(function() {
     // Creates a Not found mapping for every active Konversational America user
     // without a Xero mapping yet. The daily job then matches them in one call to Xero.
     var COMPANY_NAME = 'Konversational America';
@@ -15,7 +15,8 @@
         return;
     }
 
-    var created = 0, skipped = 0;
+    var created = 0,
+        skipped = 0;
     var usr = new GlideRecord('sys_user');
     usr.addQuery('company', company.getUniqueValue());
     usr.addActiveQuery();
@@ -41,19 +42,31 @@
         created++;
     }
     gs.info('[Xero initial load] Created: ' + created + ' | Already mapped: ' + skipped);
+
+    // NEW: match the Not found users with Xero (same subflow as the daily job)
+    try {
+        var ctx = sn_fd.FlowAPI.getRunner()
+            .subflow('x_snc_spm_xero_i_0.xero__retry_not_found_users')
+            .inBackground()
+            .run();
+        gs.info('[Xero initial load] Retry Not Found Users started. Context: ' + ctx.getContextId());
+    } catch (e) {
+        gs.error('[Xero initial load] Could not start Retry Not Found Users: ' + e.message);
+    }
+	
 })();]]></script>
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 02:20:40</sys_created_on>
         <sys_id>a902b3723b54d350ebe9c15765e45aa7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Xero - Initial load of External User Map</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_script_fix_a902b3723b54d350ebe9c15765e45aa7</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-06 02:20:40</sys_updated_on>
+        <sys_updated_on>2026-11-17 13:26:50</sys_updated_on>
         <unloadable>false</unloadable>
     </sys_script_fix>
 </record_update>

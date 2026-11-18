@@ -311,8 +311,10 @@ XeroIntegrationUtils.prototype = {
         return mapping.tool + '' == 'xero' && mapping.status + '' == 'not_found';
     },
     // ------------------------------------------------------------------
-    // On-demand sync page (UI Builder experience "Xero Sync").
-    // The page only calls these two methods through the data brokers.
+    // On-demand sync page (UI Page x_snc_spm_xero_i_0_xero_sync.do).
+    // The page calls startOnDemandSync, getOnDemandSyncState and
+    // getOnDemandProjects through the GlideAjax Script Include
+    // XeroOnDemandSyncAjax.
     // Lock and last result come from sys_flow_context (platform record of
     // every execution), so nothing is stored by this feature.
     // ------------------------------------------------------------------
@@ -329,13 +331,22 @@ XeroIntegrationUtils.prototype = {
      */
     startOnDemandSync: function(action, projectSysId) {
         if (!gs.hasRole(this.ONDEMAND_ROLE)) {
-            return { ok: false, error: 'not_authorized' };
+            return {
+                ok: false,
+                error: 'not_authorized'
+            };
         }
         if (action != 'update_tasks' && action != 'fetch_new' && action != 'sync_all') {
-            return { ok: false, error: 'invalid_action' };
+            return {
+                ok: false,
+                error: 'invalid_action'
+            };
         }
         if (this._getOnDemandRunning()) {
-            return { ok: false, error: 'running' };
+            return {
+                ok: false,
+                error: 'running'
+            };
         }
 
         var subflowName = this.ONDEMAND_PROJECT_SUBFLOW;
@@ -343,7 +354,10 @@ XeroIntegrationUtils.prototype = {
         if (action == 'update_tasks') {
             var project = new GlideRecord('pm_project');
             if (!projectSysId || !project.get(projectSysId)) {
-                return { ok: false, error: 'project_not_found' };
+                return {
+                    ok: false,
+                    error: 'project_not_found'
+                };
             }
             subflowName = this.ONDEMAND_TASKS_SUBFLOW;
             // FlowAPI Reference input needs the GlideRecord, not the sys_id string.
@@ -358,10 +372,16 @@ XeroIntegrationUtils.prototype = {
                 .inBackground()
                 .withInputs(inputs)
                 .run();
-            return { ok: true, contextId: result.getContextId() };
+            return {
+                ok: true,
+                contextId: result.getContextId()
+            };
         } catch (ex) {
             gs.error('XeroIntegrationUtils.startOnDemandSync (' + action + '): ' + ex);
-            return { ok: false, error: 'start_failed' };
+            return {
+                ok: false,
+                error: 'start_failed'
+            };
         }
     },
 
@@ -372,10 +392,17 @@ XeroIntegrationUtils.prototype = {
      */
     getOnDemandSyncState: function() {
         if (!gs.hasRole(this.ONDEMAND_ROLE)) {
-            return { ok: false, error: 'not_authorized' };
+            return {
+                ok: false,
+                error: 'not_authorized'
+            };
         }
 
-        var state = { ok: true, running: this._getOnDemandRunning(), last: null };
+        var state = {
+            ok: true,
+            running: this._getOnDemandRunning(),
+            last: null
+        };
 
         var tasksFlowId = this._getOnDemandFlowIds([this.ONDEMAND_TASKS_SUBFLOW]);
         var ctx = new GlideRecord('sys_flow_context');
@@ -422,7 +449,10 @@ XeroIntegrationUtils.prototype = {
      */
     getOnDemandProjects: function() {
         if (!gs.hasRole(this.ONDEMAND_ROLE)) {
-            return { ok: false, error: 'not_authorized' };
+            return {
+                ok: false,
+                error: 'not_authorized'
+            };
         }
         var list = [];
         var gr = new GlideRecord('pm_project');
@@ -432,9 +462,16 @@ XeroIntegrationUtils.prototype = {
         gr.orderBy('short_description');
         gr.query();
         while (gr.next()) {
-            list.push({ id: gr.getUniqueValue(), number: gr.getValue('number'), name: gr.getValue('short_description') });
+            list.push({
+                id: gr.getUniqueValue(),
+                number: gr.getValue('number'),
+                name: gr.getValue('short_description')
+            });
         }
-        return { ok: true, projects: list };
+        return {
+            ok: true,
+            projects: list
+        };
     },
 
     _getOnDemandRunning: function() {
@@ -453,7 +490,9 @@ XeroIntegrationUtils.prototype = {
         var ids = [];
         var flow = new GlideRecord('sys_hub_flow');
         flow.addQuery('sys_scope.scope', 'x_snc_spm_xero_i_0');
-        flow.addQuery('internal_name', 'IN', scopedNames.map(function(n) { return n.split('.')[1]; }).join(','));
+        flow.addQuery('internal_name', 'IN', scopedNames.map(function(n) {
+            return n.split('.')[1];
+        }).join(','));
         flow.query();
         while (flow.next()) {
             ids.push(flow.getUniqueValue());
@@ -467,13 +506,13 @@ XeroIntegrationUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 16:01:24</sys_created_on>
         <sys_id>260edb23796503107f4423b77ae41536</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>XeroIntegrationUtils</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_script_include_260edb23796503107f4423b77ae41536</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-16 02:21:23</sys_updated_on>
+        <sys_updated_on>2026-11-16 03:06:09</sys_updated_on>
     </sys_script_include>
 </record_update>

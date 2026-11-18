@@ -18,7 +18,7 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_snc_spm_xero_i_0.external_user_mapping_user</roles>
+        <roles>it_project_manager</roles>
         <route/>
         <screen/>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a8d1b206586c13107f447f794b299e22</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>External User Mapping</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_app_module_a8d1b206586c13107f447f794b299e22</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-15 23:59:36</sys_updated_on>
+        <sys_updated_on>2026-11-16 23:32:46</sys_updated_on>
         <timeline_page/>
         <title>External User Mapping</title>
         <uncancelable>false</uncancelable>

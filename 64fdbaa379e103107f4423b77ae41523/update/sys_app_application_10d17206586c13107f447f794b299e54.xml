@@ -7,14 +7,14 @@
         <hint>Xero integration: user mapping, time entry sync and on-demand sync</hint>
         <name/>
         <order>100</order>
-        <roles>x_snc_spm_xero_i_0.external_user_mapping_user,x_snc_spm_xero_i_0.xero_time_entry_sync_user,it_project_manager</roles>
+        <roles>it_project_manager</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-15 23:59:35</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>10d17206586c13107f447f794b299e54</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>SPM Xero Integration</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_app_application_10d17206586c13107f447f794b299e54</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-15 23:59:35</sys_updated_on>
+        <sys_updated_on>2026-11-16 23:32:30</sys_updated_on>
         <title>SPM Xero Integration</title>
         <view_name/>
     </sys_app_application>

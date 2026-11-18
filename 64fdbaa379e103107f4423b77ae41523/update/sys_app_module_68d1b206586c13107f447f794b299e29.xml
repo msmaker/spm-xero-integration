@@ -18,7 +18,7 @@
         <query/>
         <report/>
         <require_confirmation>true</require_confirmation>
-        <roles>x_snc_spm_xero_i_0.xero_time_entry_sync_user</roles>
+        <roles>it_project_manager</roles>
         <route/>
         <screen/>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>68d1b206586c13107f447f794b299e29</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Xero Time Entry Sync</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_app_module_68d1b206586c13107f447f794b299e29</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-15 23:59:36</sys_updated_on>
+        <sys_updated_on>2026-11-16 23:33:29</sys_updated_on>
         <timeline_page/>
         <title>Xero Time Entry Sync</title>
         <uncancelable>false</uncancelable>

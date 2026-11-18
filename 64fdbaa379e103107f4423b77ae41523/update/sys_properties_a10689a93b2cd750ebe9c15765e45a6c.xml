@@ -6,19 +6,19 @@
         <is_private>false</is_private>
         <name>x_snc_spm_xero_i_0.defect_assignment_group</name>
         <read_roles/>
-        <suffix>x_snc_spm_xero_i_0.defect_assignment_group	</suffix>
+        <suffix>x_snc_spm_xero_i_0.defect_assignment_group</suffix>
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-14 02:52:14</sys_created_on>
         <sys_id>a10689a93b2cd750ebe9c15765e45a6c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_snc_spm_xero_i_0.defect_assignment_group</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_properties_a10689a93b2cd750ebe9c15765e45a6c</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-14 02:52:14</sys_updated_on>
+        <sys_updated_on>2026-11-16 03:26:17</sys_updated_on>
         <type>string</type>
         <value>cf8cd5052b7c3650178ff12fe291bf6d</value>
         <write_roles/>
