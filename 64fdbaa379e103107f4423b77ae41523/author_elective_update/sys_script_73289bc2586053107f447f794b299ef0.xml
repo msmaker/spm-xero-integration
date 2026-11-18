@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>pm_project</collection>
+        <condition>current.correlation_id.toString() == '24e7fa5b-777a-413d-a56b-1a11d88be114'</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="pm_project">correlation_id=24e7fa5b-777a-413d-a56b-1a11d88be114<item endquery="false" field="correlation_id" goto="false" newquery="false" operator="=" or="false" value="24e7fa5b-777a-413d-a56b-1a11d88be114"/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>TEMP TEST weekly defect - delete</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+    current.setAbortAction(true);
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:47:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>73289bc2586053107f447f794b299ef0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>TEMP TEST weekly defect - delete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_script_73289bc2586053107f447f794b299ef0</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:49:06</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=73289bc2586053107f447f794b299ef0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>33127efac314d390d7299dcd2b0131fa</instance_id>
+        <instance_name>nowlearning-nlinst04834064-5hxfx-0001</instance_name>
+        <name>sys_script_73289bc2586053107f447f794b299ef0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;pm_project&lt;/collection&gt;&lt;condition&gt;current.correlation_id.toString() == '24e7fa5b-777a-413d-a56b-1a11d88be114'&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="pm_project"&gt;correlation_id=24e7fa5b-777a-413d-a56b-1a11d88be114&lt;item endquery="false" field="correlation_id" goto="false" newquery="false" operator="=" or="false" value="24e7fa5b-777a-413d-a56b-1a11d88be114"/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;TEMP TEST weekly defect - delete&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous) {
+    current.setAbortAction(true);
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-16 02:47:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;73289bc2586053107f447f794b299ef0&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;TEMP TEST weekly defect - delete&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_73289bc2586053107f447f794b299ef0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-16 02:49:06&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=73289bc2586053107f447f794b299ef0"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>148388637</payload_hash>
+        <record_name>TEMP TEST weekly defect - delete</record_name>
+        <reverted_from/>
+        <source>f921aec658e813107f447f794b299ee6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:49:06</sys_created_on>
+        <sys_id>a798d746586053107f447f794b299e4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1e2421e8a0000001</sys_recorded_at>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:49:06</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>6798d7461f6053100b3386d8f9c87f4e</update_guid>
+        <update_guid_history>6798d7461f6053100b3386d8f9c87f4e:148388637,9f989746af605310bc3deaefc67aa836:1062451228,66689f06c660531064508d4dbcb4bc59:-1659849745,4e68db06bb605310dc37f86836960f80:1062451228,cc381706db605310196d16b11d94ded1:-1659849745</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-16 02:49:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>087a2b71ccee4bcb80a4e8b15b01b5c1</sys_id>
+        <sys_metadata>73289bc2586053107f447f794b299ef0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TEMP TEST weekly defect - delete</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent display_value="Pm Project">afa13295adb203107f442875d3223dfd</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>sys_script_73289bc2586053107f447f794b299ef0</sys_update_name>
+        <sys_update_version display_value="sys_script_73289bc2586053107f447f794b299ef0">a798d746586053107f447f794b299e4f</sys_update_version>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-16 02:49:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

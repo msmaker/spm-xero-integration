@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="DELETE">
+        <acl_failure_result/>
+        <api_name>x_snc_spm_xero_i_0.Xero Sync Start</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description>On-demand Xero sync page: starts Update tasks, Fetch new projects or Sync all in background (XeroIntegrationUtils.startOnDemandSync).</description>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Xero Sync Start</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[{"name":"action","label":"Action","description":"update_tasks, fetch_new or sync_all","readOnly":false,"fieldType":"string","mandatory":true,"defaultValue":""},{"name":"projectSysId","label":"Project sys_id","description":"pm_project sys_id, only for update_tasks","readOnly":false,"fieldType":"string","mandatory":false,"defaultValue":""}]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    return new x_snc_spm_xero_i_0.XeroIntegrationUtils().startOnDemandSync(input.action + '', (input.projectSysId || '') + '');
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-15 23:42:09</sys_created_on>
+        <sys_id>8ddd6602582c13107f447f794b299e0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero Sync Start</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_8ddd6602582c13107f447f794b299e0e</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-15 23:42:09</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="DELETE" query="documentkey=8ddd6602582c13107f447f794b299e0e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>33127efac314d390d7299dcd2b0131fa</instance_id>
+        <instance_name>nowlearning-nlinst04834064-5hxfx-0001</instance_name>
+        <name>sys_ux_data_broker_transform_8ddd6602582c13107f447f794b299e0e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_transform"&gt;&lt;sys_ux_data_broker_transform action="INSERT_OR_UPDATE"&gt;&lt;acl_failure_result/&gt;&lt;api_name&gt;x_snc_spm_xero_i_0.Xero Sync Start&lt;/api_name&gt;&lt;batch_exclude&gt;false&lt;/batch_exclude&gt;&lt;description&gt;On-demand Xero sync page: starts Update tasks, Fetch new projects or Sync all in background (XeroIntegrationUtils.startOnDemandSync).&lt;/description&gt;&lt;mutates_server_data&gt;true&lt;/mutates_server_data&gt;&lt;name&gt;Xero Sync Start&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props&gt;[{"name":"action","label":"Action","description":"update_tasks, fetch_new or sync_all","readOnly":false,"fieldType":"string","mandatory":true,"defaultValue":""},{"name":"projectSysId","label":"Project sys_id","description":"pm_project sys_id, only for update_tasks","readOnly":false,"fieldType":"string","mandatory":false,"defaultValue":""}]&lt;/props&gt;&lt;required_translations/&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[function transform(input) {
+    return new x_snc_spm_xero_i_0.XeroIntegrationUtils().startOnDemandSync(input.action + '', (input.projectSysId || '') + '');
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_transform&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-15 23:42:09&lt;/sys_created_on&gt;&lt;sys_id&gt;8ddd6602582c13107f447f794b299e0e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Xero Sync Start&lt;/sys_name&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_transform_8ddd6602582c13107f447f794b299e0e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-15 23:42:09&lt;/sys_updated_on&gt;&lt;/sys_ux_data_broker_transform&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=8ddd6602582c13107f447f794b299e0e"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-844138079</payload_hash>
+        <record_name>Xero Sync Start</record_name>
+        <reverted_from/>
+        <source>46a1e68a58e813107f447f794b299ea4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-15 23:42:09</sys_created_on>
+        <sys_id>41dd6a0e582c13107f447f794b299ecb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1e196f6380000001</sys_recorded_at>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-15 23:42:09</sys_updated_on>
+        <type>Data Broker Server Script</type>
+        <update_guid>05dd6a0e8b2c13100ace372c1139ffca</update_guid>
+        <update_guid_history>05dd6a0e8b2c13100ace372c1139ffca:-844138079</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-15 23:48:59</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_transform">sys_ux_data_broker_transform</sys_db_object>
+        <sys_id>adec1b3fc5d2474cba993e42d464c284</sys_id>
+        <sys_metadata>8ddd6602582c13107f447f794b299e0e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero Sync Start</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_transform_8ddd6602582c13107f447f794b299e0e</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_transform_8ddd6602582c13107f447f794b299e0e">41dd6a0e582c13107f447f794b299ecb</sys_update_version>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-15 23:48:59</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -12,7 +12,7 @@
         <image/>
         <link_type>DETAIL</link_type>
         <map_page/>
-        <mobile_title>Retry Not Found Users (job)</mobile_title>
+        <mobile_title>Retry Time Entries with Error (job)</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>sysauto_script</name>
         <order>500</order>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>65ff0c6e2bacd7109748faa6fe91bf4c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Retry Time Entries with Error (job)</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_app_module_65ff0c6e2bacd7109748faa6fe91bf4c</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-17 01:37:51</sys_updated_on>
+        <sys_updated_on>2026-11-18 12:51:59</sys_updated_on>
         <timeline_page/>
         <title>Retry Time Entries with Error (job)</title>
         <uncancelable>false</uncancelable>

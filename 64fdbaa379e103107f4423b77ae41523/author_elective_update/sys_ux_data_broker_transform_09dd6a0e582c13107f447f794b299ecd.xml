@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="DELETE">
+        <acl_failure_result/>
+        <api_name>x_snc_spm_xero_i_0.Xero Sync State</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description>On-demand Xero sync page: lock state and last execution (XeroIntegrationUtils.getOnDemandSyncState).</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Xero Sync State</name>
+        <output_schema/>
+        <private>false</private>
+        <props>[]</props>
+        <required_translations/>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    return new x_snc_spm_xero_i_0.XeroIntegrationUtils().getOnDemandSyncState();
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-15 23:42:09</sys_created_on>
+        <sys_id>09dd6a0e582c13107f447f794b299ecd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero Sync State</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_09dd6a0e582c13107f447f794b299ecd</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-15 23:42:09</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="DELETE" query="documentkey=09dd6a0e582c13107f447f794b299ecd"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</application>
+        <file_path/>
+        <instance_id>33127efac314d390d7299dcd2b0131fa</instance_id>
+        <instance_name>nowlearning-nlinst04834064-5hxfx-0001</instance_name>
+        <name>sys_ux_data_broker_transform_09dd6a0e582c13107f447f794b299ecd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_data_broker_transform"&gt;&lt;sys_ux_data_broker_transform action="INSERT_OR_UPDATE"&gt;&lt;acl_failure_result/&gt;&lt;api_name&gt;x_snc_spm_xero_i_0.Xero Sync State&lt;/api_name&gt;&lt;batch_exclude&gt;false&lt;/batch_exclude&gt;&lt;description&gt;On-demand Xero sync page: lock state and last execution (XeroIntegrationUtils.getOnDemandSyncState).&lt;/description&gt;&lt;mutates_server_data&gt;false&lt;/mutates_server_data&gt;&lt;name&gt;Xero Sync State&lt;/name&gt;&lt;output_schema/&gt;&lt;private&gt;false&lt;/private&gt;&lt;props&gt;[]&lt;/props&gt;&lt;required_translations/&gt;&lt;schema_version&gt;1.0.0&lt;/schema_version&gt;&lt;script&gt;&lt;![CDATA[function transform(input) {
+    return new x_snc_spm_xero_i_0.XeroIntegrationUtils().getOnDemandSyncState();
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_ux_data_broker_transform&lt;/sys_class_name&gt;&lt;sys_created_by&gt;marco.silva-snadmin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-15 23:42:09&lt;/sys_created_on&gt;&lt;sys_id&gt;09dd6a0e582c13107f447f794b299ecd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Xero Sync State&lt;/sys_name&gt;&lt;sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SPM Xero Integration"&gt;64fdbaa379e103107f4423b77ae41523&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_data_broker_transform_09dd6a0e582c13107f447f794b299ecd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;marco.silva-snadmin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-15 23:42:09&lt;/sys_updated_on&gt;&lt;/sys_ux_data_broker_transform&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=09dd6a0e582c13107f447f794b299ecd"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1644866370</payload_hash>
+        <record_name>Xero Sync State</record_name>
+        <reverted_from/>
+        <source>46a1e68a58e813107f447f794b299ea4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-15 23:42:09</sys_created_on>
+        <sys_id>0ddd6a0e582c13107f447f794b299ed0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1e196f7a10000001</sys_recorded_at>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-15 23:42:09</sys_updated_on>
+        <type>Data Broker Server Script</type>
+        <update_guid>cddd6a0e892c1310961504d4524a65cf</update_guid>
+        <update_guid_history>cddd6a0e892c1310961504d4524a65cf:1644866370</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-15 23:48:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_data_broker_transform">sys_ux_data_broker_transform</sys_db_object>
+        <sys_id>07b7d1cd195246f081b411053af10900</sys_id>
+        <sys_metadata>09dd6a0e582c13107f447f794b299ecd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Xero Sync State</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_scope_delete display_value="">09f174c1cf7a4480815830a1ed9bdbc4</sys_scope_delete>
+        <sys_update_name>sys_ux_data_broker_transform_09dd6a0e582c13107f447f794b299ecd</sys_update_name>
+        <sys_update_version display_value="sys_ux_data_broker_transform_09dd6a0e582c13107f447f794b299ecd">0ddd6a0e582c13107f447f794b299ed0</sys_update_version>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-15 23:48:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
