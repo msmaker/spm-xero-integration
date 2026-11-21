@@ -39,7 +39,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_49ae340cd8f103107f440f1d30330767</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-18 13:22:13</sys_updated_on>
+        <sys_updated_on>2026-11-21 02:01:45</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -584,6 +584,29 @@
     </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=b38f304cd8f103107f440f1d303307d4"/>
     <sys_documentation action="INSERT_OR_UPDATE">
+        <element>time_entries_json</element>
+        <help/>
+        <hint/>
+        <label>Time Entries JSON</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_b38f304cd8f103107f440f1d303307d4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 17:39:52</sys_created_on>
+        <sys_id>0ed58ddb816013107f4404c46a6ec15c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time Entries JSON</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_b38f304cd8f103107f440f1d303307d4_time_entries_json_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 17:39:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
         <element>entries</element>
         <help/>
         <hint/>
@@ -603,29 +626,6 @@
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
         <sys_updated_on>2026-10-24 21:38:31</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>time_entries_json</element>
-        <help/>
-        <hint/>
-        <label>Time Entries JSON</label>
-        <language>en</language>
-        <name>var__m_sys_hub_step_ext_output_b38f304cd8f103107f440f1d303307d4</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-25 17:39:52</sys_created_on>
-        <sys_id>f78f704cd8f103107f440f1d30330730</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Time Entries JSON</sys_name>
-        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_b38f304cd8f103107f440f1d303307d4_time_entries_json_en</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-06-25 17:39:52</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1437,7 +1437,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero - Get Time Card">49ae340cd8f103107f440f1d30330767</action_id>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"316dcdc4d83503107f440f1d3033071e","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
-        <snapshot>e2ec373a216013107f44c89ffe712e53</snapshot>
+        <snapshot>070e78b74c2013107f443be937e7e20e</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:21</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -2051,7 +2051,7 @@
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 18:40:19</sys_created_on>
-        <sys_id>6d6d8dc4d83503107f440f1d303307f1</sys_id>
+        <sys_id>c2d58ddb816013107f4404c46a6ec166</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Time Entries JSON</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>

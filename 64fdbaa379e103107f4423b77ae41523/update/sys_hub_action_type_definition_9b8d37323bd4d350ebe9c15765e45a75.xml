@@ -38,7 +38,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_9b8d37323bd4d350ebe9c15765e45a75</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-18 13:22:19</sys_updated_on>
+        <sys_updated_on>2026-11-21 02:01:57</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -91,10 +91,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:14:04</sys_created_on>
         <sys_id>ff6e73b23bd4d350ebe9c15765e45ad0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-14 02:55:48</sys_updated_on>
+        <sys_updated_on>2026-11-20 20:38:23</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ff6e73b23bd4d350ebe9c15765e45ad0"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -119,18 +119,19 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:14:04</sys_created_on>
         <sys_id>f36e73b23bd4d350ebe9c15765e45afc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-14 02:55:48</sys_updated_on>
+        <sys_updated_on>2026-11-20 20:38:23</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     // Keeps only one open defect per integration process (identified by Correlation ID).&#13;
-    // Open = active defect (closed states of rm_defect: 3 Closed Complete, 7 Cancelled).&#13;
+    // Open = active defect (closed states, confirmed in the DEV: 3 Closed Complete, 4 Closed Incomplete, 7 Closed Skipped).&#13;
     var corr = inputs.correlation_id;&#13;
 &#13;
     // Same values as the record producer "Raise a Defect", kept in system properties&#13;
     var GROUP = gs.getProperty('x_snc_spm_xero_i_0.defect_assignment_group', '');&#13;
     var COMPANY = gs.getProperty('x_snc_spm_xero_i_0.defect_company', '');&#13;
     var SERVICE_ACCOUNT = gs.getProperty('x_snc_spm_xero_i_0.service_account', '');&#13;
+    var DOMAIN = gs.getProperty('x_snc_spm_xero_i_0.defect_domain', '');&#13;
 &#13;
     function openDefects() {&#13;
         var gr = new GlideRecord('rm_defect');&#13;
@@ -142,9 +143,11 @@
     }&#13;
 &#13;
     // 1. A defect is already open: add the failure as a work note&#13;
+    //    and also to the description, so every affected time card is listed&#13;
     var open = openDefects();&#13;
     if (open.next()) {&#13;
         open.work_notes = inputs.details;&#13;
+        open.description = open.description + '\n' + inputs.details;&#13;
         open.update();&#13;
         return;&#13;
     }&#13;
@@ -164,11 +167,11 @@
         '',&#13;
         'Steps to Reproduce:',&#13;
         '-----------',&#13;
-        '',&#13;
+        'Automatic defect raised by the SPM Xero Integration when a time card day could not be sent to Xero. No manual steps: see the Actual Result for the time card and sync record.',&#13;
         '',&#13;
         'Expected Result:',&#13;
         '-----------',&#13;
-        '',&#13;
+        'The approved time card days are created as time entries in Xero and the sync record is marked Sent.',&#13;
         '',&#13;
         'Actual Result:',&#13;
         '-----------',&#13;
@@ -176,11 +179,11 @@
         '',&#13;
         'Business Impact:',&#13;
         '-----------',&#13;
-        '',&#13;
+        'Approved time is not reaching Xero (billing and payroll data incomplete) until the failure is fixed and the days are resent.',&#13;
         '',&#13;
         'Additional Information:',&#13;
         '-----------',&#13;
-        ''&#13;
+        'Correlation ID: ' + corr + '. The integration retry closes this defect automatically when all days are resent.'&#13;
     ].join('\n');&#13;
     def.correlation_id = corr;&#13;
     def.priority = 3;&#13;
@@ -190,9 +193,18 @@
         gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_assignment_group is empty; defect created without assignment group.');&#13;
     }&#13;
     if (COMPANY) {&#13;
-        def.company = COMPANY;&#13;
+        def.setValue('company', COMPANY);&#13;
     } else {&#13;
         gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_company is empty; defect created with the default company.');&#13;
+    }&#13;
+    // Data domain "Konversational US&amp;UKI Shared", so US and UKI can see the defect&#13;
+    // Client request: Data domain + Override data domain = true.&#13;
+    // Fields confirmed in the DEV on 20/11: u_data_domain (reference) and u_override_data_domain (true/false).&#13;
+    if (DOMAIN) {&#13;
+        def.setValue('u_data_domain', DOMAIN);&#13;
+        def.setValue('u_override_data_domain', true);&#13;
+    } else {&#13;
+        gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_domain is empty; defect created without data domain.');&#13;
     }&#13;
     var usr = new GlideRecord('sys_user');&#13;
     if (SERVICE_ACCOUNT &amp;&amp; usr.get('user_name', SERVICE_ACCOUNT)) {&#13;
@@ -207,10 +219,11 @@
     var all = openDefects();&#13;
     if (all.next() &amp;&amp; all.getUniqueValue() != newId) {&#13;
         all.work_notes = inputs.details;&#13;
+        all.description = all.description + '\n' + inputs.details;&#13;
         all.update();&#13;
         var dup = new GlideRecord('rm_defect');&#13;
         if (dup.get(newId)) {&#13;
-            dup.state = 7; // Cancelled&#13;
+            dup.state = 7; // Closed Skipped&#13;
             dup.work_notes = 'Duplicate of ' + all.getValue('number') + ' (created at the same time).';&#13;
             dup.update();&#13;
         }&#13;
@@ -1031,14 +1044,14 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:14:05</sys_created_on>
         <sys_id>c47eb3b23bd4d350ebe9c15765e45a14</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-14 03:09:52</sys_updated_on>
+        <sys_updated_on>2026-11-20 20:59:53</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1186,17 +1199,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero - Register Integration Failure">9b8d37323bd4d350ebe9c15765e45a75</action_id>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"798fff363bd4d350ebe9c15765e45a19","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
-        <snapshot>c6fc3b3a216013107f44c89ffe712e71</snapshot>
+        <snapshot>7a1e3cb74c2013107f443be937e7e27a</snapshot>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:18:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>798fff363bd4d350ebe9c15765e45a19</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-14 03:09:54</sys_updated_on>
+        <sys_updated_on>2026-11-20 20:59:55</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1286,10 +1299,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:18:50</sys_created_on>
         <sys_id>a98fbf363bd4d350ebe9c15765e45ac3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-14 03:09:54</sys_updated_on>
+        <sys_updated_on>2026-11-20 20:59:55</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a98fbf363bd4d350ebe9c15765e45ac3"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1314,18 +1327,19 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:18:50</sys_created_on>
         <sys_id>b98fbf363bd4d350ebe9c15765e45afb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-14 03:09:54</sys_updated_on>
+        <sys_updated_on>2026-11-20 20:59:55</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     // Keeps only one open defect per integration process (identified by Correlation ID).&#13;
-    // Open = active defect (closed states of rm_defect: 3 Closed Complete, 7 Cancelled).&#13;
+    // Open = active defect (closed states, confirmed in the DEV: 3 Closed Complete, 4 Closed Incomplete, 7 Closed Skipped).&#13;
     var corr = inputs.correlation_id;&#13;
 &#13;
     // Same values as the record producer "Raise a Defect", kept in system properties&#13;
     var GROUP = gs.getProperty('x_snc_spm_xero_i_0.defect_assignment_group', '');&#13;
     var COMPANY = gs.getProperty('x_snc_spm_xero_i_0.defect_company', '');&#13;
     var SERVICE_ACCOUNT = gs.getProperty('x_snc_spm_xero_i_0.service_account', '');&#13;
+    var DOMAIN = gs.getProperty('x_snc_spm_xero_i_0.defect_domain', '');&#13;
 &#13;
     function openDefects() {&#13;
         var gr = new GlideRecord('rm_defect');&#13;
@@ -1337,9 +1351,11 @@
     }&#13;
 &#13;
     // 1. A defect is already open: add the failure as a work note&#13;
+    //    and also to the description, so every affected time card is listed&#13;
     var open = openDefects();&#13;
     if (open.next()) {&#13;
         open.work_notes = inputs.details;&#13;
+        open.description = open.description + '\n' + inputs.details;&#13;
         open.update();&#13;
         return;&#13;
     }&#13;
@@ -1359,11 +1375,11 @@
         '',&#13;
         'Steps to Reproduce:',&#13;
         '-----------',&#13;
-        '',&#13;
+        'Automatic defect raised by the SPM Xero Integration when a time card day could not be sent to Xero. No manual steps: see the Actual Result for the time card and sync record.',&#13;
         '',&#13;
         'Expected Result:',&#13;
         '-----------',&#13;
-        '',&#13;
+        'The approved time card days are created as time entries in Xero and the sync record is marked Sent.',&#13;
         '',&#13;
         'Actual Result:',&#13;
         '-----------',&#13;
@@ -1371,11 +1387,11 @@
         '',&#13;
         'Business Impact:',&#13;
         '-----------',&#13;
-        '',&#13;
+        'Approved time is not reaching Xero (billing and payroll data incomplete) until the failure is fixed and the days are resent.',&#13;
         '',&#13;
         'Additional Information:',&#13;
         '-----------',&#13;
-        ''&#13;
+        'Correlation ID: ' + corr + '. The integration retry closes this defect automatically when all days are resent.'&#13;
     ].join('\n');&#13;
     def.correlation_id = corr;&#13;
     def.priority = 3;&#13;
@@ -1385,9 +1401,18 @@
         gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_assignment_group is empty; defect created without assignment group.');&#13;
     }&#13;
     if (COMPANY) {&#13;
-        def.company = COMPANY;&#13;
+        def.setValue('company', COMPANY);&#13;
     } else {&#13;
         gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_company is empty; defect created with the default company.');&#13;
+    }&#13;
+    // Data domain "Konversational US&amp;UKI Shared", so US and UKI can see the defect&#13;
+    // Client request: Data domain + Override data domain = true.&#13;
+    // Fields confirmed in the DEV on 20/11: u_data_domain (reference) and u_override_data_domain (true/false).&#13;
+    if (DOMAIN) {&#13;
+        def.setValue('u_data_domain', DOMAIN);&#13;
+        def.setValue('u_override_data_domain', true);&#13;
+    } else {&#13;
+        gs.error('[Xero] Property x_snc_spm_xero_i_0.defect_domain is empty; defect created without data domain.');&#13;
     }&#13;
     var usr = new GlideRecord('sys_user');&#13;
     if (SERVICE_ACCOUNT &amp;&amp; usr.get('user_name', SERVICE_ACCOUNT)) {&#13;
@@ -1402,10 +1427,11 @@
     var all = openDefects();&#13;
     if (all.next() &amp;&amp; all.getUniqueValue() != newId) {&#13;
         all.work_notes = inputs.details;&#13;
+        all.description = all.description + '\n' + inputs.details;&#13;
         all.update();&#13;
         var dup = new GlideRecord('rm_defect');&#13;
         if (dup.get(newId)) {&#13;
-            dup.state = 7; // Cancelled&#13;
+            dup.state = 7; // Closed Skipped&#13;
             dup.work_notes = 'Duplicate of ' + all.getValue('number') + ' (created at the same time).';&#13;
             dup.update();&#13;
         }&#13;
@@ -2138,14 +2164,14 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-06 03:18:51</sys_created_on>
         <sys_id>318fff363bd4d350ebe9c15765e45a06</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-14 03:09:54</sys_updated_on>
+        <sys_updated_on>2026-11-20 20:59:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

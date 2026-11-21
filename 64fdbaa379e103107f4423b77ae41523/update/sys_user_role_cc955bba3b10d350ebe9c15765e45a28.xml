@@ -4,7 +4,7 @@
         <can_delegate>true</can_delegate>
         <description/>
         <elevated_privilege>false</elevated_privilege>
-        <federated_id/>
+        <federated_id>zurVwHNW8edLzShHPC7Ha5sWeNU46qsG7mwNV7Pc8t4=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_snc_spm_xero_i_0.external_user_mapping_user</name>

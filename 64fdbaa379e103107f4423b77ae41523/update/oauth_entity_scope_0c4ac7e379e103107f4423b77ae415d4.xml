@@ -2,7 +2,7 @@
     <oauth_entity_scope action="INSERT_OR_UPDATE">
         <in_default_profile>true</in_default_profile>
         <name>accounting.contacts.read</name>
-        <oauth_entity display_value="Xero OAuth Privider">b6d8c3eb79e103107f4423b77ae41555</oauth_entity>
+        <oauth_entity display_value="Xero OAuth Provider">b6d8c3eb79e103107f4423b77ae41555</oauth_entity>
         <oauth_entity_scope>accounting.contacts.read</oauth_entity_scope>
         <sys_class_name>oauth_entity_scope</sys_class_name>
         <sys_created_by>admin</sys_created_by>

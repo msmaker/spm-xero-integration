@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Project Management" source="com.snc.project_management_v3">9231b611adb203107f442875d3223d00</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 00:53:44</sys_created_on>
+        <sys_id>e8d50ddb816013107f4404c46a6ec121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 00:53:44</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

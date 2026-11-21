@@ -12,16 +12,19 @@
         <script><![CDATA[var XeroIntegrationUtils = Class.create();
 XeroIntegrationUtils.prototype = {
     initialize: function() {},
-    syncCompanyFromContact: function(contact) {
+
+        syncCompanyFromContact: function(contact) {
 
         var result = {
             company_sys_id: '',
-            is_new_company: false
+            is_new_company: false,
+            not_found: false
         };
 
         // Without ContactID and Name there is nothing safe to search for.
         // (A query with an empty/invalid value can return ALL rows)
         if (!contact || (!contact.ContactID && !contact.Name)) {
+            result.not_found = true;
             return result;
         }
 
@@ -34,75 +37,38 @@ XeroIntegrationUtils.prototype = {
         if (contact.ContactID) {
 
             company = new GlideRecord('customer_account');
-
-            company.addQuery(
-                'x_snc_spm_xero_i_0_xero_contact_id',
-                contact.ContactID
-            );
-
+            company.addQuery('x_snc_spm_xero_i_0_xero_contact_id', contact.ContactID);
             company.query();
 
             if (company.next()) {
-
-                this.updateCompany(
-                    company,
-                    contact,
-                    address,
-                    phones
-                );
-
+                this.updateCompany(company, contact, address, phones);
                 company.update();
-
-                result.company_sys_id =
-                    company.getUniqueValue();
-
+                result.company_sys_id = company.getUniqueValue();
                 return result;
             }
         }
 
-        // Without a name we cannot search by name nor create an account
+        // Without a name we cannot search by name
         if (!contact.Name) {
+            result.not_found = true;
             return result;
         }
 
         // Search the account by name
         company = new GlideRecord('customer_account');
-
-        company.addQuery(
-            'name',
-            contact.Name
-        );
-
+        company.addQuery('name', contact.Name);
         company.query();
 
         if (company.next()) {
-
-            this.updateCompany(
-                company,
-                contact,
-                address,
-                phones
-            );
-
+            this.updateCompany(company, contact, address, phones);
             company.update();
-
-            result.company_sys_id =
-                company.getUniqueValue();
-
+            result.company_sys_id = company.getUniqueValue();
             return result;
         }
 
-        // Create new account
-
-        result.company_sys_id =
-            this.createCompany(
-                contact,
-                address,
-                phones
-            );
-
-        result.is_new_company = true;
-
+        // No match: the account is NOT created (data governance).
+        // The flow leaves the project without account and warns the PM.
+        result.not_found = true;
         return result;
     },
 
@@ -506,13 +472,13 @@ XeroIntegrationUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-24 16:01:24</sys_created_on>
         <sys_id>260edb23796503107f4423b77ae41536</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>XeroIntegrationUtils</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_script_include_260edb23796503107f4423b77ae41536</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-16 03:06:09</sys_updated_on>
+        <sys_updated_on>2026-11-20 05:23:28</sys_updated_on>
     </sys_script_include>
 </record_update>
