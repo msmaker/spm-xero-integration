@@ -38,10 +38,7 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>The Xero sync found problems on project <strong>${event.parm1}</strong>:</p>
-<pre>${event.parm2}</pre>
-<p>Lines marked <strong>RATE MODEL</strong> or <strong>RESOURCE ROLE</strong>: the task was not created. Correct it (for example rename the task in Xero to match an existing resource role, or ask for the missing role or rate line), then open SPM Xero Integration &gt; Xero sync, select the project and click <strong>Update tasks</strong>.</p>
-<p>Lines marked <strong>CUSTOMER ACCOUNT</strong>: the project and its tasks were created. Please request the account creation; the next sync will link it.</p>]]></message_html>
+        <message_html><![CDATA[<p>${mail_script:xero_sync_email_body}</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Xero sync - action needed</name>
@@ -63,7 +60,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ea9120a33be8d350ebe9c15765e45a62</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Xero sync - action needed</sys_name>
         <sys_overrides/>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
@@ -71,10 +68,21 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sysevent_email_action_ea9120a33be8d350ebe9c15765e45a62</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-20 05:22:49</sys_updated_on>
+        <sys_updated_on>2026-11-23 01:30:53</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>ea9120a33be8d350ebe9c15765e45a62</id>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-23 01:30:53</sys_created_on>
+        <sys_id>8ad94b102b7497109748faa6fe91bf35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-23 01:30:53</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

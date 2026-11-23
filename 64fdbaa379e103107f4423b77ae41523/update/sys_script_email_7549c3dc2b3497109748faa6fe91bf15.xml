@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>xero_sync_email_body</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+    var esc = function (s) { return GlideStringUtil.escapeHTML(String(s)); };
+    var groups = [
+        { key: 'RESOURCE ROLE', title: 'Created without a resource role or assignment', color: '#b45309', bg: '#fffbeb',
+          action: 'Ask for the resource role to be created. The next sync creates the resource assignment.', items: [] },
+        { key: 'RATE MODEL', title: 'Created without a rate line', color: '#c2410c', bg: '#fff7ed',
+          action: 'Ask for the missing rate line in the rate model.', items: [] },
+        { key: 'RATE MODEL PROJECT', title: 'Rate model not found: no tasks created', color: '#b91c1c', bg: '#fef2f2',
+          action: 'Check the rate model property. Then open SPM Xero Integration &gt; Xero sync, select the project and click Update tasks.', items: [] },
+        { key: 'CUSTOMER ACCOUNT', title: 'Customer account not found', color: '#1d4ed8', bg: '#eff6ff',
+          action: 'Ask for the account to be created. The next sync links it.', items: [] }
+    ];
+    var byKey = {};
+    for (var a = 0; a < groups.length; a++) byKey[groups[a].key] = groups[a];
+
+    var lines = String(event.parm2 || '').split('\n');
+    var total = 0;
+    for (var i = 0; i < lines.length; i++) {
+        var m = lines[i].match(/^\[(RESOURCE ROLE|RATE MODEL|CUSTOMER ACCOUNT)\]\s*(.*)$/);
+        if (!m) continue;
+        var name = m[2].match(/^(?:Task|Customer) "(.*?)"/);
+        var key = (m[1] === 'RATE MODEL' && !name) ? 'RATE MODEL PROJECT' : m[1];
+        byKey[key].items.push(name ? name[1] : m[2]);
+        total++;
+    }
+
+    var url = gs.getProperty('glide.servlet.uri') + 'pm_project.do?sys_id=' + current.getUniqueValue();
+    var html = '<div style="font-family:Arial,Helvetica,sans-serif;max-width:640px;color:#1f2937;">' +
+        '<div style="background:#0f172a;color:#ffffff;padding:16px 20px;border-radius:8px 8px 0 0;">' +
+        '<div style="font-size:12px;letter-spacing:1px;text-transform:uppercase;opacity:.7;">Xero sync</div>' +
+        '<div style="font-size:18px;font-weight:bold;margin-top:4px;">' + esc(event.parm1) + '</div></div>' +
+        '<div style="border:1px solid #e5e7eb;border-top:0;padding:16px 20px;border-radius:0 0 8px 8px;">' +
+        '<p style="margin:0 0 16px;">The sync found ' + total + ' item(s) that need attention.</p>';
+
+    for (var g = 0; g < groups.length; g++) {
+        var grp = groups[g];
+        if (!grp.items.length) continue;
+        html += '<div style="background:' + grp.bg + ';border-left:4px solid ' + grp.color +
+            ';padding:12px 16px;margin-bottom:12px;border-radius:4px;">' +
+            '<div style="font-weight:bold;color:' + grp.color + ';">' + grp.title + ' (' + grp.items.length + ')</div>' +
+            '<ul style="margin:8px 0;padding-left:18px;">';
+        for (var k = 0; k < grp.items.length; k++) html += '<li>' + esc(grp.items[k]) + '</li>';
+        html += '</ul><div style="font-size:13px;color:#374151;"><b>What to do:</b> ' + grp.action + '</div></div>';
+    }
+
+    html += '<p style="margin:16px 0 0;"><a href="' + url + '" style="background:#2563eb;color:#ffffff;' +
+        'padding:8px 14px;border-radius:4px;text-decoration:none;font-size:13px;">Open the project</a></p></div></div>';
+    template.print(html);
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-23 01:29:26</sys_created_on>
+        <sys_id>7549c3dc2b3497109748faa6fe91bf15</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>xero_sync_email_body</sys_name>
+        <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_update_name>sys_script_email_7549c3dc2b3497109748faa6fe91bf15</sys_update_name>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-23 02:09:33</sys_updated_on>
+    </sys_script_email>
+</record_update>
