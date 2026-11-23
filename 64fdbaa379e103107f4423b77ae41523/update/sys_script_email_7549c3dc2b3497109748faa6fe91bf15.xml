@@ -6,7 +6,7 @@
     var esc = function (s) { return GlideStringUtil.escapeHTML(String(s)); };
     var groups = [
         { key: 'RESOURCE ROLE', title: 'Created without a resource role or assignment', color: '#b45309', bg: '#fffbeb',
-          action: 'Ask for the resource role to be created. The next sync creates the resource assignment.', items: [] },
+          action: 'Choose one option.<br>1. Create the resource role in SPM. The next Sync all or weekly sync creates the resource assignment.<br>2. Or create the resource assignment on the task yourself. Use the rate model of the project and a role from that rate model. The sync does not change it.', items: [] },
         { key: 'RATE MODEL', title: 'Created without a rate line', color: '#c2410c', bg: '#fff7ed',
           action: 'Ask for the missing rate line in the rate model.', items: [] },
         { key: 'RATE MODEL PROJECT', title: 'Rate model not found: no tasks created', color: '#b91c1c', bg: '#fef2f2',
@@ -55,13 +55,13 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-23 01:29:26</sys_created_on>
         <sys_id>7549c3dc2b3497109748faa6fe91bf15</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>xero_sync_email_body</sys_name>
         <sys_package display_value="SPM Xero Integration" source="x_snc_spm_xero_i_0">64fdbaa379e103107f4423b77ae41523</sys_package>
         <sys_policy/>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_script_email_7549c3dc2b3497109748faa6fe91bf15</sys_update_name>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:33</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:01:42</sys_updated_on>
     </sys_script_email>
 </record_update>

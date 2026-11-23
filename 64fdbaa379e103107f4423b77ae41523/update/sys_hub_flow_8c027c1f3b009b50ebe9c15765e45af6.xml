@@ -5,7 +5,7 @@
         <active>true</active>
         <allow_high_security_roles>false</allow_high_security_roles>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2461621000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2466439000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>29000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -45,7 +45,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_flow_8c027c1f3b009b50ebe9c15765e45af6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:14:15</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:31:56</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
@@ -686,10 +686,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:22:11</sys_created_on>
         <sys_id>5402bc1f3b009b50ebe9c15765e45a47</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:14:35</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:32:15</sys_updated_on>
         <ui_id>9a724118-1f18-4b68-b965-392c91af61d5</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VV207cMBD9FeTnJMr9whsCISG1pSotLwhFY2ey68qbhMQBtqv994432QuwrVgJqqrNm8/M2GfOzFFuFkwW7JiVHvI48MskiyM38NykDEM/4EkCGHpRIpjFKpghZTZt/R2FzqnMYvegegMuFl3PS1U/OGPYEXXbogIt64pSl0tKLmTXKJhfH1IjplIVLVbs+ObWYg20REJjy44Xz0Kv7UIBR0Wpn4c3jy6KX7Sm543BOt3KajKeP4zFV2uwbgtDxrMYPmqsCiQWJagOLTaDqgBdt/MN0iIUl5XaAlNZabqNmeTHTv6g91LXdU1midSZwCG6OeajhANcnoEGotIL3bdjqpjWUmA3aFJgCb3Sp7vYkHDZGJGHEg1cratr1c+qT4MabHPBemKE9B2RwMa0ariPjZRX0/rhy5rluaxWqoxBVQtQmxNo0o732vBZsF5+fSbzgLwQGhXO6MV8Bk1DSE6juperV4j0zJkoOjhmmYhdJyeVA8J06NAIwDkn/GwFX0MrTbsf6RoqNs99q+RdjxdmfUQWea7rx3aZZdwOI+Q2ZGFqp7RPcZKFbhJwtrRYN+9OFXTdViiaUH7XmzYH2UaB8kFjUyJa2egTInWPoxZLa/Sen0YBpF4Z8FREPHKRYyZoXeMIwwgif2dBYYL7XUeBfR7zDrbQK8hsLDSwecpttA1tNk5WCu/65mKDjsbx38w44d9rG28Lnb0cz3s5ajuBp5bazuCPeCpIC/JUXNixH/p2iEFkZ1nh2Sl4SRiXXkzfO3gKf7/G/One5qsd2horct2XXhrAw9z0Chq7bjq6GnjsoXaYr4L/wVfjlPY6a4j9497KAHy35NxOEOh/lYaxnXmesLHgwsU4zuKifENv3f4EzdK48S0KAAA=</values>
@@ -710,10 +710,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-23 01:06:42</sys_created_on>
         <sys_id>ff4487d02b3497109748faa6fe91bf34</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:14:35</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:32:15</sys_updated_on>
         <ui_id>14c74891-7946-4a05-bcb1-6e45ca6bd185</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsIENK3UyukSnvb05bbl72V5cRO8a2xs7bTbov47zeOk4CAAtFRqdU9ejwefzPzfRPDt5XPiH/lkyRI8iQZT+MgiKIgmEyiDIdpGk2yNEjxyO/5Ai8peBqccgrLR8xLuy6WqFDyH5oZZLD+ATuE6YLj56+1w59u15u73WzBOFFU+Fffvvf8AisIa6jyr1Y7W+fi4jilHFznNbAdnOa5aJeo2nO2T9vHvM9uQypioQQ9n/4yVBAKGHLMNe35SywINlI9txZFMbkTfGNYMGEgom+df2n2AvdOA+uXU8gqo26vXaK6UM6c32CD740qM1Oq2jVbSJZR7epBaI5Lbq63bc7hrjBMCnfEpe1OS14uxWdXDr8N0PQFLKUGELSwiVrkdRr5/UI+fWlQzpioalJvcplh3q6wMYqlpbF4Vj7ldAmB0BIXBRMPlhePrDoMWJaDBw6LQc7lE1yq2YMY4MwCH0Bd8WAG9pvK/BUrZrP4A8LAYQDEODAEuRZqWaqqlI8o46WuNhQW2sXy1z1fP+trjrXeZA4lRz9Li9vVoc4YuaLZI5lihfkdQjzSOrl1r5HG+CgFkw3lMikIsyj0lj4yqRTl2JoRI3+XEISsVjGekCgLkj4NKO2PaEr7yTTEfTxMkzycjKJpGg+YocuBFdUtWa/3hXXByB1FeboijSivt0tyqEy1PPdsnw4FqOUZXkyeoyD4SAKFy9+fPrsrzpXghOxCcpRkZMMnLZVBrpZbutvXS2eenwGh4fmdZaaXPr+GqqZ5zignh75CM7ux8xUa/j+/Qu+S5ACIINc9JjgT1ZMCgL4V+8dHqZeGOzyr6LXhfmXDOtvXAPaM9F46K+EMOI0S7uFub+7wHIDYzPuKMruzvjHWAoguJoBoeBkBrNo020IeqHnzirTdbPxfrD/e9QcKbh0I14cE1unOsOudw/W+gKNOCt4mm9u5eYVzF35uvqLI3luOgAUcre9DTr/oiZEHaja3N15EmifMfxzarxmHmkZV6b3B0zU8+usp3Xq6shwtoXOsgBe2ovCyJBphRVEuS0FQ/bbeEMl2MmdKm9p5f9B8oaAf4UkQpmcW1Ku8vda744f4dB5NKW9zr0mkvk17kIhXJeK1iXRLu8vQGl3wcXrpoTXDjFfdgJ9NxVY7qVJSvTK4TjTyCCPOnGpnggovCuq/j71DEjg4/k5g/RC/wS8/mjKK09EQT+IoDIMgDEgcTOM4nE7SfILjUb7RKEJaZDBNIXIOVIHwqKFG0+dwf/7Uw7bbnDkDVMPAGynsL+5hbDyLCtrrNahO467nSSolp1jsDJQ5IP9tVn0RWrqO391Q+RB/SJVsvltpZzpY67d6NpTsL8F+lvTWUmxKg+E0JFl/Godxf5STST8heNzHSTqOI0KzUX7Jl8D3fwEJmCQ14RUAAA==</values>
@@ -734,10 +734,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-20 04:55:47</sys_created_on>
         <sys_id>82fb94273ba8d350ebe9c15765e45aca</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:14:35</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:32:15</sys_updated_on>
         <ui_id>e4773013-dc35-42e7-a6ac-d07b29dbd0f2</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsIENK3Uyuklfa2Utvbl72V5dhOsdY4WdtplyL++43jBBCkQLRUarWPHo/H34y/b2Ln28rn1L/yaRIkWZKMp3EQRFEQTCYRwWGaRhOSBike+T1f4gUDT4NTwWD4hEVpx4rpvFSEIZVXdsp1IfDyaz19V097d26azLmgikn/6tv3nl9gBVENU/7Vam/qXFgCp0yA60ONaw+mWRabIarmnO3z7jLvi5vIFbVQgp7PfhkmKQMMGRaa9fwFlhSbXC03FsUwvZVia5hzaSCib51/af4C+04D65cxyIowN7cZorpSzpzdYIPvjSqJKVXtSuY5J0y7elCW4VKY612bc7gtDM+lW+LSdqtzUS7kF1cOfxOgORiwlBpAsMImapHXaWT38/z5rkE547KqST0pcoLFZoSNUTwtjcWz8plgCwiEFrgouHxEhcqfeLUYsCwGjwIGg0zkz7Cp5o9ygIkFPoC64sEM7DeV+StW3GbxD4SBxQCIC2AIckfo2AQhnxARpa4mFJbaxfLXPV8v9bXAWm8zh5Kjn6XF7epQZ4xc0ewSonhh/oYQT6xObt1rlDE+SsFkSzmSS8otCr0rD6D9fyUspatVjCc0IkHSZwFj/RFLWT+ZhriPh2mShZNRNE3jATdsMbAR1+tDNf1mtI7iO515I77r3dTbylHL8MD2uS1ALcPwYjIcBcFHEiJs/v502F1ZrgQn5BXSoySjWz7pXBnkarmjr0ONdOb5GRAant9aZnrp8jVUNc0zzgRt+9rM7MTe12b4Z35t3iXJARBF7vS4FFxWVwcA+lbsHx+lXhru8ayi15b7lQ1rcqgB7Jnce+mshDPgNEq4h729B4enBWLT7yvK7Pf6xlgLILqYAKLhZQSw2qS5KWRLzZvboj3Nxv/F+uN9f6DgzoJw3SawTnuGXfccrg8FHHVS8C7Z3MzNK5y78LXyFUX23rIFzGFpvR9y+kXPnD4ys9298aK5ecbiR9t8zTjUHFSV3htcUcOjr6R054rKM7SAk+MF3KQVI0AOjbBiKMtLSVF9h94SyZ5kxpU2tXPb8w70I70chOmZOfMqb2/j3fFDfDqPppSfMq9JpN5Ne5CIVyXibRLplnaXpjW64OX00k1rhrmoTgOeR8XOcTKlcvVK4zpxkEcYcWZXOxNUeFFQv9/22iTQ2v5OYP0Qb+3LtybCcDoa4kkchWEQhAGNg2kch9NJmk1wPMq2GkVISwLdFCJnQBUIjxpqNOccHvafutl26zNngGoYeJNL+94exsazqOB4vQbVadx1P0lzeLVjuddQHgD5X7Pqi7Ch6/jdNZUP8eOp5A/7lXam1lq/1bWh5P9K/rNknyzFpiwYTkNK+tM4jPujjE76CcXjPk7ScRxRRkbZJW8C3/8Hfxu41cgVAAA=</values>
@@ -758,10 +758,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-20 05:07:01</sys_created_on>
         <sys_id>ba8e5cab3ba8d350ebe9c15765e45acd</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:14:35</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:32:15</sys_updated_on>
         <ui_id>04552867-c1bb-4d18-97a5-13aaae7bb519</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsIEOjbqRXSSr2t1Pb2ZW/PcmKnWGfsrO202yL++47jJCBIgejoqtU+ZmZsfzPzfRMnX1c+I/6FT2bBLJvNxtM4CKIoCCaTKMVhkkSTNAkSPPJ7vsBLCpEGJ5zC4yPmhX1W2FC0lIRyxJmwHsJ0zvHzlyrgFgK8a+dKF4wTRYV/8fVbz8+xgj0NVf7Fasd1KiiOE8oh9L5CtQPSPOfNIyp9zna9vcz77BxSEQsl6Pn0h6GCUMCQYa5pz19iQbCR6rmxKIrJjeAbw4IJAzv6NviHZi9w7jSwcRmFrFLqfM0jqqrkzNkVNvjOqCI1hapC04VkKdWuHoRmuODmctvmAm5yw6RwS1zabrXkxVJ8duXwmw3qpoCl0ACC5jZRi7xKI7tbyKfbGuWcibImlZPLFPPmCRujWFIYi2flU06XsBFa4jxn4gHlSj6ycjFgWQ4eODwMMi6f4FDNHsQApxb4AOqKB3OwX5XmL1gxm8VfsA0sBkCMA0OQa6GWhSpL+YhSXujSobDQbi9/3fP1s77kWOtN5lBy9L2wuF0dqoyRK5pdkiqWmz9hi0daJbfu1boYH6TgbEO5VArCLArdKo5/CtiArFa6SGwRBhvPev1vDqWkStQxdBTHURBGfZJG4/5oSOM+nuC0T4I4Gc5IQoJsOLilKRB2APkiRtbrfd390rM7Cvt4VWthX26Xta3UlcT3bNdtG1QSD88m8VEQfCSRw+HvT+PdVetKcES6ITlIMrLhk5bKIFfLLe3uK6ozz0+AUPP8xjLTS55fQ1XRPGOUk7Y32dw6dt5kw9/zTfYuSQ6ACHLdY6K8KAGNAehbsX98kHpJuMOzkl4b7pc2rNN9DWDPSO+lsxJOgFMr4Q7O9u4dnhaI9bwvKbM762tjJYDobAKIhucRwKpJsylkS83rm6jtZh3/YuPxbjxQcGtBuG4TWKczw65nDtf7Ao46KXibbM5z9QrnznxlfUWRvbccAQtYWp2HnH7REyMP1GxOr6OINE+Y/9fmrxiH6kaV6b3B9Tc8+AWWbF1/WYaW0DmWwy1dlddDjbCiKJOFIKi6n2+IZDuZMaVNFdzy2UhBP8KTIEzPLKhXRntNdMcX8fE86lJ+yrw6keo07UEiXpmI1yTSLe0uQ2t0xsvpuYfWHDNedgM+vfKtdlKlpHplcB1p5AFGnDjVTgQVnhXU/x97bRJoHX9HsH6I7/jzj6aU4mQ0xJM4CsMgCAMSB9M4DqeTJJvgeJRtNIqQFilMU9g5A6rA9qimRt3ncH/+VMO225w5AVTNwCtZfnMPY+NZVNBer0Z1HHc1TxIpOcViZ6DcA/I/5uUboaHr+N0NlQ/xU6tg97uVdqbWWr/VtaFgfwv2vaCfLMWmNBhOQ5L2p3EY90cZmfRnBI/7eJaM44jQdJSd8ybw7Sc79O1oIhYAAA==</values>
@@ -782,10 +782,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:22:11</sys_created_on>
         <sys_id>d402bc1f3b009b50ebe9c15765e45a48</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:14:35</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:32:15</sys_updated_on>
         <ui_id>d44eea2c-dcdf-4794-b39a-e25054a2297c</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WbW/bNhD+K6yAAc7qqLKdxK3zYSiStgvQpFuaBQOaVqClU8xNolySSuK5/u+7IylZjZ3EQYsBG5YvMY/38tzDe9GHeSDSYBT0h7vDXQ793cF40B9E0WAn2UtTgCwbjnv9bCfoBpIXgJqGj3OI7aEbXPG8IuFNrGUS62kR34AqYxFH7sdUlX9AYmLD9Z+ongo9zfns3Fv9jirsF6fCzpxKMhF5qkAGow8fu8GUKwxkQAWj+a2rTWHnfAw5qp4RbnbicK/Lxcyma2Vv1zkoVUqgom4ANwZkCogm47mGblBwmXJTqlkwMqpCgQKevpP5rNGYCGnQYUC6N1r8hWGfR6SXAaaXgLtrjrGnzYmzQ274e/ScmEp51WRSigS0IyaFjFe5OWjLnMK7qRGldCY2TW9d5lUhTxwlQeOgfiWUVBpBwJTyJOQ+jez9pLw+rVG+FtJS4i/zMuF5c+LGKDGuDOGZB5U4W8O1k9ZsE3UohBwKjBkXfDoV8pIK6krYOAi7CC9zPIRZXl4jPi0uZcgTyjHEF+Dha5QfWvE5V4JiHaMbNF50Az3TBznXepk28h1/rgi0I8GnGzvGyCRRYmpeYoAr8JktunX/jO8tRL6suUxAnupW7+hJqQzBt+4R/EWF9mmWbjsJpJ+04QZWxbbFeFFW0qxeJqVSkHNyGIvU3c/nQ76XDpLoxTZEANs7MIbtF897fJv3xy+y3t7O4Pl4GAoDRUgte5QuFp+wB6EOMJ/rakx0h76z8d6UU9vfd2sg13FCZNundnqbTAyXoLo790lZKb2WLmK0sVvBFC41KAFRQJyUUhvFRZ2p0ygl8shzfBuI3cO526/JXZ1s/7/pf+BNH7mKHp4A9Sp6XY+A2yOhXkFQYDEZiN2IuLWG/CU795d+FfW+1yra242if9M2cpl9h2V0m/V/cCFhsKkGLE6nXYd7/J5qbdSVjeWIcjLKfGVIWeE9JriyFKMmPbNzhLm+YVka2+ziQRxnpYqBJ5P2vNm/kG1DyuRhU0oBDS+kyFjnyTLoFptfSIZ/ZqLKaybhmr1SqlQd8tgf2k9KCsuODpnQrBBa4zOF7nYLPS7IKeEhrTenNRJy9IYe7xRwEKQdF8SZbTLXnOaFpBDOc8jT9NcK1MxDWx3e/WG3RWfLUoN5KwphOr2W8LP1tWVJefYMv5sBK+YKkAhgSaVooDNijSGRjEsGN0IbzN0mGjoivSuJk6Kz1VCpAJtXekLCS3DN5mGvXWUtKhHKb9qhsORbCNcTkCzBaWMBcMuuh+GDtathH+tY8ytI6yZ/zE6jeIsFVftyfWxUyIWQNAPqAsD5ruFIms7dNQnIZ4ET4thZdlkv2mpqVGCLnnS80xVuHWlRNIoi97NdiRZzjeOYmwkNECzpGuEztmcDedSNan3/A97vN84m9XXLbYJQ2U81CvePPfUaI4YDHN+pY49NoKIV5n43VqHxQidHi88dET31NqOlTbHy6nZi0VfRRs9HmpWmEnp4mDhdgqSvhUkmrLO0ti/l3irhGjzQlwdnR+evatD2tvWavf11JqcHP6PN4V1Gg8bIr7T1fhfraGl9FX5TbbuIm1e40+9Fbq65wqBvt68c41bjD7sms9Cu1trZatewL1+Yk5D2ShNFddP489cNwn600NaWVfPRuRF77QzvT2i5oawNwn+yzPNO+BTDaqyhsWV+iyQnfIgTq/VNA3WJgMbqYvHxb2U/o70kEgAA</values>
@@ -795,7 +795,7 @@
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
-        <comment>Looks for the resource assignment of this task and rate model.</comment>
+        <comment>Looks for any resource assignment of this task. If one exists, no new assignment is created.</comment>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Xero - Process Tasks Page">8c027c1f3b009b50ebe9c15765e45af6</flow>
@@ -806,13 +806,13 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:22:11</sys_created_on>
         <sys_id>5402bc1f3b009b50ebe9c15765e45a49</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:14:35</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:32:15</sys_updated_on>
         <ui_id>a2400ee9-9b53-48bc-bb8a-d368d33bb0a6</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8A5eQQKBvp1ZIK+1tpW2vL3t71iR2WmuNnbWddlvE/77j/ACWpgWucOrpnlDsieebb74ZT/iy8Dn1z/wRDab5dDqaJEEQRUEwHkcZhGkajbM0SNPQ7/kS5gwtjdKW2MeC4dI9iHK1BibDJcpNIeDxptkBzyrvCdezOy6oZtI/+/K15xeg8TTLtH+22NraF46AlAk0vULf3nWNpwNi9XOGPhTP2uePzavn7aLS1EGJej77YZmkDDHkIAzr+XOQFKzSj6sVzYBeSrFeuOPS4mm+M/5h+BP6i4bOLmcYVcbqvdUjaSiql/MLsHBldZnZUjemNViDfCxWYa6I7OC8gR8se2v7J2cP2/aUbb4QLpFvynIohT3/Zz7DQ30Onc86wMvCcoVZ9yOXF0hFG74S5Vx+qnPprxDedIit3rl4QXOlQbJZ4RLqMtSkK7+6Uw+f22zMuKxwNZtCZSBWT2Ct5mlpHS8LP6ck50xQwqXg0nnCtDn5MMHm6IHMoSi4vCWFVve8OhVjmQ9uBT4McqEeHBf8Vg4gc5EPUFgwmOH6RbV8A5o7Fv7AY/DlnnN4h682/ojJNC8seeD0ltm199aKKvsA4lvXfqM40iaqCs9f9nzzaM4FGLMmG2VKvpeOg5r6hj1SJap6pULxO0ZwzxqinAaqsg1fLVugWyVaJ3pDL8/7x8GdYw8ILQuXTpFe+vgSqqZ11DmvLH5tHzO34X2qN1p5H62FTILjtJCuEn9eggdV4PPSclJ7Q2WdsIC6KvZw4dfc7FL/9NVLa7rWGc/JHPnkhWBEswy1YwhoRnJVSkrq4DbKwpGdc21sY/y8TD4zTL30FGrKs3fMq6y9lfWBJbQ7jraEPuReG0jjzXgYiFcF4q0COSzsQ67s+Gj1Fh+p3tbX4Qy4qLJhLCs20sm0VvqFa3tHIl9RxJ53+p6gwqOCevul31UCnZf/DqxHHglO07iOfzFnDNJ4COMkCsMgCAOaBJMkCSfjNB9DEufrGiXEyAxnCTw5R6ng8aSVRpvn8Hn/aUaNw/rMHqBaBV4o+VcZBMPEeg4VptdrUe3G3fSTVCnBQG41lGtE/tusmodWch29u6byr1ziby2Gkl9vM10vdXJ9qju/5H9K/r1kH5zEJiwYTkKa9SdJmPTjnI77UwqjPkzTURJRlsX5KeZgOnp1CN2YBDIlKXdxmY0Cs2C+OblHdLGgccwYDLM+zWjej5Np3E+jKfTZcBSMYhgOp0k2qNvbcvm3BsvIXFEm2vdNmToSB+ud5bKjfk/v8bDesAeDbW8436Swi9Z2nthe+9h1QHv/HbEFBP+lJvAuJ/kTDez01UEX4rWe6uM2/tiQpBAYHgaP34vajbNGlRrziRARv+Oga0qvjbxfjA4sjN2Y28K4bkBvxdCUQ/XY9Vlbvbb1WRv8Pz9r3+d4iIC4QIWQOoW1pvDIe5KJ0lQbGqRpvqeOd7t9/QmdoMOyLRYAAA==</values>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8A5eQQEjfTq2QVtrbStteX/ZWlhM7xVpjZ22nXYr432+cH8BCCmQLq57uCcWeeL6Z+b7xhC9LlxH3yh0RL87ieDSJPC8IPG88DlLsJ0kwThMvSXy35wo8p2CppTLILHIKS0+YF+s1rFNYIkznHC8e6h3sGOm8wHo6Y5woKtyrL197bo4VnGaocq+WO1unwuE4oRxM78C3c1/haYFY/lyBD8nS5vlj/ep1sygVsVCCnkt/GCoIBQwZ5pr23DkWBBupFusVRTG5FXyzMGPCwGmuNf6h2Qv4C4bWLqMQVUqrvfUjqlNULWc32OA7o4rUFKo2rcBqyMdyHeY6kS05r+F7q97G/sXa4117Qrdf8FeQb0IzXHBz/Ws+/a4+h9ZnFeBtbpiEqruBrQtOeBO+5MVcfKpq6a4RPrSQrdq5eYVzhYZk09wW1FaoLld2N5PPn5tqTJkocdWbXKaYr5+wMYolhbF5WboZQRmjnCAmOBPWE5TN0odyOgcPaI7znIlHlCv5xMpTIZb54JHDwyDj8tnmgj2KAU5t5AMgFh5MYf2mXH7Aitks/AXHwMs963AGr9b+kE4Vyw16ZuSRmo33xopI84z5t7b9mnGoKVQZnrvquXqhrznWepNsoCn6XtgcVKmvs4fKQpWvlCj+hAieaJ0oy4FStv5B2WKyI9Gq0Ft82e8fnTvHCRCaLNxaRjrJ4jVUdeuoal5a/Nw+pnbD+VRtNPQ+WwuZeOdpIW0S35dgJwXuS8tS7Q3KuqCA2hTbnfhVbo6xPz54acUbnrEMzSGfLOcUKZoCdzTCiqJMFoKgKrgtWdhkZ0xpUxvvy+QzhdILRwKnHDOjTmntrK07Suh4HI2EPmROE0jtTTsQiFMG4qwD6RZ2lys7PJvewjPpbXMdTjHjZTW0oflWOalSUr1ybR8p5AFGnHinnwjKPyuot1/6bRJovfyPYD3zSHCZxnX+izmlOAmHeBwFvu95vkcibxJF/mScZGMchdlGowhpkcIsASdnQBU4HjXUaOrs7/efetTo1mdOANUw8EaKfwrPG0bGsaigvE6D6jjuup8kUnKKxU5DuQfkf0zLeWhN19G7ayq/5RJ/qxgKdr+b6WqpNdeXuvML9rdg3wv6wVJsQr3hxCdpfxL5UT/MyLgfEzzq4zgZRQGhaZhdYg4mo4ND6NYkkEpBmI1LbwnMYP3N0j0gyyUJQ0rxMO2TlGT9MIrDfhLEuE+HI28U4uEwjtJB1d5WqxZhvuGobmo+IeZGzdfbQbclopkAdtc+th3Q3FhnFK33X5Ltu5y9LzRik4OjKQ43fKqO2/orQqCcQ3gQPHzhKTuAalkoqCdABPw2B21zdWXk/GTUURjHMTfCuK9B78RQy6F8bPsQLV/b+RD1/p8fou9zoANAjANDUFXCilNw5BNKeaHLDYWFrr+Azncfff0XatwOj98VAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=5402bc1f3b009b50ebe9c15765e45a49"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -830,10 +830,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:22:11</sys_created_on>
         <sys_id>d002bc1f3b009b50ebe9c15765e45a4a</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:14:35</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:32:15</sys_updated_on>
         <ui_id>6ebc6c28-3ff5-4253-a23a-1023df14b5a7</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/91VTW/bMAz9K4XOtmHZbhLnNrToaWuBduilawxZohthsuVJctssyH8f5Y8k61psA3bpfBP5KL5HkfTdlkhBlmRGIT7N6YynNE2TOE4WGS1naUkTkTKAjASkYTUg0rFSQdEfAvLIVOeNtila1TwUzLmCawOFAas7w6Fg1sqHpobGIVxI2yq2uR2jrkfQyU8gvpZKGGjI8u4+IC0zmMqBIcvtC9efElesBIXQz575G0Lcpn3V9vE49uRycGgjPJ84IPDsoBGARCqmLASkZo1gTpsNWTrTocEAE1eN2uwRa4kql4R47LOV3zHtIva4ClAZh8G3PxZjzQZzdc4cu8GbuevMCOVrLTnYoSYCKtYpd3ZsGwBXrZO6GUJ6mWO0Vl3dXA4lIfsLpidCS2eRBLRep2c+yqhu1vrpemJ5IZu+JKNTac7U/oRNYWTZOc9nS0CBf+iiZm0rsWVaox9lH4xc6uhB4SGqlH7CpL4rIsY98QjLyqILtJ/35ltmpFfxCa/B4F1A7MaeKeykgxYsYvGt80wGZaOGYiiDD+FGtu4DJniEke4umCZCQJy/2Vi0PDRSPwT2aBocs1+/dHGciu1WZBkAS3gouKjCbJ5nYZnmLITkND7NWJLkcx4ZwKERu93qMAiF777hEnwAs4Kq0ubYusbRsSvDHBS1FqCmhLYrffWigwfvNVrBBMhpuaB0noU0XZRhlsZlmJd0HgJN0nKRJhmN82g/vz5yt/t1dv9LjX+5en7fIdPquZCghH2lZaa9AzUWF8UMLfRi94zOk9vROe4f+q/2D53F/feOttAg7t0voaP/zRvr6P4HmaWtdqIHAAA=</values>
@@ -882,10 +882,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:38:48</sys_created_on>
         <sys_id>fbc5b0573b409b50ebe9c15765e45a03</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:11</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:29</sys_updated_on>
         <ui_id>e44ebc8f-3fcf-458e-8905-331adfa721ab</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1X22rbQBT8Fz1bRrLueQuUQKBtoEnzUorYy1l7yWqlSCsnrvG/96x18SUJCWkILc2bd3R2z8zZGSGvnbI1VWuaq/K0aeRcOyc/1o7kzokDEM8SFomAel5GIw8oZMyPkjiCMCIkdiaOJgVgZUXmkLOy1QaxJVGtBT38zWVTKbK63oPYQipeg+3zc4I7azzCQO2crI8emVUFuSIUFO481wbmWDV5MbVh5wG3x/jaPojJsUNZc8snmDhwb0BzwI6CqAYmTkE0J6asVyNSA+EXWu2ABR6Exzm2+L6Rv/Ds0LN1AlAag+7ZuMz7EXUwW5SSwUVlZKk7xBCq+j2sVG2hv3YS7HBBkFaZYbiItA2eB5XlbEn0jMTlorz7NjQ8k3orr3+oSkbUuCLG1JK2Bhp7H628Op5NB31+cCugoMCeeUGqSup5XtXlUm77IO1iOle4mApV3iE/67IpYVbjFKdJpmeIf9rC16SWVvAXPKbv913L2xbO7a1nhCZpIsDlggk3TELukjgRrpf6URSDzwQXzmY73Py2tbK6MfUDybuZYkHDalmZU6SwhF77ZvJ3uP7d7D37sPf/aO+ExZDGggd0xrLAP7JWFOxcZEhz0+QMHWDQIjuHr9dboctey/SgbrN56P+3eum/gPqw85j7E5I+svGvZMPn2SwMOXc5peCGWUBcSgPfDUlKOeeR8Gn8x9kIPUKjFIKAkpQHx69dER8ayQpFvkXzTDbGusey8fyG10XnEi9Tz4fkvEDYfnL2lT0huE9OM7Tpg+O/WXBSz/vXozMO5zA549W8S3B4AokIw8zlLEzdMOKZS1kaux6kMx4TwZIIXh0c+72i7Z+HzoGDi/slByYbJHxlsfO9Or5CV0m2D92V9Y2VusM2vwHum3mBmgwAAA==</values>
@@ -909,10 +909,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-15 02:47:56</sys_created_on>
         <sys_id>68cec2313b6c9310ebe9c15765e45a81</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:28</sys_updated_on>
         <ui_id>043344cd-07aa-4c41-9600-eb0e69cd48e3</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Uy27bMBD8lUBn2dDTqX0LWgQo0DZAY+TSBsKKXNlEKFIlKTuu4X/vUg/HSG20aHvszZzlzs6sht4HunVN6+xS31grVipYfHkMA6E8Rr/3gYIag0XAtOLCCa2KDgiDDcjWF5Zgn66YQXDICebCNhJ2D+erbC0kNzhMacAQl0MTLPavSm7XYCGhREkk984ItaJ2welURVDFcxazNJmlSRQlb7K4nKVlnPAUEFK6Nza+HUVffeiQ8KIbP49wO07ShntZcRQG+OxQcZK/qEBaDIMaFAenze6IkD9+p+QLsBbKEV3gLz9b8Z24kzz3Fyskjwz74vFYDGvrYbbWguFd4wX2iINSDj1My7ZWn3offuFYQSvduHBCWkt82HjRXsUgqbpf6+3nceCtUJ3BoSg1A3k8gaM1lK1D6z8MSqyJqKihaWg5RWP0RnTNpKWeriQdppXUWxrqEzQF5oVPaUcwvSX8XQc/gBHexUeioeZeZglWsKJLG9E5QxYO3VqKb60X1BscrBT9NuiCZUY07obmbHBQfQh/jupJSvd7nmWIkLAJZ7yaZNfzbFKmc5hgkkd5Bkkyv2ZT68C19nD42kZRyi+m+i/Z/sUrmENe5XGUn38F2ezcKziT/8vRT34Rff+xfjP5URT9j/5p9IUt+ggP3rrhf5z8Rx/zfoLtc8ORCUtClh57P/6X+8KOAiDYKbTV5slbeMEOPwC5RTcyFQYAAA==</values>
@@ -936,10 +936,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:37:19</sys_created_on>
         <sys_id>ca75305f3b009b50ebe9c15765e45a13</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:29</sys_updated_on>
         <ui_id>0e04b66e-38f2-44cf-a9ef-aa073b329271</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1XXWvbMBT9L36Ogx1/960wCoVthbXbyxjmSrpKReWP2nLaLOS/7yq287WWlm4rlPUloOMr3XOO7kmclVN1pu5Me1Wdtq2al87J95WjhHPiIMazhEcyYJ6XschDhhn3oySOMIwAYmfilFAgVdYwx5xXXWkIW4DuLLhaZZDMQt9PXV/SR8ji1GVZHLlBNuOZDzL2RTTd7V2vabdQba1h+W04hBB+rbRo0BL7MaFWDfU02Dgnq6NHZlljroGhpo3npcE5VU2erWXceSDmIYG2D2Fq26FqhOUTTBy8N1gKpI4SdIsTp4BSgKma5RZpEMRFqXfANR3UKy3gvlU/6ezQs3USSRofXNgu88Gh0ZxKcbyojarKHjHA9Ohcpbui/NxLsN6ihE6bPW+7ls7D2nK2JAZG8vK6uvsyNjxT5Ube8FBXHPR2BcY0inUGW3sfnbo69qaHPv52K6ixoJ55AXWtynleN9VCbfoQ7WI617SYSl3dET87llPgVuOU3ITpGeEfNvA3aJQV/ImOGfp9LdVth+f21jNgSZpIdIXk0g2TULgQJ9L1Uj+KYvS5FNJZb8zNbzsrq7dpMCTvPaWCljeqNqdEYYGD9vXkjcbk1fIwe8/D/5iHhMeYxlIEjMY38I9GKwp2U2SgvWlzThNgaET2I7ERuhi0TA/q/uWvxDOojzuPuT8i6T0bbyUbvshmYSiEKxhDN8wCcBkLfDeElAkhIumz+I+zEXrAohSDgEEqguOvXRkfDpIVSnyL9olsbOseysbTG14WnUu6zHI+JucZwvaTs6/sEcFDctqxzRAc/68FJ/W8tx6drTmHydlezasERySYyDDMXMFDen2JROYynsauh+lMxCB5EuGLg2PfV0r796SfwHGKh6VArloifGWx8706saSpUnwfuquaGyt1h61/Ac7bd/X8DAAA</values>
@@ -963,10 +963,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:22:11</sys_created_on>
         <sys_id>1402bc1f3b009b50ebe9c15765e45a43</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:28</sys_updated_on>
         <ui_id>7a6d3c09-e0ee-4ebe-981a-a2b9f16438b7</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/51SwW7bMAz9F50Tw7JTL86twFCgh61AV/QyFAYt0YlQWdIkOaln5N9HxU429LiLbT6Sj++ZnJgdohtieLH3Iai9YbufbyumTMLoe2IGemQ7piL2ga3YEfSQ4mmq4Uux4Xy75h09Nm21Xbd1dbcu60LUHLqKy7ssQngP5zM1ShWchvH1f/vFQWnpcRHowJOuiJ7tpk+pODpsNLSoacwzCutlEq4khbyWXc3zWpRFVRZ5Xmw3vK3KlheyBJQV1V07HxfDn/wndgr9jZdeSUWRrxh+RDQSaVAHOuCK9WAkROtHtot+IMAjyCejx1vFQZlIdCzVfgT1m7h5nqfCDsmRwDl5C5vlN86wOFgl8MlFZc2MRGj10iOsHnrzfZafFoAdDDpeF0DIEIgPXdKcVCySuh8He3q+DnxQ5uJvSWorQN8iiNGrdogY0hpQY09ETQ/OKbNvnLdHdWkmLX221xRknbYnGppOLQORhGf0iyB7IPzrBX4Fr5KLb0RDzeeL++bXkObOPhbFzWyaCoLwysV7ojviIu78lm51ZgrzYUgUKtDAl4Q9Xi88JUZashL/Qifr35PUv9j5D8VYKlIrAwAA</values>
@@ -990,10 +990,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-15 02:46:46</sys_created_on>
         <sys_id>6b7e8afd3b2c9310ebe9c15765e45a36</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:28</sys_updated_on>
         <ui_id>ddaef489-109e-4c69-a295-d14c1665091b</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WXWvbMBT9K0PPcbBjObHzVjYKgW2FNevLKEaWrhNRWXYtOWkW+t93FX80TSmUMgYrebOOru499+hw5T0pG1s11izLC2PkSpP5r9sRkdph+L0nmhVA5sQyc2dSXgOzIMiIbJhqHO7jt5CmUmx3cwTxtVSihi5dxWrMYqEm8/3Jlt1VkCqWgcKTC21hhVFIQOAyTijQSS7CbMKTMPAhg4QH0WwaAY0YyzGuP7l09D59Hui9wtpVQ1gOdcpaOFaTEYEHC1pg1DxnysCIFEwLZst6NyCYRlxp9QSsMRGmIy74wcjfmJv6Li4HbJBDuzcs006oFubrUnK4qqwsdYtYlqnuDC9VU+jvbRdOYshZo2wvMSKNwXxQOc6ORMcov16X2x99wUupD+11m6rkTA0rZm0ts8aCcbfSyOWpNi309cXdgIICa6YFqyqpV2lVlxt5qIO0i/FK4WKcq3KL/Jylxoy7HseoJhtfIv7lAN+wWrqGv2Gart5PLe8bWLi7hzjLkynEXpLz2KM0oV48mVEvobMwimcBzZKIPB7ETe8b11YrUydI2mqKAYbXsrIXSGEDXe+Po2e2dg0gj8Ic2fqlq99t6muUWa96T0+zaZb4EIYZi0UYnXha0CNPn3J7hXLnadOX6Swd/DVLx77/v5t6EOe5p4er+SeWppyxKJz5HgvE1KN+zNHSlHtTSBI/EFkUhvzdlr513m2rt3P7rRP0PN/P8/0Dzve3DtvzO3B+Bz7YOyCAS4Oslo7Cov+Tdxs7tI7kx9C2rO9cP0/Y4x+X6IeEEwwAAA==</values>
@@ -1017,10 +1017,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-15 02:48:30</sys_created_on>
         <sys_id>fcee4a313b6c9310ebe9c15765e45a72</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:28</sys_updated_on>
         <ui_id>56b7da1b-7324-4291-a401-f035c5389956</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1Vy27bMBD8FYGnFrUFP+RYck9BiwAG2gZo3VyKQKDIlU2EIhU+7LiJ/71LPewkRYseevRNO1zuzgx3oUeivau9syt9aa1YK7L4cTsgQgUMvx+JohWQBXHU3tmcGaAOOBmQLZU+4PjJha0l3d+cELYRkhvoitXUYA0HhiweXx25fQ25pAVIvLhUDtaYhe05hmmWQDIp+bSYsGw6HkEBGRvP5hczSGaUlpjX31wFctGHI7k/cA7dEBbHPtrwwGoyIPDgQHHMWpRUWhiQiipOnTb7I4Jl+LWSJ2CDhVq9FX2w4ifWTkYhrwQUyDovjmHe+dRbpAWD69oJrVrE0UL2/mnpK/WlVREchpJ66Z457C3WgzpwDiQ6RuW3jd597RteCdXI6w6lZlQeI+qcEYV3YMOreLF67U0LffrtbUBChT3zita1UOu8Nnormj5Iu4rXEoO4lHqH/MJAxZQFjTG6SeMrxD828A01Igj+jGW6ft+VuPewDG8PaVFmF5AOs5KlwyTJkmE6mSfDLJlPZ+l8nBTZjBwac/N7H2S1NnWG5K2nmGCZEbW7RApblOeMhx4Lsl8OCAJ/S8dmzhsV4ThbQD/elDxvRDVit9TEL8pFT0/RaBCNR2+jd9H4PTkcDrdhbVrZ7W7965yfd/C8g+cd/F87yIEJi3asgvZl/6cLB3scWsGeQztt7kLtE3b4BXXKu1czBwAA</values>
@@ -1044,10 +1044,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:35:40</sys_created_on>
         <sys_id>ca15b8d33b409b50ebe9c15765e45a94</sys_id>
-        <sys_mod_count>57</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:29</sys_updated_on>
         <ui_id>294acb5a-7bfe-48d4-9724-48cacc932784</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1UTYvbMBD9K8Vnx/gjduPclpaFQtuFZtlLu4ixJCeisuRKcrJpyH/vyB9J6GZpKXvsJVhPnpn3nuflEOjOtZ2z9/rGWrFWwfLrYxgI5TF8PgQKGh4sA6oVE05oRXogDLYgO3+Bj0zYVsL+4YzQjZDM8LFbCwZrHDfB8vDbldu3nEiouMTClTNCrbFcMDzVMdRJSROapUWWxnG6mCdVkVVJyjLgkOF7U+G7idybjz0Svsjaz0PcTpO0YZ5WEocBf3JcMY6ja5CWh0EDioHTZn9CDAd2p+QZ2AjlBsUNPFnxE3unee5frDlqpKMdpyMZrZpc0oLyu9YTHBAHlZws1LJr1OdBhzeZ19BJd2FyZ7Efbz1pz2KkVK82evdlGngrVC9wvJSagjydwKENVee49R+GS95gI9JA26I5pDV6K/pi5NJEa4mHqJZ6h0P9pkRAPfEIPYLoFvH3PfwARngVn7ANFg80K7CCkn6rsJ0zKOHY20J+dJ7QIHCUQgY38AVLjWjdDc7Z8pH1MXy+khfbeDiU8DadJ8liltT4M6+Kxawqi3yWlSktE6iLhOURIQN5Yh24zhISNdxaWPPj8VsXxxlbdZQi8ny5X3/Aa2SlhLzOkzi/npV5cS0rV1LyckDSPwTEf9K/zEccx/8DchkQYcmw6KO2fvg/5+PRh2GYYIe9YZwKi0TuPfZh+mf3F3tcAEEvoZ02372EM3b8BY9SP0IjBgAA</values>
@@ -1071,10 +1071,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:22:11</sys_created_on>
         <sys_id>9c02bc1f3b009b50ebe9c15765e45a45</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>61</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:28</sys_updated_on>
         <ui_id>d2580b4c-c8ca-4d7d-8034-f567b233b303</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1V22rcMBD9leLntZGt9V7yFtoGAk22JEugtKkZXZwVlS3XkpNsjf89I1+SpUloKYW+9M060sycc3YO2wamcVXj7NYcW6tuyuDo8/UsUKXH8LsNSihkcBRwUwrllCmzHpgFt6Abf4GfQtlKw/7qCeE7pUUtx24V1FjjZB0ctT9duX0lMw1Maiy8dLUqb7BcCTzlBPJ4zWNOkwVNCElW85gtKIsTQUECxXdT4duJ3JsPPTJ7lbWfh7idJplaeFoxmQXy3slSSBydg7ZyFhRQCnCm3j8itQSxKfUTsFOlGxQXcG/VD+ydpKl/mEvUyEc7Ho/ZaNXkklFcbipPcEAcMD1ZaHRTlOeDDm+yzKHR7sDkxmI/WXnSnsVIKb/cmbuLaeCJKnuB46U2HPTjCRzawBonrf9hpJYFNsoKqCo0J6tqc6v6YuRSRDcaD1GuzR0O9ZsSAffEI/QIohPE3/XwFdTKqzjDNlg80GRgFc/6rcJ2rkYJXW9L9r3xhAaBo5RscAMfWF6ryh3jnFs5su5mz1fyYBvbFpI5IVKuwzVLaThfMR4ytoJQ0MVKUMoYgUVkHbjGdt2XhhAq4q9tK+fLJSUxDQWnaThP5DKEBfBQkCVL1oIJkifRheS4MF13enm+2b4/+7j99Hz7/wGDv5G2NaR5GpP05bTNFy+l7YWcvR6x5BcR80vxmwkjhPyP2GHElM2GqIza+uF/nLBrH6dhgh32RkiuLBLZeux0+m/wF3tcAMUPoTtTf/MSnrDuAdlgiQllBgAA</values>
@@ -1098,13 +1098,13 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-20 04:58:41</sys_created_on>
         <sys_id>3cac5c673ba8d350ebe9c15765e45a63</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:28</sys_updated_on>
         <ui_id>2f57cfd4-1043-4518-ae54-3271ea3721d4</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+1WW0/bMBT+K5Zf10YpaUvbPaENJCS2SqXwQlHkOCfUwrGDLy0d6n/fcS4Fuov2Oom3+DvX7zvHVl6o9q7yzi71mbXiQdHZ3X2PChUw/H6hipVAZ9Qx+5hWRmcSSkt7dMOkDzh+5sJWku1uXxG+FjI30CarmMEcDgydvRyZ3K6CVLIMJAZeOyPUA4aLHE/jbJxNY0iSjE3yZBRDBlM+GJ2ORzAcsXyIfl3gcW9/aDkUQ9h2ZbTJQ0+DHoVnByoHLFswaaFHS6Zy5rTZHRADLJ8r+QqshXIN25I9W/EDU0/iOA6eBSBB3mpxOKatTp1EWnCYV05o1SCOYaOtUUtfqu8NjaAwFMxL90ZhbzEfVKHr0EbbU3G91ttFV/BCqJpga5SaM3k4MYcyZN6BDVPxYnkkToNcHY8GUEusmJasqhAJ8m5EXQWbLqMHiYeokHqL3YV1ihgPDCNUk0UXiH+t4VtmRKD7DdNgcCh3o8STh8sw+iFnbJScxn02yMf9YTzh/cnJkPfHMJ3GgzwbJQmn+1ra9MkHUo1IrRxpoyg6WG5E5c6whQ2Sc8ZDhwXS7/cDgb+5YzHnjSJFntZcao4bZqJ3WcgnsvJxfHJ6tzi/nt8svpyTxfzq/J4s0YusaGNEry5NmqRpoU0KjK8j4aCMwvIe0qzojChNDFjtDQditASyFW5N3FpYEnyjJjfHBXWQ10a80oS9D4pWK9Wk/Ez3+/19uMDNCJpb/q9X7uM1+HgNPl6D//01ILjQv7Ox+hcgjPTX9yIHLiwObxkmddn9HwTDDgsL/hbaavMYJHnF9j8BUd8MZGkIAAA=</values>
+        <values>H4sIAAAAAAAA/+1WW0/bMBT+K5Ff10YpaUvbPaENJCS2SqXwQlHk2CfUwrGDLy0d6n/nOJcC1TbtfbzF37l+3zm28kK0d5V3dqnPrBUPiszu7ntEqIDh9wtRtAQyI47ax6wyOpdQWtIjGyp9wPGTC1tJurt9Q9haSG6gTVZRgzkcGDJ7OTK5XQWZpDlIDLx2RqgHDBccT+N8nE8TSNOcTng6SiCHKRuMTscjGI4oH6JfF3jc2x9aDsUQtl0ZbXjoadAj8OxAccCyBZUWeqSkilOnze6AGKB8ruQbsBbKNWxL+mzFL0w9SZIkeBaABFmrxeGYtTp1EmnBYF45oVWDOIqNtkYtfal+NjSCwlBQL907hb3FfFCFrkMbbU/F9VpvF13BC6Fqgq1Rakbl4UQdypB7BzZMxYvlkTgNcnU8GkAtsWJW0qpCJMi7EXUVbLqMHyQe4kLqLXYX1immLDCMUU0aXyD+vYZvqRGB7g9Mg8Gh3I0STx4uw+iHjNJRepr06YCP+8NkwvqTkyHrj2E6TQY8H6UpI/ta2uzJB1KNSK0cWaMoOlhmROXOsIUNknPGQ4cF0h/3A4G/uWMx542KCp7VXGqOG2riD1miL9HKJ8nJ6d3i/Hp+s/h2Hi3mV+f30RK9ohVpjOjVpcnSLCu0yYCydSwclHFY3kOaFZlFSkcGrPaGQWS0hGgr3Dpya2Gj4Bs3uRkuqANeG/FKR/QoCBf6dzZaX/ow0ni1Uk3Rr2S/39+HK94MqXkH/vVSfr4Xn+/F53vxP74XHJiwOLxlmNRl9wcRDDssLNh7aKvNY5DkDdu/AlodsryLCAAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -1125,10 +1125,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-20 04:58:06</sys_created_on>
         <sys_id>1c8c18673ba8d350ebe9c15765e45a4e</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:28</sys_updated_on>
         <ui_id>82f49db6-b8f9-48bc-afca-c81d70747cab</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1V22rbQBD9FbPPltHdsd9C20CgaUoSAqWkYrQ7speutKp2lcQV/vfO6uKEOKWlFPrSN+/ZmTlnZs5aHdOtrVtrbvSpMXJTsfXnuzmTlcPod8cqKJGtGdeVkFbqis3ZPajWYV2H8XIZ+UHkCR4lXhzi0oMUuCf8ZR6uRC78IlxcIdeN2O/Pr99dfLz59KXrgpgv45NV4C1XcerF4CdezvPASzFOOKS5CE6Sl2nEK6SpFexu/xE930olGhxHVENDk7HYsHX34sruaswU5KhI5bVtZLWhdCnotIKkSAI/4VGYRqHvhydxkKdRHoQiAoxTipsS3zyb+CtLcCQEmak8iXVaQn/O8NFiJZD4ClAG56yESoDVzY6tbdMS0CCIy0rtDhFbWVmqxlzso5Hf0VXyfRdZIDXGcbg9HLNxGQPMt1pyvKx7bT1iIVdjDteqLasPQwtujVhAq+y0RkJaQ/WwdqKdjFFTcb3VD1cT4Zms+gbHS6U5qMMJLI0hby0atw1UWFKhrIS6puFkdaPvZZ9MWsrFRtFhUSj9QKTO8wvgTviCZgSLM8Lf9vAtNNJ1cUFlKJk2aDLDG1lPvfXkbN9PJfvWOj1Df2Mn2TAMChjSTonmHkfR+/nx28p64OmBDR6cSTPDsra74ydwHPA3TFr4UAQrHrxuUoheM+nsfY8cW3Xq6Sd+DX7h1xH5LcMmyX+/Pverk5mDkTzr/8+pnHv9f2zYO2fMgcIMHhLIpSElNw47n74Z7mJHW5f8OfSgm6+uhyds/wPc7VzsfQYAAA==</values>
@@ -1152,10 +1152,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-20 05:11:24</sys_created_on>
         <sys_id>4b8f106f3ba8d350ebe9c15765e45aaf</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:28</sys_updated_on>
         <ui_id>b60bd33c-5571-4b67-bd1d-8266e09c296b</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WwU7jMBD9FcvXbaOUtKXtnpAACQkWCbpcaBVN7Am1cOxgOy1d1H/fcdMWqLSrPa+4xW/GM++9sa28cduEugl+as+8V0+GTx7nHa5MxOj7jRuokE94AP+c184WGivPO3wJuok4fUrlaw3rh3dELJSWDnfFanBUI6Djk7ejUFjXmGsoUNPG++CUeaLtStJqWAyLcYpZVsBIZoMUCxyL3uB0OMD+AGSf8vYbj7n9gXJsRrDft7FORk69DsfXgEYitS1Be+zwCoyEYN36gDgEeWv0O7BQJrRqK3j16heVHqVpGjNLJIFi58Vhme982ltklcDbOihrWiQAEd0FrW4q86OVER3GEhodPjjceKqHdWQdaew4lfcLu7rbN7xUZitwF9RWgD6sIJANRRPQx6k0anpkTotcH48GyUvqmFdQ14REe5dq24VIV8mTpkVSarsidvE4JSCiwoTchOSS8PMt/ABORbk3VIY2x3Y/jXpp8CqOvi8ABtlp2oWeHHb76Uh0Ryd90R3ieJz2ZDHIMsE3W2vzlyaKak3a2ZG3jlKCF07V4YwoLElccA3usSj68/kg4G/p1Cw0zrBS5lstW41LcMmnKuwbmzVpenL6eHc2vWA3t+cX13M2pRQ2422EUvY18izPS+tyBLFIVMAqiSf3UGPGJywskDkIyCorUbMFeGYs08ogo50UVp45qzFpmwg6pgElW6mwoIvNoN0c85PZzLR1v/PNZjOPV7gdQnvP//XSfb0HX+/B13vwP74HEoXyNJxpnMTV/g8gBtbEQ4mP0Mq65yj5Hdv8BmUyKk9LCAAA</values>
@@ -1179,10 +1179,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-20 05:10:24</sys_created_on>
         <sys_id>9c5f182f3ba8d350ebe9c15765e45a6e</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:10</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:28</sys_updated_on>
         <ui_id>3811036e-64ab-463b-94aa-d57ce02c565b</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1V2WrcQBD8laDn1TKjc+U3k8RgiO1gL4YQHNFzaHfI6IhmZHsj9t/do8NefJAQ8hLIm6ZG3V1V6kK9V3e26axZ18fGqE3lHX29WXiqchg+914FpfSOPF5XQllVV/kALLxb0J27wEehTKNhd/2E8K3SopVTtwZarLGy9Y76Z1d218hcA5MaC69sq6oNliuBp4JAQTNOeRgkYUBIsIooS0JGAxGChBDfmwvfz+TefRqQxZus3TzEzTypboWjRcnCk/dWVkLi6AK0kQuvhEqArdvdI9JKEBeVfgK2qrKj4hLujfqJvYM4di8WEjXyyY7HYz5ZNbtUKy4vGkdwRCwwPVtY666szkcdzmRZQKftgcmdwX6ycaQdi4lScbWt7y7ngSeqGgROl7rmoB9PYNEG1llp3IeRWpbYKC+hadCcvGnrWzUUI5dyudF4WBa6vsOhblOWwB3xJXoEyxPEPwzwNbTKqTjDNlg80mRgFM+HrcJ2tkUJ+8GW/EfnCI0CJyn56Aa+YHirGnuMc27lxHq/eLmSB9vY9ySK42CVpD6njPmRoCs/SyH2aQgAMmUsptnyUnL88vv96dXHs8/rL9/6XkZpGhIa+oKHsR8FMvUhAe4LkrIgE0yQIjgoO79Yz5U04mm0yqifZlHiR0Bin3FG/URGMYeEIYP4+cCXofl3iP+NbGcQFzEl8evZjpLXsv1Kqt8OdPCLQLsV/M08E0L+B/ow0MrkYzAnbcPwP87zjQvvOMGMeyMkVwaJrB12Ov+J3MUOF0DxQ+iubr87CU/Y/gFBkhWs0wYAAA==</values>
@@ -1206,10 +1206,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:38:36</sys_created_on>
         <sys_id>09c5f4d33b409b50ebe9c15765e45a89</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:11</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:29</sys_updated_on>
         <ui_id>2831742c-b241-4a73-a4e2-e2010da8c176</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
@@ -1580,7 +1580,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f9a7b05f3b409b50ebe9c15765e45add</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1588,7 +1588,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:34</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -2240,7 +2240,7 @@
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
-        <comment>Looks for the resource assignment of this task and rate model.</comment>
+        <comment>Looks for any resource assignment of this task. If one exists, no new assignment is created.</comment>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Xero - Process Tasks Page">f9a7b05f3b409b50ebe9c15765e45add</flow>
@@ -2251,13 +2251,13 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:46:52</sys_created_on>
         <sys_id>02a7f05f3b409b50ebe9c15765e45a3a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 01:24:32</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
         <ui_id>a2400ee9-9b53-48bc-bb8a-d368d33bb0a6</ui_id>
         <updation_source/>
-        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8A5eQQKBvp1ZIK+1tpW2vL3t71iR2WmuNnbWddlvE/77j/ACWpgWucOrpnlDsieebb74ZT/iy8Dn1z/wRDab5dDqaJEEQRUEwHkcZhGkajbM0SNPQ7/kS5gwtjdKW2MeC4dI9iHK1BibDJcpNIeDxptkBzyrvCdezOy6oZtI/+/K15xeg8TTLtH+22NraF46AlAk0vULf3nWNpwNi9XOGPhTP2uePzavn7aLS1EGJej77YZmkDDHkIAzr+XOQFKzSj6sVzYBeSrFeuOPS4mm+M/5h+BP6i4bOLmcYVcbqvdUjaSiql/MLsHBldZnZUjemNViDfCxWYa6I7OC8gR8se2v7J2cP2/aUbb4QLpFvynIohT3/Zz7DQ30Onc86wMvCcoVZ9yOXF0hFG74S5Vx+qnPprxDedIit3rl4QXOlQbJZ4RLqMtSkK7+6Uw+f22zMuKxwNZtCZSBWT2Ct5mlpHS8LP6ck50xQwqXg0nnCtDn5MMHm6IHMoSi4vCWFVve8OhVjmQ9uBT4McqEeHBf8Vg4gc5EPUFgwmOH6RbV8A5o7Fv7AY/DlnnN4h682/ojJNC8seeD0ltm199aKKvsA4lvXfqM40iaqCs9f9nzzaM4FGLMmG2VKvpeOg5r6hj1SJap6pULxO0ZwzxqinAaqsg1fLVugWyVaJ3pDL8/7x8GdYw8ILQuXTpFe+vgSqqZ11DmvLH5tHzO34X2qN1p5H62FTILjtJCuEn9eggdV4PPSclJ7Q2WdsIC6KvZw4dfc7FL/9NVLa7rWGc/JHPnkhWBEswy1YwhoRnJVSkrq4DbKwpGdc21sY/y8TD4zTL30FGrKs3fMq6y9lfWBJbQ7jraEPuReG0jjzXgYiFcF4q0COSzsQ67s+Gj1Fh+p3tbX4Qy4qLJhLCs20sm0VvqFa3tHIl9RxJ53+p6gwqOCevul31UCnZf/DqxHHglO07iOfzFnDNJ4COMkCsMgCAOaBJMkCSfjNB9DEufrGiXEyAxnCTw5R6ng8aSVRpvn8Hn/aUaNw/rMHqBaBV4o+VcZBMPEeg4VptdrUe3G3fSTVCnBQG41lGtE/tusmodWch29u6byr1ziby2Gkl9vM10vdXJ9qju/5H9K/r1kH5zEJiwYTkKa9SdJmPTjnI77UwqjPkzTURJRlsX5KeZgOnp1CN2YBDIlKXdxmY0Cs2C+OblHdLGgccwYDLM+zWjej5Np3E+jKfTZcBSMYhgOp0k2qNvbcvm3BsvIXFEm2vdNmToSB+ud5bKjfk/v8bDesAeDbW8436Swi9Z2nthe+9h1QHv/HbEFBP+lJvAuJ/kTDez01UEX4rWe6uM2/tiQpBAYHgaP34vajbNGlRrziRARv+Oga0qvjbxfjA4sjN2Y28K4bkBvxdCUQ/XY9Vlbvbb1WRv8Pz9r3+d4iIC4QIWQOoW1pvDIe5KJ0lQbGqRpvqeOd7t9/QmdoMOyLRYAAA==</values>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8A5eQQEjfTq2QVtrbStteX/ZWlhM7xVpjZ22nXYr432+cH8BCCmQLq57uCcWeeL6Z+b7xhC9LlxH3yh0RL87ieDSJPC8IPG88DlLsJ0kwThMvSXy35wo8p2CppTLILHIKS0+YF+s1rFNYIkznHC8e6h3sGOm8wHo6Y5woKtyrL197bo4VnGaocq+WO1unwuE4oRxM78C3c1/haYFY/lyBD8nS5vlj/ep1sygVsVCCnkt/GCoIBQwZ5pr23DkWBBupFusVRTG5FXyzMGPCwGmuNf6h2Qv4C4bWLqMQVUqrvfUjqlNULWc32OA7o4rUFKo2rcBqyMdyHeY6kS05r+F7q97G/sXa4117Qrdf8FeQb0IzXHBz/Ws+/a4+h9ZnFeBtbpiEqruBrQtOeBO+5MVcfKpq6a4RPrSQrdq5eYVzhYZk09wW1FaoLld2N5PPn5tqTJkocdWbXKaYr5+wMYolhbF5WboZQRmjnCAmOBPWE5TN0odyOgcPaI7znIlHlCv5xMpTIZb54JHDwyDj8tnmgj2KAU5t5AMgFh5MYf2mXH7Aitks/AXHwMs963AGr9b+kE4Vyw16ZuSRmo33xopI84z5t7b9mnGoKVQZnrvquXqhrznWepNsoCn6XtgcVKmvs4fKQpWvlCj+hAieaJ0oy4FStv5B2WKyI9Gq0Ft82e8fnTvHCRCaLNxaRjrJ4jVUdeuoal5a/Nw+pnbD+VRtNPQ+WwuZeOdpIW0S35dgJwXuS8tS7Q3KuqCA2hTbnfhVbo6xPz54acUbnrEMzSGfLOcUKZoCdzTCiqJMFoKgKrgtWdhkZ0xpUxvvy+QzhdILRwKnHDOjTmntrK07Suh4HI2EPmROE0jtTTsQiFMG4qwD6RZ2lys7PJvewjPpbXMdTjHjZTW0oflWOalSUr1ybR8p5AFGnHinnwjKPyuot1/6bRJovfyPYD3zSHCZxnX+izmlOAmHeBwFvu95vkcibxJF/mScZGMchdlGowhpkcIsASdnQBU4HjXUaOrs7/efetTo1mdOANUw8EaKfwrPG0bGsaigvE6D6jjuup8kUnKKxU5DuQfkf0zLeWhN19G7ayq/5RJ/qxgKdr+b6WqpNdeXuvML9rdg3wv6wVJsQr3hxCdpfxL5UT/MyLgfEzzq4zgZRQGhaZhdYg4mo4ND6NYkkEpBmI1LbwnMYP3N0j0gyyUJQ0rxMO2TlGT9MIrDfhLEuE+HI28U4uEwjtJB1d5WqxZhvuGobmo+IeZGzdfbQbclopkAdtc+th3Q3FhnFK33X5Ltu5y9LzRik4OjKQ43fKqO2/orQqCcQ3gQPHzhKTuAalkoqCdABPw2B21zdWXk/GTUURjHMTfCuK9B78RQy6F8bPsQLV/b+RD1/p8fou9zoANAjANDUFXCilNw5BNKeaHLDYWFrr+Azncfff0XatwOj98VAAA=</values>
     </sys_hub_action_instance_v2>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=02a7f05f3b409b50ebe9c15765e45a3a"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
@@ -2404,7 +2404,7 @@
         <updation_source/>
         <wait_for_completion>true</wait_for_completion>
     </sys_hub_sub_flow_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f9a7b05f3b409b50ebe9c15765e45add^sys_idNOT IN96a11ab53b6c9310ebe9c15765e45a0c,86a7f05f3b409b50ebe9c15765e45a34,2aa11ab53b6c9310ebe9c15765e45a1e,8ea7f05f3b409b50ebe9c15765e45a32,06a7f05f3b409b50ebe9c15765e45a31,d0efdc6f3ba8d350ebe9c15765e45a30,1cefdc6f3ba8d350ebe9c15765e45a31,10efdc6f3ba8d350ebe9c15765e45a34,c6a7f05f3b409b50ebe9c15765e45a35,0aa7f05f3b409b50ebe9c15765e45a36,4aa7f05f3b409b50ebe9c15765e45a37,90efdc6f3ba8d350ebe9c15765e45a35,dea11ab53b6c9310ebe9c15765e45a1c"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f9a7b05f3b409b50ebe9c15765e45add^sys_idNOT IN96a11ab53b6c9310ebe9c15765e45a0c,86a7f05f3b409b50ebe9c15765e45a34,1cefdc6f3ba8d350ebe9c15765e45a31,10efdc6f3ba8d350ebe9c15765e45a34,c6a7f05f3b409b50ebe9c15765e45a35,0aa7f05f3b409b50ebe9c15765e45a36,4aa7f05f3b409b50ebe9c15765e45a37,90efdc6f3ba8d350ebe9c15765e45a35,dea11ab53b6c9310ebe9c15765e45a1c,2aa11ab53b6c9310ebe9c15765e45a1e,8ea7f05f3b409b50ebe9c15765e45a32,06a7f05f3b409b50ebe9c15765e45a31,d0efdc6f3ba8d350ebe9c15765e45a30"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">15a196b53b6c9310ebe9c15765e45a79</block>
@@ -2423,10 +2423,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-15 03:00:37</sys_created_on>
         <sys_id>96a11ab53b6c9310ebe9c15765e45a0c</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:15</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
         <ui_id>ddaef489-109e-4c69-a295-d14c1665091b</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1XUWvbMBD+K0PPcXBiObHzVloKhW2FNevLKOEsnRNRWXYtuW0W+t93ih03TSl0UMagebM+ne6++6SPwxtWNq5qnJ2XJ9aqpWGzXzcDpozH6HvDlGQzlqQc+TiXUTYWaTQKMcNUjOLpJEYeA+RswAwUSJEO7K1diBrBoST4HnTj8ZC+pbKVhvX1HiRWSssau7IV1JTFYc1mm4Ot99LQkKGm0Lnn8eW05/EGPbeuPKyMwyWVbYGvXY6LHi1r6UmNBwwfHRpJZ2c5aIsDVoCR4Mp63SOUXF4a/QysKD2lYz740arfVJGHPi5H6k9gu9cvF51OLZyfgYMrVzfCNXUXKlalEmhbZSTm0Gh3uo+1AZeVU6VpjzjI9O50qZvCfG8FYX2C3bUQ0lgigZVv1DPv2sivVuXDjx3Lc2W2mnSbuhSg+xU4V6uscZ7PhjVqfihzC70WGjUWVHNRQFUps1xUdXmvtnWIdjFcaloMc10+ED//XIcgfI9DugIYnhN+toWvoVa+4W+Upqv306i7Bi/8M8Iky9MJJkGaiyTgPOVBMp7yIOXTKE6mI56lMXsaMLu2pxqsfZaK7mhx1/hGW+E6iRatyv6IqFXlTojUPXZqPA06E02ySZaGGEUZJDKKD16v5C9fqW+dOijsnolee+ivLfQOEjsLHbJ4g1xnIUs3bpYHDrragZ2BRh9moCQMP6WFeplfOqgX+p8YiAuAOJqGAYzkJOBhIshAXAQTTNNwJLM4isQHGujGO6Dlc5xJx5l0nEnHmXScSf+RhT7pTJIolCWec0/qYvfH5DfW9CyV2IceyvrWd/iMPf0ByiCrFnsNAAA=</values>
@@ -2450,121 +2450,13 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:46:52</sys_created_on>
         <sys_id>86a7f05f3b409b50ebe9c15765e45a34</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
         <ui_id>294acb5a-7bfe-48d4-9724-48cacc932784</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPjvFH7NV5KymFQbfCUvqyFXEty4mYbHmWlDQz+e+7sh0nrBlbWR/3Eqwj3XvPOdIhHVHWNNboB3WttVjXZPHlySOidhh+d6SGipMFYaouhBGqpj3gkS1I6zbwsxC6kbB/PCFsI2TR8rFbAy3WGN6SRffLliiwoAygDDMWsjhK4ygIoqt5mKdxHkZFDBxibCgh5xKPLo803t31iPdbfmbfOFybVtTrcX03dlkdQdUWjlUYeIQ/G14XHPmUIDX3SAV1AUa1+wlpORT3tTwBG1GbQXAFz1r8wIFRkriDJUeJbHRjWtLRqQEub8AAUrHM2HYyTgnG9WBOwUuw0izPseHAfeOkDiUGcnmsVtJW9afBETI1OLsYq5EEb5xSR33UUa42avf5yPJW1L0r46ZUDOS0AoPe5dY4Ph3hklfYiFbQNOgobVq1FX0xcqn8tcSFX0q1w6HudfnAHHEfjQX/FvGbHn6EVjgVH7ENFg80c9CC0f4lYju0iZODR/ReLyVofRKJ7tLv1lEcJI/i6OCPK2GtaMw1Tt7yUcfBe/mwz95012XwPpqH4dUsLPFnnqdXszxLk1mcRSwLoUzDIvEpHeRQbcBYTalfca1hzQ+HrzYI4mJlGV6cfhmRtx/wusRlkJRJGCSXEzdPLyXuQtZeGbPoDzFzd/yXKQuC4H/M/jlmQtMhHKO2fvgbpuzJRWqYOXnNhEZqDw77cPyXcRt7fFyCnUM71X5zok7Y4SePuLC5rwYAAA==</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">91a196b53b6c9310ebe9c15765e45a81</block>
-        <comment>Adds 1 to the created tasks.</comment>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="Xero - Process Tasks Page">f9a7b05f3b409b50ebe9c15765e45add</flow>
-        <flow_variables_assigned>tasks_created</flow_variables_assigned>
-        <generation_source/>
-        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
-        <order>13</order>
-        <outputs_assigned/>
-        <parent_ui_id>043344cd-07aa-4c41-9600-eb0e69cd48e3</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-11-15 03:00:37</sys_created_on>
-        <sys_id>2aa11ab53b6c9310ebe9c15765e45a1e</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
-        <ui_id>56b7da1b-7324-4291-a401-f035c5389956</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0ZPG3NMPpzGzp5KSiGwrbBmfRnFXMvXiagsu5KcNkvz33sVO07asbHXQd6so/txzrm6eMvK2la1NYvy0hixVGz6895nQjmMvrdMZGzKojjEcJhno3TI49GgjynGfDCeXIwxHAPkzGcKCqRIC+bBJFwjWMwIXoOsHU6fmTCVhM3dEeErITONbdMKNNWwqNl0++7qX0lISFFS6MKx8GYdiz+Qs5vKwUJZXFLbBvjS1ph3aKkzR2roM3y2qDLKneYgDfqsAJWBLfWmQ6h4dqPkEVhR+UZuAc9G/KKOYd/F5Uj6eGtFd0xamxo4vwILt1bX3Na6c60UHE3jTIY51NLOTrEm4KayolRNioVUHrJLWRfqW2MI6wqcTKU2RAIrJ9Qxb2Xkt6vy6fuB5bVQe0/aS1lykN0JrNUira3js2W1WLy3uYF+NxolFtQzKaCqhFomlS7XYt+HaBfBUtIhyGX5RPzcYw2AO40BjQCCa8Kv9vAdaOEEf6Uybb8fSjzWOHfPCKM0jy8w6sU5j3phGIe9aDgJe3E4GY2jySBM4zHb+cxszEyCMUeraEbJY+2ENsa1FiWNyy6Fa1HZSyK1phSaGh4wZ8Tb10fA38KpGU1cebQUBsmhD3mW7GXu5a9BB2/KeS8vXt/3Bv2P3idv8Jntdrt7t3yNEedNPm/yeZP/503OkAtDBi2cG/PD39ldbGgjBD+Fnkr94Gofsd0rgN7N2ucHAAA=</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">6ccde89a3b860310ebe9c15765e45a6f</block>
-        <comment>If none is found:</comment>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="Xero - Process Tasks Page">f9a7b05f3b409b50ebe9c15765e45add</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>16</order>
-        <outputs_assigned/>
-        <parent_ui_id>7a6d3c09-e0ee-4ebe-981a-a2b9f16438b7</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-25 15:46:52</sys_created_on>
-        <sys_id>8ea7f05f3b409b50ebe9c15765e45a32</sys_id>
-        <sys_mod_count>23</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
-        <ui_id>d2580b4c-c8ca-4d7d-8034-f567b233b303</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1V22rcMBD9laJn28j2ei95C0kDgSRbkiVQ2tSMLs6KypdacpKt8b9nZHsvNCltaKEvfbOONDPnnJ3DtqRsbNVYsyqPjVH3BTn6dOcRVTgMv1tSQC7JEeFlIZRVZZH2gEceQDfuAj+FMpWGze0e4WulRS3HbhXUWGNlTY7aH66UwIKMQhYueMjjaBpHlEbzScimMQsjEYOEGBtqYFLj05MtjXcXPeL9lJ/dVA43tlbF/Xi+GLvcbMGyFo5VSD0in6wshEQ+GWgjPZJDIcCW9WaH1BLEstB7YK0KOwjO4cmo7zgwShL3MJMokY9u7I7p6NQAZ6dgAak03Db1zrhScWkGc4TMoNH25BAbHiwrJ3UoscD0trrUTV5cDY6QXYODH6YxSEJWTqmjPurIbtbl4/WW5ZkqelfGS11y0LsTWPSONdbxaYnUMsdGaQ5VhY6mVV0+qL4YueTBvcZDkOnyEYe67QqAO+IBGgvBGeKnPXwLtXIqLrENFg80GRjF034TsR3aJEnnEbMxJxqM2YtEd9NvjaM4SB7FpYM/roTXqrLHOPlBjjo67+ViH+x020I0oVTKhb9gSexP5oz7jM3BF/F0LuKYMQrTwFiwjem6zw2lsQi/tK2czGYxDWNf8DjxJ5Gc+TAF7gs6Y9FCMEGzKLiWHPeu685vrpar95cfVh9fZugfMHhbZheQZElIk9czO5m+ltlX0vrGoEa/CKrbkt/MKaX0f1D/OKjKpEO8Rm398L+Y0zsXymHmzmuuDFJbOex8+z/lLja4XIofQo9l/dWJ2mPdM/jpvfDxBgAA</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">dccde89a3b860310ebe9c15765e45a5d</block>
-        <comment>Repeats the steps below for each Xero task.</comment>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="Xero - Process Tasks Page">f9a7b05f3b409b50ebe9c15765e45add</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
-        <order>3</order>
-        <outputs_assigned/>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-25 15:46:52</sys_created_on>
-        <sys_id>06a7f05f3b409b50ebe9c15765e45a31</sys_id>
-        <sys_mod_count>21</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:15</sys_updated_on>
-        <ui_id>7a6d3c09-e0ee-4ebe-981a-a2b9f16438b7</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/51TTU/jMBD9Lz6nUT5KtukNgZCQdhcJEJcViia201o4ttd2WrJR/vuOmw8QRy5N53nem/cmzkB0503n3bO+dk4cFNn/eY2IUAHD/wNR0HKyJ8Lz1pGInEB2oR6GEn5k2zTdbdIGf7Z1sdvUZXG1ycuMlik0RcquYg/uzY0jEplwRkL/8l0+PQrJLJ8NGrDoy3NL9sOXI8FQPi1ZU6ZJSfOsyLMkyXbbtC7yOs1YDpwVKCih5hJb7+dkX4L63oTScqotW4CfM+dxRfERTGRJRPi754pxHN+AdDwiLSgGXtue7L3tELAc2IOS/dpxFMqjHAm97078w4lpkoTGhmMgyqfDtazmLU5wcwsenlCa+s7OrfSoBeVuWgXjDXTS33zGpoYH44VWE8VDLRe2ll2rfk+bIKvA8tIQ6Rya4CYEDdbnHM3TUZ8fF5d3Ql2WMh9KTUGuFXhvRd354GcgXPIWhaoWjBHqUBmrT+JCRi9tfJBYxI3UZxwarmcMNBiPca8Q3yF+e4FfwIqQ4hfKIHmMiOvdjQTnPrLgEqu/XXAyJZszVNMaAoVaYfw1Djjx2e74Gm78pL3ulAqHFp4Ddr98J+Ggxxsk6GforO1bMP+Bjf8BNz2WhHEDAAA=</values>
-        <workflow_reference/>
-    </sys_hub_flow_logic_instance_v2>
-    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
-        <attributes/>
-        <block display_value="">62df5c6f3ba8d350ebe9c15765e45a60</block>
-        <comment>Reports the missing role only when the task is new.</comment>
-        <connected_to/>
-        <decision_table/>
-        <display_text/>
-        <flow display_value="Xero - Process Tasks Page">f9a7b05f3b409b50ebe9c15765e45add</flow>
-        <flow_variables_assigned/>
-        <generation_source/>
-        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>6</order>
-        <outputs_assigned/>
-        <parent_ui_id>7a6d3c09-e0ee-4ebe-981a-a2b9f16438b7</parent_ui_id>
-        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-11-20 05:12:51</sys_created_on>
-        <sys_id>d0efdc6f3ba8d350ebe9c15765e45a30</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
-        <ui_id>82f49db6-b8f9-48bc-afca-c81d70747cab</ui_id>
-        <updation_source/>
-        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0XPcfB3mryVdoXCuo62FMbozLUkN2Ky5UlyW8/kv/fKH0lpAlvZYC97s47uvTrn+MjuiGps3Vhzq06MEQ8VWX29nxFROQyfO1JBycmKUFUxYYWqyIw8gmwc1nU8XiwiP4g8RqPEi0O+8CAF6jF/kYdLljO/COfXnCrNNpuLmw+Xn2+/fOu6IKaL+HgZeItlnHox+ImX0zzwUh4nFNKcBcfJ2zY8lwlTS2jv/tHxdC0k03y0qAaNzliuyap7syUYsltCUiSBn9AoTKPQ98PjOMjTKA9CFgGPUxwoIecSS09feXvAbtvWDjJWi+phXH8cW28mELk6KqE/I/zZ8opxJFGANHxGSqgYWKVbsrK6QUBzYFeVbLcVa1FZnEZc7bMRP7mb5PuusuCoi/Jhd7vMxncxwMUZWEAqDbWNHkvpWgnKzeAI4wU00p6+xoaCq7pX2bdYyOXUrWRTVp8GM8h2wPTqEWkMkuC1U+q4j0KKm7V6up5Ynouqd2XclIqC3K7Aond5Yx2fjnDJSxyUlVDX6GhWa/Uo+mbkUs4fJC7mhVRPeKi7J3OgjvgcjYX5OeJnPXwHWjgVlzgGmzELJjNUi3rS1h9ONjNiWnMqwZidRjQ3+9E4hoPiUVs22ONa+kEnePAjH2VsZvs3NOuB3TUdknwkzBEva9vuX6T9gvdFvfChCJY0OBx1iA5F/WhI8H7gJ/bvSX3wi9SPyG/FPkn+p/6PU+9o5mAEzfo/CY5zH56/GPt7F+/h0K3ZVBjkduuwi+n/5TZaTJSgr6Enpb87VTts8wKNIrCGCQcAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
@@ -2585,10 +2477,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-20 05:12:51</sys_created_on>
         <sys_id>1cefdc6f3ba8d350ebe9c15765e45a31</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
         <ui_id>2f57cfd4-1043-4518-ae54-3271ea3721d4</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WS2/iMBD+K5GvC1Eojxb2VPUhVeouEqW9lCqa2JNi1bFT24FlEf99xyRA2+2u9rQnbvY3r2++cUZZM1P5svJuas6dk8+ajR6fWkzqgNF5zaRgIzbIBtkwwW43gzPR7SeY4ZB3+qeDPvb6IHqsxTQUSJ4e3EtaWpMpLBzBC1BVwOkopCsVrB4OCJ9LJSw2RUuwlMOjZaP1B9O/klCQofqExR/I+VUZYOet1M/N/bZJcbcDjRWBUqfF8IdHLZC45KActlgBWoA3drVHLIIYa3UA5lL7utkCfjj5k+qdJUkSPHOk/ngjxf6aNjLVcH4JHohKxX1l96oZydHVygjMoVL+4i1WO4xLL42uQzxQy020UVWhv9eCsH2CN1OpHJHAMrQauDeN5Hdzs5zsWF5LvVWlMSrDQe1v4Em7rPKBz5pVcvpB5hr5TWikqVDFtICyJCQMaiG3VYh0ET8rusS5MktiF55qDDx0GNMIIL4m/HILP4CVod1vlIaCQ7l7LV8rvAmPqMcB+t3TpA0dMWj3kjPePjvp8fYAh8OkI7J+t8vZpsXcyl0ocO4gFE0ofa1Cm7VsjUBprXEI4VaW/pxILSiEZoY7LMjw/u0R8Dd3Kkbz1lEu0m13264XYON3WaIv0axKkpPTx8nV3fh+cnEVTca3V0/RlLyiGauN5LVLk3bTNDc2ReDzWHos4vBh7NPM2CjSJrLoTGU5RtYojJbSzyM/ly4KvnGdm9M79yi2RlogEXwIou/iMxtsV0wYcjyb6broV7bZbJ7CoqjHdtw6x61z3DrHrfN/to5ALh2Ncxpmd7P76wmGFRWW/C20NPYlSHLANr8AEfR4sj8JAAA=</values>
@@ -2612,10 +2504,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-20 05:12:51</sys_created_on>
         <sys_id>10efdc6f3ba8d350ebe9c15765e45a34</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
         <ui_id>3811036e-64ab-463b-94aa-d57ce02c565b</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1V2U7cQBD8lWie1yuPzzVvCIKExBHBCimKiNVzGEYZH/GMgY21/06P7T0ERAlKXiLlzVPj7q6qbdf2pO5s01mzrA+NUXcVOfhyOyOqchg+96SCUpIDwutKKKvqKh+AGXkA3bkLfBTKNBpWNzuE3ystWjl1a6DFGitbctC/uFICCwofCppxysMgCQPfDxYRZUnIaCBCkBBiQw1Manz1aEPjw9mAzH7Kz64ahxvbqupuOp9NXa43YN0Kx4r6MyKfrKyERD4FaCNnpIRKgK3b1RZpJYjLSu+Ae1XZUXAJT0b9wIFBHLsXC4kS+eTG9phPTo1wcQwWkErHbddujasVl2Y0R8gCOm2P9rHxhcvGSR1LLDC9qa51V1YXoyNk22Dvh+kMkpCNU+qoTzqK6/v68WrD8kRVgyvTpa456O0JLHrHOuv49ERqWWKjvISmQUfzpq0f1FCMXMr5ncbDvND1Iw512zUH7ojP0ViYnyB+PMA30Cqn4hzbYPFIk4FRPB82EduhTZKsZ8SszJEGY3Yi0d38e+cojpIncfnojyvhrWrsIU5+kJOO9ez1Yu/tdN/7URwHiyT1OGXMiwRdeFkKsUdDAJApYzHN5leS4wKt16fXH88/LT9/7XsZpWno09ATPIy9KJCpBwlwT/gpCzLBhF8Ee2UXl8tNJY14Gi0y6qVZlHgR+LHHOKNeIqOYQ8KQQfxy4OtP798h/r6EyCAuYurHbydElLyVEG9kwztjIfhFLLid/M1U8H3/fyz8cSwok48f86RtGP4XU+HWRcA4c+s1VwapLR12uvlXdBcrXC7F96HHuv3mRO2w9TPjzrAdXwcAAA==</values>
@@ -2639,10 +2531,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:46:52</sys_created_on>
         <sys_id>c6a7f05f3b409b50ebe9c15765e45a35</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
         <ui_id>0e04b66e-38f2-44cf-a9ef-aa073b329271</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1XXU/bMBT9L3luqqT55g2BkJDYkAbjZZqq669i4Tohdgpd1f++6yZNSweCiQKaxkvVnF77nnN8T90uvLKxVWPNZXlojJxo7+DHwpPMO/A4T0cZTUREgqAgScAJL2iYZGnC4wQg9QaehinHygomfEzLRlvEZqAaBy4WBWSjOAxzPxT4EpM090mRJn5UjGgRgkhDlgw3a5dLXM2kqRTMr7pNEKHXUrGaO2I/B9iqxp6W194B0tT4RoM6k/rmseKXylBAuNrV8Zg2O68c5vpOkEILnHWrT3u0rJkjGA08fm+5Zhx5CFCGD7wpaAa2rOc9UnNg51ptgGvcvlUzhXsjf2HHOHB1gqMy2tnSP447y1pYHIOFC1s31DZ172ApKTetJ4wLaJQ92sbagvPKylK3SywQtV5dqmaqv7ZueP0GWyfUGCTBKyfUMe9kiIvr8u7bmuWJ1CtPug9VSUH1T2BtLUljHZ+F18jLXZtb6E+jueJT7DmeQlVJPRlXdTmTqz5IezqcKHwYClXeIT833EOgTuMQjwCGJ4gfr+ArqKUT/AW36fp91/K24adugAogWZ4J7jNBhR9nMfMhzYQf5GGSpDykgglvOfDM3BwpMGZjFZ7R+LZxQlvjOovGrctuCa1lZQ+R1Ix3biwH/0z83jtsXaxGHxCrz4TsIyGvykNGU56ngkUExzcKd0YriTZTZMHcmDHFCbA4ItuRWAmddVqGD+re6PZ5Aet1IHZpP6Hm7+6gjwjL5x2094SFrBjFMWM+I4T7cRGBT0gU+jHkhDGWiJCkb3AHxQGQJOdRRCBn0e7XuUgfTqmTjgqm5pnM9XWPZe75Ba+N5AtEbUdyW9UTYrtIGpwgPdlJ5MUa7AIZ7i2QeRD8l5HsbX6YyN7odwkky3gm4rjwGY3xx1XCCp/QPPUDno9YCoJmCd9jIN3savc3rT2ZdTr6w6PSoIRLh51u1bE5Tqyk29BdWd848Rts+RstP6eXBA4AAA==</values>
@@ -2666,10 +2558,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:46:52</sys_created_on>
         <sys_id>0aa7f05f3b409b50ebe9c15765e45a36</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:34</sys_updated_on>
         <ui_id>2831742c-b241-4a73-a4e2-e2010da8c176</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
@@ -2693,10 +2585,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:46:52</sys_created_on>
         <sys_id>4aa7f05f3b409b50ebe9c15765e45a37</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:34</sys_updated_on>
         <ui_id>e44ebc8f-3fcf-458e-8905-331adfa721ab</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1XXU/bMBT9L3luqqT55g2BkJDYkAbbyzRV1/Z1sXCcEDuFrup/n03StBQQTHTwMN6Sk2vfc67PqdWlV7Wmbo2+rA61FjPlHfxceoJ5Bx5iOslowiMSBAVJAiRY0DDJ0gTjBCD1Rp6CEm1lDTOc0qpVxmJzkK0DA/vMhK4lLH5sQfRKSNag6/NrZFc2dguDjXdguyr7oECeCXVtqx8Vv5aVBIJyl9ZTVM2idpjrO7MUOuCsX306oFXDHMFo5OGdQcXQ8uAgNY68EhQDUzWLAWkQ2LmSG+DKbt+pKeFOi9+2Yxy4Oo5WGcXu2/A67WfWwfwYDFyYpqWmbXA9lEpQ1N1MGHJopTnaxrqC89qISnVLDBC5Xl3JtlRfu2l4wwbrI7JIqy0JrJ1Qx7yXwS+uqttva5YnQt3PpP8oKwpyeANjGkFa4/gsvVZc7o65gx4PGiWWtue0hLoWajatm2ou7vtY2uV4Ju3LmMvq1vJzXh0DdRrH9ghgfGLx43v4BzTCCf5it+n7fVfipsVTZ6ACSJZnHH3GKffjLGY+pBn3gzxMkhRDyhn3ViNPL/SRBK03o7JnNL1pndBucP2Ipt2U3RLaiNocWlJz7KexGn1Umt47O31KJh+Qkk/D78Pwb7J3RlPMU84iMqFFFO5YK4k2LjKgr/WUWgcYa5GNw5fLe6HzXsv4Qd1q9dj/e7hMXsF6HYhd2s+o+bsr5SPC8nml7D1hISsmccyYzwhBPy4i8AmJQj+GnDDGEh6S9B9cKXEAJMkxigjkLNr9OefpQ5c66VZBqV/I3FD3VOZeXvDWSL5C1HYkt1U9I7aPpLYOUrOdRF6swT6Q4d4CmQfBfxnJYcwPEzkM+l0CyTLMeBwXPqNx7scJK3xC89QPMJ+wFDjNEtxjIJ13lfsT1Z3MOh3D4VGhrYRLh51u1bGFdayg29Bt1Vw78Rts9QdPH3WYog0AAA==</values>
@@ -2720,10 +2612,10 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-20 05:12:51</sys_created_on>
         <sys_id>90efdc6f3ba8d350ebe9c15765e45a35</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
         <ui_id>b60bd33c-5571-4b67-bd1d-8266e09c296b</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1WyW4iMRD9FcvXgVYTlgTmFGWRIiUTKWFyCVGr2i6CFbfdsd0QBvHvU6YbSDKL5jBHbu3nWt57ZUqsuK1CWQU/tqfeq2fDR49PLa5MxOh7xZXkIz7IB/kwxW43hxPZ7aeY41B0+seDPvb6IHu8xQ0USJEB/EtWOptrLDzBc9BVxOlTKl9qWD7sETFTWjpsmpbgqEZAx0erT1f/SkJDjvo3LP5ALizLCPvglHluztdNifstaJ2MlDotjm8BjUTiMgXtscULMBKCdcsd4hDkrdF7YKZMqMUW8ObVD+p3kqZpjJwi6RONFbtj1thUw9NzCEBUKhEqt3PNKoG+dkbiFCodzt5jdcBtGZQ1dUoAktxkW10V5lttCN8VeDeVyhMJLKPUyL0RMr2f2cXdluWlMhtXmkttBejdCQJ5l1ch8lnxSo0/2VwjvxiNNBXqmBVQloTEQc3VpguRLpJnTYdkqu2C2MWnmoCIChMaASSXhJ9v4AdwKsq9oTKUHNt9N+q1wqv4iHoCoN89TtvQkYN2Lz0R7ZOjnmgPcDhMOzLvd7uCr1vcL/2ZBu/3RtGEstcqyqxtawzKao9jinCqDKdEak4pNDPcYtGGj2+PgL+FUzOat2FTmW3UbVTPwSUfqrAvbFKl6dHx493p+ILd3J5fXD+xMYWwCa9vKGRbI+tm2dS6DEHMEhWwSOKvYldjwkcszJA5CMgKK1GzGXhmLNPKIKNMulaeOasxqZsIeu0BJVuoMKM1wqBOjvHJZGLqul/5er1+iougHsthqxy2ymGrHLbK/9kqEoXyNK5xnM3V9l9LvFgSDyXeQwvrXqLkPbb+CXxVE6//CAAA</values>
@@ -2747,13 +2639,121 @@
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-11-15 03:00:37</sys_created_on>
         <sys_id>dea11ab53b6c9310ebe9c15765e45a1c</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:16</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
         <ui_id>043344cd-07aa-4c41-9600-eb0e69cd48e3</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+1VyW7bMBD9lYBnWdDq1L4FDgIUSBugCXJpA2FEUjYRSlS52HEN/3uHWmyjddAG6bE388323mgevCPK2dZZ86CujBHLhsy/PgVENB7D3zvSQM3JnFDVMGGFaooOCMgapPOBBzDPF1RzsJwhzIRpJWwfz0fpSkim+TClBY29LNdkvvslJBgWVxFU8YzGNE2maRJFyYcsLqdpGScsBQ4pNpRQcompi5HexW2HBK/yttvW48Zq0SyH9+3Q5X4ElWaeVRwFhL9Y3jBkP69AGh6QGhoGVuntAUF57K6RR2AlGovtiE9+MeIHDkzy3CdWHCVS3gcPz2LYWg9X12ABqThqnR5S6UoJyk2/HMYrcNIuTrE+4a71UvsSC6Ucq5V0dfO53wg5NBg/EiLOIAneeqWe+qCjul+pzZeR5Y1ouq0MQakoyMMLLO6udNbz2REueY2NihraFjdatFqtRVeMXOpwKfERVlJtcKi/uhCoJx7iYiG8Qfy6gx9BC6/iE7bB4p5mCUbQortQbIdr4mQfELM1CwnGHEXidovvzlPsJQ/iin4/voRq0dornLzmg4598PvBn9z6bseyjHNI6IRRVk2yy1k2KdMZTHiSR3kGSTK7pKGxYJ3Z77+5KErZq954Z7e3eWkGeZXHUX7eS9n0nJfOuOiNBkr+YCD/9f7SP1EU/TfQuw0kTNGf/aCtG/4P/fPkzdLPPOyaCoPUHjz2cfxf8YEtHpegp9BG6Wcv6ojtfwJ+W2OToQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">91a196b53b6c9310ebe9c15765e45a81</block>
+        <comment>Adds 1 to the created tasks.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Process Tasks Page">f9a7b05f3b409b50ebe9c15765e45add</flow>
+        <flow_variables_assigned>tasks_created</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>043344cd-07aa-4c41-9600-eb0e69cd48e3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-15 03:00:37</sys_created_on>
+        <sys_id>2aa11ab53b6c9310ebe9c15765e45a1e</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
+        <ui_id>56b7da1b-7324-4291-a401-f035c5389956</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0ZPG3NMPpzGzp5KSiGwrbBmfRnFXMvXiagsu5KcNkvz33sVO07asbHXQd6so/txzrm6eMvK2la1NYvy0hixVGz6895nQjmMvrdMZGzKojjEcJhno3TI49GgjynGfDCeXIwxHAPkzGcKCqRIC+bBJFwjWMwIXoOsHU6fmTCVhM3dEeErITONbdMKNNWwqNl0++7qX0lISFFS6MKx8GYdiz+Qs5vKwUJZXFLbBvjS1ph3aKkzR2roM3y2qDLKneYgDfqsAJWBLfWmQ6h4dqPkEVhR+UZuAc9G/KKOYd/F5Uj6eGtFd0xamxo4vwILt1bX3Na6c60UHE3jTIY51NLOTrEm4KayolRNioVUHrJLWRfqW2MI6wqcTKU2RAIrJ9Qxb2Xkt6vy6fuB5bVQe0/aS1lykN0JrNUira3js2W1WLy3uYF+NxolFtQzKaCqhFomlS7XYt+HaBfBUtIhyGX5RPzcYw2AO40BjQCCa8Kv9vAdaOEEf6Uybb8fSjzWOHfPCKM0jy8w6sU5j3phGIe9aDgJe3E4GY2jySBM4zHb+cxszEyCMUeraEbJY+2ENsa1FiWNyy6Fa1HZSyK1phSaGh4wZ8Tb10fA38KpGU1cebQUBsmhD3mW7GXu5a9BB2/KeS8vXt/3Bv2P3idv8Jntdrt7t3yNEedNPm/yeZP/503OkAtDBi2cG/PD39ldbGgjBD+Fnkr94Gofsd0rgN7N2ucHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6ccde89a3b860310ebe9c15765e45a6f</block>
+        <comment>If none is found:</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Process Tasks Page">f9a7b05f3b409b50ebe9c15765e45add</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>16</order>
+        <outputs_assigned/>
+        <parent_ui_id>7a6d3c09-e0ee-4ebe-981a-a2b9f16438b7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-25 15:46:52</sys_created_on>
+        <sys_id>8ea7f05f3b409b50ebe9c15765e45a32</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
+        <ui_id>d2580b4c-c8ca-4d7d-8034-f567b233b303</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V22rcMBD9laJn28j2ei95C0kDgSRbkiVQ2tSMLs6KypdacpKt8b9nZHsvNCltaKEvfbOONDPnnJ3DtqRsbNVYsyqPjVH3BTn6dOcRVTgMv1tSQC7JEeFlIZRVZZH2gEceQDfuAj+FMpWGze0e4WulRS3HbhXUWGNlTY7aH66UwIKMQhYueMjjaBpHlEbzScimMQsjEYOEGBtqYFLj05MtjXcXPeL9lJ/dVA43tlbF/Xi+GLvcbMGyFo5VSD0in6wshEQ+GWgjPZJDIcCW9WaH1BLEstB7YK0KOwjO4cmo7zgwShL3MJMokY9u7I7p6NQAZ6dgAak03Db1zrhScWkGc4TMoNH25BAbHiwrJ3UoscD0trrUTV5cDY6QXYODH6YxSEJWTqmjPurIbtbl4/WW5ZkqelfGS11y0LsTWPSONdbxaYnUMsdGaQ5VhY6mVV0+qL4YueTBvcZDkOnyEYe67QqAO+IBGgvBGeKnPXwLtXIqLrENFg80GRjF034TsR3aJEnnEbMxJxqM2YtEd9NvjaM4SB7FpYM/roTXqrLHOPlBjjo67+ViH+x020I0oVTKhb9gSexP5oz7jM3BF/F0LuKYMQrTwFiwjem6zw2lsQi/tK2czGYxDWNf8DjxJ5Gc+TAF7gs6Y9FCMEGzKLiWHPeu685vrpar95cfVh9fZugfMHhbZheQZElIk9czO5m+ltlX0vrGoEa/CKrbkt/MKaX0f1D/OKjKpEO8Rm398L+Y0zsXymHmzmuuDFJbOex8+z/lLja4XIofQo9l/dWJ2mPdM/jpvfDxBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dccde89a3b860310ebe9c15765e45a5d</block>
+        <comment>Repeats the steps below for each Xero task.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Process Tasks Page">f9a7b05f3b409b50ebe9c15765e45add</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-25 15:46:52</sys_created_on>
+        <sys_id>06a7f05f3b409b50ebe9c15765e45a31</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
+        <ui_id>7a6d3c09-e0ee-4ebe-981a-a2b9f16438b7</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TTU/jMBD9Lz6nUT5KtukNgZCQdhcJEJcViia201o4ttd2WrJR/vuOmw8QRy5N53nem/cmzkB0503n3bO+dk4cFNn/eY2IUAHD/wNR0HKyJ8Lz1pGInEB2oR6GEn5k2zTdbdIGf7Z1sdvUZXG1ycuMlik0RcquYg/uzY0jEplwRkL/8l0+PQrJLJ8NGrDoy3NL9sOXI8FQPi1ZU6ZJSfOsyLMkyXbbtC7yOs1YDpwVKCih5hJb7+dkX4L63oTScqotW4CfM+dxRfERTGRJRPi754pxHN+AdDwiLSgGXtue7L3tELAc2IOS/dpxFMqjHAm97078w4lpkoTGhmMgyqfDtazmLU5wcwsenlCa+s7OrfSoBeVuWgXjDXTS33zGpoYH44VWE8VDLRe2ll2rfk+bIKvA8tIQ6Rya4CYEDdbnHM3TUZ8fF5d3Ql2WMh9KTUGuFXhvRd354GcgXPIWhaoWjBHqUBmrT+JCRi9tfJBYxI3UZxwarmcMNBiPca8Q3yF+e4FfwIqQ4hfKIHmMiOvdjQTnPrLgEqu/XXAyJZszVNMaAoVaYfw1Djjx2e74Gm78pL3ulAqHFp4Ddr98J+Ggxxsk6GforO1bMP+Bjf8BNz2WhHEDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">62df5c6f3ba8d350ebe9c15765e45a60</block>
+        <comment>Reports the missing role only when the task is new.</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Xero - Process Tasks Page">f9a7b05f3b409b50ebe9c15765e45add</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>7a6d3c09-e0ee-4ebe-981a-a2b9f16438b7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-11-20 05:12:51</sys_created_on>
+        <sys_id>d0efdc6f3ba8d350ebe9c15765e45a30</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-11-23 03:29:33</sys_updated_on>
+        <ui_id>82f49db6-b8f9-48bc-afca-c81d70747cab</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0XPcfB3mryVdoXCuo62FMbozLUkN2Ky5UlyW8/kv/fKH0lpAlvZYC97s47uvTrn+MjuiGps3Vhzq06MEQ8VWX29nxFROQyfO1JBycmKUFUxYYWqyIw8gmwc1nU8XiwiP4g8RqPEi0O+8CAF6jF/kYdLljO/COfXnCrNNpuLmw+Xn2+/fOu6IKaL+HgZeItlnHox+ImX0zzwUh4nFNKcBcfJ2zY8lwlTS2jv/tHxdC0k03y0qAaNzliuyap7syUYsltCUiSBn9AoTKPQ98PjOMjTKA9CFgGPUxwoIecSS09feXvAbtvWDjJWi+phXH8cW28mELk6KqE/I/zZ8opxJFGANHxGSqgYWKVbsrK6QUBzYFeVbLcVa1FZnEZc7bMRP7mb5PuusuCoi/Jhd7vMxncxwMUZWEAqDbWNHkvpWgnKzeAI4wU00p6+xoaCq7pX2bdYyOXUrWRTVp8GM8h2wPTqEWkMkuC1U+q4j0KKm7V6up5Ynouqd2XclIqC3K7Aond5Yx2fjnDJSxyUlVDX6GhWa/Uo+mbkUs4fJC7mhVRPeKi7J3OgjvgcjYX5OeJnPXwHWjgVlzgGmzELJjNUi3rS1h9ONjNiWnMqwZidRjQ3+9E4hoPiUVs22ONa+kEnePAjH2VsZvs3NOuB3TUdknwkzBEva9vuX6T9gvdFvfChCJY0OBx1iA5F/WhI8H7gJ/bvSX3wi9SPyG/FPkn+p/6PU+9o5mAEzfo/CY5zH56/GPt7F+/h0K3ZVBjkduuwi+n/5TZaTJSgr6Enpb87VTts8wKNIrCGCQcAAA==</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=f9a7b05f3b409b50ebe9c15765e45add"/>
@@ -3100,16 +3100,16 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_subflow_plan","id":"96a7f05f3b409b50ebe9c15765e45a8f","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
         <plan_id display_value="Xero - Process Tasks Page">8c027c1f3b009b50ebe9c15765e45af6</plan_id>
-        <snapshot>35d3db9448b413107f44278ba78fa70c</snapshot>
+        <snapshot>ef952394483813107f44278ba78fa785</snapshot>
         <sys_created_by>marco.silva-snadmin</sys_created_by>
         <sys_created_on>2026-10-25 15:46:53</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>96a7f05f3b409b50ebe9c15765e45a8f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-11-23 02:09:18</sys_updated_on>
+        <sys_updated_on>2026-11-23 03:29:35</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>
