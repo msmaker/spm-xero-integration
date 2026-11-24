@@ -39,7 +39,7 @@
         <sys_scope display_value="SPM Xero Integration">64fdbaa379e103107f4423b77ae41523</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_ee5ef9ccd8b503107f440f1d303307e6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-11-21 02:02:13</sys_updated_on>
+        <sys_updated_on>2026-11-23 23:43:15</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -1251,7 +1251,7 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Xero - Get User">ee5ef9ccd8b503107f440f1d303307e6</action_id>
         <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_hub_action_plan","id":"d9a0ca40d8f503107f440f1d30330740","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
-        <snapshot>7b1e7cb74c2013107f443be937e7e2b5</snapshot>
+        <snapshot>4cfa77ec707013107f448610beb8c21e</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-06-25 22:24:13</sys_created_on>
         <sys_domain>global</sys_domain>
@@ -1772,48 +1772,6 @@
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
         <document_key>bca0ca40d8f503107f440f1d30330711</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-06-25 22:24:12</sys_created_on>
-        <sys_id>78a0ca40d8f503107f440f1d30330724</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-23 01:08:55</sys_updated_on>
-        <value>a1d5e68b2b730b109748faa6fe91bf93</value>
-        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>bca0ca40d8f503107f440f1d30330711</document_key>
-        <order>300</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-23 01:08:55</sys_created_on>
-        <sys_id>318bdf522bc053509748faa6fe91bfca</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-23 01:08:55</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Override Default Policy for Alias">324e357187c03300a8cc7d5e27cb0b43</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>bca0ca40d8f503107f440f1d30330711</document_key>
-        <order>200</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>marco.silva-snadmin</sys_created_by>
-        <sys_created_on>2026-10-12 19:06:39</sys_created_on>
-        <sys_id>2db8ae432bb30b109748faa6fe91bf6f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
-        <sys_updated_on>2026-10-12 19:06:39</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>bca0ca40d8f503107f440f1d30330711</document_key>
         <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -1936,6 +1894,48 @@
         <sys_updated_on>2026-06-25 22:24:12</sys_updated_on>
         <value/>
         <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bca0ca40d8f503107f440f1d30330711</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-25 22:24:12</sys_created_on>
+        <sys_id>78a0ca40d8f503107f440f1d30330724</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-23 01:08:55</sys_updated_on>
+        <value>a1d5e68b2b730b109748faa6fe91bf93</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bca0ca40d8f503107f440f1d30330711</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-23 01:08:55</sys_created_on>
+        <sys_id>318bdf522bc053509748faa6fe91bfca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-23 01:08:55</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Override Default Policy for Alias">324e357187c03300a8cc7d5e27cb0b43</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>bca0ca40d8f503107f440f1d30330711</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>marco.silva-snadmin</sys_created_by>
+        <sys_created_on>2026-10-12 19:06:39</sys_created_on>
+        <sys_id>2db8ae432bb30b109748faa6fe91bf6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>marco.silva-snadmin</sys_updated_by>
+        <sys_updated_on>2026-10-12 19:06:39</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Enable Retry Policy">321e31fd87803300a8cc7d5e27cb0b7a</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_bca0ca40d8f503107f440f1d30330711^id=bca0ca40d8f503107f440f1d30330711"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=bca0ca40d8f503107f440f1d30330711"/>
